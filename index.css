@@ -1,1 +1,818 @@
+body
+{
+    margin: 0 auto;
+    width: 900px;
+    overflow: hidden;
+}
+.gallery
+{    
+    margin: 200px 0;
+    width: 900px;
+    -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;  
+}
+.gallery > input
+{
+    display: none;
+}
+.wrapper > input
+{
+    display: none;
+}
+.wrapper
+{
+    display: flex;
+    justify-content: center;
+    transition-property: margin;
+      transition-duration: .2s;
+}
+.wrap
+{    
+    position: relative;
+    display: flex;
+    box-shadow: 1px 1px 10px black;
+    transition-property: transform, margin;
+      transition-duration: .2s;
+}
+.pic > img{
+    width: 300px;
+}
+input[id="uno"]:checked ~ .wrapper
+{
+    margin-left: 900px;
+}
+input[id="uno"]:checked ~ .wrapper > .uno
+{
+    transform: perspective(350px) rotateY(0deg);
+    z-index: 7;
+    margin: 0 -100px;
+}
+input[id="uno"]:checked ~ .wrapper > .dos
+{
+    transform: perspective(350px) rotateY(-25deg);
+    z-index: 6;
+    margin-right:-150px;
+}
+input[id="uno"]:checked ~ .wrapper  > .tres
+{
+    transform: perspective(350px) rotateY(-25deg);
+    z-index: 5;
+    margin-right: -150px;
+}
+input[id="uno"]:checked ~ .wrapper  > .cuatro
+{
+    transform: perspective(350px) rotateY(-25deg);
+    z-index: 4;
+    margin-right: -150px;
+}
+input[id="uno"]:checked ~ .wrapper  > .cinco
+{
+    transform: perspective(350px) rotateY(-25deg);
+    z-index: 3;
+    margin-right: -150px;
+}
+input[id="uno"]:checked ~ .wrapper  > .sies
+{    
+    transform: perspective(350px) rotateY(-25deg);
+    z-index: 2;
+    margin-right: -150px;
+}
+input[id="uno"]:checked ~ .wrapper  > .siete
+{
+    transform: perspective(350px) rotateY(-25deg);
+    z-index: 1;
+    margin-right: -150px;
+}
+input[id="dos"]:checked ~ .wrapper
+{
+    margin-left: 600px;
+}
+input[id="dos"]:checked ~ .wrapper > .uno
+{
+    transform: perspective(350px) rotateY(25deg);
+    z-index: 6;
+    margin-left: -150px;
+}
+input[id="dos"]:checked ~ .wrapper > .dos
+{
+    transform: perspective(350px) rotateY(0deg);
+    z-index: 7;
+    margin: 0 -100px;
+}
+input[id="dos"]:checked ~ .wrapper  > .tres
+{
+    transform: perspective(350px) rotateY(-25deg);
+    z-index: 5;
+    margin-right: -150px;
+}
+input[id="dos"]:checked ~ .wrapper  > .cuatro
+{
+    transform: perspective(350px) rotateY(-25deg);
+    z-index: 4;
+    margin-right: -150px;
+}
+input[id="dos"]:checked ~ .wrapper  > .cinco
+{
+    transform: perspective(350px) rotateY(-25deg);
+    z-index: 3;
+    margin-right: -150px;
+}
+input[id="dos"]:checked ~ .wrapper  > .sies
+{    
+    transform: perspective(350px) rotateY(-25deg);
+    z-index: 2;
+    margin-right: -150px;
+}
+input[id="dos"]:checked ~ .wrapper  > .siete
+{
+    transform: perspective(350px) rotateY(-25deg);
+    z-index: 1;
+    margin-right: -150px;
+}
+input[id="tres"]:checked ~ .wrapper
+{
+    margin-left: 300px;
+}
+input[id="tres"]:checked ~ .wrapper > .uno
+{
+    transform: perspective(350px) rotateY(25deg);
+    z-index: 1;
+    margin-left: -150px;
+}
+input[id="tres"]:checked ~ .wrapper > .dos
+{
+    transform: perspective(350px) rotateY(25deg);
+    z-index: 3;
+    margin-left: -150px;
+}
+input[id="tres"]:checked ~ .wrapper  > .tres
+{
+    transform: perspective(350px) rotateY(0deg);
+    z-index: 7;
+    margin: 0 -100px;
+}
+input[id="tres"]:checked ~ .wrapper  > .cuatro
+{
+    transform: perspective(350px) rotateY(-25deg);
+    z-index: 6;
+    margin-right: -150px;
+}
+input[id="tres"]:checked ~ .wrapper  > .cinco
+{
+    transform: perspective(350px) rotateY(-25deg);
+    z-index: 5;
+    margin-right: -150px;
+}
+input[id="tres"]:checked ~ .wrapper  > .sies
+{    
+    transform: perspective(350px) rotateY(-25deg);
+    z-index: 3;
+    margin-right: -150px;
+}
+input[id="tres"]:checked ~ .wrapper  > .siete
+{
+    transform: perspective(350px) rotateY(-25deg);
+    z-index: 1;
+    margin-right: -150px;
+}
+input[id="cuatro"]:checked ~ .wrapper > .uno
+{
+    transform: perspective(350px) rotateY(25deg);
+    z-index: 1;
+    margin-left: -150px;
+}
+input[id="cuatro"]:checked ~ .wrapper > .dos
+{
+    transform: perspective(350px) rotateY(25deg);
+    z-index: 3;
+    margin-left: -150px;
+}
+input[id="cuatro"]:checked ~ .wrapper  > .tres
+{
+    transform: perspective(350px) rotateY(25deg);
+    z-index: 5;
+    margin-left: -150px;
+}
+input[id="cuatro"]:checked ~ .wrapper  > .cuatro
+{
+    transform: perspective(350px) rotateY(0deg);
+    z-index: 7;
+    margin: 0 -100px;
+}
+input[id="cuatro"]:checked ~ .wrapper  > .cinco
+{
+    transform: perspective(350px) rotateY(-25deg);
+    z-index: 5;
+    margin-right: -150px;
+}
+input[id="cuatro"]:checked ~ .wrapper  > .sies
+{    
+    transform: perspective(350px) rotateY(-25deg);
+    z-index: 3;
+    margin-right: -150px;
+}
+input[id="cuatro"]:checked ~ .wrapper  > .siete
+{
+    transform: perspective(350px) rotateY(-25deg);
+    z-index: 1;
+    margin-right: -150px;
+}
+input[id="cinco"]:checked ~ .wrapper
+{
+    margin-left: -300px;
+}
+input[id="cinco"]:checked ~ .wrapper > .uno
+{
+    transform: perspective(350px) rotateY(25deg);
+    z-index: 1;
+    margin-left: -150px;
+}
+input[id="cinco"]:checked ~ .wrapper > .dos
+{
+    transform: perspective(350px) rotateY(25deg);
+    z-index: 3;
+    margin-left: -150px;
+}
+input[id="cinco"]:checked ~ .wrapper  > .tres
+{
+    transform: perspective(350px) rotateY(25deg);
+    z-index: 5;
+    margin-left: -150px;
+}
+input[id="cinco"]:checked ~ .wrapper  > .cuatro
+{
+    transform: perspective(350px) rotateY(25deg);
+    z-index: 6;
+    margin-left: -150px;
+}
+input[id="cinco"]:checked ~ .wrapper  > .cinco
+{
+    transform: perspective(350px) rotateY(0deg);
+    z-index: 7;
+    margin: 0 -100px;
+}
+input[id="cinco"]:checked ~ .wrapper  > .sies
+{    
+    transform: perspective(350px) rotateY(-25deg);
+    z-index: 3;
+    margin-right: -150px;
+}
+input[id="cinco"]:checked ~ .wrapper  > .siete
+{
+    transform: perspective(350px) rotateY(-25deg);
+    z-index: 1;
+    margin-right: -150px;
+}
+input[id="sies"]:checked ~ .wrapper
+{
+    margin-left: -600px;
+}
+input[id="sies"]:checked ~ .wrapper > .uno
+{
+    transform: perspective(350px) rotateY(25deg);
+    z-index: 1;
+    margin-left: -150px;
+}
+input[id="sies"]:checked ~ .wrapper > .dos
+{
+    transform: perspective(350px) rotateY(25deg);
+    z-index: 3;
+    margin-left: -150px;
+}
+input[id="sies"]:checked ~ .wrapper  > .tres
+{
+    transform: perspective(350px) rotateY(25deg);
+    z-index: 4;
+    margin-left: -150px;
+}
+input[id="sies"]:checked ~ .wrapper  > .cuatro
+{
+    transform: perspective(350px) rotateY(25deg);
+    z-index: 5;
+    margin-left: -150px;
+}
+input[id="sies"]:checked ~ .wrapper  > .cinco
+{
+    transform: perspective(350px) rotateY(25deg);
+    z-index: 6;
+    margin-left: -150px;
+}
+input[id="sies"]:checked ~ .wrapper  > .sies
+{    
+    transform: perspective(350px) rotateY(0deg);
+    z-index: 7;
+    margin: 0 -100px;
+}
+input[id="sies"]:checked ~ .wrapper  > .siete
+{
+    transform: perspective(350px) rotateY(-25deg);
+    z-index: 1;
+    margin-right: -150px;
+}
+input[id="siete"]:checked ~ .wrapper
+{
+    margin-left: -900px;
+}
+input[id="siete"]:checked ~ .wrapper > .uno
+{
+    transform: perspective(350px) rotateY(25deg);
+    z-index: 1;
+    margin-left: -150px;
+}
+input[id="siete"]:checked ~ .wrapper > .dos
+{
+    transform: perspective(350px) rotateY(25deg);
+    z-index: 2;
+    margin-left: -150px;
+}
+input[id="siete"]:checked ~ .wrapper  > .tres
+{
+    transform: perspective(350px) rotateY(25deg);
+    z-index: 3;
+    margin-left: -150px;
+}
+input[id="siete"]:checked ~ .wrapper  > .cuatro
+{
+    transform: perspective(350px) rotateY(25deg);
+    z-index: 4;
+    margin-left: -150px;
+}
+input[id="siete"]:checked ~ .wrapper  > .cinco
+{
+    transform: perspective(350px) rotateY(25deg);
+    z-index: 5;
+    margin-left: -150px;
+}
+input[id="siete"]:checked ~ .wrapper  > .sies
+{    
+    transform: perspective(350px) rotateY(25deg);
+    z-index: 6;
+    margin-left: -150px;
+}
+input[id="siete"]:checked ~ .wrapper  > .siete
+{
+    transform: perspective(350px) rotateY(0deg);
+    z-index: 7;
+    margin: 0 -100px;
+}
+input[id="uno"]:checked ~ .wrapper  > .uno:hover > .one > .bonus
+{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 8;
+    background: rgba(60,60,60,.6);
+}
+input[id="uno"]:checked ~ .wrapper  > .uno:hover > .one > .bonus:hover > .btn
+{
+    opacity: 1;
+}
+input[id="dos"]:checked ~ .wrapper  > .dos:hover > .two > .bonus
+{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 8;
+    background: rgba(60,60,60,.6);
+}
+input[id="dos"]:checked ~ .wrapper  > .dos:hover > .two > .bonus:hover > .btn
+{
+    opacity: 1;
+}
+input[id="tres"]:checked ~ .wrapper  > .tres:hover > .three > .bonus
+{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 8;
+    background: rgba(60,60,60,.6);
+}
+input[id="tres"]:checked ~ .wrapper  > .tres:hover > .three > .bonus:hover > .btn
+{
+    opacity: 1;
+}
+input[id="cuatro"]:checked ~ .wrapper  > .cuatro:hover > .four > .bonus
+{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 8;
+    background: rgba(60,60,60,.6);
+}
+input[id="cuatro"]:checked ~ .wrapper  > .cuatro:hover > .four > .bonus:hover > .btn
+{
+    opacity: 1;
+}
+input[id="cinco"]:checked ~ .wrapper  > .cinco:hover > .five > .bonus
+{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 8;
+    background: rgba(60,60,60,.6);
+}
+input[id="cinco"]:checked ~ .wrapper  > .cinco:hover > .five > .bonus:hover > .btn
+{
+    opacity: 1;
+}
+input[id="sies"]:checked ~ .wrapper  > .sies:hover > .six > .bonus
+{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 8;
+    background: rgba(60,60,60,.6);
+}
+input[id="sies"]:checked ~ .wrapper  > .sies:hover > .six > .bonus:hover > .btn
+{
+    opacity: 1;
+}
+input[id="siete"]:checked ~ .wrapper  > .siete:hover > .seven > .bonus
+{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 8;
+    background: rgba(60,60,60,.6);
+}
+input[id="siete"]:checked ~ .wrapper  > .siete:hover > .seven > .bonus:hover > .btn
+{
+    opacity: 1;
+    z-index: 10;
+}
+.bonus
+{
+    position: absolute;
+    width: 100%;
+    height: 0;
+    z-index: -1;
+    background: rgba(0,0,0,.0);
+    transition-property: all;
+    transition-duration: .2s;
+    font-size: 0;
+}
+.btn{
+    margin: 20px auto;
+    display: block;
+    padding-top: 60px;
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgba(0,0,0,0);
+    border: solid 5px #fff;
+    border-radius: 50%;
+    width: 150px;
+    height: 90px;
+    opacity: 0;
+    transition-property: opacity, animation;
+      transition-duration: .5s;
+      box-shadow: 0 0 0 0 rgba(153, 90, 220, 0.7), inset 0 0 0 0 rgba(153, 90, 220, 0.7);
+      animation: pulse 1.5s infinite cubic-bezier(0.6, 0, 0, 1);
+}
+.btn:hover
+{
+    color: #fff;
+    cursor: pointer;
+    animation:none;
+}
+.exit
+{
+    display: none;
+}
+.rec
+{
+    display: none;
+}
+input[id="openOne"]:checked ~ .uno > .one > .rec
+{    
+    position: absolute;
+    height: 600px;
+    width: 600px;
+    border: solid 1000px rgba(0,0,0,.3);
+    margin-left: -1150px;
+    margin-top: -1100px;
+    z-index: 1000;
+    display: block;
+    animation: openEnd 1s linear;
+}
+input[id="openOne"]:checked ~ .uno > .one > .rec .exit
+{
+    display: block;
+    cursor: pointer;
+} 
+input[id="openOne"]:checked ~ .uno
+{
+    position: relative;
+    top: 0;
+    animation: openStart 1s linear;
+}
+input[id="openOne"]:checked ~ .uno > .one > .rec > .content
+{    
+    display: block;
+    background: white;
+    height: 100%;
+    padding: 20px;
+    width: 580px;
+}
+input[id="openTwo"]:checked ~ .dos > .two > .rec
+{    
+    position: absolute;
+    height: 600px;
+    width: 600px;
+    border: solid 1000px rgba(0,0,0,.3);
+    margin-left: -1150px;
+    margin-top: -1100px;
+    z-index: 1000;
+    display: block;
+    animation: openEnd 1s linear;
+}
+input[id="openTwo"]:checked ~ .dos > .two > .rec .exit
+{
+    display: block;
+    cursor: pointer;
+} 
+input[id="openTwo"]:checked ~ .dos
+{
+    position: relative;
+    top: 0;
+    animation: openStart 1s linear;
+}
+input[id="openTwo"]:checked ~ .dos > .two > .rec > .content
+{    
+    display: block;
+    background: white;
+    height: 100%;
+    padding: 20px;
+    width: 580px;
+}
+input[id="openThree"]:checked ~ .tres > .three > .rec
+{    
+    position: absolute;
+    height: 600px;
+    width: 600px;
+    border: solid 1000px rgba(0,0,0,.3);
+    margin-left: -1150px;
+    margin-top: -1100px;
+    z-index: 1000;
+    display: block;
+    animation: openEnd 1s linear;
+}
+input[id="openThree"]:checked ~ .tres > .three > .rec .exit
+{
+    display: block;
+    cursor: pointer;
+} 
+input[id="openThree"]:checked ~ .tres
+{
+    position: relative;
+    top: 0;
+    animation: openStart 1s linear;
+}
+input[id="openThree"]:checked ~ .tres > .three > .rec > .content
+{    
+    display: block;
+    background: white;
+    height: 100%;
+    padding: 20px;
+    width: 580px;
+}
+input[id="openFour"]:checked ~ .cuatro > .four > .rec
+{    
+    position: absolute;
+    height: 600px;
+    width: 600px;
+    border: solid 1000px rgba(0,0,0,.3);
+    margin-left: -1150px;
+    margin-top: -1100px;
+    z-index: 1000;
+    display: block;
+    animation: openEnd 1s linear;
+}
+input[id="openFour"]:checked ~ .cuatro > .four > .rec .exit
+{
+    display: block;
+    cursor: pointer;
+} 
+input[id="openFour"]:checked ~ .cuatro
+{
+    position: relative;
+    top: 0;
+    animation: openStart 1s linear;
+}
+input[id="openFour"]:checked ~ .cuatro > .four > .rec > .content
+{    
+    display: block;
+    background: white;
+    height: 100%;
+    padding: 20px;
+    width: 580px;
+}
+input[id="openFive"]:checked ~ .cinco > .five > .rec
+{    
+    position: absolute;
+    height: 600px;
+    width: 600px;
+    border: solid 1000px rgba(0,0,0,.3);
+    margin-left: -1150px;
+    margin-top: -1100px;
+    z-index: 1000;
+    display: block;
+    animation: openEnd 1s linear;
+}
+input[id="openFive"]:checked ~ .cinco > .five > .rec .exit
+{
+    display: block;
+    cursor: pointer;
+} 
+input[id="openFive"]:checked ~ .cinco
+{
+    position: relative;
+    top: 0;
+    animation: openStart 1s linear;
+}
+input[id="openFive"]:checked ~ .cinco > .five > .rec > .content
+{    
+    display: block;
+    background: white;
+    height: 100%;
+    padding: 20px;
+    width: 580px;
+}
+input[id="openSix"]:checked ~ .sies > .six > .rec
+{    
+    position: absolute;
+    height: 600px;
+    width: 600px;
+    border: solid 1000px rgba(0,0,0,.3);
+    margin-left: -1150px;
+    margin-top: -1100px;
+    z-index: 1000;
+    display: block;
+    animation: openEnd 1s linear;
+}
+input[id="openSix"]:checked ~ .sies > .six > .rec .exit
+{
+    display: block;
+    cursor: pointer;
+} 
+input[id="openSix"]:checked ~ .sies
+{
+    position: relative;
+    top: 0;
+    animation: openStart 1s linear;
+}
+input[id="openSix"]:checked ~ .sies > .six > .rec > .content
+{    
+    display: block;
+    background: white;
+    height: 100%;
+    padding: 20px;
+    width: 580px;
+}
+input[id="openSeven"]:checked ~ .siete > .seven > .rec
+{    
+    position: absolute;
+    height: 600px;
+    width: 600px;
+    border: solid 1000px rgba(0,0,0,.3);
+    margin-left: -1150px;
+    margin-top: -1100px;
+    z-index: 1000;
+    display: block;
+    animation: openEnd 1s linear;
+}
+input[id="openSeven"]:checked ~ .siete > .seven > .rec .exit
+{
+    display: block;
+    cursor: pointer;
+} 
+input[id="openSeven"]:checked ~ .siete
+{
+    position: relative;
+    top: 0;
+    animation: openStart 1s linear;
+}
+input[id="openSeven"]:checked ~ .siete > .seven > .rec > .content
+{    
+    display: block;
+    background: #000;
+    height: 100%;
+    padding: 20px;
+    width: 580px;
+}
+.content
+{
+    display: none;
+}
+.exit
+{
+    float: right;
 
+}
+.content > h2
+{
+    width: 100%;
+    color: #777;
+}
+.content > ul
+{    
+    margin: 0;
+    float: left;
+    width: 200px;
+}
+.content > ol
+{    
+    margin: 0;
+    float: right;
+    width: 300px;
+}
+.content > ol > span
+{
+    color: #f00;
+}
+@keyframes openStart{
+    0%    {
+        position: relative;
+        top: 0;
+        }
+    50% {
+        position: relative;
+        top: -200px;
+        transform: perspective(800px) rotateX(-90deg);
+        opacity: 1;
+        }
+    51%{
+        opacity: 0;
+    }
+    80%{    
+        transform: perspective(800px) rotateX(-180deg);
+        position: relative;
+        }
+    100%{
+        transform: perspective(400px) rotateX(-360deg);
+        }
+}
+@keyframes openEnd{
+     0%    {
+        position: absolute;
+        height: 600px;
+        width: 300px;
+        z-index: 1;
+        display: block;
+        border: solid 0 rgba(0,0,0,.3);
+        margin-left: 0;
+        margin-top: 0;
+        z-index: 1;
+        display: block;
+        opacity: 0;
+        }
+    49%    {
+        position: absolute;
+        opacity: 0;
+        width: 600px;
+        margin-left: -150px;
+        height: 600px;
+        }
+    50% {
+        height: 600px;
+        opacity: 1;
+        margin-top: -100px;
+        }
+    70%{
+        position: absolute;
+        border: solid 0 rgba(0,0,0,.3);
+        margin-left: -150px;
+        margin-top: -400px;
+        height: 600px;
+        z-index: 1000;
+        display: block;
+        opacity: 1;
+    }
+    100%{
+        background: rgba(0,0,0,.0);
+        position: absolute;
+        height: 600px;
+        width: 600px;
+        border: solid 1000px rgba(0,0,0,.3);
+        margin-left: -1150px;
+        margin-top: -1100px;
+        z-index: 1000;
+        display: block;
+        opacity: 1;
+    }
+}
+@keyframes pulse {
+  to {
+    box-shadow: 0 0 0 20px rgba(153, 90, 220, 0), inset 0 0 0 150px rgba(0, 0, 0, 0);
+  }
+}
