@@ -9,9 +9,9 @@ body
     margin: 200px 0;
     width: 900px;
     -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;  
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;  
 }
 .gallery > input
 {
@@ -36,328 +36,329 @@ body
     transition-property: transform, margin;
       transition-duration: .2s;
 }
-.pic > img{
+.pic > img
+{
     width: 300px;
 }
-input[id="uno"]:checked ~ .wrapper
+input[id='uno']:checked ~ .wrapper
 {
     margin-left: 900px;
 }
-input[id="uno"]:checked ~ .wrapper > .uno
+input[id='uno']:checked ~ .wrapper > .uno
 {
     transform: perspective(350px) rotateY(0deg);
     z-index: 7;
     margin: 0 -100px;
 }
-input[id="uno"]:checked ~ .wrapper > .dos
+input[id='uno']:checked ~ .wrapper > .dos
 {
     transform: perspective(350px) rotateY(-25deg);
     z-index: 6;
     margin-right:-150px;
 }
-input[id="uno"]:checked ~ .wrapper  > .tres
+input[id='uno']:checked ~ .wrapper > .tres
 {
     transform: perspective(350px) rotateY(-25deg);
     z-index: 5;
     margin-right: -150px;
 }
-input[id="uno"]:checked ~ .wrapper  > .cuatro
+input[id='uno']:checked ~ .wrapper > .cuatro
 {
     transform: perspective(350px) rotateY(-25deg);
     z-index: 4;
     margin-right: -150px;
 }
-input[id="uno"]:checked ~ .wrapper  > .cinco
+input[id='uno']:checked ~ .wrapper > .cinco
 {
     transform: perspective(350px) rotateY(-25deg);
     z-index: 3;
     margin-right: -150px;
 }
-input[id="uno"]:checked ~ .wrapper  > .sies
+input[id='uno']:checked ~ .wrapper > .sies
 {    
     transform: perspective(350px) rotateY(-25deg);
     z-index: 2;
     margin-right: -150px;
 }
-input[id="uno"]:checked ~ .wrapper  > .siete
+input[id='uno']:checked ~ .wrapper > .siete
 {
     transform: perspective(350px) rotateY(-25deg);
     z-index: 1;
     margin-right: -150px;
 }
-input[id="dos"]:checked ~ .wrapper
+input[id='dos']:checked ~ .wrapper
 {
     margin-left: 600px;
 }
-input[id="dos"]:checked ~ .wrapper > .uno
+input[id='dos']:checked ~ .wrapper > .uno
 {
     transform: perspective(350px) rotateY(25deg);
     z-index: 6;
     margin-left: -150px;
 }
-input[id="dos"]:checked ~ .wrapper > .dos
+input[id='dos']:checked ~ .wrapper > .dos
 {
     transform: perspective(350px) rotateY(0deg);
     z-index: 7;
     margin: 0 -100px;
 }
-input[id="dos"]:checked ~ .wrapper  > .tres
+input[id='dos']:checked ~ .wrapper > .tres
 {
     transform: perspective(350px) rotateY(-25deg);
     z-index: 5;
     margin-right: -150px;
 }
-input[id="dos"]:checked ~ .wrapper  > .cuatro
+input[id='dos']:checked ~ .wrapper > .cuatro
 {
     transform: perspective(350px) rotateY(-25deg);
     z-index: 4;
     margin-right: -150px;
 }
-input[id="dos"]:checked ~ .wrapper  > .cinco
+input[id='dos']:checked ~ .wrapper > .cinco
 {
     transform: perspective(350px) rotateY(-25deg);
     z-index: 3;
     margin-right: -150px;
 }
-input[id="dos"]:checked ~ .wrapper  > .sies
+input[id='dos']:checked ~ .wrapper > .sies
 {    
     transform: perspective(350px) rotateY(-25deg);
     z-index: 2;
     margin-right: -150px;
 }
-input[id="dos"]:checked ~ .wrapper  > .siete
+input[id='dos']:checked ~ .wrapper > .siete
 {
     transform: perspective(350px) rotateY(-25deg);
     z-index: 1;
     margin-right: -150px;
 }
-input[id="tres"]:checked ~ .wrapper
+input[id='tres']:checked ~ .wrapper
 {
     margin-left: 300px;
 }
-input[id="tres"]:checked ~ .wrapper > .uno
+input[id='tres']:checked ~ .wrapper > .uno
 {
     transform: perspective(350px) rotateY(25deg);
     z-index: 1;
     margin-left: -150px;
 }
-input[id="tres"]:checked ~ .wrapper > .dos
+input[id='tres']:checked ~ .wrapper > .dos
 {
     transform: perspective(350px) rotateY(25deg);
     z-index: 3;
     margin-left: -150px;
 }
-input[id="tres"]:checked ~ .wrapper  > .tres
+input[id='tres']:checked ~ .wrapper > .tres
 {
     transform: perspective(350px) rotateY(0deg);
     z-index: 7;
     margin: 0 -100px;
 }
-input[id="tres"]:checked ~ .wrapper  > .cuatro
+input[id='tres']:checked ~ .wrapper > .cuatro
 {
     transform: perspective(350px) rotateY(-25deg);
     z-index: 6;
     margin-right: -150px;
 }
-input[id="tres"]:checked ~ .wrapper  > .cinco
+input[id='tres']:checked ~ .wrapper > .cinco
 {
     transform: perspective(350px) rotateY(-25deg);
     z-index: 5;
     margin-right: -150px;
 }
-input[id="tres"]:checked ~ .wrapper  > .sies
+input[id='tres']:checked ~ .wrapper > .sies
 {    
     transform: perspective(350px) rotateY(-25deg);
     z-index: 3;
     margin-right: -150px;
 }
-input[id="tres"]:checked ~ .wrapper  > .siete
+input[id='tres']:checked ~ .wrapper > .siete
 {
     transform: perspective(350px) rotateY(-25deg);
     z-index: 1;
     margin-right: -150px;
 }
-input[id="cuatro"]:checked ~ .wrapper > .uno
+input[id='cuatro']:checked ~ .wrapper > .uno
 {
     transform: perspective(350px) rotateY(25deg);
     z-index: 1;
     margin-left: -150px;
 }
-input[id="cuatro"]:checked ~ .wrapper > .dos
+input[id='cuatro']:checked ~ .wrapper > .dos
 {
     transform: perspective(350px) rotateY(25deg);
     z-index: 3;
     margin-left: -150px;
 }
-input[id="cuatro"]:checked ~ .wrapper  > .tres
+input[id='cuatro']:checked ~ .wrapper > .tres
 {
     transform: perspective(350px) rotateY(25deg);
     z-index: 5;
     margin-left: -150px;
 }
-input[id="cuatro"]:checked ~ .wrapper  > .cuatro
+input[id='cuatro']:checked ~ .wrapper > .cuatro
 {
     transform: perspective(350px) rotateY(0deg);
     z-index: 7;
     margin: 0 -100px;
 }
-input[id="cuatro"]:checked ~ .wrapper  > .cinco
+input[id='cuatro']:checked ~ .wrapper > .cinco
 {
     transform: perspective(350px) rotateY(-25deg);
     z-index: 5;
     margin-right: -150px;
 }
-input[id="cuatro"]:checked ~ .wrapper  > .sies
+input[id='cuatro']:checked ~ .wrapper > .sies
 {    
     transform: perspective(350px) rotateY(-25deg);
     z-index: 3;
     margin-right: -150px;
 }
-input[id="cuatro"]:checked ~ .wrapper  > .siete
+input[id='cuatro']:checked ~ .wrapper > .siete
 {
     transform: perspective(350px) rotateY(-25deg);
     z-index: 1;
     margin-right: -150px;
 }
-input[id="cinco"]:checked ~ .wrapper
+input[id='cinco']:checked ~ .wrapper
 {
     margin-left: -300px;
 }
-input[id="cinco"]:checked ~ .wrapper > .uno
+input[id='cinco']:checked ~ .wrapper > .uno
 {
     transform: perspective(350px) rotateY(25deg);
     z-index: 1;
     margin-left: -150px;
 }
-input[id="cinco"]:checked ~ .wrapper > .dos
+input[id='cinco']:checked ~ .wrapper > .dos
 {
     transform: perspective(350px) rotateY(25deg);
     z-index: 3;
     margin-left: -150px;
 }
-input[id="cinco"]:checked ~ .wrapper  > .tres
+input[id='cinco']:checked ~ .wrapper > .tres
 {
     transform: perspective(350px) rotateY(25deg);
     z-index: 5;
     margin-left: -150px;
 }
-input[id="cinco"]:checked ~ .wrapper  > .cuatro
+input[id='cinco']:checked ~ .wrapper > .cuatro
 {
     transform: perspective(350px) rotateY(25deg);
     z-index: 6;
     margin-left: -150px;
 }
-input[id="cinco"]:checked ~ .wrapper  > .cinco
+input[id='cinco']:checked ~ .wrapper > .cinco
 {
     transform: perspective(350px) rotateY(0deg);
     z-index: 7;
     margin: 0 -100px;
 }
-input[id="cinco"]:checked ~ .wrapper  > .sies
+input[id='cinco']:checked ~ .wrapper > .sies
 {    
     transform: perspective(350px) rotateY(-25deg);
     z-index: 3;
     margin-right: -150px;
 }
-input[id="cinco"]:checked ~ .wrapper  > .siete
+input[id='cinco']:checked ~ .wrapper > .siete
 {
     transform: perspective(350px) rotateY(-25deg);
     z-index: 1;
     margin-right: -150px;
 }
-input[id="sies"]:checked ~ .wrapper
+input[id='sies']:checked ~ .wrapper
 {
     margin-left: -600px;
 }
-input[id="sies"]:checked ~ .wrapper > .uno
+input[id='sies']:checked ~ .wrapper > .uno
 {
     transform: perspective(350px) rotateY(25deg);
     z-index: 1;
     margin-left: -150px;
 }
-input[id="sies"]:checked ~ .wrapper > .dos
+input[id='sies']:checked ~ .wrapper > .dos
 {
     transform: perspective(350px) rotateY(25deg);
     z-index: 3;
     margin-left: -150px;
 }
-input[id="sies"]:checked ~ .wrapper  > .tres
+input[id='sies']:checked ~ .wrapper > .tres
 {
     transform: perspective(350px) rotateY(25deg);
     z-index: 4;
     margin-left: -150px;
 }
-input[id="sies"]:checked ~ .wrapper  > .cuatro
+input[id='sies']:checked ~ .wrapper > .cuatro
 {
     transform: perspective(350px) rotateY(25deg);
     z-index: 5;
     margin-left: -150px;
 }
-input[id="sies"]:checked ~ .wrapper  > .cinco
+input[id='sies']:checked ~ .wrapper > .cinco
 {
     transform: perspective(350px) rotateY(25deg);
     z-index: 6;
     margin-left: -150px;
 }
-input[id="sies"]:checked ~ .wrapper  > .sies
+input[id='sies']:checked ~ .wrapper > .sies
 {    
     transform: perspective(350px) rotateY(0deg);
     z-index: 7;
     margin: 0 -100px;
 }
-input[id="sies"]:checked ~ .wrapper  > .siete
+input[id='sies']:checked ~ .wrapper > .siete
 {
     transform: perspective(350px) rotateY(-25deg);
     z-index: 1;
     margin-right: -150px;
 }
-input[id="siete"]:checked ~ .wrapper
+input[id='siete']:checked ~ .wrapper
 {
     margin-left: -900px;
 }
-input[id="siete"]:checked ~ .wrapper > .uno
+input[id='siete']:checked ~ .wrapper > .uno
 {
     transform: perspective(350px) rotateY(25deg);
     z-index: 1;
     margin-left: -150px;
 }
-input[id="siete"]:checked ~ .wrapper > .dos
+input[id='siete']:checked ~ .wrapper > .dos
 {
     transform: perspective(350px) rotateY(25deg);
     z-index: 2;
     margin-left: -150px;
 }
-input[id="siete"]:checked ~ .wrapper  > .tres
+input[id='siete']:checked ~ .wrapper > .tres
 {
     transform: perspective(350px) rotateY(25deg);
     z-index: 3;
     margin-left: -150px;
 }
-input[id="siete"]:checked ~ .wrapper  > .cuatro
+input[id='siete']:checked ~ .wrapper > .cuatro
 {
     transform: perspective(350px) rotateY(25deg);
     z-index: 4;
     margin-left: -150px;
 }
-input[id="siete"]:checked ~ .wrapper  > .cinco
+input[id='siete']:checked ~ .wrapper > .cinco
 {
     transform: perspective(350px) rotateY(25deg);
     z-index: 5;
     margin-left: -150px;
 }
-input[id="siete"]:checked ~ .wrapper  > .sies
+input[id='siete']:checked ~ .wrapper > .sies
 {    
     transform: perspective(350px) rotateY(25deg);
     z-index: 6;
     margin-left: -150px;
 }
-input[id="siete"]:checked ~ .wrapper  > .siete
+input[id='siete']:checked ~ .wrapper > .siete
 {
     transform: perspective(350px) rotateY(0deg);
     z-index: 7;
     margin: 0 -100px;
 }
-input[id="uno"]:checked ~ .wrapper  > .uno:hover > .one > .bonus
+input[id='uno']:checked ~ .wrapper > .uno:hover > .one > .bonus
 {
     position: absolute;
     display: block;
@@ -366,11 +367,11 @@ input[id="uno"]:checked ~ .wrapper  > .uno:hover > .one > .bonus
     z-index: 8;
     background: rgba(60,60,60,.6);
 }
-input[id="uno"]:checked ~ .wrapper  > .uno:hover > .one > .bonus:hover > .btn
+input[id='uno']:checked ~ .wrapper > .uno:hover > .one > .bonus:hover > .btn
 {
     opacity: 1;
 }
-input[id="dos"]:checked ~ .wrapper  > .dos:hover > .two > .bonus
+input[id='dos']:checked ~ .wrapper > .dos:hover > .two > .bonus
 {
     position: absolute;
     display: block;
@@ -379,11 +380,11 @@ input[id="dos"]:checked ~ .wrapper  > .dos:hover > .two > .bonus
     z-index: 8;
     background: rgba(60,60,60,.6);
 }
-input[id="dos"]:checked ~ .wrapper  > .dos:hover > .two > .bonus:hover > .btn
+input[id='dos']:checked ~ .wrapper > .dos:hover > .two > .bonus:hover > .btn
 {
     opacity: 1;
 }
-input[id="tres"]:checked ~ .wrapper  > .tres:hover > .three > .bonus
+input[id='tres']:checked ~ .wrapper > .tres:hover > .three > .bonus
 {
     position: absolute;
     display: block;
@@ -392,11 +393,11 @@ input[id="tres"]:checked ~ .wrapper  > .tres:hover > .three > .bonus
     z-index: 8;
     background: rgba(60,60,60,.6);
 }
-input[id="tres"]:checked ~ .wrapper  > .tres:hover > .three > .bonus:hover > .btn
+input[id='tres']:checked ~ .wrapper > .tres:hover > .three > .bonus:hover > .btn
 {
     opacity: 1;
 }
-input[id="cuatro"]:checked ~ .wrapper  > .cuatro:hover > .four > .bonus
+input[id='cuatro']:checked ~ .wrapper > .cuatro:hover > .four > .bonus
 {
     position: absolute;
     display: block;
@@ -405,11 +406,11 @@ input[id="cuatro"]:checked ~ .wrapper  > .cuatro:hover > .four > .bonus
     z-index: 8;
     background: rgba(60,60,60,.6);
 }
-input[id="cuatro"]:checked ~ .wrapper  > .cuatro:hover > .four > .bonus:hover > .btn
+input[id='cuatro']:checked ~ .wrapper > .cuatro:hover > .four > .bonus:hover > .btn
 {
     opacity: 1;
 }
-input[id="cinco"]:checked ~ .wrapper  > .cinco:hover > .five > .bonus
+input[id='cinco']:checked ~ .wrapper > .cinco:hover > .five > .bonus
 {
     position: absolute;
     display: block;
@@ -418,11 +419,11 @@ input[id="cinco"]:checked ~ .wrapper  > .cinco:hover > .five > .bonus
     z-index: 8;
     background: rgba(60,60,60,.6);
 }
-input[id="cinco"]:checked ~ .wrapper  > .cinco:hover > .five > .bonus:hover > .btn
+input[id='cinco']:checked ~ .wrapper > .cinco:hover > .five > .bonus:hover > .btn
 {
     opacity: 1;
 }
-input[id="sies"]:checked ~ .wrapper  > .sies:hover > .six > .bonus
+input[id='sies']:checked ~ .wrapper > .sies:hover > .six > .bonus
 {
     position: absolute;
     display: block;
@@ -431,11 +432,11 @@ input[id="sies"]:checked ~ .wrapper  > .sies:hover > .six > .bonus
     z-index: 8;
     background: rgba(60,60,60,.6);
 }
-input[id="sies"]:checked ~ .wrapper  > .sies:hover > .six > .bonus:hover > .btn
+input[id='sies']:checked ~ .wrapper > .sies:hover > .six > .bonus:hover > .btn
 {
     opacity: 1;
 }
-input[id="siete"]:checked ~ .wrapper  > .siete:hover > .seven > .bonus
+input[id='siete']:checked ~ .wrapper > .siete:hover > .seven > .bonus
 {
     position: absolute;
     display: block;
@@ -444,7 +445,7 @@ input[id="siete"]:checked ~ .wrapper  > .siete:hover > .seven > .bonus
     z-index: 8;
     background: rgba(60,60,60,.6);
 }
-input[id="siete"]:checked ~ .wrapper  > .siete:hover > .seven > .bonus:hover > .btn
+input[id='siete']:checked ~ .wrapper > .siete:hover > .seven > .bonus:hover > .btn
 {
     opacity: 1;
     z-index: 10;
@@ -493,7 +494,7 @@ input[id="siete"]:checked ~ .wrapper  > .siete:hover > .seven > .bonus:hover > .
 {
     display: none;
 }
-input[id="openOne"]:checked ~ .uno > .one > .rec
+input[id='openOne']:checked ~ .uno > .one > .rec
 {    
     position: absolute;
     height: 600px;
@@ -505,18 +506,18 @@ input[id="openOne"]:checked ~ .uno > .one > .rec
     display: block;
     animation: openEnd 1s linear;
 }
-input[id="openOne"]:checked ~ .uno > .one > .rec .exit
+input[id='openOne']:checked ~ .uno > .one > .rec .exit
 {
     display: block;
     cursor: pointer;
 } 
-input[id="openOne"]:checked ~ .uno
+input[id='openOne']:checked ~ .uno
 {
     position: relative;
     top: 0;
     animation: openStart 1s linear;
 }
-input[id="openOne"]:checked ~ .uno > .one > .rec > .content
+input[id='openOne']:checked ~ .uno > .one > .rec > .content
 {    
     display: block;
     background: white;
@@ -524,7 +525,7 @@ input[id="openOne"]:checked ~ .uno > .one > .rec > .content
     padding: 20px;
     width: 580px;
 }
-input[id="openTwo"]:checked ~ .dos > .two > .rec
+input[id='openTwo']:checked ~ .dos > .two > .rec
 {    
     position: absolute;
     height: 600px;
@@ -536,18 +537,18 @@ input[id="openTwo"]:checked ~ .dos > .two > .rec
     display: block;
     animation: openEnd 1s linear;
 }
-input[id="openTwo"]:checked ~ .dos > .two > .rec .exit
+input[id='openTwo']:checked ~ .dos > .two > .rec .exit
 {
     display: block;
     cursor: pointer;
 } 
-input[id="openTwo"]:checked ~ .dos
+input[id='openTwo']:checked ~ .dos
 {
     position: relative;
     top: 0;
     animation: openStart 1s linear;
 }
-input[id="openTwo"]:checked ~ .dos > .two > .rec > .content
+input[id='openTwo']:checked ~ .dos > .two > .rec > .content
 {    
     display: block;
     background: white;
@@ -555,7 +556,7 @@ input[id="openTwo"]:checked ~ .dos > .two > .rec > .content
     padding: 20px;
     width: 580px;
 }
-input[id="openThree"]:checked ~ .tres > .three > .rec
+input[id='openThree']:checked ~ .tres > .three > .rec
 {    
     position: absolute;
     height: 600px;
@@ -567,18 +568,18 @@ input[id="openThree"]:checked ~ .tres > .three > .rec
     display: block;
     animation: openEnd 1s linear;
 }
-input[id="openThree"]:checked ~ .tres > .three > .rec .exit
+input[id='openThree']:checked ~ .tres > .three > .rec .exit
 {
     display: block;
     cursor: pointer;
 } 
-input[id="openThree"]:checked ~ .tres
+input[id='openThree']:checked ~ .tres
 {
     position: relative;
     top: 0;
     animation: openStart 1s linear;
 }
-input[id="openThree"]:checked ~ .tres > .three > .rec > .content
+input[id='openThree']:checked ~ .tres > .three > .rec > .content
 {    
     display: block;
     background: white;
@@ -586,7 +587,7 @@ input[id="openThree"]:checked ~ .tres > .three > .rec > .content
     padding: 20px;
     width: 580px;
 }
-input[id="openFour"]:checked ~ .cuatro > .four > .rec
+input[id='openFour']:checked ~ .cuatro > .four > .rec
 {    
     position: absolute;
     height: 600px;
@@ -598,18 +599,18 @@ input[id="openFour"]:checked ~ .cuatro > .four > .rec
     display: block;
     animation: openEnd 1s linear;
 }
-input[id="openFour"]:checked ~ .cuatro > .four > .rec .exit
+input[id='openFour']:checked ~ .cuatro > .four > .rec .exit
 {
     display: block;
     cursor: pointer;
 } 
-input[id="openFour"]:checked ~ .cuatro
+input[id='openFour']:checked ~ .cuatro
 {
     position: relative;
     top: 0;
     animation: openStart 1s linear;
 }
-input[id="openFour"]:checked ~ .cuatro > .four > .rec > .content
+input[id='openFour']:checked ~ .cuatro > .four > .rec > .content
 {    
     display: block;
     background: white;
@@ -617,7 +618,7 @@ input[id="openFour"]:checked ~ .cuatro > .four > .rec > .content
     padding: 20px;
     width: 580px;
 }
-input[id="openFive"]:checked ~ .cinco > .five > .rec
+input[id='openFive']:checked ~ .cinco > .five > .rec
 {    
     position: absolute;
     height: 600px;
@@ -629,18 +630,18 @@ input[id="openFive"]:checked ~ .cinco > .five > .rec
     display: block;
     animation: openEnd 1s linear;
 }
-input[id="openFive"]:checked ~ .cinco > .five > .rec .exit
+input[id='openFive']:checked ~ .cinco > .five > .rec .exit
 {
     display: block;
     cursor: pointer;
 } 
-input[id="openFive"]:checked ~ .cinco
+input[id='openFive']:checked ~ .cinco
 {
     position: relative;
     top: 0;
     animation: openStart 1s linear;
 }
-input[id="openFive"]:checked ~ .cinco > .five > .rec > .content
+input[id='openFive']:checked ~ .cinco > .five > .rec > .content
 {    
     display: block;
     background: white;
@@ -648,7 +649,7 @@ input[id="openFive"]:checked ~ .cinco > .five > .rec > .content
     padding: 20px;
     width: 580px;
 }
-input[id="openSix"]:checked ~ .sies > .six > .rec
+input[id='openSix']:checked ~ .sies > .six > .rec
 {    
     position: absolute;
     height: 600px;
@@ -660,18 +661,18 @@ input[id="openSix"]:checked ~ .sies > .six > .rec
     display: block;
     animation: openEnd 1s linear;
 }
-input[id="openSix"]:checked ~ .sies > .six > .rec .exit
+input[id='openSix']:checked ~ .sies > .six > .rec .exit
 {
     display: block;
     cursor: pointer;
 } 
-input[id="openSix"]:checked ~ .sies
+input[id='openSix']:checked ~ .sies
 {
     position: relative;
     top: 0;
     animation: openStart 1s linear;
 }
-input[id="openSix"]:checked ~ .sies > .six > .rec > .content
+input[id='openSix']:checked ~ .sies > .six > .rec > .content
 {    
     display: block;
     background: white;
@@ -679,7 +680,7 @@ input[id="openSix"]:checked ~ .sies > .six > .rec > .content
     padding: 20px;
     width: 580px;
 }
-input[id="openSeven"]:checked ~ .siete > .seven > .rec
+input[id='openSeven']:checked ~ .siete > .seven > .rec
 {    
     position: absolute;
     height: 600px;
@@ -691,18 +692,18 @@ input[id="openSeven"]:checked ~ .siete > .seven > .rec
     display: block;
     animation: openEnd 1s linear;
 }
-input[id="openSeven"]:checked ~ .siete > .seven > .rec .exit
+input[id='openSeven']:checked ~ .siete > .seven > .rec .exit
 {
     display: block;
     cursor: pointer;
 } 
-input[id="openSeven"]:checked ~ .siete
+input[id='openSeven']:checked ~ .siete
 {
     position: relative;
     top: 0;
     animation: openStart 1s linear;
 }
-input[id="openSeven"]:checked ~ .siete > .seven > .rec > .content
+input[id='openSeven']:checked ~ .siete > .seven > .rec > .content
 {    
     display: block;
     background: #000;
