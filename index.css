@@ -5,8 +5,8 @@ body
     overflow: hidden;
 }
 .gallery
-{    
-    margin: 200px 0;
+{
+   margin: 200px 0;
     width: 900px;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -29,7 +29,7 @@ body
       transition-duration: .2s;
 }
 .wrap
-{    
+{
     position: relative;
     display: flex;
     box-shadow: 1px 1px 10px black;
@@ -75,7 +75,7 @@ input[id='uno']:checked ~ .wrapper > .cinco
     margin-right: -150px;
 }
 input[id='uno']:checked ~ .wrapper > .sies
-{    
+{
     transform: perspective(350px) rotateY(-25deg);
     z-index: 2;
     margin-right: -150px;
@@ -121,7 +121,7 @@ input[id='dos']:checked ~ .wrapper > .cinco
     margin-right: -150px;
 }
 input[id='dos']:checked ~ .wrapper > .sies
-{    
+{
     transform: perspective(350px) rotateY(-25deg);
     z-index: 2;
     margin-right: -150px;
@@ -167,7 +167,7 @@ input[id='tres']:checked ~ .wrapper > .cinco
     margin-right: -150px;
 }
 input[id='tres']:checked ~ .wrapper > .sies
-{    
+{
     transform: perspective(350px) rotateY(-25deg);
     z-index: 3;
     margin-right: -150px;
@@ -209,7 +209,7 @@ input[id='cuatro']:checked ~ .wrapper > .cinco
     margin-right: -150px;
 }
 input[id='cuatro']:checked ~ .wrapper > .sies
-{    
+{
     transform: perspective(350px) rotateY(-25deg);
     z-index: 3;
     margin-right: -150px;
@@ -255,7 +255,7 @@ input[id='cinco']:checked ~ .wrapper > .cinco
     margin: 0 -100px;
 }
 input[id='cinco']:checked ~ .wrapper > .sies
-{    
+{
     transform: perspective(350px) rotateY(-25deg);
     z-index: 3;
     margin-right: -150px;
@@ -301,7 +301,7 @@ input[id='sies']:checked ~ .wrapper > .cinco
     margin-left: -150px;
 }
 input[id='sies']:checked ~ .wrapper > .sies
-{    
+{
     transform: perspective(350px) rotateY(0deg);
     z-index: 7;
     margin: 0 -100px;
@@ -347,7 +347,7 @@ input[id='siete']:checked ~ .wrapper > .cinco
     margin-left: -150px;
 }
 input[id='siete']:checked ~ .wrapper > .sies
-{    
+{
     transform: perspective(350px) rotateY(25deg);
     z-index: 6;
     margin-left: -150px;
@@ -476,9 +476,9 @@ input[id='siete']:checked ~ .wrapper > .siete:hover > .seven > .bonus:hover > .b
     height: 90px;
     opacity: 0;
     transition-property: opacity, animation;
-      transition-duration: .5s;
-      box-shadow: 0 0 0 0 rgba(153, 90, 220, 0.7), inset 0 0 0 0 rgba(153, 90, 220, 0.7);
-      animation: pulse 1.5s infinite cubic-bezier(0.6, 0, 0, 1);
+    transition-duration: .5s;
+    box-shadow: 0 0 0 0 rgba(153, 90, 220, .7), inset 0 0 0 0 rgba(153, 90, 220, .7);
+    animation: pulse 1.5s infinite cubic-bezier(0.6, 0, 0, 1);
 }
 .btn:hover
 {
@@ -495,7 +495,7 @@ input[id='siete']:checked ~ .wrapper > .siete:hover > .seven > .bonus:hover > .b
     display: none;
 }
 input[id='openOne']:checked ~ .uno > .one > .rec
-{    
+{
     position: absolute;
     height: 600px;
     width: 600px;
@@ -518,7 +518,7 @@ input[id='openOne']:checked ~ .uno
     animation: openStart 1s linear;
 }
 input[id='openOne']:checked ~ .uno > .one > .rec > .content
-{    
+{
     display: block;
     background: white;
     height: 100%;
@@ -526,7 +526,7 @@ input[id='openOne']:checked ~ .uno > .one > .rec > .content
     width: 580px;
 }
 input[id='openTwo']:checked ~ .dos > .two > .rec
-{    
+{
     position: absolute;
     height: 600px;
     width: 600px;
@@ -549,7 +549,7 @@ input[id='openTwo']:checked ~ .dos
     animation: openStart 1s linear;
 }
 input[id='openTwo']:checked ~ .dos > .two > .rec > .content
-{    
+{
     display: block;
     background: white;
     height: 100%;
@@ -557,7 +557,7 @@ input[id='openTwo']:checked ~ .dos > .two > .rec > .content
     width: 580px;
 }
 input[id='openThree']:checked ~ .tres > .three > .rec
-{    
+{
     position: absolute;
     height: 600px;
     width: 600px;
@@ -580,7 +580,7 @@ input[id='openThree']:checked ~ .tres
     animation: openStart 1s linear;
 }
 input[id='openThree']:checked ~ .tres > .three > .rec > .content
-{    
+{
     display: block;
     background: white;
     height: 100%;
@@ -588,7 +588,7 @@ input[id='openThree']:checked ~ .tres > .three > .rec > .content
     width: 580px;
 }
 input[id='openFour']:checked ~ .cuatro > .four > .rec
-{    
+{
     position: absolute;
     height: 600px;
     width: 600px;
@@ -611,7 +611,7 @@ input[id='openFour']:checked ~ .cuatro
     animation: openStart 1s linear;
 }
 input[id='openFour']:checked ~ .cuatro > .four > .rec > .content
-{    
+{
     display: block;
     background: white;
     height: 100%;
@@ -619,7 +619,7 @@ input[id='openFour']:checked ~ .cuatro > .four > .rec > .content
     width: 580px;
 }
 input[id='openFive']:checked ~ .cinco > .five > .rec
-{    
+{
     position: absolute;
     height: 600px;
     width: 600px;
@@ -642,7 +642,7 @@ input[id='openFive']:checked ~ .cinco
     animation: openStart 1s linear;
 }
 input[id='openFive']:checked ~ .cinco > .five > .rec > .content
-{    
+{
     display: block;
     background: white;
     height: 100%;
@@ -650,7 +650,7 @@ input[id='openFive']:checked ~ .cinco > .five > .rec > .content
     width: 580px;
 }
 input[id='openSix']:checked ~ .sies > .six > .rec
-{    
+{
     position: absolute;
     height: 600px;
     width: 600px;
@@ -673,7 +673,7 @@ input[id='openSix']:checked ~ .sies
     animation: openStart 1s linear;
 }
 input[id='openSix']:checked ~ .sies > .six > .rec > .content
-{    
+{
     display: block;
     background: white;
     height: 100%;
@@ -681,7 +681,7 @@ input[id='openSix']:checked ~ .sies > .six > .rec > .content
     width: 580px;
 }
 input[id='openSeven']:checked ~ .siete > .seven > .rec
-{    
+{
     position: absolute;
     height: 600px;
     width: 600px;
@@ -704,7 +704,7 @@ input[id='openSeven']:checked ~ .siete
     animation: openStart 1s linear;
 }
 input[id='openSeven']:checked ~ .siete > .seven > .rec > .content
-{    
+{
     display: block;
     background: #000;
     height: 100%;
@@ -726,13 +726,13 @@ input[id='openSeven']:checked ~ .siete > .seven > .rec > .content
     color: #777;
 }
 .content > ul
-{    
+{
     margin: 0;
     float: left;
     width: 200px;
 }
 .content > ol
-{    
+{
     margin: 0;
     float: right;
     width: 300px;
@@ -742,29 +742,35 @@ input[id='openSeven']:checked ~ .siete > .seven > .rec > .content
     color: #f00;
 }
 @keyframes openStart{
-    0%    {
+    0%
+    {
         position: relative;
         top: 0;
-        }
-    50% {
+    }
+    50%
+    {
         position: relative;
         top: -200px;
         transform: perspective(800px) rotateX(-90deg);
         opacity: 1;
-        }
-    51%{
+    }
+    51%
+    {
         opacity: 0;
     }
-    80%{    
+    80%
+    {
         transform: perspective(800px) rotateX(-180deg);
         position: relative;
-        }
-    100%{
+    }
+    100%
+    {
         transform: perspective(400px) rotateX(-360deg);
-        }
+    }
 }
 @keyframes openEnd{
-     0%    {
+     0%
+     {
         position: absolute;
         height: 600px;
         width: 300px;
@@ -776,22 +782,25 @@ input[id='openSeven']:checked ~ .siete > .seven > .rec > .content
         z-index: 1;
         display: block;
         opacity: 0;
-        }
-    49%    {
+    }
+    49%
+    {
         position: absolute;
         opacity: 0;
         width: 600px;
         margin-left: -150px;
         height: 600px;
-        }
-    50% {
+    }
+    50%
+    {
         height: 600px;
         opacity: 1;
         margin-top: -100px;
-        }
-    70%{
+    }
+    70%
+    {
         position: absolute;
-        border: solid 0 rgba(0,0,0,.3);
+        border: solid 0 rgba(0, 0, 0, .3);
         margin-left: -150px;
         margin-top: -400px;
         height: 600px;
@@ -799,12 +808,13 @@ input[id='openSeven']:checked ~ .siete > .seven > .rec > .content
         display: block;
         opacity: 1;
     }
-    100%{
-        background: rgba(0,0,0,.0);
+    100%
+    {
+        background: rgba(0, 0, 0, .0);
         position: absolute;
         height: 600px;
         width: 600px;
-        border: solid 1000px rgba(0,0,0,.3);
+        border: solid 1000px rgba(0, 0, 0, .3);
         margin-left: -1150px;
         margin-top: -1100px;
         z-index: 1000;
@@ -812,8 +822,10 @@ input[id='openSeven']:checked ~ .siete > .seven > .rec > .content
         opacity: 1;
     }
 }
-@keyframes pulse {
-  to {
+@keyframes pulse 
+{
+  to 
+  {
     box-shadow: 0 0 0 20px rgba(153, 90, 220, 0), inset 0 0 0 150px rgba(0, 0, 0, 0);
-  }
+}
 }
