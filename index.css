@@ -32,7 +32,7 @@ body
 {
     position: relative;
     display: flex;
-    box-shadow: 1px 1px 10px black;
+    box-shadow: 1px 1px 10px #000;
     transition-property: transform, margin;
       transition-duration: .2s;
 }
@@ -520,7 +520,7 @@ input[id='openOne']:checked ~ .uno
 input[id='openOne']:checked ~ .uno > .one > .rec > .content
 {
     display: block;
-    background: white;
+    background: #fff;
     height: 100%;
     padding: 20px;
     width: 580px;
@@ -551,7 +551,7 @@ input[id='openTwo']:checked ~ .dos
 input[id='openTwo']:checked ~ .dos > .two > .rec > .content
 {
     display: block;
-    background: white;
+    background: #fff;
     height: 100%;
     padding: 20px;
     width: 580px;
@@ -582,7 +582,7 @@ input[id='openThree']:checked ~ .tres
 input[id='openThree']:checked ~ .tres > .three > .rec > .content
 {
     display: block;
-    background: white;
+    background: #fff;
     height: 100%;
     padding: 20px;
     width: 580px;
@@ -613,7 +613,7 @@ input[id='openFour']:checked ~ .cuatro
 input[id='openFour']:checked ~ .cuatro > .four > .rec > .content
 {
     display: block;
-    background: white;
+    background: #fff;
     height: 100%;
     padding: 20px;
     width: 580px;
@@ -644,7 +644,7 @@ input[id='openFive']:checked ~ .cinco
 input[id='openFive']:checked ~ .cinco > .five > .rec > .content
 {
     display: block;
-    background: white;
+    background: #fff;
     height: 100%;
     padding: 20px;
     width: 580px;
@@ -675,7 +675,7 @@ input[id='openSix']:checked ~ .sies
 input[id='openSix']:checked ~ .sies > .six > .rec > .content
 {
     display: block;
-    background: white;
+    background: #fff;
     height: 100%;
     padding: 20px;
     width: 580px;
@@ -706,7 +706,7 @@ input[id='openSeven']:checked ~ .siete
 input[id='openSeven']:checked ~ .siete > .seven > .rec > .content
 {
     display: block;
-    background: #000;
+    background: #fff;
     height: 100%;
     padding: 20px;
     width: 580px;
@@ -740,6 +740,139 @@ input[id='openSeven']:checked ~ .siete > .seven > .rec > .content
 .content > ol > span
 {
     color: #f00;
+}
+input[id='closeOne']:checked ~ .uno > .one > .rec
+{
+    display: none;
+    animation: closeStart 1s linear;
+}
+input[id='closeOne']:checked ~ .uno > .one > .rec .exit
+{
+    display: none;
+} 
+input[id='closeOne']:checked ~ .uno
+{
+    position: relative;
+    top: 0;
+    animation: closeEnd 1s linear;
+}
+input[id='closeOne']:checked ~ .uno > .one > .rec > .content
+{
+    display: none;
+}
+input[id='closeTwo']:checked ~ .dos > .two > .rec
+{
+    display: none;
+    animation: closeStart 1s linear;
+}
+input[id='closeTwo']:checked ~ .dos > .two > .rec .exit
+{
+    display: none;
+} 
+input[id='closeTwo']:checked ~ .dos
+{
+    position: relative;
+    top: 0;
+    animation: closeEnd 1s linear;
+}
+input[id='closeTwo']:checked ~ .dos > .two > .rec > .content
+{
+    display: none;
+}
+input[id='closeThree']:checked ~ .tres > .three > .rec
+{
+    display: none;
+    animation: closeStart 1s linear;
+}
+input[id='closeThree']:checked ~ .tres > .three > .rec .exit
+{
+    display: none;
+} 
+input[id='closeThree']:checked ~ .tres
+{
+    position: relative;
+    top: 0;
+    animation: closeEnd 1s linear;
+}
+input[id='closeThree']:checked ~ .tres > .three > .rec > .content
+{
+    display: none;
+}
+input[id='closeFour']:checked ~ .cuatro > .four > .rec
+{
+    display: none;
+    animation: closeStart 1s linear;
+}
+input[id='closeFour']:checked ~ .cuatro > .four > .rec .exit
+{
+    display: none;
+} 
+input[id='closeFour']:checked ~ .cuatro
+{
+    position: relative;
+    top: 0;
+    animation: closeEnd 1s linear;
+}
+input[id='closeFour']:checked ~ .cuatro > .four > .rec > .content
+{
+    display: none;
+}
+input[id='closeFive']:checked ~ .cinco > .five > .rec
+{
+    display: none;
+    animation: closeStart 1s linear;
+}
+input[id='closeFive']:checked ~ .cinco > .five > .rec .exit
+{
+    display: none;
+} 
+input[id='closeFive']:checked ~ .cinco
+{
+    position: relative;
+    top: 0;
+    animation: closeEnd 1s linear;
+}
+input[id='closeFive']:checked ~ .cinco > .five > .rec > .content
+{
+    display: none;
+}
+input[id='closeSix']:checked ~ .sies > .six > .rec
+{
+    display: none;
+    animation: closeStart 1s linear;
+}
+input[id='closeSix']:checked ~ .sies > .six > .rec .exit
+{
+    display: none;
+} 
+input[id='closeSix']:checked ~ .sies
+{
+    position: relative;
+    top: 0;
+    animation: closeEnd 1s linear;
+}
+input[id='closeSix']:checked ~ .sies > .six > .rec > .content
+{
+    display: none;
+}
+input[id='closeSeven']:checked ~ .siete > .seven > .rec
+{
+    display: none;
+    animation: closeStart 1s linear;
+}
+input[id='closeSeven']:checked ~ .siete > .seven > .rec .exit
+{
+    display: none;
+} 
+input[id='closeSeven']:checked ~ .siete
+{
+    position: relative;
+    top: 0;
+    animation: closeEnd 1s linear;
+}
+input[id='closeSeven']:checked ~ .siete > .seven > .rec > .content
+{
+    display: none;
 }
 @keyframes openStart{
     0%
@@ -825,7 +958,91 @@ input[id='openSeven']:checked ~ .siete > .seven > .rec > .content
 @keyframes pulse 
 {
   to 
-  {
+{
     box-shadow: 0 0 0 20px rgba(153, 90, 220, 0), inset 0 0 0 150px rgba(0, 0, 0, 0);
 }
+}
+@keyframes closeEnd{
+    0%
+    {
+        transform: perspective(400px) rotateX(-360deg);
+    }
+    20%
+    {
+        transform: perspective(800px) rotateX(-180deg);
+        position: relative;
+    }
+    49%
+    {
+        opacity: 0;
+    }
+    50%
+    {
+        position: relative;
+        top: -200px;
+        transform: perspective(800px) rotateX(-90deg);
+        opacity: 1;
+    }
+
+    1000%
+    {
+        position: relative;
+        top: 0;
+    }
+    
+}
+@keyframes closeStart{
+    0%
+    {
+        background: rgba(0, 0, 0, .0);
+        position: absolute;
+        height: 600px;
+        width: 600px;
+        border: solid 1000px rgba(0, 0, 0, .3);
+        margin-left: -1150px;
+        margin-top: -1100px;
+        z-index: 1000;
+        display: block;
+        opacity: 1;
+    }
+    30%
+    {
+        position: absolute;
+        border: solid 0 rgba(0, 0, 0, .3);
+        margin-left: -150px;
+        margin-top: -400px;
+        height: 600px;
+        z-index: 1000;
+        display: block;
+        opacity: 1;
+    }
+    50%
+    {
+        height: 600px;
+        opacity: 1;
+        margin-top: -100px;
+        opacity: 0;
+    }
+    51%
+    {
+        position: absolute;
+        opacity: 0;
+        width: 600px;
+        margin-left: -150px;
+        height: 600px;
+    }
+    100%
+    {
+        position: absolute;
+        height: 600px;
+        width: 300px;
+        z-index: 1;
+        display: block;
+        border: solid 0 rgba(0,0,0,.3);
+        margin-left: 0;
+        margin-top: 0;
+        z-index: 1;
+        display: block;
+        
+    }  
 }
