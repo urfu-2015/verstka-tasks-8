@@ -22,8 +22,8 @@ body
 .image img
 {
     width: 5vw;
- }
- 
+}
+
 .item
 {
     display: flex;
@@ -93,7 +93,6 @@ body
     animation-name: animation-round;
     animation-iteration-count: infinite;
     animation-duration: 2s;
-
 }
 @keyframes animation-round {
     0% {
@@ -117,7 +116,6 @@ body
     top: 0;
     left: 0;
  }
-
 
 .radio-images:checked  ~ .hiddenRight
 {
@@ -176,7 +174,7 @@ body
  {
     perspective: 400px;
     display: none;
- }
+}
 .view-image + .radio-images:checked + .item + .description
 {
     display: flex;
