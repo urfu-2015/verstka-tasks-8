@@ -118,7 +118,7 @@ body
     position: absolute;
     top: 0;
     left: 0;
- }
+}
 
 .radio-images:checked ~ .hiddenRight
 {
@@ -298,7 +298,7 @@ body
 {
     transform-style: preserve-3d;
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     width: 600px;
     height: 800px;
     padding: 20px;
