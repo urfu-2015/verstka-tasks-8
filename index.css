@@ -1,1 +1,123 @@
+body
+{
+    overflow-x: hidden;
+    background-color: #ccc;
+}
 
+input
+{
+    display: none;
+}
+
+.slider
+{
+    transform-style: preserve-3d;
+    width: 99%;
+    margin-top: 200px;
+    text-align: center;
+    transition: all 1s ease-out;
+}
+
+.image
+{
+    display: inline-block;
+    max-width: 14%;
+    transition: all 1s ease-out;
+}
+
+img
+{
+    width: 100%;
+}
+
+#first:checked ~ div
+{
+    transform: translateX(20%);
+}
+
+#second:checked ~ div
+{
+    transform: translateX(15%);
+}
+
+#third:checked ~ div
+{
+    transform: translateX(8%);
+}
+
+#fifth:checked ~ div
+{
+    transform: translateX(-9%);
+}
+
+#sixth:checked ~ div
+{
+    transform: translateX(-17%);
+}
+
+#seventh:checked ~ div
+{
+    transform: translateX(-19%);
+}
+
+#first:checked ~ div > label > .second,
+#first:checked ~ div > label > .third,
+#first:checked ~ div > label > .fourth,
+#second:checked ~ div > label > .third,
+#second:checked ~ div > label > .fourth,
+#third:checked ~ div > label > .fourth,
+#third:checked ~ div > label > .fifth,
+#fourth:checked ~ div > label > .fifth,
+#fourth:checked ~ div > label > .sixth,
+#fifth:checked ~ div > label > .sixth,
+#sixth:checked ~ div > label > .seventh
+{
+    transform: perspective(300px) rotateY(-40deg) translateZ(-40px);
+    margin-left: -6%;
+}
+
+#first:checked ~ div > label > .fifth,
+#first:checked ~ div > label > .sixth,
+#first:checked ~ div > label > .seventh,
+#second:checked ~ div > label > .fifth,
+#second:checked ~ div > label > .sixth,
+#second:checked ~ div > label > .seventh,
+#third:checked ~ div > label > .sixth,
+#third:checked ~ div > label > .seventh,
+#fourth:checked ~ div > label > .seventh,
+#fifth:checked ~ div > label > .seventh
+{
+    transform: perspective(300px) rotateY(-35deg) translateZ(-40px);
+    margin-left: -7%;
+}
+
+#second:checked ~ div > label > .first,
+#third:checked ~ div > label > .first,
+#third:checked ~ div > label > .second,
+#fourth:checked ~ div > label > .second,
+#fourth:checked ~ div > label > .third,
+#fifth:checked ~ div > label > .fourth,
+#fifth:checked ~ div > label > .third,
+#sixth:checked ~ div > label > .fourth,
+#sixth:checked ~ div > label > .fifth,
+#seventh:checked ~ div > label > .sixth,
+#seventh:checked ~ div > label > .fifth,
+#seventh:checked ~ div > label > .fourth
+{
+    transform: perspective(350px) rotateY(40deg) translateZ(-40px);
+    margin-right: -6%;
+}
+
+#fourth:checked ~ div > label > .first,
+#fifth:checked ~ div > label > .second,
+#fifth:checked ~ div > label > .first,
+#sixth:checked ~ div > label > .first,
+#sixth:checked ~ div > label > .second,
+#sixth:checked ~ div > label > .third,
+#seventh:checked ~ div > label > .third,
+#seventh:checked ~ div > label > .second,
+#seventh:checked ~ div > label > .first
+{
+    transform: perspective(350px) rotateY(35deg) translateZ(-40px);
+    margin-right: -7%;
+}
