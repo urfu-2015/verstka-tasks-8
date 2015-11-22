@@ -1,1 +1,65 @@
+body
+{
+    /*display: flex;*/
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
 
+.gallery
+{
+    display: flex;
+    flex-wrap: wrap;
+    transform-style: preserve-3d;
+    min-width: 200%;
+    transition: all 1s cubic-bezier(0.1, 0.005, 0.5, 1.200);
+    margin-top: 30%;
+}
+
+input[id^="button"]
+{
+    display: none;
+}
+
+.gallery article[class^="image"]
+{
+    width: 200px;
+    height: 150px;
+    overflow: hidden;
+}
+
+.gallery article[class^="image"] img
+{
+    width: 100%;
+    height: 100%;
+}
+
+#button-1:checked ~ div
+{
+    transform: translateX(20%);
+}
+
+#button-2:checked ~ div
+{
+    transform: translateX(15%);
+}
+
+#button-3:checked ~ div
+{
+    transform: translateX(8%);
+}
+
+#button-5:checked ~ div
+{
+    transform: translateX(-8%);
+}
+
+#button-6:checked ~ div
+{
+    transform: translateX(-15%);
+}
+
+#button-7:checked ~ div
+{
+    transform: translateX(-20%);
+}
