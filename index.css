@@ -35,6 +35,7 @@ input[id^="button"]
     height: 180px;
     overflow: hidden;
     transition: all 1s cubic-bezier(0.1, 0.005, 0.5, 1.200);
+    transition-delay: 0.3s;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3),
         -10px 0 20px rgba(0, 0, 0, 0.3);
 }
@@ -47,32 +48,32 @@ input[id^="button"]
 
 #button-1:checked ~ div
 {
-    transform: translateX(20%);
+    transform: translateX(30%);
 }
 
 #button-2:checked ~ div
 {
-    transform: translateX(15%);
+    transform: translateX(25%);
 }
 
 #button-3:checked ~ div
 {
-    transform: translateX(8%);
+    transform: translateX(15%);
 }
 
 #button-5:checked ~ div
 {
-    transform: translateX(-8%);
+    transform: translateX(-15%);
 }
 
 #button-6:checked ~ div
 {
-    transform: translateX(-15%);
+    transform: translateX(-25%);
 }
 
 #button-7:checked ~ div
 {
-    transform: translateX(-20%);
+    transform: translateX(-30%);
 }
 
 #button-1:checked ~ div .image-2,
