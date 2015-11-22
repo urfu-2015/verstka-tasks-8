@@ -37,9 +37,29 @@ body
     transition-property: transform, margin;
     transition-duration: .2s;
 }
+input[id='uno']:checked ~ .wrapper > .wrap:not(.uno),
+input[id='dos']:checked ~ .wrapper > .wrap:not(.dos),
+input[id='tres']:checked ~ .wrapper > .wrap:not(.tres),
+input[id='cuatro']:checked ~ .wrapper > .wrap:not(.cuatro),
+input[id='cinco']:checked ~ .wrapper > .wrap:not(.cinco),
+input[id='sies']:checked ~ .wrapper > .wrap:not(.sies),
+input[id='siete']:checked ~ .wrapper > .wrap:not(.siete)
+{
+    cursor: pointer;
+}
 .pic > img
 {
     width: 300px;
+}
+input[id='openOne']:checked ~ .wrapper > label:not(.uno),
+input[id='openTwo']:checked ~ .wrapper > label:not(.dos),
+input[id='openThree']:checked ~ .wrapper > label:not(.tres),
+input[id='openFour']:checked ~ .wrapper > label:not(.cuatro),
+input[id='openFive']:checked ~ .wrapper > label:not(.cinco),
+input[id='openSix']:checked ~ .wrapper > label:not(.sies),
+input[id='openSeven']:checked ~ .wrapper > label:not(.siete)
+{
+    pointer-events:none;
 }
 input[id='uno']:checked ~ .wrapper
 {
@@ -411,13 +431,13 @@ input[id='closeSeven']:checked ~ .wrapper > .siete > .seven > .rec > .content
 {
     display: none;
 }
-input[id='openOne']:checked ~ .wrapper > label:not(.uno),
-input[id='openTwo']:checked ~ .wrapper > label:not(.dos),
-input[id='openThree']:checked ~ .wrapper > label:not(.tres),
-input[id='openFour']:checked ~ .wrapper > label:not(.cuatro),
-input[id='openFive']:checked ~ .wrapper > label:not(.cinco),
-input[id='openSix']:checked ~ .wrapper > label:not(.sies),
-input[id='openSeven']:checked ~ .wrapper > label:not(.siete)
+input[id='openOne']:checked ~ .wrapper > .wrap:not(.uno),
+input[id='openTwo']:checked ~ .wrapper > .wrap:not(.dos),
+input[id='openThree']:checked ~ .wrapper > .wrap:not(.tres),
+input[id='openFour']:checked ~ .wrapper > .wrap:not(.cuatro),
+input[id='openFive']:checked ~ .wrapper > .wrap:not(.cinco),
+input[id='openSix']:checked ~ .wrapper > .wrap:not(.sies),
+input[id='openSeven']:checked ~ .wrapper > .wrap:not(.siete)
 {
     pointer-events:none;
 }
