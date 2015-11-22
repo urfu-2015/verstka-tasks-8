@@ -1,19 +1,27 @@
 body
 {
-    /*display: flex;*/
     margin: 0;
     padding: 0;
+}
+
+main
+{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 100%;
+    align-items: center;
 }
 
 .gallery
 {
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     transform-style: preserve-3d;
-    min-width: 200%;
     transition: all 1s cubic-bezier(0.1, 0.005, 0.5, 1.200);
-    margin-top: 30%;
 }
 
 input[id^="button"]
@@ -23,9 +31,12 @@ input[id^="button"]
 
 .gallery article[class^="image"]
 {
-    width: 200px;
-    height: 150px;
+    width: 240px;
+    height: 180px;
     overflow: hidden;
+    transition: all 1s cubic-bezier(0.1, 0.005, 0.5, 1.200);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3),
+        -10px 0 20px rgba(0, 0, 0, 0.3);
 }
 
 .gallery article[class^="image"] img
@@ -62,4 +73,66 @@ input[id^="button"]
 #button-7:checked ~ div
 {
     transform: translateX(-20%);
+}
+
+#button-1:checked ~ div .image-2,
+#button-2:checked ~ div .image-3,
+#button-3:checked ~ div .image-4,
+#button-4:checked ~ div .image-5,
+#button-5:checked ~ div .image-6,
+#button-6:checked ~ div .image-7
+{
+    margin-left: -100px;
+    transform: perspective(300px) rotateY(-35deg) translateZ(-20px);
+}
+
+#button-2:checked ~ div .image-1,
+#button-3:checked ~ div .image-2,
+#button-4:checked ~ div .image-3,
+#button-5:checked ~ div .image-4,
+#button-6:checked ~ div .image-5,
+#button-7:checked ~ div .image-6
+{
+    margin-right: -100px;
+    transform: perspective(300px) rotateY(35deg) translateZ(-20px);
+}
+
+#button-1:checked ~ div .image-3,
+#button-1:checked ~ div .image-4,
+#button-1:checked ~ div .image-5,
+#button-1:checked ~ div .image-6,
+#button-1:checked ~ div .image-7,
+#button-2:checked ~ div .image-4,
+#button-2:checked ~ div .image-5,
+#button-2:checked ~ div .image-6,
+#button-2:checked ~ div .image-7,
+#button-3:checked ~ div .image-6,
+#button-3:checked ~ div .image-5,
+#button-3:checked ~ div .image-7,
+#button-4:checked ~ div .image-6,
+#button-4:checked ~ div .image-7,
+#button-5:checked ~ div .image-7
+{
+    margin-left: -150px;
+    transform: perspective(300px) rotateY(-35deg) translateZ(-20px);
+}
+
+#button-7:checked ~ div .image-5,
+#button-7:checked ~ div .image-4,
+#button-7:checked ~ div .image-3,
+#button-7:checked ~ div .image-2,
+#button-7:checked ~ div .image-1,
+#button-6:checked ~ div .image-4,
+#button-6:checked ~ div .image-3,
+#button-6:checked ~ div .image-2,
+#button-6:checked ~ div .image-1,
+#button-5:checked ~ div .image-3,
+#button-5:checked ~ div .image-2,
+#button-5:checked ~ div .image-1,
+#button-4:checked ~ div .image-2,
+#button-4:checked ~ div .image-1,
+#button-3:checked ~ div .image-1
+{
+    margin-right: -150px;
+    transform: perspective(300px) rotateY(35deg) translateZ(-20px);
 }
