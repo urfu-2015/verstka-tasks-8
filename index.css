@@ -21,26 +21,26 @@ main
     display: flex;
     flex-wrap: wrap;
     transform-style: preserve-3d;
-    transition: all 1s cubic-bezier(0.1, 0.005, 0.5, 1.200);
+    transition: all 1s cubic-bezier(.1, .01, .5, 1.2);
 }
 
-input[id^="button"]
+input[id^='button']
 {
     display: none;
 }
 
-.gallery article[class^="image"]
+.gallery article[class^='image']
 {
     width: 240px;
     height: 180px;
     overflow: hidden;
-    transition: all 1s cubic-bezier(0.1, 0.005, 0.5, 1.200);
-    transition-delay: 0.3s;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3),
-        -10px 0 20px rgba(0, 0, 0, 0.3);
+    transition: all 1s cubic-bezier(.1, .01, .5, 1.2);
+    transition-delay: .3s;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, .3),
+        -10px 0 20px rgba(0, 0, 0, .3);
 }
 
-.gallery article[class^="image"] img
+.gallery article[class^='image'] img
 {
     width: 100%;
     height: 100%;
@@ -84,7 +84,7 @@ input[id^="button"]
 #button-6:checked ~ div .image-7
 {
     margin-left: -100px;
-    transform: perspective(300px) rotateY(-35deg) translateZ(-20px);
+    transform: perspective(300px) rotateY(-40deg) translateZ(-20px);
 }
 
 #button-2:checked ~ div .image-1,
@@ -95,7 +95,7 @@ input[id^="button"]
 #button-7:checked ~ div .image-6
 {
     margin-right: -100px;
-    transform: perspective(300px) rotateY(35deg) translateZ(-20px);
+    transform: perspective(300px) rotateY(40deg) translateZ(-20px);
 }
 
 #button-1:checked ~ div .image-3,
@@ -115,7 +115,7 @@ input[id^="button"]
 #button-5:checked ~ div .image-7
 {
     margin-left: -150px;
-    transform: perspective(300px) rotateY(-35deg) translateZ(-20px);
+    transform: perspective(300px) rotateY(-40deg) translateZ(-20px);
 }
 
 #button-7:checked ~ div .image-5,
@@ -135,5 +135,5 @@ input[id^="button"]
 #button-3:checked ~ div .image-1
 {
     margin-right: -150px;
-    transform: perspective(300px) rotateY(35deg) translateZ(-20px);
+    transform: perspective(300px) rotateY(40deg) translateZ(-20px);
 }
