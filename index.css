@@ -58,12 +58,11 @@ article.tomato
 
 }
 
-[id="parrot"]:checked ~ .main-content .parrot
+[id='parrot']:checked ~ .main-content .parrot
 {
     transform: scale(1.5);
     z-index: 7;
 }
-
 
 [id='cabbage']:checked ~ .main-content .cabbage
 {
@@ -105,37 +104,37 @@ article.tomato
 
 }
 
-[id="parrot"]:checked ~ .main-content .pepper
+[id='parrot']:checked ~ .main-content .pepper
 {
     z-index: 6;
     transform: rotateY(-30deg);
 }
 
-[id="parrot"]:checked ~ .main-content .pumpkin
+[id='parrot']:checked ~ .main-content .pumpkin
 {
     z-index: 5;
     transform: scaleY(.9) rotateY(-25deg);
 }
 
-[id="parrot"]:checked ~ .main-content .tomato
+[id='parrot']:checked ~ .main-content .tomato
 {
     z-index: 4;
     transform: rotateY(-20deg);
 }
 
-[id="parrot"]:checked ~ .main-content .eggplant
+[id='parrot']:checked ~ .main-content .eggplant
 {
     z-index: 6;
     transform: rotateY(30deg);
 }
 
-[id="parrot"]:checked ~ .main-content .cabbage
+[id='parrot']:checked ~ .main-content .cabbage
 {
     z-index: 5;
     transform: rotateY(25deg);
 }
 
-[id="parrot"]:checked ~ .main-content .cucumber
+[id='parrot']:checked ~ .main-content .cucumber
 {
     z-index: 4;
     transform: rotateY(20deg);
@@ -143,7 +142,7 @@ article.tomato
 
 /* ********************************************************************* */
 
-[id="cucumber"]:checked ~ .main-content .cabbage
+[id='cucumber']:checked ~ .main-content .cabbage
 {
     left: 40%;
     z-index: 6;
@@ -358,7 +357,6 @@ article.tomato
     z-index: 6;
     transform: rotateY(-30deg) scaleY(1.9);
 }
-
 
 /* ********************************************************************* */
 
