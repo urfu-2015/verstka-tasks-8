@@ -1,1 +1,247 @@
+.wrapper {
+    background-color: #EBEBEB;
+}
 
+.invisible {
+    display: none;
+}
+
+div {
+    margin: 1px;
+    border: 1px solid black;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .5);
+}
+
+label {
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin-top: 15%;
+    justify-content: space-around;
+    align-items: center;
+    perspective: 400px;
+    transform-style: preserve-3d;
+}
+
+.card {
+    width: 220px;
+    height: 160px;
+    transition-property: transform;
+    transition-duration: 1s;
+}
+
+.vegetables {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+/******************************************* Fourth card checked */
+#vegetable4:checked ~ .vegetable1 {
+    transform: rotateY(15deg) translate3d(100px,0,-100px);
+}
+
+#vegetable4:checked ~ .vegetable2 {
+    transform: rotateY(45deg) translate3d(100px,0,-100px);
+}
+
+#vegetable4:checked ~ .vegetable3 {
+    transform: rotateY(65deg) translate3d(100px,0,-100px);
+}
+
+#vegetable4:checked ~ .vegetable4 {
+    transform: translate3d(0%,0%,200px);
+}
+
+#vegetable4:checked ~ .vegetable5 {
+    transform: rotateY(-65deg) translate3d(-100px,0,-100px);
+}
+
+#vegetable4:checked ~ .vegetable6 {
+    transform: rotateY(-45deg) translate3d(-100px,0,-100px);
+}
+
+#vegetable4:checked ~ .vegetable7 {
+    transform: rotateY(-15deg) translate3d(-100px,0,-100px);
+}
+
+/********************************************* Third card checked */
+#vegetable3:checked ~ .vegetable1 {
+    transform: translate3d(112%,0,-100px) rotateY(45deg);
+}
+
+#vegetable3:checked ~ .vegetable2 {
+    transform: translate3d(112%,0,-100px) rotateY(65deg);
+}
+
+#vegetable3:checked ~ .vegetable3 {
+    transform: translate3d(112%,0%,200px);
+}
+
+#vegetable3:checked ~ .vegetable4 {
+    transform: translate3d(112%,0,-100px) rotateY(-65deg);
+}
+
+#vegetable3:checked ~ .vegetable5 {
+    transform: translate3d(112%,0,-100px) rotateY(-45deg);
+}
+
+#vegetable3:checked ~ .vegetable6 {
+    transform: translate3d(112%,0,-100px) rotateY(-15deg);
+}
+
+#vegetable3:checked ~ .vegetable7 {
+    transform: translate3d(112%,0,-100px) rotateY(-5deg);
+}
+
+/********************************************* Fifs card checked */
+#vegetable5:checked ~ .vegetable1 {
+    transform: translate3d(-112%,0,-100px) rotateY(5deg);
+}
+
+#vegetable5:checked ~ .vegetable2 {
+    transform: translate3d(-112%,0,-100px) rotateY(15deg);
+}
+
+#vegetable5:checked ~ .vegetable5 {
+    transform: translate3d(-112%,0%,200px);
+}
+
+#vegetable5:checked ~ .vegetable4 {
+    transform: translate3d(-112%,0,-100px) rotateY(65deg);
+}
+
+#vegetable5:checked ~ .vegetable3 {
+    transform: translate3d(-112%,0,-100px) rotateY(45deg);
+}
+
+#vegetable5:checked ~ .vegetable6 {
+    transform: translate3d(-112%,0,-100px) rotateY(-65deg);
+}
+
+#vegetable5:checked ~ .vegetable7 {
+    transform: translate3d(-112%,0,-100px) rotateY(-45deg);
+}
+
+/********************************************* Second card checked */
+#vegetable2:checked ~ .vegetable1 {
+    transform: translate3d(224%,0,-100px) rotateY(65deg);
+}
+
+#vegetable2:checked ~ .vegetable5 {
+    transform: translate3d(112%,0,-100px) rotateY(-15deg);
+}
+
+#vegetable2:checked ~ .vegetable2 {
+    transform: translate3d(224%,0%,200px);
+}
+
+#vegetable2:checked ~ .vegetable4 {
+    transform: translate3d(144%,0,-100px) rotateY(-45deg);
+
+}
+
+#vegetable2:checked ~ .vegetable3 {
+    transform: translate3d(204%,0,-100px) rotateY(-65deg);
+}
+
+#vegetable2:checked ~ .vegetable6 {
+    transform: translate3d(112%,0,-100px) rotateY(-5deg);
+}
+
+#vegetable2:checked ~ .vegetable7 {
+    transform: translate3d(88%,0,-100px) rotateY(5deg);
+}
+
+/********************************************* Six card checked */
+#vegetable6:checked ~ .vegetable7 {
+    transform: translate3d(-224%,0,-100px) rotateY(-65deg);
+}
+
+#vegetable6:checked ~ .vegetable5 {
+    transform: translate3d(-224%,0,-100px) rotateY(65deg);
+}
+
+#vegetable6:checked ~ .vegetable6 {
+    transform: translate3d(-224%,0%,200px);
+}
+
+#vegetable6:checked ~ .vegetable4 {
+    transform: translate3d(-144%,0,-100px) rotateY(45deg);
+}
+
+#vegetable6:checked ~ .vegetable3 {
+    transform: translate3d(-136%,0,-100px) rotateY(15deg);
+}
+
+#vegetable6:checked ~ .vegetable2 {
+    transform: translate3d(-112%,0,-100px) rotateY(5deg);
+}
+
+#vegetable6:checked ~ .vegetable1 {
+    transform: translate3d(-88%,0,-100px) rotateY(5deg);
+}
+
+/********************************************* First card checked */
+#vegetable1:checked ~ .vegetable7 {
+    transform: translate3d(12%,0,-100px) rotateY(-5deg);
+}
+
+#vegetable1:checked ~ .vegetable5 {
+    transform: translate3d(146%,0,-100px) rotateY(-35deg);
+}
+
+#vegetable1:checked ~ .vegetable1 {
+    transform: translate3d(336%,0%,200px);
+}
+
+#vegetable1:checked ~ .vegetable4 {
+    transform: translate3d(224%,0,-100px) rotateY(-25deg);
+
+}
+
+#vegetable1:checked ~ .vegetable3 {
+    transform: translate3d(264%,0,-100px) rotateY(-45deg);
+}
+
+#vegetable1:checked ~ .vegetable2 {
+    transform: translate3d(336%,0,-100px) rotateY(-65deg);
+}
+
+#vegetable1:checked ~ .vegetable6 {
+    transform: translate3d(88%,0,-100px) rotateY(-15deg);
+}
+
+/********************************************* Seven card checked */
+#vegetable7:checked ~ .vegetable1 {
+    transform: translate3d(-12%,0,-100px) rotateY(5deg);
+}
+
+#vegetable7:checked ~ .vegetable3 {
+    transform: translate3d(-146%,0,-100px) rotateY(35deg);
+}
+
+#vegetable7:checked ~ .vegetable7 {
+    transform: translate3d(-336%,0%,200px);
+}
+
+#vegetable7:checked ~ .vegetable4 {
+    transform: translate3d(-224%,0,-100px) rotateY(25deg);
+
+}
+
+#vegetable7:checked ~ .vegetable5 {
+    transform: translate3d(-264%,0,-100px) rotateY(45deg);
+}
+
+#vegetable7:checked ~ .vegetable6 {
+    transform: translate3d(-336%,0,-100px) rotateY(65deg);
+}
+
+#vegetable7:checked ~ .vegetable2 {
+    transform: translate3d(-88%,0,-100px) rotateY(15deg);
+}
