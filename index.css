@@ -1,1 +1,162 @@
+body,
+main
+{
+    height: 600px;
+    width: 100%;
+    background-color: #ebebeb;
+}
+
+input[type='radio']
+{
+    display: none;
+}
+
+section
+{
+    width: 90%;
+    height: 100%;
+    margin: 100px auto;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+section .img-container
+{
+    height: 160px;
+    width: 200px;
+    position: absolute;
+    left: 43%;
+    box-shadow: 0 0 10px #000;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    overflow: hidden;
+    transition: transform .7s ease-in-out;
+}
+
+section .img-container label
+{
+    width: 220px;
+}
+
+section .img-container img
+{
+    width: 220px;
+    overflow: hidden;
+}
+
+input[id='img1']:checked ~ section > .img1,
+input[id='img2']:checked ~ section > .img2,
+input[id='img3']:checked ~ section > .img3,
+input[id='img4']:checked ~ section > .img4,
+input[id='img5']:checked ~ section > .img5,
+input[id='img6']:checked ~ section > .img6,
+input[id='img7']:checked ~ section > .img7
+{
+    z-index: 7;
+    transform: scale(1.2);
+}
+
+input[id='img1']:checked ~ section > .img2,
+input[id='img2']:checked ~ section > .img3,
+input[id='img3']:checked ~ section > .img4,
+input[id='img4']:checked ~ section > .img5,
+input[id='img5']:checked ~ section > .img6,
+input[id='img6']:checked ~ section > .img7
+{
+    z-index: 6;
+    transform: perspective(500px) rotateY(-30deg) translateX(120px);
+}
+
+input[id='img2']:checked ~ section > .img1,
+input[id='img3']:checked ~ section > .img2,
+input[id='img4']:checked ~ section > .img3,
+input[id='img5']:checked ~ section > .img4,
+input[id='img6']:checked ~ section > .img5,
+input[id='img7']:checked ~ section > .img6
+{
+    z-index: 6;
+    transform: perspective(500px) rotateY(30deg) translateX(-120px);
+}
+
+input[id='img1']:checked ~ section > .img3,
+input[id='img2']:checked ~ section > .img4,
+input[id='img3']:checked ~ section > .img5,
+input[id='img4']:checked ~ section > .img6,
+input[id='img5']:checked ~ section > .img7
+{
+    z-index: 5;
+    transform: perspective(500px) rotateY(-25deg) translateX(200px);
+}
+
+input[id='img3']:checked ~ section > .img1,
+input[id='img4']:checked ~ section > .img2,
+input[id='img5']:checked ~ section > .img3,
+input[id='img6']:checked ~ section > .img4,
+input[id='img7']:checked ~ section > .img5
+{
+    z-index: 5;
+    transform: perspective(500px) rotateY(25deg) translateX(-200px);
+}
+
+input[id='img1']:checked ~ section > .img4,
+input[id='img2']:checked ~ section > .img5,
+input[id='img3']:checked ~ section > .img6,
+input[id='img4']:checked ~ section > .img7
+{
+    z-index: 4;
+    transform: perspective(500px) rotateY(-20deg) translateX(280px);
+}
+
+input[id='img4']:checked ~ section > .img1,
+input[id='img5']:checked ~ section > .img2,
+input[id='img6']:checked ~ section > .img3,
+input[id='img7']:checked ~ section > .img4
+{
+    z-index: 4;
+    transform: perspective(500px) rotateY(20deg) translateX(-280px);
+}
+
+input[id='img1']:checked ~ section > .img5,
+input[id='img2']:checked ~ section > .img6,
+input[id='img3']:checked ~ section > .img7
+{
+    z-index: 3;
+    transform: perspective(500px) rotateY(-15deg) translateX(340px);
+}
+
+input[id='img5']:checked ~ section > .img1,
+input[id='img6']:checked ~ section > .img2,
+input[id='img7']:checked ~ section > .img3
+{
+    z-index: 3;
+    transform: perspective(500px) rotateY(15deg) translateX(-340px);
+}
+
+input[id='img1']:checked ~ section > .img6,
+input[id='img2']:checked ~ section > .img7
+{
+    z-index: 2;
+    transform: perspective(500px) rotateY(-15deg) translateX(380px);
+}
+
+input[id='img6']:checked ~ section > .img1,
+input[id='img7']:checked ~ section > .img2
+{
+    z-index: 2;
+    transform: perspective(500px) rotateY(15deg) translateX(-380px);
+}
+
+input[id='img1']:checked ~ section > .img7
+{
+    z-index: 1;
+    transform: perspective(500px) rotateY(-15deg) translateX(420px);
+}
+
+input[id='img7']:checked ~ section > .img1
+{
+    z-index: 1;
+    transform: perspective(500px) rotateY(15deg) translateX(-420px);
+}
 
