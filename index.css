@@ -1,1 +1,330 @@
-
+input
+{
+    display: none;
+}
+.wrapper
+{
+    margin: 200px auto;
+    width: 80%;
+    min-width: 1150px;
+    perspective: 500px;
+}
+.wrapper
+.vegetable
+{
+    display: inline-block;
+    position: relative;
+    width: 160px;
+    height: 180px;
+    box-shadow: 0 5px 30px grey;
+    transition: transform 1.5s ease 0s, left 1.5s ease 0s;
+}
+.wrapper
+.vegetable
+img
+{
+    width: inherit;
+    height: inherit;
+    background-color: #fff;
+}
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+#first:checked ~ label > .first
+{
+    transform: scaleY(1);
+    left: 30%;
+    z-index: 7;
+}
+#first:checked ~ label > .second
+{
+    transform: scaleY(.9) rotateY(-30deg);
+    left: 25%;
+    z-index: 6;
+}
+#first:checked ~ label > .third
+{
+    transform: scaleY(.8) rotateY(-30deg);
+    left: 20%;
+    z-index: 5;
+}
+#first:checked ~ label > .fourth
+{
+    transform: scaleY(.7) rotateY(-30deg);
+    left: 15%;
+    z-index: 4;
+}
+#first:checked ~ label > .fifth
+{
+    transform: scaleY(.6) rotateY(-30deg);
+    left: 10%;
+    z-index: 3;
+}
+#first:checked ~ label > .sixth
+{
+    transform: scaleY(.5) rotateY(-30deg);
+    left: 5%;
+    z-index: 2;
+}
+#first:checked ~ label > .seventh
+{
+    transform: scaleY(.4) rotateY(-30deg);
+    left: 0%;
+    z-index: 1;
+}
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+#second:checked ~ label > .first
+{
+    transform: scaleY(.9) rotateY(30deg);
+    left: 25%;
+    z-index: 5;
+}
+#second:checked ~ label > .second
+{
+    transform: scaleY(1);
+    left: 20%;
+    z-index: 6;
+}
+#second:checked ~ label > .third
+{
+    transform: scaleY(.9) rotateY(-30deg);
+    left: 15%;
+    z-index: 5;
+}
+#second:checked ~ label > .fourth
+{
+    transform: scaleY(.8) rotateY(-30deg);
+    left: 10%;
+    z-index: 4;
+}
+#second:checked ~ label > .fifth
+{
+    transform: scaleY(.7) rotateY(-30deg);
+    left: 5%;
+    z-index: 3;
+}
+#second:checked ~ label > .sixth
+{
+    transform: scaleY(.6) rotateY(-30deg);
+    left: 0%;
+    z-index: 2;
+}
+#second:checked ~ label > .seventh
+{
+    transform: scaleY(.5) rotateY(-30deg);
+    left: -5%;
+    z-index: 1;
+}
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+#third:checked ~ label > .first
+{
+    transform: scaleY(.8) rotateY(30deg);
+    left: 20%;
+    z-index: 3;
+}
+#third:checked ~ label > .second
+{
+    transform: scaleY(.9) rotateY(30deg);
+    left: 15%;
+    z-index: 4;
+}
+#third:checked ~ label > .third
+{
+    transform: scaleY(1);
+    left: 10%;
+    z-index: 5;
+}
+#third:checked ~ label > .fourth
+{
+    transform: scaleY(.9) rotateY(-30deg);
+    left: 5%;
+    z-index: 4;
+}
+#third:checked ~ label > .fifth
+{
+    transform: scaleY(.8) rotateY(-30deg);
+    left: 0%;
+    z-index: 3;
+}
+#third:checked ~ label > .sixth
+{
+    transform: scaleY(.7) rotateY(-30deg);
+    left: -5%;
+    z-index: 2;
+}
+#third:checked ~ label > .seventh
+{
+    transform: scaleY(.6) rotateY(-30deg);
+    left: -10%;
+    z-index: 1;
+}
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+#fourth:checked ~ label > .first
+{
+    transform: scaleY(.7) rotateY(30deg);
+    left: 15%;
+    z-index: 2;
+}
+#fourth:checked ~ label > .second
+{
+    transform: scaleY(.8) rotateY(30deg);
+    left: 10%;
+    z-index: 3;
+}
+#fourth:checked ~ label > .third
+{
+    transform: scaleY(.9) rotateY(30deg);
+    left: 5%;
+    z-index: 4;
+}
+#fourth:checked ~ label > .fourth
+{
+    transform: scaleY(1);
+    left: 0%;
+    z-index: 5;
+}
+#fourth:checked ~ label > .fifth
+{
+    transform: scaleY(.9) rotateY(-30deg);
+    left: -5%;
+    z-index: 4;
+}
+#fourth:checked ~ label > .sixth
+{
+    transform: scaleY(.8) rotateY(-30deg);
+    left: -10%;
+    z-index: 3;
+}
+#fourth:checked ~ label > .seventh
+{
+    transform: scaleY(.7) rotateY(-30deg);
+    left: -15%;
+    z-index: 2;
+}
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+#fifth:checked ~ label > .first
+{
+    transform: scaleY(.6) rotateY(30deg);
+    left: 10%;
+    z-index: 1;
+}
+#fifth:checked ~ label > .second
+{
+    transform: scaleY(.7) rotateY(30deg);
+    left: 5%;
+    z-index: 2;
+}
+#fifth:checked ~ label > .third
+{
+    transform: scaleY(.8) rotateY(30deg);
+    left: 0%;
+    z-index: 3;
+}
+#fifth:checked ~ label > .fourth
+{
+    transform: scaleY(.9) rotateY(30deg);
+    left: -5%;
+    z-index: 4;
+}
+#fifth:checked ~ label > .fifth
+{
+    transform: scaleY(1);
+    left: -10%;
+    z-index: 5;
+}
+#fifth:checked ~ label > .sixth
+{
+    transform: scaleY(.9) rotateY(-30deg);
+    left: -15%;
+    z-index: 4;
+}
+#fifth:checked ~ label > .seventh
+{
+    transform: scaleY(.8) rotateY(-30deg);
+    left: -20%;
+    z-index: 3;
+}
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+#sixth:checked ~ label > .first
+{
+    transform: scaleY(.5) rotateY(30deg);
+    left: 5%;
+    z-index: 1;
+}
+#sixth:checked ~ label > .second
+{
+    transform: scaleY(.6) rotateY(30deg);
+    left: 0%;
+    z-index: 2;
+}
+#sixth:checked ~ label > .third
+{
+    transform: scaleY(.7) rotateY(30deg);
+    left: -5%;
+    z-index: 3;
+}
+#sixth:checked ~ label > .fourth
+{
+    transform: scaleY(.8) rotateY(30deg);
+    left: -10%;
+    z-index: 4;
+}
+#sixth:checked ~ label > .fifth
+{
+    transform: scaleY(.9) rotateY(30deg);
+    left: -15%;
+    z-index: 5;
+}
+#sixth:checked ~ label > .sixth
+{
+    transform: scaleY(1);
+    left: -20%;
+    z-index: 6;
+}
+#sixth:checked ~ label > .seventh
+{
+    transform: scaleY(.9) rotateY(-30deg);
+    left: -25%;
+    z-index: 4;
+}
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+#seventh:checked ~ label > .first
+{
+    transform: scaleY(.4) rotateY(30deg);
+    left: 0%;
+    z-index: 1;
+}
+#seventh:checked ~ label > .second
+{
+    transform: scaleY(.5) rotateY(30deg);
+    left: -5%;
+    z-index: 2;
+}
+#seventh:checked ~ label > .third
+{
+    transform: scaleY(.6) rotateY(30deg);
+    left: -10%;
+    z-index: 3;
+}
+#seventh:checked ~ label > .fourth
+{
+    transform: scaleY(.7) rotateY(30deg);
+    left: -15%;
+    z-index: 4;
+}
+#seventh:checked ~ label > .fifth
+{
+    transform: scaleY(.8) rotateY(30deg);
+    left: -20%;
+    z-index: 5;
+}
+#seventh:checked ~ label > .sixth
+{
+    transform: scaleY(.9) rotateY(30deg);
+    left: -25%;
+    z-index: 6;
+}
+#seventh:checked ~ label > .seventh
+{
+    transform: scaleY(1);
+    left: -30%;
+    z-index: 7;
+}
