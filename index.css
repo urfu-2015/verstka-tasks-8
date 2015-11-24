@@ -100,7 +100,6 @@ span
     width: 30px;
     height: 30px;
     top: 20px;
-    top: 20px;
     right: 20px;
     z-index: 15;
 }
@@ -374,35 +373,14 @@ input[value='seventh']:checked ~ main label.seventh div.veg:hover img:not(.back)
     z-index: 9;
 }
 
-input[value='recipe']:checked ~ div.veg .recipe div
+input[value='recipe1']:checked ~ div.veg
 {
-    display: flex;
-}
-
-input[value='recipe']:checked ~ div.veg .recipe div.actions
-{
-    display: block;
-}
-
-main label input[value='recipe']:checked ~ div.veg
-{
-    position: relative;
-}
-
-input[value='recipe']:checked ~ div .back,
-input[value='recipe']:checked ~ div .close
-{
-    visibility: visible;
-}
-
-input[value='recipe']:checked + div.veg
-{
-    animation-name: closing;
+    animation-name: closingVeg;
     animation-duration: .5s;
     position: relative;
 }
 
-input[value='recipe']:checked + div.veg .recipe
+input[value='recipe1']:checked ~ div.veg div.recipe
 {
     display: block;
     animation-name: openingRecipe;
@@ -412,7 +390,31 @@ input[value='recipe']:checked + div.veg .recipe
     opacity: 0;
 }
 
-input[value='recipe']:not(:checked) + div.veg
+input[value='recipe1']:checked ~ div.veg .recipe div
+{
+    display: flex;
+}
+
+input[value='recipe1']:checked ~ div .back,
+input[value='recipe1']:checked ~ div .close
+{
+    visibility: visible;
+}
+
+input[value='recipe1']:checked ~ div.veg .recipe div.actions
+{
+    display: block;
+}
+
+input[value='recipe2']:checked ~ div.veg .recipe
+{
+    animation-name: closingRecipe;
+    animation-duration: 3s;
+    visibility: visible;
+    opacity: 1;
+}
+
+input[value='recipe2']:checked ~ div.veg
 {
     animation-name: openingVeg;
     animation-duration: 1s;
@@ -447,7 +449,7 @@ input[value='recipe']:not(:checked) + div.veg
     }
 }
 
-@keyframes closing
+@keyframes closingVeg
 {
     50%
     {
@@ -457,6 +459,29 @@ input[value='recipe']:not(:checked) + div.veg
     100%
     {
         opacity: 0;
+        transform: perspective(300px) translateY(-300px) rotateX(-90deg);
+    }
+}
+
+@keyframes closingRecipe
+{
+    0%
+    {
+        display: block;
+        z-index: 15;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    50%
+    {
+        opacity: .5;
+        transform: perspective(300px) translateY(-150px) rotateX(-45deg);
+    }
+    100%
+    {
+        opacity: 0;
+        display: none;
         transform: perspective(300px) translateY(-300px) rotateX(-90deg);
     }
 }
