@@ -1,1 +1,218 @@
+body
+{
+    background: #ececec;
+}
 
+.gallery
+{
+    transform-style: preserve-3d;
+    display: flex;
+    width: 1500px;
+    perspective: 500px;
+    position: fixed;
+    top: 300px;
+    left: 20px;
+    right: 20px;
+    margin: auto;
+}
+
+div[class^='item'] 
+{
+    background: #fff;
+    height: 200px;
+    width: 350px;
+    overflow: hidden;
+    position: relative;
+    transition-property: all;
+    transition-duration: 1s;
+    margin: 1%;
+    -webkit-box-shadow: 0 10px 113px -20px rgba(64, 63, 64, .68);
+    -moz-box-shadow: 0 10px 113px -20px rgba(64, 63, 64, .68);
+    box-shadow: 0 10px 113px -20px rgba(64, 63, 64, .68);
+}
+
+img
+{
+    width: 130%;
+}
+
+label: after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+}
+
+#veg4:checked ~ .item-4
+{
+    transform: rotateY(0) translateZ(60px);
+}
+
+#veg1:checked ~ .item-1
+{
+    transform: translateX(600px) rotateY(0) translateZ(60px);
+}
+
+#veg1:checked ~ .item-2
+{
+    transform: translateX(500px) rotateY(-50deg);
+}
+
+#veg1:checked ~ .item-3
+{
+    transform: translateX(400px) rotateY(-50deg);
+}
+
+#veg2:checked ~ .item-1
+{
+    transform: translateX(500px) rotateY(50deg);
+}
+
+#veg2:checked ~ .item-2
+{
+    transform: translateX(400px) rotateY(0) translateZ(60px);
+}
+
+#veg3:checked ~ .item-1
+{
+    transform: translateX(400px) rotateY(50deg);
+}
+
+#veg3:checked ~ .item-3
+{
+    transform: translateX(200px) rotateY(0) translateZ(60px);
+}
+
+#veg5:checked ~ .item-5
+{
+    transform: translateX(-200px) rotateY(0) translateZ(60px);
+}
+
+#veg5:checked ~ .item-7
+{
+    transform: translateX(-400px) rotateY(-50deg);
+}
+
+#veg6:checked ~ .item-6
+{
+    transform: translateX(-400px) rotateY(0) translateZ(60px);
+}
+
+#veg6:checked ~ .item-7
+{
+    transform: translateX(-500px) rotateY(-50deg);
+}
+
+#veg7:checked ~ .item-5
+{
+    transform: translateX(-400px) rotateY(50deg);
+}
+
+#veg7:checked ~ .item-6
+{
+    transform: translateX(-500px) rotateY(50deg);
+}
+
+#veg7:checked ~ .item-7
+{
+    transform: translateX(-600px) rotateY(0) translateZ(60px);
+}
+
+.recipe,
+input
+{
+    display: none;
+}
+
+#veg4:checked ~ .item-1,
+#veg3:checked ~ .item-2
+{
+    transform: translateX(300px) rotateY(50deg);
+}
+
+#veg4:checked ~ .item-2,
+#veg5:checked ~ .item-1
+{
+    transform: translateX(200px) rotateY(50deg);
+}
+
+#veg4:checked ~ .item-3,
+#veg5:checked ~ .item-2,
+#veg6:checked ~ .item-1
+{
+    transform: translateX(100px) rotateY(50deg);
+}
+
+#veg4:checked ~ .item-5,
+#veg2:checked ~ .item-7,
+#veg3:checked ~ .item-6
+{
+    transform: translateX(-100px) rotateY(-50deg);
+}
+
+#veg4:checked ~ .item-6,
+#veg3:checked ~ .item-7
+{
+    transform: translateX(-200px) rotateY(-50deg);
+}
+
+#veg4:checked ~ .item-7,
+#veg5:checked ~ .item-6
+{
+    transform: translateX(-300px) rotateY(-50deg);
+}
+
+#veg1:checked ~ .item-4,
+#veg2:checked ~ .item-3
+{
+    transform: translateX(300px) rotateY(-50deg);
+}
+
+#veg1:checked ~ .item-5,
+#veg2:checked ~ .item-4
+{
+    transform: translateX(200px) rotateY(-50deg);
+}
+
+#veg1:checked ~ .item-6,
+#veg2:checked ~ .item-5,
+#veg3:checked ~ .item-4
+{
+    transform: translateX(100px) rotateY(-50deg);
+}
+
+#veg1:checked ~ .item-7,
+#veg2:checked ~ .item-6,
+#veg3:checked ~ .item-5
+{
+    transform: translateX(0) rotateY(-50deg);
+}
+
+#veg5:checked ~ .item-3,
+#veg6:checked ~ .item-2,
+#veg7:checked ~ .item-1
+{
+    transform: translateX(0) rotateY(50deg);
+}
+
+#veg5:checked ~ .item-4,
+#veg6:checked ~ .item-3,
+#veg7:checked ~ .item-2
+{
+    transform: translateX(-100px) rotateY(50deg);
+}
+
+#veg6:checked ~ .item-4,
+#veg7:checked ~ .item-3
+{
+    transform: translateX(-200px) rotateY(50deg);
+}
+
+#veg6:checked ~ .item-5,
+#veg7:checked ~ .item-4
+{
+    transform: translateX(-300px) rotateY(50deg);
+}
