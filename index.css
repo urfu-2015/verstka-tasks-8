@@ -24,8 +24,9 @@ main
 .vegetables
 {
     width: 14%;
-    height: 300px;
+    height: 180px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     position: relative;
 }
@@ -33,7 +34,67 @@ main
 .vegetables img
 {
     width: 100%;
+    min-height: 180px;
     box-shadow: 0 0 5px 5px rgba(0, 0, 0, .3);
+    object-fit: fill;
+}
+
+.hover-background
+{
+    background-color: rgb(72, 72, 72);
+    transition-property: transform, background-color;
+    transition-duration: 0.3s, 1s;
+    transition-delay: 0s, 0.2s;
+    visibility: hidden;
+}
+
+[id='cucumber']:checked ~ .main-content .cucumber:hover .hover-background,
+[id='cabbage']:checked ~ .main-content .cabbage:hover .hover-background,
+[id='eggplant']:checked ~ .main-content .eggplant:hover .hover-background,
+[id='parrot']:checked ~ .main-content .parrot:hover .hover-background,
+[id='pepper']:checked ~ .main-content .pepper:hover .hover-background,
+[id='pumpkin']:checked ~ .main-content .pumpkin:hover .hover-background,
+[id='tomato']:checked ~ .main-content .tomato:hover .hover-background
+{
+    visibility: visible;
+    display: flex;
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: rgba(72, 72, 72, .8);
+}
+
+
+[id='cucumber']:checked ~ .main-content .cucumber:hover .recipe,
+[id='cabbage']:checked ~ .main-content .cabbage:hover .recipe,
+[id='eggplant']:checked ~ .main-content .eggplant:hover .recipe,
+[id='parrot']:checked ~ .main-content .parrot:hover .recipe,
+[id='pepper']:checked ~ .main-content .pepper:hover .recipe,
+[id='pumpkin']:checked ~ .main-content .pumpkin:hover .recipe,
+[id='tomato']:checked ~ .main-content .tomato:hover .recipe
+{
+    border: 3px solid #fff;
+    position: relative;
+    top: 25%;
+    left: 18%;
+    width: 60%;
+    height: 50%;
+    border-radius: 1000px;
+    text-align: center;
+}
+
+[id='cucumber']:checked ~ .main-content .cucumber:hover .hover-background p,
+[id='cabbage']:checked ~ .main-content .cabbage:hover .hover-background p,
+[id='eggplant']:checked ~ .main-content .eggplant:hover .hover-background p,
+[id='parrot']:checked ~ .main-content .parrot:hover .hover-background p,
+[id='pepper']:checked ~ .main-content .pepper:hover .hover-background p,
+[id='pumpkin']:checked ~ .main-content .pumpkin:hover .hover-background p,
+[id='tomato']:checked ~ .main-content .tomato:hover .hover-background p
+{
+    color: #fff;
+    margin-top: 35%;
 }
 
 article.cucumber,
@@ -60,7 +121,7 @@ article.tomato
 
 [id='parrot']:checked ~ .main-content .parrot
 {
-    transform: scale(1.5);
+    transform: scale(1.3);
     z-index: 7;
 }
 
@@ -83,7 +144,7 @@ article.tomato
 [id='pepper']:checked ~ .main-content .pepper
 {
     left: -15%;
-    transform: scale(2);
+    transform: scale(1.4);
     z-index: 7;
 
 }
@@ -153,14 +214,14 @@ article.tomato
 {
     left: 32%;
     z-index: 5;
-    transform: rotateY(-30deg) scaleY(.9);
+    transform: rotateY(-30deg) scaleY(1.1);
 }
 
 [id='cucumber']:checked ~ .main-content .parrot
 {
     left: 23%;
     z-index: 4;
-    transform: rotateY(-30deg) scaleY(.7);
+    transform: rotateY(-30deg);
 }
 
 [id='cucumber']:checked ~ .main-content .pepper
@@ -174,14 +235,14 @@ article.tomato
 {
     left: 6%;
     z-index: 2;
-    transform: rotateY(-30deg) scaleY(.9);
+    transform: rotateY(-30deg) scaleY(.8);
 }
 
 [id='cucumber']:checked ~ .main-content .tomato
 {
     left: -4%;
     z-index: 1;
-    transform: rotateY(-30deg);
+    transform: rotateY(-30deg) scaleY(.7);
 }
 
 /* ********************************************************************* */
@@ -190,21 +251,21 @@ article.tomato
 {
     left: 25%;
     z-index: 6;
-    transform: rotateY(30deg) scaleY(1.3);
+    transform: rotateY(30deg) scaleY(1.1);
 }
 
 [id='cabbage']:checked ~ .main-content .eggplant
 {
     left: 30%;
     z-index: 6;
-    transform: rotateY(-30deg) scaleY(.9);
+    transform: rotateY(-30deg);
 }
 
 [id='cabbage']:checked ~ .main-content .parrot
 {
     left: 22%;
     z-index: 5;
-    transform: rotateY(-30deg) scaleY(.7);
+    transform: rotateY(-30deg) scaleY(.95);
 }
 
 [id='cabbage']:checked ~ .main-content .pepper
@@ -218,14 +279,14 @@ article.tomato
 {
     left: 3%;
     z-index: 3;
-    transform: rotateY(-30deg) scaleY(.8);
+    transform: rotateY(-30deg) scaleY(.85);
 }
 
 [id='cabbage']:checked ~ .main-content .tomato
 {
     left: -6%;
     z-index: 2;
-    transform: rotateY(-30deg) scaleY(.9);
+    transform: rotateY(-30deg) scaleY(.8);
 }
 
 /* ********************************************************************* */
@@ -234,42 +295,42 @@ article.tomato
 {
     left: 16%;
     z-index: 5;
-    transform: rotateY(30deg) scaleY(1.3);
+    transform: rotateY(30deg);
 }
 
 [id='eggplant']:checked ~ .main-content .cabbage
 {
     left: 12%;
     z-index: 6;
-    transform: rotateY(30deg) scaleY(1.3);
+    transform: rotateY(30deg) scaleY(1.1);
 }
 
 [id='eggplant']:checked ~ .main-content .parrot
 {
     left: 15%;
     z-index: 6;
-    transform: rotateY(-30deg) scaleY(.8);
+    transform: rotateY(-30deg) scaleY(1.1);
 }
 
 [id='eggplant']:checked ~ .main-content .pepper
 {
     left: 10%;
     z-index: 5;
-    transform: rotateY(-30deg) scaleY(1.1);
+    transform: rotateY(-30deg);
 }
 
 [id='eggplant']:checked ~ .main-content .pumpkin
 {
     left: 3%;
     z-index: 4;
-    transform: rotateY(-30deg) scaleY(1.1);
+    transform: rotateY(-30deg) scaleY(.9);
 }
 
 [id='eggplant']:checked ~ .main-content .tomato
 {
     left: -4%;
     z-index: 3;
-    transform: rotateY(-30deg) scaleY(1.3);
+    transform: rotateY(-30deg) scaleY(.8);
 }
 
 /* ********************************************************************* */
@@ -278,13 +339,13 @@ article.tomato
 {
     left: 8%;
     z-index: 3;
-    transform: rotateY(30deg) scaleY(1.1);
+    transform: rotateY(30deg) scaleY(.8);
 }
 
 [id='pepper']:checked ~ .main-content .cabbage
 {
     z-index: 4;
-    transform: rotateY(30deg) scaleY(1.1);
+    transform: rotateY(30deg) scaleY(.9);
 }
 
 [id='pepper']:checked ~ .main-content .eggplant
@@ -298,21 +359,21 @@ article.tomato
 {
     left: -15%;
     z-index: 6;
-    transform: rotateY(30deg);
+    transform: rotateY(30deg) scaleY(1.1);
 }
 
 [id='pepper']:checked ~ .main-content .pumpkin
 {
     left: -14%;
     z-index: 6;
-    transform: rotateY(-30deg) scaleY(1.4);
+    transform: rotateY(-30deg) scaleY(1.1);
 }
 
 [id='pepper']:checked ~ .main-content .tomato
 {
     left: -20%;
     z-index: 5;
-    transform: rotateY(-30deg) scaleY(1.5);
+    transform: rotateY(-30deg);
 }
 
 /* ********************************************************************* */
@@ -321,41 +382,41 @@ article.tomato
 {
     left: 8%;
     z-index: 2;
-    transform: rotateY(30deg) scaleY(1.1);
+    transform: rotateY(30deg) scaleY(.7);
 }
 
 [id='pumpkin']:checked ~ .main-content .cabbage
 {
     z-index: 3;
-    transform: rotateY(30deg) scaleY(1.1);
+    transform: rotateY(30deg) scaleY(.8);
 }
 
 [id='pumpkin']:checked ~ .main-content .eggplant
 {
     left: -8%;
     z-index: 4;
-    transform: rotateY(30deg);
+    transform: rotateY(30deg) scaleY(.9);
 }
 
 [id='pumpkin']:checked ~ .main-content .parrot
 {
     left: -17%;
     z-index: 5;
-    transform: rotateY(30deg) scaleY(.95);
+    transform: rotateY(30deg) scaleY(1);
 }
 
 [id='pumpkin']:checked ~ .main-content .pepper
 {
     left: -24%;
     z-index: 6;
-    transform: rotateY(30deg) scaleY(1.4);
+    transform: rotateY(30deg) scaleY(1.1);
 }
 
 [id='pumpkin']:checked ~ .main-content .tomato
 {
     left: -23%;
     z-index: 6;
-    transform: rotateY(-30deg) scaleY(1.9);
+    transform: rotateY(-30deg) scaleY(1.1);
 }
 
 /* ********************************************************************* */
@@ -364,28 +425,28 @@ article.tomato
 {
     left: 3%;
     z-index: 1;
-    transform: rotateY(30deg) scaleY(1.1);
+    transform: rotateY(30deg) scaleY(.8);
 }
 
 [id='tomato']:checked ~ .main-content .cabbage
 {
     left: -6%;
     z-index: 2;
-    transform: rotateY(30deg) scaleY(1.1);
+    transform: rotateY(30deg) scaleY(.9);
 }
 
 [id='tomato']:checked ~ .main-content .eggplant
 {
     left: -15%;
     z-index: 3;
-    transform: rotateY(30deg) scaleY(.9);
+    transform: rotateY(30deg) scaleY(1);
 }
 
 [id='tomato']:checked ~ .main-content .parrot
 {
     left: -23%;
     z-index: 4;
-    transform: rotateY(30deg) scaleY(.8);
+    transform: rotateY(30deg) scaleY(1.1);
 }
 
 [id='tomato']:checked ~ .main-content .pepper
