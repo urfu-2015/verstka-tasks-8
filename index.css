@@ -15,7 +15,6 @@ input
     display: none;
 }
 
-
 .photo-wrapper
 {
     display: inline-block;
@@ -31,7 +30,6 @@ img
     height: 200px;
 }
 
-
 #radio-photo-1:checked ~ .gallery
 {
     transform: translateX(33%);
@@ -43,7 +41,6 @@ img
     transform: translateX(28%);
 }
 
-
 #radio-photo-3:checked ~ .gallery
 {
     transform: translateX(23%);
@@ -54,7 +51,6 @@ img
 {
     transform: translateX(18%);
 }
-
 
 #radio-photo-5:checked ~ .gallery
 {
@@ -71,7 +67,6 @@ img
 {
     transform: translateX(3%);
 }
-
 /*
 --------------------------------------------------------
 Одинаковые позже объединю
@@ -171,8 +166,6 @@ img
     margin: 0 -3%;
     z-index: 30;
 }
-
-
 
 #radio-photo-3:checked ~ .gallery label .photo-1 
 {
