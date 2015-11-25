@@ -1,1 +1,317 @@
+.container
+{
+    transform-style: preserve-3d;
+    width: 100%;
+    text-align: center;
+    margin-top: 12em;
+}
 
+.veg
+{
+    display: none;
+}
+
+label
+{
+    position: relative;
+    display: inline-flex;
+    width: 13%;
+    height: 120px;
+    transition-property: transform;
+    transition-duration: .5s;
+    box-shadow: 0 1em 2em black;
+}
+
+#img-melon
+{
+    background: url("https://pp.vk.me/c630125/v630125151/1ecc/wMTXhTawg8w.jpg") no-repeat;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+}
+#melon:checked ~ .container #img-melon
+{
+    transform: rotateY(0deg) scale(1.5) translateX(200%);
+}
+
+#img-carrot
+{
+    background: url("https://pp.vk.me/c630125/v630125151/1ed6/frqxQ6oR6Ho.jpg") no-repeat;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+}
+#carrot:checked ~ .container #img-carrot
+{
+    transform: rotateY(0deg) scale(1.5) translateX(120%);
+}
+
+#img-watermelon
+{
+    background: url("https://pp.vk.me/c630125/v630125151/1eec/daAy02g-Fhc.jpg") no-repeat;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+}
+#watermelon:checked ~ .container #img-watermelon
+{
+    transform: rotateY(0deg) scale(1.5) translateX(60%);
+}
+
+#img-kiwi
+{
+    background: url("https://pp.vk.me/c630125/v630125151/1ec2/xmTB7Eq0e38.jpg") no-repeat;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+}
+#kiwi:checked ~ .container #img-kiwi
+{
+    transform: rotateY(0deg) scale(1.5);
+}
+
+#img-cucumber
+{
+    background: url("https://pp.vk.me/c630125/v630125151/1eb9/Zgg2HCd0yi4.jpg") no-repeat;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+}
+#cucumber:checked ~ .container #img-cucumber
+{
+    transform: rotateY(0deg) scale(1.5) translateX(-60%);
+}
+
+#img-pepper
+{
+    background: url("https://pp.vk.me/c630125/v630125151/1ede/G-FVz0bas0c.jpg") no-repeat;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+}
+#pepper:checked ~ .container #img-pepper
+{
+    transform: rotateY(0deg) scale(1.5) translateX(-120%);
+}
+
+#img-tomato
+{
+    background: url("https://pp.vk.me/c630125/v630125151/1ee5/R4k4jbruF2A.jpg") no-repeat;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+}
+#tomato:checked ~ .container #img-tomato
+{
+    transform: rotateY(0deg) scale(1.5) translateX(-200%);
+}
+
+#melon:checked ~ .container #img-carrot
+{
+    transform: translateX(275%) perspective(300px) rotateY(-40deg) translateZ(-40px);
+}
+
+#melon:checked ~ .container #img-watermelon
+{
+    transform: translateX(235%) perspective(300px) rotateY(-35deg) translateZ(-40px);
+}
+
+#melon:checked ~ .container #img-kiwi
+{
+    transform: translateX(190%) perspective(300px) rotateY(-30deg) translateZ(-40px);
+}
+
+#melon:checked ~ .container #img-cucumber
+{
+    transform: translateX(140%) perspective(300px) rotateY(-25deg) translateZ(-40px);
+}
+
+#melon:checked ~ .container #img-pepper
+{
+    transform: translateX(80%) perspective(300px) rotateY(-20deg) translateZ(-40px);
+}
+
+#melon:checked ~ .container #img-tomato
+{
+    transform: translateX(20%) perspective(300px) rotateY(-15deg) translateZ(-40px);
+}
+
+#carrot:checked ~ .container #img-melon
+{
+    transform: translateX(190%) perspective(300px) rotateY(40deg) translateZ(-40px);
+}
+
+#carrot:checked ~ .container #img-watermelon
+{
+    transform: translateX(170%) perspective(300px) rotateY(-40deg) translateZ(-40px);
+}
+
+#carrot:checked ~ .container #img-kiwi
+{
+    transform: translateX(130%) perspective(300px) rotateY(-35deg) translateZ(-40px);
+}
+
+#carrot:checked ~ .container #img-cucumber
+{
+    transform: translateX(80%) perspective(300px) rotateY(-30deg) translateZ(-40px);
+}
+
+#carrot:checked ~ .container #img-pepper
+{
+    transform: translateX(30%) perspective(300px) rotateY(-25deg) translateZ(-40px);
+}
+
+#carrot:checked ~ .container #img-tomato
+{
+    transform: translateX(-30%) perspective(300px) rotateY(-20deg) translateZ(-40px);
+}
+
+#watermelon:checked ~ .container #img-melon
+{
+    transform: translateX(130%) perspective(300px) rotateY(35deg) translateZ(-40px);
+}
+
+#watermelon:checked ~ .container #img-carrot
+{
+    transform: translateX(100%) perspective(300px) rotateY(40deg) translateZ(-40px);
+}
+
+#watermelon:checked ~ .container #img-kiwi
+{
+    transform: translateX(80%) perspective(300px) rotateY(-40deg) translateZ(-40px);
+}
+
+#watermelon:checked ~ .container #img-cucumber
+{
+    transform: translateX(40%) perspective(300px) rotateY(-35deg) translateZ(-40px);
+}
+
+#watermelon:checked ~ .container #img-pepper
+{
+    transform: translateX(-10%) perspective(300px) rotateY(-30deg) translateZ(-40px);
+}
+
+#watermelon:checked ~ .container #img-tomato
+{
+    transform: translateX(-60%) perspective(300px) rotateY(-25deg) translateZ(-40px);
+}
+
+#kiwi:checked ~ .container #img-melon
+{
+    transform: translateX(90%) perspective(300px) rotateY(30deg) translateZ(-40px);
+}
+
+#kiwi:checked ~ .container #img-carrot
+{
+    transform: translateX(50%) perspective(300px) rotateY(35deg) translateZ(-40px);
+}
+
+#kiwi:checked ~ .container #img-watermelon
+{
+    transform: translateX(20%) perspective(300px) rotateY(40deg) translateZ(-40px);
+}
+
+#kiwi:checked ~ .container #img-cucumber
+{
+    transform: translateX(-20%) perspective(300px) rotateY(-40deg) translateZ(-40px);
+}
+
+#kiwi:checked ~ .container #img-pepper
+{
+    transform: translateX(-50%) perspective(300px) rotateY(-35deg) translateZ(-40px);
+}
+
+#kiwi:checked ~ .container #img-tomato
+{
+    transform: translateX(-90%) perspective(300px) rotateY(-30deg) translateZ(-40px);
+}
+
+#cucumber:checked ~ .container #img-melon
+{
+    transform: translateX(60%) perspective(300px) rotateY(25deg) translateZ(-40px);
+}
+
+#cucumber:checked ~ .container #img-carrot
+{
+    transform: translateX(10%) perspective(300px) rotateY(30deg) translateZ(-40px);
+}
+
+#cucumber:checked ~ .container #img-watermelon
+{
+    transform: translateX(-40%) perspective(300px) rotateY(35deg) translateZ(-40px);
+}
+
+#cucumber:checked ~ .container #img-kiwi
+{
+    transform: translateX(-80%) perspective(300px) rotateY(40deg) translateZ(-40px);
+}
+
+#cucumber:checked ~ .container #img-pepper
+{
+    transform: translateX(-100%) perspective(300px) rotateY(-40deg) translateZ(-40px);
+}
+
+#cucumber:checked ~ .container #img-tomato
+{
+    transform: translateX(-130%) perspective(300px) rotateY(-35deg) translateZ(-40px);
+}
+
+#pepper:checked ~ .container #img-melon
+{
+    transform: translateX(30%) perspective(300px) rotateY(20deg) translateZ(-40px);
+}
+
+#pepper:checked ~ .container #img-carrot
+{
+    transform: translateX(-30%) perspective(300px) rotateY(25deg) translateZ(-40px);
+}
+
+#pepper:checked ~ .container #img-watermelon
+{
+    transform: translateX(-80%) perspective(300px) rotateY(30deg) translateZ(-40px);
+}
+
+#pepper:checked ~ .container #img-kiwi
+{
+    transform: translateX(-130%) perspective(300px) rotateY(35deg) translateZ(-40px);
+}
+
+#pepper:checked ~ .container #img-cucumber
+{
+    transform: translateX(-170%) perspective(300px) rotateY(40deg) translateZ(-40px);
+}
+
+#pepper:checked ~ .container #img-tomato
+{
+    transform: translateX(-190%) perspective(300px) rotateY(-40deg) translateZ(-40px);
+}
+
+#tomato:checked ~ .container #img-melon
+{
+    transform: translateX(-20%) perspective(300px) rotateY(15deg) translateZ(-40px);
+}
+
+#tomato:checked ~ .container #img-carrot
+{
+    transform: translateX(-80%) perspective(300px) rotateY(20deg) translateZ(-40px);
+}
+
+#tomato:checked ~ .container #img-watermelon
+{
+    transform: translateX(-140%) perspective(300px) rotateY(25deg) translateZ(-40px);
+}
+
+#tomato:checked ~ .container #img-kiwi
+{
+    transform: translateX(-190%) perspective(300px) rotateY(30deg) translateZ(-40px);
+}
+
+#tomato:checked ~ .container #img-cucumber
+{
+    transform: translateX(-235%) perspective(300px) rotateY(35deg) translateZ(-40px);
+}
+
+#tomato:checked ~ .container #img-pepper
+{
+    transform: translateX(-275%) perspective(300px) rotateY(40deg) translateZ(-40px);
+}
