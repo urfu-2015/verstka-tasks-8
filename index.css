@@ -1,1 +1,162 @@
+body
+{
+    background: #ccc;
+    text-align: center;
+}
 
+main
+{
+    padding: 50px;
+    perspective: 300px;
+    transform-style: preserve-3d;
+}
+
+article
+{
+    display: inline-block;
+    width: 75px;
+    transition: all 1s ease;
+}
+
+img
+{
+    width: 300px;
+    transform: translateX(-40%);
+    box-shadow: 0 0 5px #000;
+}
+
+input
+{
+    display: none;
+}
+
+#one:checked ~ main .second,
+#one:checked ~ main .third,
+#one:checked ~ main .forth,
+#one:checked ~ main .fifth,
+#one:checked ~ main .sixth,
+#one:checked ~ main .seventh
+{
+    transform: translateX(225px) rotateY(-30deg);
+}
+
+#one:checked ~ main .first
+{
+    transform: translateX(225px) translateZ(70px);
+}
+
+#two:checked ~ main .second
+{
+    transform: translateX(150px) rotateY(30deg);
+}
+
+#two:checked ~ main .first
+{
+    transform: translateX(150px) rotateY(30deg);
+}
+
+#two:checked ~ main .third,
+#two:checked ~ main .forth,
+#two:checked ~ main .fifth,
+#two:checked ~ main .sixth,
+#two:checked ~ main .seventh
+{
+    transform: translateX(150px) rotateY(-30deg);
+}
+
+#two:checked ~ main .second
+{
+    transform: translateX(150px) translateZ(70px);
+}
+
+#three:checked ~ main .first,
+#three:checked ~ main .second
+{
+    transform: translateX(75px) rotateY(30deg);
+}
+
+#three:checked ~ main .third,
+#three:checked ~ main .forth,
+#three:checked ~ main .fifth,
+#three:checked ~ main .sixth,
+#three:checked ~ main .seventh
+{
+    transform: translateX(75px) rotateY(-30deg);
+}
+
+#three:checked ~ main .third
+{
+    transform: translateX(75px) translateZ(70px);
+}
+
+#four:checked ~ main .first,
+#four:checked ~ main .second,
+#four:checked ~ main .third
+{
+    transform: rotateY(30deg);
+}
+
+#four:checked ~ main .fifth,
+#four:checked ~ main .sixth,
+#four:checked ~ main .seventh
+{
+    transform: rotateY(-30deg);
+}
+
+#four:checked ~ main .forth
+{
+    transform: translateZ(70px);
+}
+
+#five:checked ~ main .first,
+#five:checked ~ main .second,
+#five:checked ~ main .third,
+#five:checked ~ main .forth
+{
+    transform: translateX(-75px) rotateY(30deg);
+}
+
+#five:checked ~ main .sixth,
+#five:checked ~ main .seventh
+{
+    transform: translateX(-75px) rotateY(-30deg);
+}
+
+#five:checked ~ main .fifth
+{
+    transform: translateX(-75px) translateZ(70px);
+}
+
+#six:checked ~ main .first,
+#six:checked ~ main .second,
+#six:checked ~ main .third,
+#six:checked ~ main .forth,
+#six:checked ~ main .fifth
+{
+    transform: translateX(-150px) rotateY(30deg);
+}
+
+#six:checked ~ main .seventh
+{
+    transform: translateX(-150px) rotateY(-30deg);
+}
+
+#six:checked ~ main .sixth
+{
+    transform: translateX(-150px) translateZ(70px);
+}
+
+#seven:checked ~ main .first,
+#seven:checked ~ main .second,
+#seven:checked ~ main .third,
+#seven:checked ~ main .forth,
+#seven:checked ~ main .fifth,
+#seven:checked ~ main .sixth
+{
+    transform: translateX(-225px) rotateY(30deg);
+}
+
+#seven:checked ~ main .seventh
+{
+    transform: translateX(-225px) translateZ(70px);
+}
