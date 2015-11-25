@@ -35,7 +35,6 @@ img
     transform: translateX(33%);
 }
 
-
 #radio-photo-2:checked ~ .gallery
 {
     transform: translateX(28%);
@@ -46,7 +45,6 @@ img
     transform: translateX(23%);
 }
 
-
 #radio-photo-4:checked ~ .gallery
 {
     transform: translateX(18%);
@@ -56,7 +54,6 @@ img
 {
     transform: translateX(13%);
 }
-
 
 #radio-photo-6:checked ~ .gallery
 {
