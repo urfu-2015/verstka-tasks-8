@@ -82,7 +82,6 @@ section
     z-index: 6;
 }
 
-
 #slide1:checked ~ section > label > .slide3,
 #slide2:checked ~ section > label > .slide4,
 #slide3:checked ~ section > label > .slide5,
