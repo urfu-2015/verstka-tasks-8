@@ -1,1 +1,186 @@
+input
+{
+    display: none;
+}
+
+body
+{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    background: url(img/main.jpg);
+    perspective: 200px;
+}
+
+main
+{
+    display: flex;
+    width: 1050px;
+    transform-style: preserve-3d;
+    transition-property: transform;
+    transition-duration: 3s;
+}
+
+img
+{
+    width: 100%;
+}
+
+label
+{
+    display: flex;
+    align-self: center;
+    height: 150px;
+    width: 150px;
+    box-shadow: 0 13px 23px 0 #000;
+}
+
+#slide-1:checked ~ main .photo-1,
+#slide-2:checked ~ main .photo-2,
+#slide-3:checked ~ main .photo-3,
+#slide-4:checked ~ main .photo-4,
+#slide-5:checked ~ main .photo-5,
+#slide-6:checked ~ main .photo-6,
+#slide-7:checked ~ main .photo-7
+{
+    transform: rotateY(0deg);
+    z-index: 7;
+}
+
+#slide-1:checked ~ main .photo-2,
+#slide-2:checked ~ main .photo-3,
+#slide-3:checked ~ main .photo-4,
+#slide-4:checked ~ main .photo-5,
+#slide-5:checked ~ main .photo-6,
+#slide-6:checked ~ main .photo-7
+{
+    transform: rotateY(-30deg) translateX(-50px);
+    z-index: 6;
+}
+
+#slide-1:checked ~ main .photo-3,
+#slide-2:checked ~ main .photo-4,
+#slide-3:checked ~ main .photo-5,
+#slide-4:checked ~ main .photo-6,
+#slide-5:checked ~ main .photo-7
+{
+    transform: rotateY(-25deg) translateX(-100px);
+    z-index: 5;
+}
+
+#slide-1:checked ~ main .photo-4,
+#slide-2:checked ~ main .photo-5,
+#slide-3:checked ~ main .photo-6,
+#slide-4:checked ~ main .photo-7
+{
+    transform: rotateY(-20deg) translateX(-150px);
+    z-index: 4;
+}
+
+#slide-1:checked ~ main .photo-5,
+#slide-2:checked ~ main .photo-6,
+#slide-3:checked ~ main .photo-7
+{
+    transform: rotateY(-15deg) translateX(-200px);
+    z-index: 3;
+}
+
+#slide-1:checked ~ main .photo-6,
+#slide-2:checked ~ main .photo-7
+{
+    transform: rotateY(-10deg) translateX(-270px);
+    z-index: 2;
+}
+
+#slide-1:checked ~ main .photo-7
+{
+    transform: rotateY(-10deg) translateX(-330px);
+    z-index: 1;
+}
+
+#slide-2:checked ~ main .photo-1,
+#slide-3:checked ~ main .photo-2,
+#slide-4:checked ~ main .photo-3,
+#slide-5:checked ~ main .photo-4,
+#slide-6:checked ~ main .photo-5,
+#slide-7:checked ~ main .photo-6
+{
+    transform: rotateY(30deg) translateX(50px);
+    z-index: 6;
+}
+
+#slide-3:checked ~ main .photo-1,
+#slide-4:checked ~ main .photo-2,
+#slide-5:checked ~ main .photo-3,
+#slide-6:checked ~ main .photo-4,
+#slide-7:checked ~ main .photo-5
+{
+    transform: rotateY(25deg) translateX(100px);
+    z-index: 5;
+}
+
+#slide-4:checked ~ main .photo-1,
+#slide-5:checked ~ main .photo-2,
+#slide-6:checked ~ main .photo-3,
+#slide-7:checked ~ main .photo-4
+{
+    transform: rotateY(20deg) translateX(150px);
+    z-index: 4;
+}
+
+#slide-5:checked ~ main .photo-1,
+#slide-6:checked ~ main .photo-2,
+#slide-7:checked ~ main .photo-3
+{
+    transform: rotateY(15deg) translateX(200px);
+    z-index: 3;
+}
+
+#slide-6:checked ~ main .photo-1,
+#slide-7:checked ~ main .photo-2
+{
+    transform: rotateY(10deg) translateX(270px);
+    z-index: 2;
+}
+
+#slide-7:checked ~ main .photo-1
+{
+    transform: rotateY(10deg) translateX(330px);
+    z-index: 1;
+}
+
+#slide-1:checked ~ main
+{
+    transform: translateX(450px);
+}
+
+#slide-2:checked ~ main
+{
+    transform: translateX(300px);
+}
+
+#slide-3:checked ~ main
+{
+    transform: translateX(150px);
+}
+
+#slide-4:checked ~ main
+{
+    transform: translateX(0);
+}
+
+#slide-5:checked ~ main
+{
+    transform: translateX(-150px);
+}
+
+#slide-6:checked ~ main
+{
+    transform: translateX(-300px);
+}
+
+#slide-7:checked ~ main
+{
+    transform: translateX(-450px);
+}
 
