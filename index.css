@@ -19,7 +19,7 @@ label
     height: 120px;
     transition-property: transform;
     transition-duration: .5s;
-    box-shadow: 0 1em 2em rgba(60, 63, 65, 0.78);
+    box-shadow: 0 1em 2em rgba(60, 63, 65, .78);
 }
 
 #img-melon
