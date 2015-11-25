@@ -1,1 +1,187 @@
+body{
+    width: 100%;
 
+}
+.main{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+input{
+    display: none;
+}
+
+.gallery{
+    display: flex;
+    transform-style: preserve-3d;
+    transition:all .5s ease-in;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 100px;
+
+}
+
+.image{
+    width: 200px;
+    z-index: 10;
+    height: 330px;
+    transition: all .5s ease-in;
+    box-shadow: 10px 10px 25px 0 rgba(0,0,0,.5);
+
+}
+img{
+    width: 100%;
+    height: 100%;
+    transform: translateZ(-100px) rotateY(45deg);
+
+}
+#first:checked~div{
+
+    transform:translateX(20%);
+
+}
+#second:checked~div{
+
+    transform:translateX(13%);
+
+
+}
+#third:checked~div{
+
+    transform:translateX(8%);
+
+}
+#five:checked~div{
+
+    transform:translateX(-20%);
+
+}
+#six:checked~div{
+
+    transform:translateX(-29%);
+
+}
+#seven:checked~div{
+
+    transform:translateX(-38%);
+
+}
+#first:checked ~ .gallery > .first,
+#second:checked ~ .gallery > .second,
+#third:checked ~ .gallery > .third,
+#four:checked ~ .gallery > .four,
+#five:checked ~ .gallery > .five,
+#six:checked ~ .gallery > .six,
+#seven:checked ~ .gallery > .seven
+{
+    transform: scale(1.1);
+    z-index: 100;
+}
+
+#first:checked ~ .gallery > .second,
+#second:checked ~ .gallery > .third,
+#third:checked ~ .gallery > .four,
+#four:checked ~ .gallery > .five,
+#five:checked ~ .gallery > .six,
+#six:checked ~ .gallery > .seven
+{
+    transform: perspective(400px) rotateY(-50deg) translateZ(-50px);
+    margin-left: -100px;
+}
+
+#first:checked ~ .gallery > .third,
+#second:checked ~ .gallery > .four,
+#third:checked ~ .gallery > .five,
+#four:checked ~ .gallery > .six,
+#five:checked ~ .gallery > .seven
+{
+    transform: perspective(400px) rotateY(-48deg) translateZ(-50px);
+    margin-left: -100px;
+}
+
+#first:checked ~ .gallery > .four,
+#second:checked ~ .gallery > .five,
+#third:checked ~ .gallery > .six,
+#four:checked ~ .gallery > .seven
+{
+    transform: perspective(400px) rotateY(-46deg) translateZ(-50px);
+    margin-left: -150px;
+}
+
+#first:checked ~ .gallery > .five,
+#second:checked ~ .gallery > .six,
+#third:checked ~ .gallery > .seven
+{
+    transform: perspective(400px) rotateY(-44deg) translateZ(-50px);
+    margin-left: -160px;
+}
+
+#first:checked ~ .gallery > .six,
+#second:checked ~ .gallery > .seven
+{
+    transform: perspective(400px) rotateY(-42deg) translateZ(-50px);
+    margin-left: -170px;
+}
+
+#first:checked ~ .gallery > .seven
+{
+    transform: perspective(400px) rotateY(-40deg) translateZ(-50px);
+    margin-left: -180px;
+}
+
+#second:checked ~ .gallery > .first,
+#third:checked ~ .gallery > .second,
+#four:checked ~ .gallery > .third,
+#five:checked ~ .gallery > .four,
+#six:checked ~ .gallery > .five,
+#seven:checked ~ .gallery > .six
+{
+    transform: perspective(400px) rotateY(50deg) translateZ(-50px);
+    margin-right: -100px;
+}
+
+#third:checked ~ .gallery > .first,
+#four:checked ~ .gallery > .second,
+#five:checked ~ .gallery > .third,
+#six:checked ~ .gallery > .four,
+#seven:checked ~ .gallery > .five
+{
+    transform: perspective(400px) rotateY(48deg) translateZ(-50px);
+    margin-right: -100px;
+}
+
+#four:checked ~ .gallery > .first,
+#five:checked ~ .gallery > .second,
+#six:checked ~ .gallery > .third,
+#seven:checked ~ .gallery > .four
+{
+    transform: perspective(400px) rotateY(46deg) translateZ(-50px);
+    margin-right: -150px;
+}
+
+#five:checked ~ .gallery > .first,
+#six:checked ~ .gallery > .second,
+#seven:checked ~ .gallery > .third
+{
+    transform: perspective(400px) rotateY(44deg) translateZ(-50px);
+    margin-right: -160px;
+}
+
+#six:checked ~ .gallery > .first,
+#seven:checked ~ .gallery > .second
+{
+    transform: perspective(400px) rotateY(42deg) translateZ(-50px);
+    margin-right: -170px;
+}
+
+#seven:checked ~ .gallery > .first
+{
+    transform: perspective(400px) rotateY(40deg) translateZ(-50px);
+    margin-right: -180px;
+}
