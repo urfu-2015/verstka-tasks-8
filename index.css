@@ -12,7 +12,7 @@ main
     align-items: center;
     width: 100%;
     height: 100vh;
-    background-color: #eee;
+    background-color: #f5f7f8;
 }
 
 .gallery
@@ -35,7 +35,7 @@ label
     cursor: pointer;
 }
 
-.vegetables
+.items
 {
     transition: right 1s ease-out 0s, transform 1s ease-in-out 0s;
     position: relative;
@@ -46,251 +46,251 @@ label
 img
 {
     object-fit: contain;
-    height: 250px;
-    width: 250px;
+    height: 200px;
+    width: 200px;
 }
 
-#image1:checked ~ .gallery .veg1
+#image1:checked ~ .gallery .item1
 {
-    transform: translateX(700px) translateZ(80px);
+    transform: translateX(600px) translateZ(80px);
 }
 
-#image1:checked ~ .gallery .veg2
+#image1:checked ~ .gallery .item2
 {
-    transform: translateX(600px) rotateY(-50deg);
+    transform: translateX(500px) rotateY(-35deg);
 }
 
-#image1:checked ~ .gallery .veg3
+#image1:checked ~ .gallery .item3
 {
-    transform: translateX(500px) rotateY(-45deg);
+    transform: translateX(400px) rotateY(-30deg);
 }
 
-#image1:checked ~ .gallery .veg4
+#image1:checked ~ .gallery .item4
 {
-    transform: translateX(400px) rotateY(-40deg);
+    transform: translateX(300px) rotateY(-25deg);
 }
 
-#image1:checked ~ .gallery .veg5
+#image1:checked ~ .gallery .item5
+{
+    transform: translateX(200px) rotateY(-20deg);
+}
+
+#image1:checked ~ .gallery .item6
+{
+    transform: translateX(100px) rotateY(-15deg);
+}
+
+#image1:checked ~ .gallery .item7
+{
+    transform: translateX(0) rotateY(-10deg);
+}
+
+#image2:checked ~ .gallery .item1
+{
+    transform: translateX(500px) rotateY(35deg);
+}
+
+#image2:checked ~ .gallery .item2
+{
+    transform: translateX(400px) translateZ(80px);
+}
+
+#image2:checked ~ .gallery .item3
 {
     transform: translateX(300px) rotateY(-35deg);
 }
 
-#image1:checked ~ .gallery .veg6
+#image2:checked ~ .gallery .item4
 {
     transform: translateX(200px) rotateY(-30deg);
 }
 
-#image1:checked ~ .gallery .veg7
+#image2:checked ~ .gallery .item5
 {
-    transform: translateX(0) rotateY(-25deg);
+    transform: translateX(100px) rotateY(-25deg);
 }
 
-#image2:checked ~ .gallery .veg1
+#image2:checked ~ .gallery .item6
 {
-    transform: translateX(600px) rotateY(50deg);
+    transform: translateX(0) rotateY(-20deg);
 }
 
-#image2:checked ~ .gallery .veg2
+#image2:checked ~ .gallery .item7
 {
-    transform: translateX(500px) translateZ(80px);
+    transform: translateX(-100px) rotateY(-15deg);
 }
 
-#image2:checked ~ .gallery .veg3
+#image3:checked ~ .gallery .item1
 {
-    transform: translateX(400px) rotateY(-50deg);
+    transform: translateX(400px) rotateY(30deg);
 }
 
-#image2:checked ~ .gallery .veg4
-{
-    transform: translateX(300px) rotateY(-45deg);
-}
-
-#image2:checked ~ .gallery .veg5
-{
-    transform: translateX(200px) rotateY(-40deg);
-}
-
-#image2:checked ~ .gallery .veg6
-{
-    transform: translateX(0) rotateY(-35deg);
-}
-
-#image2:checked ~ .gallery .veg7
-{
-    transform: translateX(-200px) rotateY(-30deg);
-}
-
-#image3:checked ~ .gallery .veg1
-{
-    transform: translateX(500px) rotateY(45deg);
-}
-
-#image3:checked ~ .gallery .veg2
-{
-    transform: translateX(400px) rotateY(50deg);
-}
-
-#image3:checked ~ .gallery .veg3
-{
-    transform: translateX(300px) translateZ(80px);
-}
-
-#image3:checked ~ .gallery .veg4
-{
-    transform: translateX(200px) rotateY(-50deg);
-}
-
-#image3:checked ~ .gallery .veg5
-{
-    transform: translateX(0) rotateY(-45deg);
-}
-
-#image3:checked ~ .gallery .veg6
-{
-    transform: translateX(-200px) rotateY(-40deg);
-}
-
-#image3:checked ~ .gallery .veg7
-{
-    transform: translateX(-300px) rotateY(-35deg);
-}
-
-#image4:checked ~ .gallery .veg1
-{
-    transform: translateX(375px) rotateY(28deg);
-}
-
-#image4:checked ~ .gallery .veg2
-{
-    transform: translateX(210px) rotateY(25deg);
-}
-
-#image4:checked ~ .gallery .veg3
-{
-    transform: translateX(40px) rotateY(35deg);
-}
-
-#image4:checked ~ .gallery .veg4
-{
-    transform: translateZ(80px);
-}
-
-#image4:checked ~ .gallery .veg5
-{
-    transform: translateX(-40px) rotateY(-35deg);
-}
-
-#image4:checked ~ .gallery .veg6
-{
-    transform: translateX(-210px) rotateY(-25deg);
-}
-
-#image4:checked ~ .gallery .veg7
-{
-    transform: translateX(-375px) rotateY(-28deg);
-}
-
-#image5:checked ~ .gallery .veg1
+#image3:checked ~ .gallery .item2
 {
     transform: translateX(300px) rotateY(35deg);
 }
 
-#image5:checked ~ .gallery .veg2
+#image3:checked ~ .gallery .item3
 {
-    transform: translateX(200px) rotateY(40deg);
+    transform: translateX(200px) translateZ(80px);
 }
 
-#image5:checked ~ .gallery .veg3
+#image3:checked ~ .gallery .item4
 {
-    transform: translateX(0) rotateY(45deg);
+    transform: translateX(100px) rotateY(-35deg);
 }
 
-#image5:checked ~ .gallery .veg4
+#image3:checked ~ .gallery .item5
 {
-    transform: translateX(-200px) rotateY(50deg);
+    transform: translateX(0) rotateY(-30deg);
 }
 
-#image5:checked ~ .gallery .veg5
+#image3:checked ~ .gallery .item6
 {
-    transform: translateX(-300px) translateZ(80px);
+    transform: translateX(-100px) rotateY(-25deg);
 }
 
-#image5:checked ~ .gallery .veg6
+#image3:checked ~ .gallery .item7
 {
-    transform: translateX(-400px) rotateY(-50deg);
+    transform: translateX(-200px) rotateY(-20deg);
 }
 
-#image5:checked ~ .gallery .veg7
+#image4:checked ~ .gallery .item1
 {
-    transform: translateX(-500px) rotateY(-45deg);
+    transform: translateX(300px) rotateY(25deg);
 }
 
-#image6:checked ~ .gallery .veg1
+#image4:checked ~ .gallery .item2
 {
     transform: translateX(200px) rotateY(30deg);
 }
 
-#image6:checked ~ .gallery .veg2
+#image4:checked ~ .gallery .item3
 {
-    transform: translateX(0) rotateY(35deg);
+    transform: translateX(100px) rotateY(35deg);
 }
 
-#image6:checked ~ .gallery .veg3
+#image4:checked ~ .gallery .item4
 {
-    transform: translateX(-200px) rotateY(40deg);
+    transform: translateZ(80px);
 }
 
-#image6:checked ~ .gallery .veg4
+#image4:checked ~ .gallery .item5
 {
-    transform: translateX(-300px) rotateY(45deg);
+    transform: translateX(-100px) rotateY(-35deg);
 }
 
-#image6:checked ~ .gallery .veg5
+#image4:checked ~ .gallery .item6
 {
-    transform: translateX(-400px) rotateY(50deg);
+    transform: translateX(-200px) rotateY(-30deg);
 }
 
-#image6:checked ~ .gallery .veg6
+#image4:checked ~ .gallery .item7
 {
-    transform: translateX(-500px) translateZ(80px);
+    transform: translateX(-300px) rotateY(-25deg);
 }
 
-#image6:checked ~ .gallery .veg7
+#image5:checked ~ .gallery .item1
 {
-    transform: translateX(-600px) rotateY(-50deg);
+    transform: translateX(200px) rotateY(20deg);
 }
 
-#image7:checked ~ .gallery .veg1
+#image5:checked ~ .gallery .item2
 {
-    transform: translateX(0) rotateY(25deg);
+    transform: translateX(100px) rotateY(25deg);
 }
 
-#image7:checked ~ .gallery .veg2
+#image5:checked ~ .gallery .item3
+{
+    transform: translateX(0) rotateY(30deg);
+}
+
+#image5:checked ~ .gallery .item4
+{
+    transform: translateX(-100px) rotateY(35deg);
+}
+
+#image5:checked ~ .gallery .item5
+{
+    transform: translateX(-200px) translateZ(80px);
+}
+
+#image5:checked ~ .gallery .item6
+{
+    transform: translateX(-300px) rotateY(-35deg);
+}
+
+#image5:checked ~ .gallery .item7
+{
+    transform: translateX(-400px) rotateY(-30deg);
+}
+
+#image6:checked ~ .gallery .item1
+{
+    transform: translateX(100px) rotateY(15deg);
+}
+
+#image6:checked ~ .gallery .item2
+{
+    transform: translateX(0) rotateY(20deg);
+}
+
+#image6:checked ~ .gallery .item3
+{
+    transform: translateX(-100px) rotateY(25deg);
+}
+
+#image6:checked ~ .gallery .item4
 {
     transform: translateX(-200px) rotateY(30deg);
 }
 
-#image7:checked ~ .gallery .veg3
+#image6:checked ~ .gallery .item5
 {
     transform: translateX(-300px) rotateY(35deg);
 }
 
-#image7:checked ~ .gallery .veg4
+#image6:checked ~ .gallery .item6
 {
-    transform: translateX(-400px) rotateY(40deg);
+    transform: translateX(-400px) translateZ(80px);
 }
 
-#image7:checked ~ .gallery .veg5
+#image6:checked ~ .gallery .item7
 {
-    transform: translateX(-500px) rotateY(45deg);
+    transform: translateX(-500px) rotateY(-35deg);
 }
 
-#image7:checked ~ .gallery .veg6
+#image7:checked ~ .gallery .item1
 {
-    transform: translateX(-600px) rotateY(50deg);
+    transform: translateX(0) rotateY(10deg);
 }
 
-#image7:checked ~ .gallery .veg7
+#image7:checked ~ .gallery .item2
 {
-    transform: translateX(-700px) translateZ(80px);
+    transform: translateX(-100px) rotateY(15deg);
+}
+
+#image7:checked ~ .gallery .item3
+{
+    transform: translateX(-200px) rotateY(20deg);
+}
+
+#image7:checked ~ .gallery .item4
+{
+    transform: translateX(-300px) rotateY(25deg);
+}
+
+#image7:checked ~ .gallery .item5
+{
+    transform: translateX(-400px) rotateY(30deg);
+}
+
+#image7:checked ~ .gallery .item6
+{
+    transform: translateX(-500px) rotateY(35deg);
+}
+
+#image7:checked ~ .gallery .item7
+{
+    transform: translateX(-600px) translateZ(80px);
 }
