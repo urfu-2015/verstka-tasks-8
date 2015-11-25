@@ -27,7 +27,7 @@ article > label > img
     min-height: 100%;
 }
 
-article >label
+article > label
 {
     display: flex;
     justify-content: center;
@@ -74,7 +74,7 @@ article[class^=veg]
 }
 #veg-1:checked ~ main > .veg-7
 {
-    transform: translateX(0px) rotateY(-50deg);
+    transform: translateX(0) rotateY(-50deg);
 }
 /*-----------------*/
 
@@ -102,7 +102,7 @@ article[class^=veg]
 }
 #veg-2:checked ~ main > .veg-6
 {
-    transform: translateX(0px) rotateY(-50deg);
+    transform: translateX(0) rotateY(-50deg);
 }
 #veg-2:checked ~ main > .veg-7
 {
@@ -130,7 +130,7 @@ article[class^=veg]
 }
 #veg-3:checked ~ main > .veg-5
 {
-    transform: translateX(0px) rotateY(-50deg);
+    transform: translateX(0) rotateY(-50deg);
 }
 #veg-3:checked ~ main > .veg-6
 {
@@ -157,7 +157,7 @@ article[class^=veg]
 }
 #veg-4:checked ~ main > .veg-4
 {
-    transform: translateX(0px) rotateY(0deg) translateZ(50px);
+    transform: translateX(0) rotateY(0deg) translateZ(50px);
 }
 #veg-4:checked ~ main > .veg-5
 {
@@ -185,7 +185,7 @@ article[class^=veg]
 }
 #veg-5:checked ~ main > .veg-3
 {
-    transform: translateX(0px) rotateY(50deg);
+    transform: translateX(0) rotateY(50deg);
 }
 #veg-5:checked ~ main > .veg-4
 {
@@ -213,7 +213,7 @@ article[class^=veg]
 }
 #veg-6:checked ~ main > .veg-2
 {
-    transform: translateX(0px) rotateY(50deg);
+    transform: translateX(0) rotateY(50deg);
 }
 #veg-6:checked ~ main > .veg-3
 {
@@ -240,7 +240,7 @@ article[class^=veg]
 /*For veg-7 checked*/
 #veg-7:checked ~ main > .veg-1
 {
-    transform: translateX(0px) rotateY(50deg);
+    transform: translateX(0) rotateY(50deg);
     margin-left: 600px;
 }
 #veg-7:checked ~ main > .veg-2
