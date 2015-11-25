@@ -37,7 +37,7 @@ input
     height: 100%;
     align-items: center;
     position: relative;
-    box-shadow: 0 0 20px rgba(0,0,0,0.7);
+    box-shadow: 0 0 20px rgba(0,0,0,.7);
     transition: transform 2s ease-in-out 0s, left 1.5s ease-in-out 0s;
 
 }
@@ -315,14 +315,12 @@ input
     transform: rotateY(50deg);
 }
 
-
 #block-6:checked ~ .block-2
 {
     left: -8%;
     z-index: 3;
     transform: rotateY(50deg);
 }
-
 
 #block-6:checked ~ .block-3
 {
@@ -331,14 +329,12 @@ input
     transform: rotateY(50deg);
 }
 
-
 #block-6:checked ~ .block-4
 {
     left: -18%;
     z-index: 5;
     transform: rotateY(50deg);
 }
-
 
 #block-6:checked ~ .block-5
 {
