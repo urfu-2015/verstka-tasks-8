@@ -1,1 +1,319 @@
+body
+{
+    background: #d8d8d8;
+}
 
+.image
+{
+    position: absolute;
+    height: 250px;
+    top: 20%;
+    border: 2px solid #666;
+}
+
+.firstImg
+{
+    z-index: 1;
+    left: 0;
+    transform: perspective(300px) translateZ(-60px) rotateY(50deg);
+}
+
+.secondImg
+{
+    z-index: 2;
+    left: 20%;
+    transform: perspective(300px) translateZ(-50px) translateX(-40%) rotateY(40deg);
+}
+
+.thirdImg
+{
+    left: 30%;
+    transform: perspective(300px) translateZ(-40px) translateX(-25%) rotateY(30deg);
+    z-index: 3;
+}
+
+.fourthImg
+{
+    left: 41%;
+    transform: perspective(300px);
+    z-index: 4;
+}
+
+.fifthImg
+{
+    right: 30%;
+    transform: perspective(300px) translateZ(-40px) translateX(25%) rotateY(-30deg);
+    z-index: 3;
+}
+
+.sixthImg
+{
+    right: 20%;
+    transform: perspective(300px) translateZ(-50px) translateX(40%) rotateY(-40deg);
+    z-index: 2;
+}
+
+.seventhImg
+{
+    right: 0;
+    transform: perspective(300px) translateZ(-60px) rotateY(-50deg);
+    z-index: 1;
+}
+
+.invisible
+{
+    display: none;
+}
+
+/*Вопрос: относительно чего отсчитывается положение: относительно текущего положения или общего;*/
+/*Выбрано 1 изображение*/
+#firstFruit:checked ~ .firstFruit
+{
+    transform:;
+}
+
+#firstFruit:checked ~ .secondFruit
+{
+    transform:;
+}
+
+#firstFruit:checked ~ .thirdFruit
+{
+    transform:;
+}
+
+#firstFruit:checked ~ .fourthFruit
+{
+    transform:;
+}
+
+#firstFruit:checked ~ .fifthFruit
+{
+    transform:;
+}
+
+#firstFruit:checked ~ .sixthFruit
+{
+    transform:;
+}
+
+#firstFruit:checked ~ .seventhFruit
+{
+    transform:;
+}
+
+/*Выбрано 2 изображение*/
+#secondFruit:checked ~ .firstFruit
+{
+    transform:;
+}
+
+#secondFruit:checked ~ .secondFruit
+{
+    transform:;
+}
+
+#secondFruit:checked ~ .thirdFruit
+{
+    transform:;
+}
+
+#secondFruit:checked ~ .fourthFruit
+{
+    transform:;
+}
+
+#secondFruit:checked ~ .fifthFruit
+{
+    transform:;
+}
+
+#secondFruit:checked ~ .sixthFruit
+{
+    transform:;
+}
+
+#secondFruit:checked ~ .seventhFruit
+{
+    transform:;
+}
+
+/*Выбрано 3 изображение*/
+#thirdFruit:checked ~ .firstFruit
+{
+    transform:;
+}
+
+#thirdFruit:checked ~ .secondFruit
+{
+    transform:;
+}
+
+#thirdFruit:checked ~ .thirdFruit
+{
+    transform:;
+}
+
+#thirdFruit:checked ~ .fourthFruit
+{
+    transform:;
+}
+
+#thirdFruit:checked ~ .fifthFruit
+{
+    transform:;
+}
+
+#thirdFruit:checked ~ .sixthFruit
+{
+    transform:;
+}
+
+#thirdFruit:checked ~ .seventhFruit
+{
+    transform:;
+}
+
+/*Выбрано 4 изображение*/
+#fourthFruit:checked ~ .firstFruit
+{
+    transform:;
+}
+
+#fourthFruit:checked ~ .secondFruit
+{
+    transform:;
+}
+
+#fourthFruit:checked ~ .thirdFruit
+{
+    transform:;
+}
+
+#fourthFruit:checked ~ .fourthFruit
+{
+    transform:;
+}
+
+#fourthFruit:checked ~ .fifthFruit
+{
+    transform:;
+}
+
+#fourthFruit:checked ~ .sixthFruit
+{
+    transform:;
+}
+
+#fourthFruit:checked ~ .seventhFruit
+{
+    transform:;
+}
+
+/*Выбрано 5 изображение*/
+#fifthFruit:checked ~ .firstFruit
+{
+    transform:;
+}
+
+#fifthFruit:checked ~ .secondFruit
+{
+    transform:;
+}
+
+#fifthFruit:checked ~ .thirdFruit
+{
+    transform:;
+}
+
+#fifthFruit:checked ~ .fourthFruit
+{
+    transform:;
+}
+
+#fifthFruit:checked ~ .fifthFruit
+{
+    transform:;
+}
+
+#fifthFruit:checked ~ .sixthFruit
+{
+    transform:;
+}
+
+#fifthFruit:checked ~ .seventhFruit
+{
+    transform:;
+}
+
+/*Выбрано 6 изображение*/
+#sixthFruit:checked ~ .firstFruit
+{
+    transform:;
+}
+
+#sixthFruit:checked ~ .secondFruit
+{
+    transform:;
+}
+
+#sixthFruit:checked ~ .thirdFruit
+{
+    transform:;
+}
+
+#sixthFruit:checked ~ .fourthFruit
+{
+    transform:;
+}
+
+#sixthFruit:checked ~ .fifthFruit
+{
+    transform:;
+}
+
+#sixthFruit:checked ~ .sixthFruit
+{
+    transform:;
+}
+
+#sixthFruit:checked ~ .seventhFruit
+{
+    transform:;
+}
+
+/*Выбрано 7 изображение*/
+#seventhFruit:checked ~ .firstFruit
+{
+    transform:;
+}
+
+#seventhFruit:checked ~ .secondFruit
+{
+    transform:;
+}
+
+#seventhFruit:checked ~ .thirdFruit
+{
+    transform:;
+}
+
+#seventhFruit:checked ~ .fourthFruit
+{
+    transform:;
+}
+
+#seventhFruit:checked ~ .fifthFruit
+{
+    transform:;
+}
+
+#seventhFruit:checked ~ .sixthFruit
+{
+    transform:;
+}
+
+#seventhFruit:checked ~ .seventhFruit
+{
+    transform:;
+}
