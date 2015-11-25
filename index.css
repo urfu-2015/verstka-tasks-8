@@ -1,1 +1,209 @@
+body
+{
+    height: 100%;
+    margin: 0 auto;
+}
+main
+{
+    margin: 0 auto;
+    height: 100%;
+}
+.wrapper
+{
+    margin: 0 auto;
+    display: flex;
+    align-content: center;
+    width: 90%;
+    height: 100vh;
+}
+.hidden
+{
+    display: none;
+}
+.card
+{
+    background: white;
+}
+#radio1 ~ .wrapper .all .card1,
+#radio2 ~ .wrapper .all .card2,
+#radio3 ~ .wrapper .all .card3,
+#radio4 ~ .wrapper .all .card4,
+#radio5 ~ .wrapper .all .card5,
+#radio6 ~ .wrapper .all .card6,
+#radio7 ~ .wrapper .all .card7
+{
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+#radio1:checked ~ .wrapper .all .card1,
+#radio2:checked ~ .wrapper .all .card2,
+#radio3:checked ~ .wrapper .all .card3,
+#radio4:checked ~ .wrapper .all .card4,
+#radio5:checked ~ .wrapper .all .card5,
+#radio6:checked ~ .wrapper .all .card6,
+#radio7:checked ~ .wrapper .all .card7
+{
+    transform: translateZ(50px);
+    background: white;
+}
+
+#radio1:checked ~ .wrapper .all .r11,
+#radio2:checked ~ .wrapper .all .r21,
+#radio3:checked ~ .wrapper .all .r31,
+#radio4:checked ~ .wrapper .all .r41,
+#radio5:checked ~ .wrapper .all .r51,
+#radio6:checked ~ .wrapper .all .r61
+{
+    transform: rotateY(-40deg);
+}
+
+
+#radio1:checked ~ .wrapper .all .r12,
+#radio2:checked ~ .wrapper .all .r22,
+#radio3:checked ~ .wrapper .all .r32,
+#radio4:checked ~ .wrapper .all .r42,
+#radio5:checked ~ .wrapper .all .r52,
+#radio6:checked ~ .wrapper .all .r62
+{
+    transform: rotateY(-38deg);
+}
+
+
+#radio1:checked ~ .wrapper .all .r13,
+#radio2:checked ~ .wrapper .all .r23,
+#radio3:checked ~ .wrapper .all .r33,
+#radio4:checked ~ .wrapper .all .r43,
+#radio5:checked ~ .wrapper .all .r53,
+#radio6:checked ~ .wrapper .all .r63
+{
+    transform: rotateY(-36deg);
+}
+
+
+#radio1:checked ~ .wrapper .all .r14,
+#radio2:checked ~ .wrapper .all .r24,
+#radio3:checked ~ .wrapper .all .r34,
+#radio4:checked ~ .wrapper .all .r44,
+#radio5:checked ~ .wrapper .all .r54,
+#radio6:checked ~ .wrapper .all .r64
+{
+    transform: rotateY(-34deg);
+}
+
+#radio1:checked ~ .wrapper .all .r15,
+#radio2:checked ~ .wrapper .all .r25,
+#radio3:checked ~ .wrapper .all .r35,
+#radio4:checked ~ .wrapper .all .r45,
+#radio5:checked ~ .wrapper .all .r55,
+#radio6:checked ~ .wrapper .all .r65
+{
+    transform: rotateY(-32deg);
+}
+
+#radio1:checked ~ .wrapper .all .r16,
+#radio2:checked ~ .wrapper .all .r26,
+#radio3:checked ~ .wrapper .all .r36,
+#radio4:checked ~ .wrapper .all .r46,
+#radio5:checked ~ .wrapper .all .r56,
+#radio6:checked ~ .wrapper .all .r66
+{
+    transform: rotateY(-30deg);
+}
+
+#radio1:checked ~ .wrapper .all .l11,
+#radio2:checked ~ .wrapper .all .l21,
+#radio3:checked ~ .wrapper .all .l31,
+#radio4:checked ~ .wrapper .all .l41,
+#radio5:checked ~ .wrapper .all .l51,
+#radio6:checked ~ .wrapper .all .l61,
+#radio7:checked ~ .wrapper .all .l71
+{
+    transform: rotateY(40deg);
+}
+
+
+#radio1:checked ~ .wrapper .all .l12,
+#radio2:checked ~ .wrapper .all .l22,
+#radio3:checked ~ .wrapper .all .l32,
+#radio4:checked ~ .wrapper .all .l42,
+#radio5:checked ~ .wrapper .all .l52,
+#radio6:checked ~ .wrapper .all .l62,
+#radio7:checked ~ .wrapper .all .l72
+{
+    transform: rotateY(38deg);
+}
+
+
+#radio1:checked ~ .wrapper .all .l13,
+#radio2:checked ~ .wrapper .all .l23,
+#radio3:checked ~ .wrapper .all .l33,
+#radio4:checked ~ .wrapper .all .l43,
+#radio5:checked ~ .wrapper .all .l53,
+#radio6:checked ~ .wrapper .all .l63,
+#radio7:checked ~ .wrapper .all .l73
+{
+    transform: rotateY(36deg);
+}
+
+
+#radio1:checked ~ .wrapper .all .l14,
+#radio2:checked ~ .wrapper .all .l24,
+#radio3:checked ~ .wrapper .all .l34,
+#radio4:checked ~ .wrapper .all .l44,
+#radio5:checked ~ .wrapper .all .l54,
+#radio6:checked ~ .wrapper .all .l64,
+#radio7:checked ~ .wrapper .all .l74
+{
+    transform: rotateY(34deg);
+}
+
+
+#radio1:checked ~ .wrapper .all .l15,
+#radio2:checked ~ .wrapper .all .l25,
+#radio3:checked ~ .wrapper .all .l35,
+#radio4:checked ~ .wrapper .all .l45,
+#radio5:checked ~ .wrapper .all .l55,
+#radio6:checked ~ .wrapper .all .l65,
+#radio7:checked ~ .wrapper .all .l75
+{
+    transform: rotateY(32deg);
+}
+
+#radio1:checked ~ .wrapper .all .l16,
+#radio2:checked ~ .wrapper .all .l26,
+#radio3:checked ~ .wrapper .all .l36,
+#radio4:checked ~ .wrapper .all .l46,
+#radio5:checked ~ .wrapper .all .l56,
+#radio6:checked ~ .wrapper .all .l66,
+#radio7:checked ~ .wrapper .all .l76
+{
+    transform: rotateY(30deg);
+}
+
+.img
+{
+    width: 100%;
+    object-fit: cover;
+}
+.all
+{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+
+    transform-style: preserve-3d;
+    perspective: 300px;
+    perspective-origin: 50% 50%;
+
+    align-content: center;
+    justify-content: center;
+    vertical-align: middle;
+    height: 100%;
+}
+
 
