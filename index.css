@@ -1,1 +1,290 @@
+body,
+html
+{
+    height: 100%;
+    overflow: hidden;
+}
+main
+{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    perspective: 800px;
+}
+.wrapper label img
+{
+    object-fit: cover;
+    height: 100%;
+    max-width: 100%;
+}
+input
+{
+    display: none;
+}
+.wrapper {
+    /*display: flex;*/
+    height: 200px;
+    width: 200px;
+    /*border: 1px solid black;*/
+    perspective: 200px;
+    box-shadow: 0 10px 25px -5px rgba(50, 50, 50, 0.75);
+}
+
+.wrapper
+{
+    transition-property: transform, z-index;
+    transition-duration: 1s, 1s;
+}
+
+
+.input#pic1:checked ~ main .wrapper_w1
+{
+    transform: translate(300%) scale(1.1);
+}
+.input#pic1:checked ~ main .wrapper_w2
+{
+    transform: translateX(300%) translate(-30px) rotateY(-50deg);
+    z-index: -10;
+}
+.input#pic1:checked ~ main .wrapper_w3
+{
+    transform: translateX(300%) translate(-130px) rotateY(-40deg);
+    z-index: -20;
+}
+.input#pic1:checked ~ main .wrapper_w4
+{
+    transform: translateX(300%) translate(-230px) rotateY(-30deg);
+    z-index: -30;
+}
+.input#pic1:checked ~ main .wrapper_w5
+{
+    transform: translateX(300%) translate(-330px) rotateY(-20deg);
+    z-index: -40;
+}
+.input#pic1:checked ~ main .wrapper_w6
+{
+    transform: translateX(300%) translate(-430px) rotateY(-10deg);
+    z-index: -50;
+}
+.input#pic1:checked ~ main .wrapper_w7
+{
+    transform: translateX(300%) translate(-530px) rotateY(0deg);
+    z-index: -60;
+}
+
+
+
+
+
+
+
+.input#pic2:checked ~ main .wrapper_w1
+{
+    transform: translateX(200%) translate(30px) rotateY(50deg);
+}
+.input#pic2:checked ~ main .wrapper_w2
+{
+    transform: translate(200%) scale(1.1);
+}
+.input#pic2:checked ~ main .wrapper_w3
+{
+    transform: translateX(200%) translate(-30px) rotateY(-50deg);
+    z-index: -20;
+}
+.input#pic2:checked ~ main .wrapper_w4
+{
+    transform: translateX(200%) translate(-130px) rotateY(-40deg);
+    z-index: -30;
+}
+.input#pic2:checked ~ main .wrapper_w5
+{
+    transform: translateX(200%) translate(-230px) rotateY(-30deg);
+    z-index: -40;
+}
+.input#pic2:checked ~ main .wrapper_w6
+{
+    transform: translateX(200%) translate(-330px) rotateY(-20deg);
+    z-index: -50;
+}
+.input#pic2:checked ~ main .wrapper_w7
+{
+    transform: translateX(200%) translate(-430px) rotateY(-10deg);
+    z-index: -60;
+}
+
+
+
+
+.input#pic3:checked ~ main .wrapper_w1
+{
+    transform: translateX(100%) translate(130px) rotateY(40deg);
+}
+.input#pic3:checked ~ main .wrapper_w2
+{
+    transform: translateX(100%) translate(30px) rotateY(50deg);
+}
+.input#pic3:checked ~ main .wrapper_w3
+{
+    transform: translateX(100%) scale(1.1);
+}
+.input#pic3:checked ~ main .wrapper_w4
+{
+    transform: translateX(100%) translate(-30px) rotateY(-50deg) ;
+    z-index: -10;
+}
+.input#pic3:checked ~ main .wrapper_w5
+{
+    transform: translateX(100%) translate(-130px) rotateY(-40deg);
+    z-index: -20;
+}
+.input#pic3:checked ~ main .wrapper_w6
+{
+    transform: translateX(100%) translate(-230px) rotateY(-30deg);
+    z-index: -30;
+}
+.input#pic3:checked ~ main .wrapper_w7
+{
+    transform: translateX(100%) translate(-330px) rotateY(-20deg);
+    z-index: -40;
+}
+
+.input#pic4:checked ~ main
+{
+    transform-origin: 50% 50%;
+}
+
+.input#pic4:checked ~ main .wrapper_w1
+{
+    transform: translate(230px) rotateY(30deg);
+}
+.input#pic4:checked ~ main .wrapper_w2
+{
+    transform: translate(130px) rotateY(40deg);
+}
+.input#pic4:checked ~ main .wrapper_w3
+{
+    transform: translate(30px) rotateY(50deg);
+}
+.input#pic4:checked ~ main .wrapper_w4
+{
+    transform: scale(1.1);
+}
+.input#pic4:checked ~ main .wrapper_w5
+{
+    transform: translate(-30px) rotateY(-50deg);
+    z-index: -10;
+}
+.input#pic4:checked ~ main .wrapper_w6
+{
+    transform: translate(-130px) rotateY(-40deg);
+    z-index: -20;
+}
+.input#pic4:checked ~ main .wrapper_w7
+{
+    transform: translate(-230px) rotateY(-30deg);
+    z-index: -30;
+}
+
+
+.input#pic5:checked ~ main .wrapper_w1
+{
+    transform: translateX(-100%) translate(330px) rotateY(20deg);
+}
+.input#pic5:checked ~ main .wrapper_w2
+{
+    transform: translateX(-100%) translate(230px) rotateY(30deg);
+}
+.input#pic5:checked ~ main .wrapper_w3
+{
+    transform: translateX(-100%) translate(130px) rotateY(40deg);
+}
+.input#pic5:checked ~ main .wrapper_w4
+{
+    transform: translateX(-100%) translate(30px) rotateY(50deg);
+    /*z-index: -10;*/
+}
+.input#pic5:checked ~ main .wrapper_w5
+{
+    transform: translateX(-100%) scale(1.1);
+    /*z-index: -20;*/
+}
+.input#pic5:checked ~ main .wrapper_w6
+{
+    transform: translateX(-100%) translate(-30px) rotateY(-50deg);
+    z-index: -30;
+}
+.input#pic5:checked ~ main .wrapper_w7
+{
+    transform: translateX(-100%) translate(-130px) rotateY(-40deg);
+    z-index: -40;
+}
+
+
+
+
+.input#pic6:checked ~ main .wrapper_w1
+{
+    transform: translateX(-200%) translate(430px) rotateY(10deg);
+}
+.input#pic6:checked ~ main .wrapper_w2
+{
+    transform: translateX(-200%) translate(330px) rotateY(20deg);
+}
+.input#pic6:checked ~ main .wrapper_w3
+{
+    transform: translateX(-200%) translate(230px) rotateY(30deg);
+}
+.input#pic6:checked ~ main .wrapper_w4
+{
+    transform: translateX(-200%) translate(130px) rotateY(40deg);
+}
+.input#pic6:checked ~ main .wrapper_w5
+{
+    transform: translateX(-200%) translate(30px) rotateY(50deg);
+}
+.input#pic6:checked ~ main .wrapper_w6
+{
+    transform: translateX(-200%) scale(1.1);
+}
+.input#pic6:checked ~ main .wrapper_w7
+{
+    transform: translateX(-200%) translate(-30px) rotateY(-50deg);
+    z-index: -40;
+}
+
+
+.input#pic7:checked ~ main .wrapper_w1
+{
+    transform: translateX(-300%) translate(530px) rotateY(0deg);
+}
+.input#pic7:checked ~ main .wrapper_w2
+{
+    transform: translateX(-300%) translate(430px) rotateY(10deg);
+}
+.input#pic7:checked ~ main .wrapper_w3
+{
+    transform: translateX(-300%) translate(330px) rotateY(20deg);
+}
+.input#pic7:checked ~ main .wrapper_w4
+{
+    transform: translateX(-300%) translate(230px) rotateY(30deg);
+}
+.input#pic7:checked ~ main .wrapper_w5
+{
+    transform: translateX(-300%) translate(130px) rotateY(40deg);
+}
+.input#pic7:checked ~ main .wrapper_w6
+{
+    transform: translateX(-300%) translate(30px) rotateY(50deg);
+}
+.input#pic7:checked ~ main .wrapper_w7
+{
+    transform: translateX(-300%) scale(1.1);
+}
+
+
+
 
