@@ -14,7 +14,7 @@
     margin-left: -150px;
     width: 300px;
     height: 200px;
-    background: url("http://lorempixel.com/300/200/nature") no-repeat;
+    background: url('http://lorempixel.com/300/200/nature') no-repeat;
 }
 
 .visible
@@ -31,44 +31,44 @@
 
 #radio1:checked + #radio2 + #radio3 + #radio4 + #radio5 + #radio6 + #radio7 + div.wrapper #img2
 {
-    transform: translate(-200px, 0) rotateY(-20deg) scaleY(0.75);
+    transform: translate(-200px, 0) rotateY(-20deg) scaleY(.75);
     z-index: 5;
 }
 
 #radio1:checked + #radio2 + #radio3 + #radio4 + #radio5 + #radio6 + #radio7 + div.wrapper #img3
 {
-    transform: translate(-100px, 0) rotateY(-25deg) scaleY(0.75);
+    transform: translate(-100px, 0) rotateY(-25deg) scaleY(.75);
     z-index: 4;
 }
 
 #radio1:checked + #radio2 + #radio3 + #radio4 + #radio5 + #radio6 + #radio7 + div.wrapper #img4
 {
-    transform: translate(0, 0) rotateY(-30deg) scaleY(0.75);
+    transform: translate(0, 0) rotateY(-30deg) scaleY(.75);
     z-index: 3;
 }
 
 #radio1:checked + #radio2 + #radio3 + #radio4 + #radio5 + #radio6 + #radio7 + div.wrapper #img5
 {
-    transform: translate( 100px, 0) rotateY(-35deg) scaleY(0.75);
+    transform: translate( 100px, 0) rotateY(-35deg) scaleY(.75);
     z-index: 2;
 }
 
 #radio1:checked + #radio2 + #radio3 + #radio4 + #radio5 + #radio6 + #radio7 + div.wrapper #img6
 {
-    transform: translate( 200px, 0) rotateY(-40deg) scaleY(0.75);
+    transform: translate( 200px, 0) rotateY(-40deg) scaleY(.75);
     z-index: 1;
 }
 
 #radio1:checked + #radio2 + #radio3 + #radio4 + #radio5 + #radio6 + #radio7 + div.wrapper #img7
 {
-    transform: translate( 300px, 0) rotateY(-45deg) scaleY(0.75);
+    transform: translate( 300px, 0) rotateY(-45deg) scaleY(.75);
     z-index: 0;
 }
 
 /* RADIO2*/
 #radio2:checked + #radio3 + #radio4 + #radio5 + #radio6 + #radio7 + div.wrapper #img1
 {
-    transform: translate(-300px, 0) rotateY(45deg) scaleY(0.75);
+    transform: translate(-300px, 0) rotateY(45deg) scaleY(.75);
     z-index: 0;
 }
 
@@ -80,44 +80,44 @@
 
 #radio2:checked + #radio3 + #radio4 + #radio5 + #radio6 + #radio7 + div.wrapper #img3
 {
-    transform: translate(-100px, 0) rotateY(-25deg) scaleY(0.75);
+    transform: translate(-100px, 0) rotateY(-25deg) scaleY(.75);
     z-index: 4;
 }
 
 #radio2:checked + #radio3 + #radio4 + #radio5 + #radio6 + #radio7 + div.wrapper #img4
 {
-    transform: translate(0, 0) rotateY(-30deg) scaleY(0.75);
+    transform: translate(0, 0) rotateY(-30deg) scaleY(.75);
     z-index: 3;
 }
 
 #radio2:checked + #radio3 + #radio4 + #radio5 + #radio6 + #radio7 + div.wrapper #img5
 {
-    transform: translate( 100px, 0) rotateY(-35deg) scaleY(0.75);
+    transform: translate( 100px, 0) rotateY(-35deg) scaleY(.75);
     z-index: 2;
 }
 
 #radio2:checked + #radio3 + #radio4 + #radio5 + #radio6 + #radio7 + div.wrapper #img6
 {
-    transform: translate( 200px, 0) rotateY(-40deg) scaleY(0.75);
+    transform: translate( 200px, 0) rotateY(-40deg) scaleY(.75);
     z-index: 1;
 }
 
 #radio2:checked + #radio3 + #radio4 + #radio5 + #radio6 + #radio7 + div.wrapper #img7
 {
-    transform: translate( 300px, 0) rotateY(-45deg) scaleY(0.75);
+    transform: translate( 300px, 0) rotateY(-45deg) scaleY(.75);
     z-index: 0;
 }
 
 /* RADIO3*/
 #radio3:checked + #radio4 + #radio5 + #radio6 + #radio7 + div.wrapper #img1
 {
-    transform: translate(-300px, 0) rotateY(45deg) scaleY(0.75);
+    transform: translate(-300px, 0) rotateY(45deg) scaleY(.75);
     z-index: 0;
 }
 
 #radio3:checked + #radio4 + #radio5 + #radio6 + #radio7 + div.wrapper #img2
 {
-    transform: translate(-200px, 0) rotateY(40deg) scaleY(0.75);
+    transform: translate(-200px, 0) rotateY(40deg) scaleY(.75);
     z-index: 1;
 }
 
@@ -129,44 +129,44 @@
 
 #radio3:checked + #radio4 + #radio5 + #radio6 + #radio7 + div.wrapper #img4
 {
-    transform: translate(0, 0) rotateY(-30deg) scaleY(0.75);
+    transform: translate(0, 0) rotateY(-30deg) scaleY(.75);
     z-index: 3;
 }
 
 #radio3:checked + #radio4 + #radio5 + #radio6 + #radio7 + div.wrapper #img5
 {
-    transform: translate( 100px, 0) rotateY(-35deg) scaleY(0.75);
+    transform: translate( 100px, 0) rotateY(-35deg) scaleY(.75);
     z-index: 2;
 }
 
 #radio3:checked + #radio4 + #radio5 + #radio6 + #radio7 + div.wrapper #img6
 {
-    transform: translate( 200px, 0) rotateY(-40deg) scaleY(0.75);
+    transform: translate( 200px, 0) rotateY(-40deg) scaleY(.75);
     z-index: 1;
 }
 
 #radio3:checked + #radio4 + #radio5 + #radio6 + #radio7 + div.wrapper #img7
 {
-    transform: translate( 300px, 0) rotateY(-45deg) scaleY(0.75);
+    transform: translate( 300px, 0) rotateY(-45deg) scaleY(.75);
     z-index: 0;
 }
 
 /* RADIO4*/
 #radio4:checked + #radio5 + #radio6 + #radio7 + div.wrapper #img1
 {
-    transform: translate(-300px, 0) rotateY(45deg) scaleY(0.75);
+    transform: translate(-300px, 0) rotateY(45deg) scaleY(.75);
     z-index: 0;
 }
 
 #radio4:checked + #radio5 + #radio6 + #radio7 + div.wrapper #img2
 {
-    transform: translate(-200px, 0) rotateY(40deg) scaleY(0.75);
+    transform: translate(-200px, 0) rotateY(40deg) scaleY(.75);
     z-index: 1;
 }
 
 #radio4:checked + #radio5 + #radio6 + #radio7 + div.wrapper #img3
 {
-    transform: translate(-100px, 0) rotateY(35deg) scaleY(0.75);
+    transform: translate(-100px, 0) rotateY(35deg) scaleY(.75);
     z-index: 2;
 }
 
@@ -178,44 +178,44 @@
 
 #radio4:checked + #radio5 + #radio6 + #radio7 + div.wrapper #img5
 {
-    transform: translate( 100px, 0) rotateY(-35deg) scaleY(0.75);
+    transform: translate( 100px, 0) rotateY(-35deg) scaleY(.75);
     z-index: 2;
 }
 
 #radio4:checked + #radio5 + #radio6 + #radio7 + div.wrapper #img6
 {
-    transform: translate( 200px, 0) rotateY(-40deg) scaleY(0.75);
+    transform: translate( 200px, 0) rotateY(-40deg) scaleY(.75);
     z-index: 1;
 }
 
 #radio4:checked + #radio5 + #radio6 + #radio7 + div.wrapper #img7
 {
-    transform: translate( 300px, 0) rotateY(-45deg) scaleY(0.75);
+    transform: translate( 300px, 0) rotateY(-45deg) scaleY(.75);
     z-index: 0;
 }
 
 /* RADIO5*/
 #radio5:checked + #radio6 + #radio7 + div.wrapper #img1
 {
-    transform: translate(-300px, 0) rotateY(45deg) scaleY(0.75);
+    transform: translate(-300px, 0) rotateY(45deg) scaleY(.75);
     z-index: 0;
 }
 
-#radio5:checked  + #radio6 + #radio7 + div.wrapper #img2
+#radio5:checked + #radio6 + #radio7 + div.wrapper #img2
 {
-    transform: translate(-200px, 0) rotateY(40deg) scaleY(0.75);
+    transform: translate(-200px, 0) rotateY(40deg) scaleY(.75);
     z-index: 1;
 }
 
 #radio5:checked + #radio6 + #radio7 + div.wrapper #img3
 {
-    transform: translate(-100px, 0) rotateY(35deg) scaleY(0.75);
+    transform: translate(-100px, 0) rotateY(35deg) scaleY(.75);
     z-index: 2;
 }
 
 #radio5:checked + #radio6 + #radio7 + div.wrapper #img4
 {
-    transform: translate(0, 0) rotateY(30deg) scaleY(0.75);
+    transform: translate(0, 0) rotateY(30deg) scaleY(.75);
     z-index: 3;
 }
 
@@ -227,44 +227,44 @@
 
 #radio5:checked + #radio6 + #radio7 + div.wrapper #img6
 {
-    transform: translate( 200px, 0) rotateY(-40deg) scaleY(0.75);
+    transform: translate( 200px, 0) rotateY(-40deg) scaleY(.75);
     z-index: 3;
 }
 
 #radio5:checked + #radio6 + #radio7 + div.wrapper #img7
 {
-    transform: translate( 300px, 0) rotateY(-45deg) scaleY(0.75);
+    transform: translate( 300px, 0) rotateY(-45deg) scaleY(.75);
     z-index: 2;
 }
 
 /* RADIO6*/
 #radio6:checked + #radio7 + div.wrapper #img1
 {
-    transform: translate(-300px, 0) rotateY(45deg) scaleY(0.75);
+    transform: translate(-300px, 0) rotateY(45deg) scaleY(.75);
     z-index: 0;
 }
 
-#radio6:checked  + #radio7 + div.wrapper #img2
+#radio6:checked + #radio7 + div.wrapper #img2
 {
-    transform: translate(-200px, 0) rotateY(40deg) scaleY(0.75);
+    transform: translate(-200px, 0) rotateY(40deg) scaleY(.75);
     z-index: 1;
 }
 
 #radio6:checked + #radio7 + div.wrapper #img3
 {
-    transform: translate(-100px, 0) rotateY(35deg) scaleY(0.75);
+    transform: translate(-100px, 0) rotateY(35deg) scaleY(.75);
     z-index: 2;
 }
 
 #radio6:checked + #radio7 + div.wrapper #img4
 {
-    transform: translate(0, 0) rotateY(30deg) scaleY(0.75);
+    transform: translate(0, 0) rotateY(30deg) scaleY(.75);
     z-index: 3;
 }
 
 #radio6:checked + #radio7 + div.wrapper #img5
 {
-    transform: translate( 100px, 0) rotateY(25deg) scaleY(0.75);
+    transform: translate( 100px, 0) rotateY(25deg) scaleY(.75);
     z-index: 4;
 }
 
@@ -276,44 +276,44 @@
 
 #radio6:checked + #radio7 + div.wrapper #img7
 {
-    transform: translate( 300px, 0) rotateY(-45deg) scaleY(0.75);
+    transform: translate( 300px, 0) rotateY(-45deg) scaleY(.75);
     z-index: 4;
 }
 
 /* RADIO7*/
 #radio7:checked + div.wrapper #img1
 {
-    transform: translate(-300px, 0) rotateY(45deg) scaleY(0.75);
+    transform: translate(-300px, 0) rotateY(45deg) scaleY(.75);
     z-index: 0;
 }
 
 #radio7:checked + div.wrapper #img2
 {
-    transform: translate(-200px, 0) rotateY(40deg) scaleY(0.75);
+    transform: translate(-200px, 0) rotateY(40deg) scaleY(.75);
     z-index: 1;
 }
 
 #radio7:checked + div.wrapper #img3
 {
-    transform: translate(-100px, 0) rotateY(35deg) scaleY(0.75);
+    transform: translate(-100px, 0) rotateY(35deg) scaleY(.75);
     z-index: 2;
 }
 
 #radio7:checked + div.wrapper #img4
 {
-    transform: translate(0, 0) rotateY(30deg) scaleY(0.75);
+    transform: translate(0, 0) rotateY(30deg) scaleY(.75);
     z-index: 3;
 }
 
 #radio7:checked + div.wrapper #img5
 {
-    transform: translate( 100px, 0) rotateY(25deg) scaleY(0.75);
+    transform: translate( 100px, 0) rotateY(25deg) scaleY(.75);
     z-index: 4;
 }
 
 #radio7:checked + div.wrapper #img6
 {
-    transform: translate( 200px, 0) rotateY(20deg) scaleY(0.75);
+    transform: translate( 200px, 0) rotateY(20deg) scaleY(.75);
     z-index: 5;
 }
 
