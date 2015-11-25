@@ -19,12 +19,12 @@ label
     height: 120px;
     transition-property: transform;
     transition-duration: .5s;
-    box-shadow: 0 1em 2em black;
+    box-shadow: 0 1em 2em rgba(60, 63, 65, 0.78);
 }
 
 #img-melon
 {
-    background: url("https://pp.vk.me/c630125/v630125151/1ecc/wMTXhTawg8w.jpg") no-repeat;
+    background: url('https://pp.vk.me/c630125/v630125151/1ecc/wMTXhTawg8w.jpg') no-repeat;
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -36,7 +36,7 @@ label
 
 #img-carrot
 {
-    background: url("https://pp.vk.me/c630125/v630125151/1ed6/frqxQ6oR6Ho.jpg") no-repeat;
+    background: url('https://pp.vk.me/c630125/v630125151/1ed6/frqxQ6oR6Ho.jpg') no-repeat;
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -48,7 +48,7 @@ label
 
 #img-watermelon
 {
-    background: url("https://pp.vk.me/c630125/v630125151/1eec/daAy02g-Fhc.jpg") no-repeat;
+    background: url('https://pp.vk.me/c630125/v630125151/1eec/daAy02g-Fhc.jpg') no-repeat;
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -60,7 +60,7 @@ label
 
 #img-kiwi
 {
-    background: url("https://pp.vk.me/c630125/v630125151/1ec2/xmTB7Eq0e38.jpg") no-repeat;
+    background: url('https://pp.vk.me/c630125/v630125151/1ec2/xmTB7Eq0e38.jpg') no-repeat;
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -72,7 +72,7 @@ label
 
 #img-cucumber
 {
-    background: url("https://pp.vk.me/c630125/v630125151/1eb9/Zgg2HCd0yi4.jpg") no-repeat;
+    background: url('https://pp.vk.me/c630125/v630125151/1eb9/Zgg2HCd0yi4.jpg') no-repeat;
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -84,7 +84,7 @@ label
 
 #img-pepper
 {
-    background: url("https://pp.vk.me/c630125/v630125151/1ede/G-FVz0bas0c.jpg") no-repeat;
+    background: url('https://pp.vk.me/c630125/v630125151/1ede/G-FVz0bas0c.jpg') no-repeat;
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -96,7 +96,7 @@ label
 
 #img-tomato
 {
-    background: url("https://pp.vk.me/c630125/v630125151/1ee5/R4k4jbruF2A.jpg") no-repeat;
+    background: url('https://pp.vk.me/c630125/v630125151/1ee5/R4k4jbruF2A.jpg') no-repeat;
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
