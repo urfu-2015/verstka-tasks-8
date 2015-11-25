@@ -1,1 +1,410 @@
+body
+{
+    background-color: #e9ebeb;
+}
 
+section
+{
+    margin-top: 15%;
+    transform-style: preserve-3d;
+    transition: all 1s ease-out;
+}
+
+input
+{
+    display: none;
+}
+
+
+.photo-wrapper
+{
+    display: inline-block;
+    width: 14%;
+    transition: all 1.5s ease-out;
+    box-shadow: 0 1px 10px #000;
+    height: 200px;
+}
+
+img
+{
+    width: 100%;
+    height: 200px;
+}
+
+
+#radio-photo-1:checked ~ .gallery
+{
+    transform: translateX(33%);
+}
+
+
+#radio-photo-2:checked ~ .gallery
+{
+    transform: translateX(28%);
+}
+
+
+#radio-photo-3:checked ~ .gallery
+{
+    transform: translateX(23%);
+}
+
+
+#radio-photo-4:checked ~ .gallery
+{
+    transform: translateX(18%);
+}
+
+
+#radio-photo-5:checked ~ .gallery
+{
+    transform: translateX(13%);
+}
+
+
+#radio-photo-6:checked ~ .gallery
+{
+    transform: translateX(8%);
+}
+
+#radio-photo-7:checked ~ .gallery
+{
+    transform: translateX(3%);
+}
+
+/*
+--------------------------------------------------------
+Одинаковые позже объединю
+--------------------------------------------------------
+*/
+
+#radio-photo-1:checked ~ .gallery label .photo-1
+{
+    z-index: 80;
+}
+
+#radio-photo-1:checked ~ .gallery label .photo-2 
+{
+    transform: perspective(1000px) rotateY(-50deg) translateZ(-20px);
+    margin: 0 -3%;
+    z-index: 70;
+}
+
+#radio-photo-1:checked ~ .gallery label .photo-3
+{
+    transform: perspective(1000px) rotateY(-50deg) translateZ(-25px);
+    margin: 0 -3%;
+    z-index: 60;
+}
+
+#radio-photo-1:checked ~ .gallery label .photo-4
+{
+    transform: perspective(1000px) rotateY(-50deg) translateZ(-30px);
+    margin: 0 -3%;
+    z-index: 50;
+}
+
+#radio-photo-1:checked ~ .gallery label .photo-5
+{
+    transform: perspective(1000px) rotateY(-50deg) translateZ(-35px);
+    margin: 0 -3%;
+    z-index: 40;
+}
+
+#radio-photo-1:checked ~ .gallery label .photo-6
+{
+    transform: perspective(1000px) rotateY(-50deg) translateZ(-40px);
+    margin: 0 -3%;
+    z-index: 30;
+}
+
+#radio-photo-1:checked ~ .gallery label .photo-7
+{
+    transform: perspective(1000px) rotateY(-50deg) translateZ(-45px);
+    margin: 0 -3%;
+    z-index: 20;
+}
+
+#radio-photo-2:checked ~ .gallery label .photo-1 
+{
+    transform: perspective(1000px) rotateY(50deg) translateZ(-20px);
+    margin: 0 -3%;
+    z-index: 70;
+}
+
+#radio-photo-2:checked ~ .gallery label .photo-2 
+{
+    z-index: 80;
+}
+
+#radio-photo-2:checked ~ .gallery label .photo-3
+{
+    transform: perspective(1000px) rotateY(-50deg) translateZ(-20px);
+    margin: 0 -3%;
+    z-index: 70;
+}
+
+#radio-photo-2:checked ~ .gallery label .photo-4
+{
+    transform: perspective(1000px) rotateY(-50deg) translateZ(-25px);
+    margin: 0 -3%;
+    z-index: 60;
+}
+
+#radio-photo-2:checked ~ .gallery label .photo-5
+{
+    transform: perspective(1000px) rotateY(-50deg) translateZ(-30px);
+    margin: 0 -3%;
+    z-index: 50;
+}
+
+#radio-photo-2:checked ~ .gallery label .photo-6
+{
+    transform: perspective(1000px) rotateY(-50deg) translateZ(-35px);
+    margin: 0 -3%;
+    z-index: 40;
+}
+
+#radio-photo-2:checked ~ .gallery label .photo-7
+{
+    transform: perspective(1000px) rotateY(-50deg) translateZ(-40px);
+    margin: 0 -3%;
+    z-index: 30;
+}
+
+
+
+#radio-photo-3:checked ~ .gallery label .photo-1 
+{
+    transform: perspective(1000px) rotateY(50deg) translateZ(-20px);
+    margin: 0 -3%;
+    z-index: 60;
+}
+
+#radio-photo-3:checked ~ .gallery label .photo-2
+{
+    transform: perspective(1000px) rotateY(50deg) translateZ(-25px);
+    margin: 0 -3%;
+    z-index: 70;
+}
+
+#radio-photo-3:checked ~ .gallery label .photo-3
+{
+    z-index: 80;
+}
+
+#radio-photo-3:checked ~ .gallery label .photo-4
+{
+    transform: perspective(1000px) rotateY(-50deg) translateZ(-20px);
+    margin: 0 -3%;
+    z-index: 70;
+}
+
+#radio-photo-3:checked ~ .gallery label .photo-5
+{
+    transform: perspective(1000px) rotateY(-50deg) translateZ(-25px);
+    margin: 0 -3%;
+    z-index: 60;
+}
+
+#radio-photo-3:checked ~ .gallery label .photo-6
+{
+    transform: perspective(1000px) rotateY(-50deg) translateZ(-30px);
+    margin: 0 -3%;
+    z-index: 50;
+}
+
+#radio-photo-3:checked ~ .gallery label .photo-7
+{
+    transform: perspective(1000px) rotateY(-50deg) translateZ(-35px);
+    margin: 0 -3%;
+    z-index: 40;
+}
+
+#radio-photo-4:checked ~ .gallery label .photo-1 
+{
+    transform: perspective(1000px) rotateY(50deg) translateZ(-30px);
+    margin: 0 -3%;
+    z-index: 50;
+}
+
+#radio-photo-4:checked ~ .gallery label .photo-2
+{
+    transform: perspective(1000px) rotateY(50deg) translateZ(-25px);
+    margin: 0 -3%;
+    z-index: 60;
+}
+
+#radio-photo-4:checked ~ .gallery label .photo-3
+{
+    transform: perspective(1000px) rotateY(50deg) translateZ(-20px);
+    margin: 0 -3%;
+    z-index: 70;
+}
+
+#radio-photo-4:checked ~ .gallery label .photo-4
+{
+    z-index: 80;
+}
+
+#radio-photo-4:checked ~ .gallery label .photo-5
+{
+    transform: perspective(1000px) rotateY(-50deg) translateZ(-20px);
+    margin: 0 -3%;
+    z-index: 70;
+}
+
+#radio-photo-4:checked ~ .gallery label .photo-6
+{
+    transform: perspective(1000px) rotateY(-50deg) translateZ(-25px);
+    margin: 0 -3%;
+    z-index: 60;
+}
+
+#radio-photo-4:checked ~ .gallery label .photo-7
+{
+    transform: perspective(1000px) rotateY(-50deg) translateZ(-30px);
+    margin: 0 -3%;
+    z-index: 50;
+}
+
+#radio-photo-5:checked ~ .gallery label .photo-1 
+{
+    transform: perspective(1000px) rotateY(50deg) translateZ(-30px);
+    margin: 0 -3%;
+    z-index: 40;
+}
+
+#radio-photo-5:checked ~ .gallery label .photo-2
+{
+    transform: perspective(1000px) rotateY(50deg) translateZ(-25px);
+    margin: 0 -3%;
+    z-index: 50;
+}
+
+#radio-photo-5:checked ~ .gallery label .photo-3
+{
+    transform: perspective(1000px) rotateY(50deg) translateZ(-20px);
+    margin: 0 -3%;
+    z-index: 60;
+}
+
+#radio-photo-5:checked ~ .gallery label .photo-4
+{
+    transform: perspective(1000px) rotateY(50deg) translateZ(-20px);
+    margin: 0 -3%;
+    z-index: 70;
+}
+
+#radio-photo-5:checked ~ .gallery label .photo-5
+{
+    z-index: 80;
+}
+
+#radio-photo-5:checked ~ .gallery label .photo-6
+{
+    transform: perspective(1000px) rotateY(-50deg) translateZ(-25px);
+    margin: 0 -3%;
+    z-index: 70;
+}
+
+#radio-photo-5:checked ~ .gallery label .photo-7
+{
+    transform: perspective(1000px) rotateY(-50deg) translateZ(-30px);
+    margin: 0 -3%;
+    z-index: 60;
+}
+
+#radio-photo-6:checked ~ .gallery label .photo-1 
+{
+    transform: perspective(1000px) rotateY(50deg) translateZ(-40px);
+    margin: 0 -3%;
+    z-index: 30;
+}
+
+#radio-photo-6:checked ~ .gallery label .photo-2
+{
+    transform: perspective(1000px) rotateY(50deg) translateZ(-35px);
+    margin: 0 -3%;
+    z-index: 40;
+}
+
+#radio-photo-6:checked ~ .gallery label .photo-3
+{
+    transform: perspective(1000px) rotateY(50deg) translateZ(-30px);
+    margin: 0 -3%;
+    z-index: 50;
+}
+
+#radio-photo-6:checked ~ .gallery label .photo-4
+{
+    transform: perspective(1000px) rotateY(50deg) translateZ(-25px);
+    margin: 0 -3%;
+    z-index: 60;
+}
+
+#radio-photo-6:checked ~ .gallery label .photo-5
+{
+    transform: perspective(1000px) rotateY(50deg) translateZ(-20px);
+    margin: 0 -3%;
+    z-index: 70;
+}
+
+#radio-photo-6:checked ~ .gallery label .photo-5
+{
+    z-index: 80;
+}
+
+#radio-photo-6:checked ~ .gallery label .photo-7
+{
+    transform: perspective(1000px) rotateY(-50deg) translateZ(-20px);
+    margin: 0 -3%;
+    z-index: 70;
+}
+
+#radio-photo-7:checked ~ .gallery label .photo-1 
+{
+    transform: perspective(1000px) rotateY(50deg) translateZ(-45px);
+    margin: 0 -3%;
+    z-index: 20;
+}
+
+#radio-photo-7:checked ~ .gallery label .photo-2
+{
+    transform: perspective(1000px) rotateY(50deg) translateZ(-40px);
+    margin: 0 -3%;
+    z-index: 30;
+}
+
+#radio-photo-7:checked ~ .gallery label .photo-3
+{
+    transform: perspective(1000px) rotateY(50deg) translateZ(-35px);
+    margin: 0 -3%;
+    z-index: 40;
+}
+
+#radio-photo-7:checked ~ .gallery label .photo-4
+{
+    transform: perspective(1000px) rotateY(50deg) translateZ(-30px);
+    margin: 0 -3%;
+    z-index: 50;
+}
+
+#radio-photo-7:checked ~ .gallery label .photo-5
+{
+    transform: perspective(1000px) rotateY(50deg) translateZ(-25px);
+    margin: 0 -3%;
+    z-index: 60;
+}
+
+#radio-photo-7:checked ~ .gallery label .photo-6
+{
+    transform: perspective(1000px) rotateY(50deg) translateZ(-20px);
+    margin: 0 -3%;
+    z-index: 70;
+}
+
+#radio-photo-7:checked ~ .gallery label .photo-6
+{
+    z-index: 80;
+}
