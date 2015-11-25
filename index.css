@@ -1,1 +1,178 @@
+body
+{
+    background-color: #ccc;
+    margin: 0;
+}
 
+main
+{
+    max-width: 100%;
+    min-width: 100%;
+    text-align: center;
+    height: 100%;
+}
+
+.center
+{
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    transform-style: preserve-3d;
+    perspective: 600px;
+    perspective-origin: 50% 50%;
+}
+
+.center div
+{
+    display: inline-block;
+    width: 10%;
+    transition: all .8s ease;
+}
+
+header
+{
+    text-align: center;
+}
+
+img
+{
+    width: 100%;
+    transform: scale(1.5);
+    box-shadow: 0 0 20px #aaa;
+}
+
+input
+{
+    display: none;
+}
+
+#first:checked ~ article .center .one,
+#second:checked ~ article .center .two,
+#third:checked ~ article .center .three,
+#fourth:checked ~ article .center .four,
+#fifth:checked ~ article .center .five,
+#sixth:checked ~ article .center .six,
+#seventh:checked ~ article .center .seven
+{
+    transform: translateZ(40px);
+}
+
+#fourth:checked ~ article .center .one,
+#fourth:checked ~ article .center .two,
+#fourth:checked ~ article .center .three
+{
+    transform: translateX(-10%) rotateY(60deg);
+}
+
+#fourth:checked ~ article .center .five,
+#fourth:checked ~ article .center .six,
+#fourth:checked ~ article .center .seven
+{
+    transform: translateX(10%) rotateY(-60deg);
+}
+
+#first:checked ~ article .center .one
+{
+    transform: translateX(300%);
+}
+
+#first:checked ~ article .center .two,
+#first:checked ~ article .center .three,
+#first:checked ~ article .center .four,
+#first:checked ~ article .center .five,
+#first:checked ~ article .center .six,
+#first:checked ~ article .center .seven
+{
+    transform: translateX(280%) rotateY(-60deg);
+}
+
+#second:checked ~ article .center .two
+{
+    transform: translateX(200%);
+}
+
+#second:checked ~ article .center .one
+{
+    transform: translateX(180%) rotateY(60deg);
+}
+
+#second:checked ~ article .center .three,
+#second:checked ~ article .center .four,
+#second:checked ~ article .center .five,
+#second:checked ~ article .center .six,
+#second:checked ~ article .center .seven
+{
+    transform: translateX(180%) rotateY(-60deg);
+}
+
+#third:checked ~ article .center .three
+{
+    transform: translateX(100%);
+}
+
+#third:checked ~ article .center .one,
+#third:checked ~ article .center .two
+{
+    transform: translateX(80%) rotateY(60deg);
+}
+
+#third:checked ~ article .center .four,
+#third:checked ~ article .center .five,
+#third:checked ~ article .center .six,
+#third:checked ~ article .center .seven
+{
+    transform: translateX(80%) rotateY(-60deg);
+}
+
+#fifth:checked ~ article .center .five
+{
+    transform: translateX(-100%);
+}
+
+#fifth:checked ~ article .center .one,
+#fifth:checked ~ article .center .two,
+#fifth:checked ~ article .center .three,
+#fifth:checked ~ article .center .four
+{
+    transform: translateX(-80%) rotateY(60deg);
+}
+
+#fifth:checked ~ article .center .six,
+#fifth:checked ~ article .center .seven
+{
+    transform: translateX(-80%) rotateY(-60deg);
+}
+
+#sixth:checked ~ article .center .six
+{
+    transform: translateX(-200%);
+}
+
+#sixth:checked ~ article .center .one,
+#sixth:checked ~ article .center .two,
+#sixth:checked ~ article .center .three,
+#sixth:checked ~ article .center .four,
+#sixth:checked ~ article .center .five
+{
+    transform: translateX(-180%) rotateY(60deg);
+}
+
+#sixth:checked ~ article .center .seven
+{
+    transform: translateX(-180%) rotateY(-60deg);
+}
+
+#seventh:checked ~ article .center .seven
+{
+    transform: translateX(-300%);
+}
+
+#seventh:checked ~ article .center .one,
+#seventh:checked ~ article .center .two,
+#seventh:checked ~ article .center .three,
+#seventh:checked ~ article .center .four,
+#seventh:checked ~ article .center .five,
+#seventh:checked ~ article .center .six
+{
+    transform: translateX(-280%) rotateY(60deg);
+}
