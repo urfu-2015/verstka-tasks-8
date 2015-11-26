@@ -39,7 +39,6 @@ main
     box-shadow: 0 0 5px 5px rgba(0, 0, 0, .3);
 }
 
-
 .hover-background
 {
     background-color: rgb(72, 72, 72);
@@ -48,7 +47,6 @@ main
     transition-delay: 0s, .2s;
     display: none;
 }
-
 
 [id='cucumber']:checked ~ .main-content .cucumber:hover .hover-background,
 [id='cabbage']:checked ~ .main-content .cabbage:hover .hover-background,
