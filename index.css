@@ -28,6 +28,7 @@ body
 {
     display: flex;
     justify-content: center;
+    perspective: 400px;
     transform-style: preserve-3d;
     transition-property: transform, transform;
     transform: scale(1.4) rotateY(40deg);
@@ -89,25 +90,6 @@ body
     color: #fff;
     font-size: 12px;
     border: 3px solid #fff;
-    animation-name: animation-round;
-    animation-iteration-count: infinite;
-    animation-duration: 2s;
-}
-@keyframes animation-round
-{
-    0%
-    {
-        border: 3px solid #0f4dea;
-    }
-    50%
-    {
-        transform: scale(1.02);
-        border: 3px solid #15cae5;
-    }
-    100%
-    {
-        border: 3px solid #0f4dea;
-    }
 }
 
 .radio-images:checked + .item:hover .image-checkbox div
@@ -175,92 +157,21 @@ body
 
 .radio-images:not(:checked) + .item:hover
 {
-    transform: rotateY(0deg) scale(1.4) !important;
     z-index: 90;
 }
-.description
- {
-    perspective: 400px;
-    display: none;
-}
-.view-image + .radio-images:checked + .item + .description
-{
-    display: flex;
-    justify-content: center;
-    opacity: 0;
-    padding-top: 100px;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, .3);
-    z-index: -1000;
-}
 .view-image:checked + .radio-images:checked + .item
-{
-    animation-name: show-recipe-image;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-}
-.view-image:checked + .radio-images:checked + .item + .description
-{
-    animation-name: show-recipe;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-}
-
-.view-image + .radio-images:checked + .item
-{
-    animation-name: show-recipe-image;
-    animation-duration: 0s;
-}
-
-@keyframes show-recipe-image
-{
-    50%
-    {
-        transform: rotateX(88deg) translateZ(62px) scale(3);
-        visibility: hidden;
-    }
-    100%
-    {
-        visibility: hidden;
-    }
-}
-@keyframes show-recipe-image-reverse
-{
-    50%
-    {
-        transform: rotateX(88deg) translateZ(62px) scale(3);
-    }
-}
-.view-image:checked + .radio-images:checked + .item + .description div h3,
-.view-image:checked + .radio-images:checked + .item + .description div .d-left,
-.view-image:checked + .radio-images:checked + .item + .description div .d-right
 {
     transform-style: preserve-3d;
     animation-name: show-recipe-content;
     animation-duration: 2s;
     animation-fill-mode: forwards;
 }
+
 @keyframes show-recipe-content
 {
-    49%
-    {
-        visibility: hidden;
-    }
-    50%
-    {
-        width: 150px;
-        height: 0;
-        transform: rotateX(10deg) translateZ(0) scale(3);
-        opacity: 0;
-    }
     100%
     {
-        transform: rotateX(0deg) translateZ(0);
-        opacity: 1;
+        transform:  translateZ(100px) translateY(-200px) rotateX(78deg);
     }
 }
 
@@ -272,70 +183,77 @@ body
     width: 150px;
     height: 0;
 }
-@keyframes show-recipe-content-reverse
-{
-    0%
-    {
-        display: block;
-        transform: rotateX(0deg) translateZ(0);
-        opacity: 1;
-    }
-    49%
-    {
-        width: 150px;
-        height: 0;
-        transform: rotateX(10deg) translateZ(0) scale(3);
-    }
-    100%
-    {
-        top: 200px;
-        width: 150px;
-        height: 0;
-    }
-}
 
-.view-image:checked + .radio-images:checked + .item + .description div
+.description
 {
-    transform-style: preserve-3d;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    background-color: rgba(20, 20, 20, .4);
+    z-index: 1000;
+    transform: translateZ(-1000px) translateY(-1000px) rotateX(90deg);
+}
+.description div
+{
     display: flex;
     flex-wrap: wrap;
     width: 600px;
     height: 800px;
     padding: 20px;
     background-color: #fff;
+}
+.view-image + .radio-images + .item + .description
+{
+    display: none;
+}
+.view-image + .radio-images:checked + .item + .description
+{
+    display: flex;
+}
+.view-image:checked + .radio-images:checked + .item + .description
+{
     animation-name: show-recipe;
-    animation-duration: 2s;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    transition-delay: 2s;
+}
+@keyframes show-recipe
+{
+    100%
+    {
+        transform: translateZ(0px) translateY(0px) rotateX(0deg);
+    }
+}
+/*Здесь должна быть обратная анимация. Но я не знаю как сделать,
+что бы она не работала, когда идет изменение выбраной картинки*/
+.view-image + .radio-images:checked  + .item + .description
+{
+    /* animation-name: hide-recipe;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;*/
+}
+@keyframes hide-recipe
+{
+    0%
+    {
+        transform: translateZ(0px) translateY(0px) rotateX(0deg);
+    }
+    100%
+    {
+       transform: translateZ(-1000px) translateY(-1000px) rotateX(90deg);
+    }
 }
 
 .view-image:checked + .radio-images:checked ~ .item:nth-of-type(n)
 {
     transform-style: flat;
-}
-
-@keyframes show-recipe
-{
-    0%
-    {
-        top: 200px;
-        width: 150px;
-        height: 0;
-        opacity: 0;
-    }
-    50%
-    {
-        top: 200px;
-        width: 150px;
-        height: 0;
-        display: flex;
-        transform: rotateX(10deg) translateZ(0) scale(3);
-    }
-    100%
-    {
-        transform: rotateX(0deg) translateZ(0);
-        z-index: 1000;
-        display: flex;
-        opacity: 1;
-    }
 }
 
 .radio-images:checked + .item .image,
