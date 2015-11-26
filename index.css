@@ -7,6 +7,7 @@ main
 {
     margin: 0 auto;
     height: 100%;
+    background-color: #EEE9E9;
 }
 .wrapper
 {
@@ -23,6 +24,10 @@ main
 .card
 {
     background: white;
+    width: 200px;
+    height: 150px;
+    display: flex;
+    align-content: center;
 }
 #radio1 ~ .wrapper .all .card1,
 #radio2 ~ .wrapper .all .card2,
@@ -32,9 +37,7 @@ main
 #radio6 ~ .wrapper .all .card6,
 #radio7 ~ .wrapper .all .card7
 {
-    width: 150px;
-    height: 150px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
 }
 
 #radio1:checked ~ .wrapper .all .card1,
@@ -45,7 +48,8 @@ main
 #radio6:checked ~ .wrapper .all .card6,
 #radio7:checked ~ .wrapper .all .card7
 {
-    transform: translateZ(50px);
+    transform: translateZ(70px);
+    transition-duration: 2s;
     background: white;
 }
 
@@ -57,6 +61,7 @@ main
 #radio6:checked ~ .wrapper .all .r61
 {
     transform: rotateY(-40deg);
+    transition-duration: 2s;
 }
 
 
@@ -68,6 +73,7 @@ main
 #radio6:checked ~ .wrapper .all .r62
 {
     transform: rotateY(-38deg);
+    transition-duration: 2s;
 }
 
 
@@ -79,6 +85,7 @@ main
 #radio6:checked ~ .wrapper .all .r63
 {
     transform: rotateY(-36deg);
+    transition-duration: 2s;
 }
 
 
@@ -90,6 +97,7 @@ main
 #radio6:checked ~ .wrapper .all .r64
 {
     transform: rotateY(-34deg);
+    transition-duration: 2s;
 }
 
 #radio1:checked ~ .wrapper .all .r15,
@@ -100,6 +108,7 @@ main
 #radio6:checked ~ .wrapper .all .r65
 {
     transform: rotateY(-32deg);
+    transition-duration: 2s;
 }
 
 #radio1:checked ~ .wrapper .all .r16,
@@ -109,7 +118,8 @@ main
 #radio5:checked ~ .wrapper .all .r56,
 #radio6:checked ~ .wrapper .all .r66
 {
-    transform: rotateY(-30deg);
+    transform: rotateY(-70deg);
+    transition-duration: 2s;
 }
 
 #radio1:checked ~ .wrapper .all .l11,
@@ -121,6 +131,7 @@ main
 #radio7:checked ~ .wrapper .all .l71
 {
     transform: rotateY(40deg);
+    transition-duration: 2s;
 }
 
 
@@ -133,6 +144,7 @@ main
 #radio7:checked ~ .wrapper .all .l72
 {
     transform: rotateY(38deg);
+    transition-duration: 2s;
 }
 
 
@@ -145,6 +157,7 @@ main
 #radio7:checked ~ .wrapper .all .l73
 {
     transform: rotateY(36deg);
+    transition-duration: 2s;
 }
 
 
@@ -157,6 +170,7 @@ main
 #radio7:checked ~ .wrapper .all .l74
 {
     transform: rotateY(34deg);
+    transition-duration: 2s;
 }
 
 
@@ -169,6 +183,7 @@ main
 #radio7:checked ~ .wrapper .all .l75
 {
     transform: rotateY(32deg);
+    transition-duration: 2s;
 }
 
 #radio1:checked ~ .wrapper .all .l16,
@@ -180,6 +195,7 @@ main
 #radio7:checked ~ .wrapper .all .l76
 {
     transform: rotateY(30deg);
+    transition-duration: 2s;
 }
 
 .img
@@ -193,17 +209,45 @@ main
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 100%;
+    width: 70%;
     text-align: center;
 
     transform-style: preserve-3d;
-    perspective: 300px;
+    perspective: 500px;
     perspective-origin: 50% 50%;
 
     align-content: center;
     justify-content: center;
     vertical-align: middle;
     height: 100%;
+    transition-duration: 2s;
+}
+#radio1:checked ~ .wrapper .all
+{
+    perspective-origin: 0% 50%;
 }
 
+#radio2:checked ~ .wrapper .all
+{
+    perspective-origin: 22% 50%;
+}
+
+#radio3:checked ~ .wrapper .all
+{
+    perspective-origin: 37% 50%;
+}
+#radio5:checked ~ .wrapper .all
+{
+    perspective-origin: 63% 50%;
+}
+
+#radio6:checked ~ .wrapper .all
+{
+    perspective-origin: 77% 50%;
+}
+
+#radio7:checked ~ .wrapper .all
+{
+    perspective-origin: 100% 50%;
+}
 
