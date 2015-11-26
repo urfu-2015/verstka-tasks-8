@@ -30,6 +30,15 @@ article
     transition-duration: .5s;
 }
 
+label
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    width: 250px;
+}
+
 img
 {
     max-height: 250px;
@@ -343,21 +352,21 @@ img
 
 #in5:checked ~ #pic4
 {
-    -webkit-transform: rotateY(35deg) translate3d(50px, 0, -300px) scale(1.2);
-    -moz-transform: rotateY(35deg) translate3d(50px, 0, -300px) scale(1.2);
-    -ms-transform: rotateY(35deg) translate3d(50px, 0, -300px) scale(1.2);
-    -o-transform: rotateY(35deg) translate3d(50px, 0, -300px) scale(1.2);
-    transform: rotateY(35deg) translate3d(50px, 0, -300px) scale(1.2);
+    -webkit-transform: rotateY(40deg) translate3d(-50px, 0, -300px) scale(1.15);
+    -moz-transform: rotateY(40deg) translate3d(-50px, 0, -300px) scale(1.15);
+    -ms-transform: rotateY(40deg) translate3d(-50px, 0, -300px) scale(1.15);
+    -o-transform: rotateY(40deg) translate3d(-50px, 0, -300px) scale(1.15);
+    transform: rotateY(40deg) translate3d(-50px, 0, -300px) scale(1.15);
     z-index: 13;
 }
 
 #in5:checked ~ #pic5
 {
-    -webkit-transform: translateX(-200px);
-    -moz-transform: translateX(-200px);
-    -ms-transform: translateX(-200px);
-    -o-transform: translateX(-200px);
-    transform: translateX(-200px);
+    -webkit-transform: translateX(-250px);
+    -moz-transform: translateX(-250px);
+    -ms-transform: translateX(-250px);
+    -o-transform: translateX(-250px);
+    transform: translateX(-250px);
     z-index: 14;
 }
 
