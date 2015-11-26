@@ -13,7 +13,6 @@ body
     background: #ddd;
     perspective: 1000px;
     overflow: hidden;
-    /*transform-style: preserve-3d;*/
 }
 
 input
