@@ -1,1 +1,343 @@
+body
+{
+    height: 100%;
+    margin: 0 auto;
+}
+main
+{
+    margin: 0 auto;
+    height: 100%;
+    background-color: #eee9e9;
+}
+.wrapper
+{
+    margin: 0 auto;
+    display: flex;
+    align-content: center;
+    width: 90%;
+    height: 100vh;
+}
+.hidden
+{
+    display: none;
+}
+.card
+{
+    background: white;
+    display: flex;
+    align-content: center;
+}
+#radio1 ~ .wrapper .all .card1,
+#radio2 ~ .wrapper .all .card2,
+#radio3 ~ .wrapper .all .card3,
+#radio4 ~ .wrapper .all .card4,
+#radio5 ~ .wrapper .all .card5,
+#radio6 ~ .wrapper .all .card6,
+#radio7 ~ .wrapper .all .card7
+{
+    box-shadow: 5px 5px 5px rgba(0,0,0,.1);
+}
 
+#radio1:checked ~ .wrapper .all .card1,
+#radio2:checked ~ .wrapper .all .card2,
+#radio3:checked ~ .wrapper .all .card3,
+#radio4:checked ~ .wrapper .all .card4,
+#radio5:checked ~ .wrapper .all .card5,
+#radio6:checked ~ .wrapper .all .card6,
+#radio7:checked ~ .wrapper .all .card7
+{
+    transition-duration: 1s;
+    background: white;
+}
+
+#radio1:checked ~ .wrapper .all .card1
+{
+    transform: translateX(300%) translateZ(200px);
+    transition-delay: .6s;
+}
+#radio2:checked ~ .wrapper .all .card2
+{
+    transform: translateX(200%) translateZ(200px);
+    transition-delay: .5s;
+}
+#radio3:checked ~ .wrapper .all .card3
+{
+    transform: translateX(100%) translateZ(200px);
+    transition-delay: .4s;
+}
+#radio4:checked ~ .wrapper .all .card4
+{
+    transform: translateZ(200px);
+    transition-delay: .3s;
+}
+#radio5:checked ~ .wrapper .all .card5
+{
+    transform: translateX(-100%) translateZ(200px);
+    transition-delay: .4s;
+}
+#radio6:checked ~ .wrapper .all .card6
+{
+    transform: translateX(-200%) translateZ(200px);
+    transition-delay: .5s;
+}
+#radio7:checked ~ .wrapper .all .card7
+{
+    transform: translateX(-300%) translateZ(200px);
+    transition-delay: .6s;
+}
+/*r - right, l-left, 1-ое число - номер нажатой карточки, 2-ое число - номер от нажатой карточки*/
+
+#radio1:checked ~ .wrapper .all .r11,
+#radio2:checked ~ .wrapper .all .r21,
+#radio3:checked ~ .wrapper .all .r31,
+#radio4:checked ~ .wrapper .all .r41,
+#radio5:checked ~ .wrapper .all .r51,
+#radio6:checked ~ .wrapper .all .r61,
+#radio7:checked ~ .wrapper .all .r71
+{
+    transition-duration: 1s;
+}
+
+.hidden:checked ~ .wrapper .all .card
+{
+    transition-duration: 1s;
+}
+
+/*1 - картинка*/
+#radio1:checked ~ .wrapper .all .r11
+{
+    transform: translateX(300%) rotateY(-50deg);
+    transition-delay: .5s;
+}
+#radio1:checked ~ .wrapper .all .r12
+{
+    transform: translateX(250%) rotateY(-50deg);
+    transition-delay: .4s;
+}
+#radio1:checked ~ .wrapper .all .r13
+{
+    transform: translateX(200%) rotateY(-50deg);
+    transition-delay: .3s;
+}
+#radio1:checked ~ .wrapper .all .r14
+{
+    transform: translateX(150%) rotateY(-50deg);
+    transition-delay: .2s;
+}
+#radio1:checked ~ .wrapper .all .r15
+{
+    transform: translateX(100%) rotateY(-50deg);
+    transition-delay: .1s;
+}
+#radio1:checked ~ .wrapper .all .r16
+{
+    transform: translateX(50%) rotateY(-50deg);
+}
+/*2 картнинка*/
+#radio2:checked ~ .wrapper .all .r21
+{
+    transform: translateX(200%) rotateY(-50deg);
+    transition-delay: .4s;
+}
+#radio2:checked ~ .wrapper .all .r22
+{
+    transform: translateX(150%) rotateY(-50deg);
+    transition-delay: .3s;
+}
+#radio2:checked ~ .wrapper .all .r23
+{
+    transform: translateX(100%) rotateY(-50deg);
+    transition-delay: .2s;
+}
+#radio2:checked ~ .wrapper .all .r24
+{
+    transform: translateX(50%) rotateY(-50deg);
+    transition-delay: .1s;
+}
+#radio2:checked ~ .wrapper .all .r25
+{
+    transform: rotateY(-50deg);
+}
+#radio2:checked ~ .wrapper .all .l21
+{
+    transform: translateX(200%) rotateY(50deg);
+    transition-delay: .6s;
+}
+
+/*3 картинка нажата*/
+#radio3:checked ~ .wrapper .all .r31
+{
+    transform: translateX(100%) rotateY(-50deg);
+    transition-delay: .3s;
+}
+#radio3:checked ~ .wrapper .all .r32
+{
+    transform: translateX(50%) rotateY(-50deg);
+    transition-delay: .2s;
+}
+#radio3:checked ~ .wrapper .all .r33
+{
+    transform: rotateY(-50deg);
+    transition-delay: .1s;
+}
+#radio3:checked ~ .wrapper .all .r34
+{
+    transform: translateX(-50%) rotateY(-50deg);
+}
+#radio3:checked ~ .wrapper .all .l31
+{
+    transform: translateX(100%) rotateY(50deg);
+    transition-delay: .5s;
+}
+#radio3:checked ~ .wrapper .all .l32
+{
+    transform: translateX(150%) rotateY(50deg);
+    transition-delay: .6s;
+}
+
+/*4 картинка*/
+#radio4:checked ~ .wrapper .all .r41
+{
+    transform: rotateY(-50deg);
+    transition-delay: .3s;
+}
+#radio4:checked ~ .wrapper .all .r42
+{
+    transform: translateX(-50%) rotateY(-50deg);
+    transition-delay: .2s;
+}
+#radio4:checked ~ .wrapper .all .r43
+{
+    transform: translateX(-100%) rotateY(-50deg);
+    transition-delay: .1s;
+}
+#radio4:checked ~ .wrapper .all .l41
+{
+    transform: rotateY(50deg);
+    transition-delay: .5s;
+}
+#radio4:checked ~ .wrapper .all .l42
+{
+    transform: translateX(50%) rotateY(50deg);
+    transition-delay: .6s;
+}
+#radio4:checked ~ .wrapper .all .l43
+{
+    transform: translateX(100%) rotateY(50deg);
+    transition-delay: .7s;
+}
+
+/*5 картинка*/
+#radio5:checked ~ .wrapper .all .r51
+{
+    transform: translateX(-100%) rotateY(-50deg);
+    transition-delay: .5s;
+}
+#radio5:checked ~ .wrapper .all .r52
+{
+    transform: translateX(-150%) rotateY(-50deg);
+    transition-delay: .6s;
+}
+#radio5:checked ~ .wrapper .all .l51
+{
+    transform: translateX(-100%) rotateY(50deg);
+    transition-delay: .3s;
+}
+#radio5:checked ~ .wrapper .all .l52
+{
+    transform: translateX(-50%) rotateY(50deg);
+    transition-delay: .2s;
+}
+#radio5:checked ~ .wrapper .all .l53
+{
+    transform: rotateY(50deg);
+    transition-delay: .1s;
+}
+#radio5:checked ~ .wrapper .all .l54
+{
+    transform: translateX(50%) rotateY(50deg);
+}
+
+/* 6 картинка нажата*/
+#radio6:checked ~ .wrapper .all .r61
+{
+    transform: translateX(-200%) rotateY(-50deg);
+    transition-delay: .6s;
+}
+#radio6:checked ~ .wrapper .all .l61
+{
+    transform: translateX(-200%) rotateY(50deg);
+    transition-delay: .4s;
+}
+#radio6:checked ~ .wrapper .all .l62
+{
+    transform: translateX(-150%) rotateY(50deg);
+    transition-delay: .3s;
+}
+#radio6:checked ~ .wrapper .all .l63
+{
+    transform: translateX(-100%) rotateY(50deg);
+    transition-delay: .2s;
+}
+#radio6:checked ~ .wrapper .all .l64
+{
+    transform: translateX(-50%) rotateY(50deg);
+    transition-delay: .1s;
+}
+#radio6:checked ~ .wrapper .all .l65
+{
+    transform: rotateY(50deg);
+}
+
+/*7 картинка нажата*/
+#radio7:checked ~ .wrapper .all .l71
+{
+    transform: translateX(-300%) rotateY(50deg);
+    transition-delay: .5s;
+}
+#radio7:checked ~ .wrapper .all .l72
+{
+    transform: translateX(-250%) rotateY(50deg);
+    transition-delay: .4s;
+}
+#radio7:checked ~ .wrapper .all .l73
+{
+    transform: translateX(-200%) rotateY(50deg);
+    transition-delay: .3s;
+}
+#radio7:checked ~ .wrapper .all .l74
+{
+    transform: translateX(-150%) rotateY(50deg);
+    transition-delay: .2s;
+}
+#radio7:checked ~ .wrapper .all .l75
+{
+    transform: translateX(-100%) rotateY(50deg);
+    transition-delay: .1s;
+}
+#radio7:checked ~ .wrapper .all .l76
+{
+    transform: translateX(-50%) rotateY(50deg);
+}
+.img
+{
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+}
+.all
+{
+    perspective-origin: 50% 50%;
+    align-content: center;
+    justify-content: center;
+    vertical-align: middle;
+    transform-style: preserve-3d;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    perspective: 500px;
+    height: 100%;
+}
