@@ -3,317 +3,282 @@ body
     background: #d8d8d8;
 }
 
-.image
-{
-    position: absolute;
-    height: 250px;
-    top: 20%;
-    border: 2px solid #666;
-}
-
-.firstImg
-{
-    z-index: 1;
-    left: 0;
-    transform: perspective(300px) translateZ(-60px) rotateY(50deg);
-}
-
-.secondImg
-{
-    z-index: 2;
-    left: 20%;
-    transform: perspective(300px) translateZ(-50px) translateX(-40%) rotateY(40deg);
-}
-
-.thirdImg
-{
-    left: 30%;
-    transform: perspective(300px) translateZ(-40px) translateX(-25%) rotateY(30deg);
-    z-index: 3;
-}
-
-.fourthImg
-{
-    left: 41%;
-    transform: perspective(300px);
-    z-index: 4;
-}
-
-.fifthImg
-{
-    right: 30%;
-    transform: perspective(300px) translateZ(-40px) translateX(25%) rotateY(-30deg);
-    z-index: 3;
-}
-
-.sixthImg
-{
-    right: 20%;
-    transform: perspective(300px) translateZ(-50px) translateX(40%) rotateY(-40deg);
-    z-index: 2;
-}
-
-.seventhImg
-{
-    right: 0;
-    transform: perspective(300px) translateZ(-60px) rotateY(-50deg);
-    z-index: 1;
-}
-
 .invisible
 {
     display: none;
 }
 
-/*Вопрос: относительно чего отсчитывается положение: относительно текущего положения или общего;*/
-/*Выбрано 1 изображение*/
+.images
+{
+    display: flex;
+    margin-top: 15%;
+    justify-content: space-around;
+    align-items: center;
+    perspective: 200px;
+    transform-style: preserve-3d;
+}
+
+.img-container
+{
+    transition-property: transform;
+    transition-duration: 2s;
+}
+
+.image
+{
+    border: 2px solid #666;
+    width: 200px;
+    height: 200px;
+}
+
+/*----Выбрано 1 изображение----*/
 #firstFruit:checked ~ .firstFruit
 {
-    transform:;
+    transform: translate3d(300%,0,50px);
 }
 
 #firstFruit:checked ~ .secondFruit
 {
-    transform:;
+    transform: translate3d(325%,0,-100px) rotateY(-65deg);
 }
 
 #firstFruit:checked ~ .thirdFruit
 {
-    transform:;
+    transform: translate3d(275%,0,-100px) rotateY(-45deg);
 }
 
 #firstFruit:checked ~ .fourthFruit
 {
-    transform:;
+    transform: translate3d(225%,0,-100px) rotateY(-35deg);
 }
 
 #firstFruit:checked ~ .fifthFruit
 {
-    transform:;
+    transform: translate3d(175%,0,-100px) rotateY(-25deg);
 }
 
 #firstFruit:checked ~ .sixthFruit
 {
-    transform:;
+    transform: translate3d(125%,0,-100px) rotateY(-15deg);
 }
 
 #firstFruit:checked ~ .seventhFruit
 {
-    transform:;
+    transform: translate3d(75%,0,-100px) rotateY(-5deg);
 }
 
-/*Выбрано 2 изображение*/
+/*----Выбрано 2 изображение----*/
 #secondFruit:checked ~ .firstFruit
 {
-    transform:;
+    transform: translate3d(150%,0,-100px) rotateY(75deg);
 }
 
 #secondFruit:checked ~ .secondFruit
 {
-    transform:;
+    transform: translate3d(170%,0,50px);
 }
 
 #secondFruit:checked ~ .thirdFruit
 {
-    transform:;
+    transform: translate3d(150%,0,-100px) rotateY(-75deg);
 }
 
 #secondFruit:checked ~ .fourthFruit
 {
-    transform:;
+    transform: translate3d(125%,0,-100px) rotateY(-70deg);
 }
 
 #secondFruit:checked ~ .fifthFruit
 {
-    transform:;
+    transform: translate3d(100%,0,-100px) rotateY(-65deg);
 }
 
 #secondFruit:checked ~ .sixthFruit
 {
-    transform:;
+    transform: translate3d(75%,0,-100px) rotateY(-50deg);
 }
 
 #secondFruit:checked ~ .seventhFruit
 {
-    transform:;
+    transform: translate3d(50%,0,-100px) rotateY(-45deg);
 }
 
-/*Выбрано 3 изображение*/
+/*----Выбрано 3 изображение----*/
 #thirdFruit:checked ~ .firstFruit
 {
-    transform:;
+    transform: translate3d(100%,0,-100px) rotateY(35deg);
 }
 
 #thirdFruit:checked ~ .secondFruit
 {
-    transform:;
+    transform: translate3d(100%,0,-100px) rotateY(45deg);
 }
 
 #thirdFruit:checked ~ .thirdFruit
 {
-    transform:;
+    transform: translate3d(100%,0,50px);
 }
 
 #thirdFruit:checked ~ .fourthFruit
 {
-    transform:;
+    transform: translate3d(100%,0,-100px) rotateY(-45deg);
 }
 
 #thirdFruit:checked ~ .fifthFruit
 {
-    transform:;
+    transform: translate3d(100%,0,-100px) rotateY(-35deg);
 }
 
 #thirdFruit:checked ~ .sixthFruit
 {
-    transform:;
+    transform: translate3d(100%,0,-100px) rotateY(-25deg);
 }
 
 #thirdFruit:checked ~ .seventhFruit
 {
-    transform:;
+    transform: translate3d(100%,0,-100px) rotateY(-15deg);
 }
 
-/*Выбрано 4 изображение*/
+/*----Выбрано 4 изображение----*/
 #fourthFruit:checked ~ .firstFruit
 {
-    transform:;
+    transform: rotateY(15deg) translate3d(100px,0,-100px);
 }
 
 #fourthFruit:checked ~ .secondFruit
 {
-    transform:;
+    transform: rotateY(45deg) translate3d(100px,0,-100px);
 }
 
 #fourthFruit:checked ~ .thirdFruit
 {
-    transform:;
+    transform: rotateY(65deg) translate3d(100px,0,-100px);
 }
 
 #fourthFruit:checked ~ .fourthFruit
 {
-    transform:;
+    transform: translateZ(50px);
 }
 
 #fourthFruit:checked ~ .fifthFruit
 {
-    transform:;
+    transform: rotateY(-65deg) translate3d(-100px,0,-100px);
 }
 
 #fourthFruit:checked ~ .sixthFruit
 {
-    transform:;
+    transform: rotateY(-45deg) translate3d(-100px,0,-100px);
 }
 
 #fourthFruit:checked ~ .seventhFruit
 {
-    transform:;
+    transform: rotateY(-15deg) translate3d(-100px,0,-100px);
 }
 
-/*Выбрано 5 изображение*/
+/*----Выбрано 5 изображение----*/
 #fifthFruit:checked ~ .firstFruit
 {
-    transform:;
+    transform: translate3d(-75%,0,-100px) rotateY(25deg);
 }
 
 #fifthFruit:checked ~ .secondFruit
 {
-    transform:;
+    transform: translate3d(-75%,0,-100px) rotateY(35deg);
 }
 
 #fifthFruit:checked ~ .thirdFruit
 {
-    transform:;
+    transform: translate3d(-75%,0,-100px) rotateY(45deg);
 }
 
 #fifthFruit:checked ~ .fourthFruit
 {
-    transform:;
+    transform: translate3d(-100%,0,-100px) rotateY(65deg);
 }
 
 #fifthFruit:checked ~ .fifthFruit
 {
-    transform:;
+    transform: translate3d(-100%,0%,50px);
 }
 
 #fifthFruit:checked ~ .sixthFruit
 {
-    transform:;
+    transform: translate3d(-100%,0,-100px) rotateY(-65deg);
 }
 
 #fifthFruit:checked ~ .seventhFruit
 {
-    transform:;
+    transform: translate3d(-100%,0,-100px) rotateY(-45deg);
 }
 
-/*Выбрано 6 изображение*/
+/*----Выбрано 6 изображение----*/
 #sixthFruit:checked ~ .firstFruit
 {
-    transform:;
+    transform: translate3d(-100%,0,-100px) rotateY(25deg);
 }
 
 #sixthFruit:checked ~ .secondFruit
 {
-    transform:;
+    transform: translate3d(-125%,0,-100px) rotateY(35deg);
 }
 
 #sixthFruit:checked ~ .thirdFruit
 {
-    transform:;
+    transform: translate3d(-150%,0,-100px) rotateY(45deg);
 }
 
 #sixthFruit:checked ~ .fourthFruit
 {
-    transform:;
+    transform: translate3d(-175%,0,-100px) rotateY(55deg);
 }
 
 #sixthFruit:checked ~ .fifthFruit
 {
-    transform:;
+    transform: translate3d(-225%,0,-100px) rotateY(65deg);
 }
 
 #sixthFruit:checked ~ .sixthFruit
 {
-    transform:;
+    transform: translate3d(-225%,0%,50px);
 }
 
 #sixthFruit:checked ~ .seventhFruit
 {
-    transform:;
+    transform: translate3d(-225%,0,-100px) rotateY(-65deg);
 }
 
 /*Выбрано 7 изображение*/
 #seventhFruit:checked ~ .firstFruit
 {
-    transform:;
+    transform: translate3d(-125%,0,-100px) rotateY(15deg);
 }
 
 #seventhFruit:checked ~ .secondFruit
 {
-    transform:;
+    transform: translate3d(-150%,0,-100px) rotateY(25deg);
 }
 
 #seventhFruit:checked ~ .thirdFruit
 {
-    transform:;
+    transform: translate3d(-175%,0,-100px) rotateY(35deg);
 }
 
 #seventhFruit:checked ~ .fourthFruit
 {
-    transform:;
+    transform: translate3d(-200%,0,-100px) rotateY(45deg);
 }
 
 #seventhFruit:checked ~ .fifthFruit
 {
-    transform:;
+    transform: translate3d(-225%,0,-100px) rotateY(55deg);
 }
 
 #seventhFruit:checked ~ .sixthFruit
 {
-    transform:;
+    transform: translate3d(-275%,0,-100px) rotateY(65deg);
 }
 
 #seventhFruit:checked ~ .seventhFruit
 {
-    transform:;
+    transform: translate3d(-300%,0%,50px);
 }
