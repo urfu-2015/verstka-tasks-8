@@ -90,7 +90,7 @@ input#photo-7:checked ~ .items-slide .vegetable-card label[for='photo-7']
 {
     transform: translateZ(50px);
     box-shadow: 2px 2px 5px #c8c8c8,
-    -2px 0 5px #c8c8c8;
+        -2px 0 5px #c8c8c8;
 }
 
 input#photo-1:checked ~ .items-slide .vegetable-card label[for='photo-5'],
@@ -216,7 +216,7 @@ input#photo-1:checked ~ .items-slide .vegetable-card:nth-of-type(7)
 
 .vegetable-card
 {
-    transform: translateX(0px);
+    transform: translateX(0);
     transition-property: transform;
     transition-timing-function: linear;
     transition-duration: 1s;
