@@ -35,7 +35,7 @@ article[class^='image']
     width: 240px;
     height: 180px;
     overflow: hidden;
-    transition: all 1s cubic-bezier(.1, .01, .5, 1.2) 0.3s;
+    transition: all 1s cubic-bezier(.1, .01, .5, 1.2) .3s;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, .3),
         -10px 0 20px rgba(0, 0, 0, .3);
 }
