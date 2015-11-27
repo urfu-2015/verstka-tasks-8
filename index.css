@@ -9,18 +9,31 @@ main
 {
     display: flex;
     height: 100%;
-    width: 100%;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     perspective: 800px;
 }
 
+.wrapper label
+{
+    height: 200px;
+    width: 250px;
+    display: block;
+}
+.wrapper
+{
+    height: 200px;
+    width: 250px;
+    perspective: 200px;
+    box-shadow: 0 10px 25px -5px rgba(50, 50, 50, .75);
+}
+
 .wrapper label img
 {
     object-fit: cover;
     height: 100%;
-    max-width: 100%;
+    width: 100%;
 }
 
 input
@@ -28,13 +41,6 @@ input
     display: none;
 }
 
-.wrapper
-{
-    height: 200px;
-    width: 200px;
-    perspective: 200px;
-    box-shadow: 0 10px 25px -5px rgba(50, 50, 50, .75);
-}
 
 .wrapper
 {
@@ -49,43 +55,43 @@ input
 
 .input#pic1:checked ~ main .wrapper_w2
 {
-    transform: translateX(300%) translate(-30px) rotateY(-50deg);
+    transform: translateX(300%) translate(-30%) rotateY(-50deg);
     z-index: -10;
 }
 
 .input#pic1:checked ~ main .wrapper_w3
 {
-    transform: translateX(300%) translate(-130px) rotateY(-40deg);
+    transform: translateX(300%) translate(-50%) rotateY(-40deg);
     z-index: -20;
 }
 
 .input#pic1:checked ~ main .wrapper_w4
 {
-    transform: translateX(300%) translate(-230px) rotateY(-30deg);
+    transform: translateX(300%) translate(-70%) rotateY(-30deg);
     z-index: -30;
 }
 
 .input#pic1:checked ~ main .wrapper_w5
 {
-    transform: translateX(300%) translate(-330px) rotateY(-20deg);
+    transform: translateX(300%) translate(-90%) rotateY(-20deg);
     z-index: -40;
 }
 
 .input#pic1:checked ~ main .wrapper_w6
 {
-    transform: translateX(300%) translate(-430px) rotateY(-10deg);
+    transform: translateX(300%) translate(-110%) rotateY(-10deg);
     z-index: -50;
 }
 
 .input#pic1:checked ~ main .wrapper_w7
 {
-    transform: translateX(300%) translate(-530px) rotateY(0deg);
+    transform: translateX(300%) translate(-130%) rotateY(0deg);
     z-index: -60;
 }
 
 .input#pic2:checked ~ main .wrapper_w1
 {
-    transform: translateX(200%) translate(30px) rotateY(50deg);
+    transform: translateX(200%) translate(30%) rotateY(50deg);
 }
 
 .input#pic2:checked ~ main .wrapper_w2
@@ -95,42 +101,42 @@ input
 
 .input#pic2:checked ~ main .wrapper_w3
 {
-    transform: translateX(200%) translate(-30px) rotateY(-50deg);
+    transform: translateX(200%) translate(-30%) rotateY(-50deg);
     z-index: -20;
 }
 
 .input#pic2:checked ~ main .wrapper_w4
 {
-    transform: translateX(200%) translate(-130px) rotateY(-40deg);
+    transform: translateX(200%) translate(-50%) rotateY(-40deg);
     z-index: -30;
 }
 
 .input#pic2:checked ~ main .wrapper_w5
 {
-    transform: translateX(200%) translate(-230px) rotateY(-30deg);
+    transform: translateX(200%) translate(-70%) rotateY(-30deg);
     z-index: -40;
 }
 
 .input#pic2:checked ~ main .wrapper_w6
 {
-    transform: translateX(200%) translate(-330px) rotateY(-20deg);
+    transform: translateX(200%) translate(-90%) rotateY(-20deg);
     z-index: -50;
 }
 
 .input#pic2:checked ~ main .wrapper_w7
 {
-    transform: translateX(200%) translate(-430px) rotateY(-10deg);
+    transform: translateX(200%) translate(-110%) rotateY(-10deg);
     z-index: -60;
 }
 
 .input#pic3:checked ~ main .wrapper_w1
 {
-    transform: translateX(100%) translate(130px) rotateY(40deg);
+    transform: translateX(100%) translate(50%) rotateY(40deg);
 }
 
 .input#pic3:checked ~ main .wrapper_w2
 {
-    transform: translateX(100%) translate(30px) rotateY(50deg);
+    transform: translateX(100%) translate(30%) rotateY(50deg);
 }
 
 .input#pic3:checked ~ main .wrapper_w3
@@ -140,24 +146,24 @@ input
 
 .input#pic3:checked ~ main .wrapper_w4
 {
-    transform: translateX(100%) translate(-30px) rotateY(-50deg);
+    transform: translateX(100%) translate(-30%) rotateY(-50deg);
     z-index: -10;
 }
 
 .input#pic3:checked ~ main .wrapper_w5
 {
-    transform: translateX(100%) translate(-130px) rotateY(-40deg);
+    transform: translateX(100%) translate(-50%) rotateY(-40deg);
     z-index: -20;
 }
 .input#pic3:checked ~ main .wrapper_w6
 {
-    transform: translateX(100%) translate(-230px) rotateY(-30deg);
+    transform: translateX(100%) translate(-70%) rotateY(-30deg);
     z-index: -30;
 }
 
 .input#pic3:checked ~ main .wrapper_w7
 {
-    transform: translateX(100%) translate(-330px) rotateY(-20deg);
+    transform: translateX(100%) translate(-90%) rotateY(-20deg);
     z-index: -40;
 }
 
@@ -168,17 +174,17 @@ input
 
 .input#pic4:checked ~ main .wrapper_w1
 {
-    transform: translate(230px) rotateY(30deg);
+    transform: translate(70%) rotateY(30deg);
 }
 
 .input#pic4:checked ~ main .wrapper_w2
 {
-    transform: translate(130px) rotateY(40deg);
+    transform: translate(50%) rotateY(40deg);
 }
 
 .input#pic4:checked ~ main .wrapper_w3
 {
-    transform: translate(30px) rotateY(50deg);
+    transform: translate(30%) rotateY(50deg);
 }
 
 .input#pic4:checked ~ main .wrapper_w4
@@ -188,40 +194,40 @@ input
 
 .input#pic4:checked ~ main .wrapper_w5
 {
-    transform: translate(-30px) rotateY(-50deg);
+    transform: translate(-30%) rotateY(-50deg);
     z-index: -10;
 }
 
 .input#pic4:checked ~ main .wrapper_w6
 {
-    transform: translate(-130px) rotateY(-40deg);
+    transform: translate(-50%) rotateY(-40deg);
     z-index: -20;
 }
 
 .input#pic4:checked ~ main .wrapper_w7
 {
-    transform: translate(-230px) rotateY(-30deg);
+    transform: translate(-70%) rotateY(-30deg);
     z-index: -30;
 }
 
 .input#pic5:checked ~ main .wrapper_w1
 {
-    transform: translateX(-100%) translate(330px) rotateY(20deg);
+    transform: translateX(-100%) translate(90%) rotateY(20deg);
 }
 
 .input#pic5:checked ~ main .wrapper_w2
 {
-    transform: translateX(-100%) translate(230px) rotateY(30deg);
+    transform: translateX(-100%) translate(70%) rotateY(30deg);
 }
 
 .input#pic5:checked ~ main .wrapper_w3
 {
-    transform: translateX(-100%) translate(130px) rotateY(40deg);
+    transform: translateX(-100%) translate(50%) rotateY(40deg);
 }
 
 .input#pic5:checked ~ main .wrapper_w4
 {
-    transform: translateX(-100%) translate(30px) rotateY(50deg);
+    transform: translateX(-100%) translate(30%) rotateY(50deg);
 }
 
 .input#pic5:checked ~ main .wrapper_w5
@@ -231,39 +237,39 @@ input
 
 .input#pic5:checked ~ main .wrapper_w6
 {
-    transform: translateX(-100%) translate(-30px) rotateY(-50deg);
+    transform: translateX(-100%) translate(-30%) rotateY(-50deg);
     z-index: -30;
 }
 
 .input#pic5:checked ~ main .wrapper_w7
 {
-    transform: translateX(-100%) translate(-130px) rotateY(-40deg);
+    transform: translateX(-100%) translate(-50%) rotateY(-40deg);
     z-index: -40;
 }
 
 .input#pic6:checked ~ main .wrapper_w1
 {
-    transform: translateX(-200%) translate(430px) rotateY(10deg);
+    transform: translateX(-200%) translate(110%) rotateY(10deg);
 }
 
 .input#pic6:checked ~ main .wrapper_w2
 {
-    transform: translateX(-200%) translate(330px) rotateY(20deg);
+    transform: translateX(-200%) translate(90%) rotateY(20deg);
 }
 
 .input#pic6:checked ~ main .wrapper_w3
 {
-    transform: translateX(-200%) translate(230px) rotateY(30deg);
+    transform: translateX(-200%) translate(70%) rotateY(30deg);
 }
 
 .input#pic6:checked ~ main .wrapper_w4
 {
-    transform: translateX(-200%) translate(130px) rotateY(40deg);
+    transform: translateX(-200%) translate(50%) rotateY(40deg);
 }
 
 .input#pic6:checked ~ main .wrapper_w5
 {
-    transform: translateX(-200%) translate(30px) rotateY(50deg);
+    transform: translateX(-200%) translate(30%) rotateY(50deg);
 }
 
 .input#pic6:checked ~ main .wrapper_w6
@@ -273,38 +279,38 @@ input
 
 .input#pic6:checked ~ main .wrapper_w7
 {
-    transform: translateX(-200%) translate(-30px) rotateY(-50deg);
+    transform: translateX(-200%) translate(-30%) rotateY(-50deg);
     z-index: -40;
 }
 
 .input#pic7:checked ~ main .wrapper_w1
 {
-    transform: translateX(-300%) translate(530px) rotateY(0deg);
+    transform: translateX(-300%) translate(130%) rotateY(0deg);
 }
 
 .input#pic7:checked ~ main .wrapper_w2
 {
-    transform: translateX(-300%) translate(430px) rotateY(10deg);
+    transform: translateX(-300%) translate(110%) rotateY(10deg);
 }
 
 .input#pic7:checked ~ main .wrapper_w3
 {
-    transform: translateX(-300%) translate(330px) rotateY(20deg);
+    transform: translateX(-300%) translate(90%) rotateY(20deg);
 }
 
 .input#pic7:checked ~ main .wrapper_w4
 {
-    transform: translateX(-300%) translate(230px) rotateY(30deg);
+    transform: translateX(-300%) translate(70%) rotateY(30deg);
 }
 
 .input#pic7:checked ~ main .wrapper_w5
 {
-    transform: translateX(-300%) translate(130px) rotateY(40deg);
+    transform: translateX(-300%) translate(50%) rotateY(40deg);
 }
 
 .input#pic7:checked ~ main .wrapper_w6
 {
-    transform: translateX(-300%) translate(30px) rotateY(50deg);
+    transform: translateX(-300%) translate(30%) rotateY(50deg);
 }
 
 .input#pic7:checked ~ main .wrapper_w7
