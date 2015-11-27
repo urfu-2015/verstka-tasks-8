@@ -21,7 +21,8 @@ main
     display: flex;
     flex-wrap: wrap;
     transform-style: preserve-3d;
-    transition: all 1s cubic-bezier(.1, .01, .5, 1.2);
+    transition: transform 1s cubic-bezier(.1, .01, .5, 1.2);
+    perspective: 800px;
 }
 
 input[id^='button']
@@ -29,7 +30,7 @@ input[id^='button']
     display: none;
 }
 
-.gallery article[class^='image']
+article[class^='image']
 {
     width: 240px;
     height: 180px;
@@ -40,7 +41,7 @@ input[id^='button']
         -10px 0 20px rgba(0, 0, 0, .3);
 }
 
-.gallery article[class^='image'] img
+.gallery-item
 {
     width: 100%;
     height: 100%;
@@ -48,32 +49,32 @@ input[id^='button']
 
 #button-1:checked ~ div
 {
-    transform: translateX(30%);
+    transform: translateX(295px);
 }
 
 #button-2:checked ~ div
 {
-    transform: translateX(25%);
+    transform: translateX(180px);
 }
 
 #button-3:checked ~ div
 {
-    transform: translateX(15%);
+    transform: translateX(90px);
 }
 
 #button-5:checked ~ div
 {
-    transform: translateX(-15%);
+    transform: translateX(-90px);
 }
 
 #button-6:checked ~ div
 {
-    transform: translateX(-25%);
+    transform: translateX(-180px);
 }
 
 #button-7:checked ~ div
 {
-    transform: translateX(-30%);
+    transform: translateX(-295px);
 }
 
 #button-1:checked ~ div .image-2,
@@ -84,7 +85,7 @@ input[id^='button']
 #button-6:checked ~ div .image-7
 {
     margin-left: -100px;
-    transform: perspective(300px) rotateY(-40deg) translateZ(-20px);
+    transform: rotateY(-40deg) translateZ(-20px);
 }
 
 #button-2:checked ~ div .image-1,
@@ -95,7 +96,7 @@ input[id^='button']
 #button-7:checked ~ div .image-6
 {
     margin-right: -100px;
-    transform: perspective(300px) rotateY(40deg) translateZ(-20px);
+    transform: rotateY(40deg) translateZ(-20px);
 }
 
 #button-1:checked ~ div .image-3,
@@ -115,7 +116,7 @@ input[id^='button']
 #button-5:checked ~ div .image-7
 {
     margin-left: -150px;
-    transform: perspective(300px) rotateY(-40deg) translateZ(-20px);
+    transform: rotateY(-40deg) translateZ(-20px);
 }
 
 #button-7:checked ~ div .image-5,
@@ -135,5 +136,5 @@ input[id^='button']
 #button-3:checked ~ div .image-1
 {
     margin-right: -150px;
-    transform: perspective(300px) rotateY(40deg) translateZ(-20px);
+    transform: rotateY(40deg) translateZ(-20px);
 }
