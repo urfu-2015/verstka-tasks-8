@@ -2,6 +2,7 @@ body,
 html
 {
     height: 100%;
+    width: 100%;
     overflow: hidden;
 }
 
@@ -9,6 +10,7 @@ main
 {
     display: flex;
     height: 100%;
+    width: 100%;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -25,6 +27,8 @@ main
 {
     height: 200px;
     width: 250px;
+    min-width: 250px;
+    display: block;
     perspective: 200px;
     box-shadow: 0 10px 25px -5px rgba(50, 50, 50, .75);
 }
