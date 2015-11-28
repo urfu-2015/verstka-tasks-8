@@ -20,7 +20,7 @@ main
     perspective: 550px;
 }
 
-article > label > img
+label > img
 {
     flex-shrink: 0;
     min-width: 100%;
@@ -50,7 +50,6 @@ article[class^=veg]
 #veg-1:checked ~ main > .veg-1
 {
     transform: translateX(600px) rotateY(0deg) translateZ(50px);
-    margin-left: -600px;
 }
 #veg-1:checked ~ main > .veg-2
 {
@@ -82,7 +81,6 @@ article[class^=veg]
 #veg-2:checked ~ main > .veg-1
 {
     transform: translateX(500px) rotateY(50deg);
-    margin-left: -450px;
 }
 #veg-2:checked ~ main > .veg-2
 {
@@ -114,7 +112,6 @@ article[class^=veg]
 #veg-3:checked ~ main > .veg-1
 {
     transform: translateX(400px) rotateY(50deg);
-    margin-left: -350px;
 }
 #veg-3:checked ~ main > .veg-2
 {
@@ -177,7 +174,6 @@ article[class^=veg]
 #veg-5:checked ~ main > .veg-1
 {
     transform: translateX(200px) rotateY(50deg);
-    margin-left: 350px;
 }
 #veg-5:checked ~ main > .veg-2
 {
@@ -209,7 +205,6 @@ article[class^=veg]
 #veg-6:checked ~ main > .veg-1
 {
     transform: translateX(100px) rotateY(50deg);
-    margin-left: 450px;
 }
 #veg-6:checked ~ main > .veg-2
 {
@@ -241,7 +236,6 @@ article[class^=veg]
 #veg-7:checked ~ main > .veg-1
 {
     transform: translateX(0) rotateY(50deg);
-    margin-left: 600px;
 }
 #veg-7:checked ~ main > .veg-2
 {
