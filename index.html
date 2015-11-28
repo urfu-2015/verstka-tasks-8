@@ -8,7 +8,6 @@
     <body>
         <!-- Здесь применять трехмерное волшебство -->
     <main>
-        <!-- фото в галерее -->
         <input type="radio" id="image1" name="photo">
         <input type="radio" id="image2" name="photo">
         <input type="radio" id="image3" name="photo">
@@ -17,41 +16,406 @@
         <input type="radio" id="image6" name="photo">
         <input type="radio" id="image7" name="photo">
 
+        <input type="radio" id="open1" name="toggle1">
+        <input type="radio" id="open2" name="toggle2">
+        <input type="radio" id="open3" name="toggle3">
+        <input type="radio" id="open4" name="toggle4">
+        <input type="radio" id="open5" name="toggle5">
+        <input type="radio" id="open6" name="toggle6">
+        <input type="radio" id="open7" name="toggle7">
+
+        <input type="radio" id="close1" name="toggle1">
+        <input type="radio" id="close2" name="toggle2">
+        <input type="radio" id="close3" name="toggle3">
+        <input type="radio" id="close4" name="toggle4">
+        <input type="radio" id="close5" name="toggle5">
+        <input type="radio" id="close6" name="toggle6">
+        <input type="radio" id="close7" name="toggle7">
+
         <div class="gallery">
-            <div class="items item1">
-                <label for="image1">
-                    <img src="images/cucumber.jpg" alt="cucumber" title="cucumber">
-                </label>
+            <div data-item>
+                <figure class="effect image1">
+                    <label for="image1">
+                        <img src="images/cucumber.jpg" alt="cucumber" title="cucumber">
+                        <figcaption><label for="open1" class="btn">Рецепт</label></figcaption>
+                    </label>
+                    <div class="back">
+                        <div class="recipe">
+                            <label for="close1"><img src="images/cross.png"></label>
+                            <h1>Холодный огуречный суп с лососем</h1>
+                            <hr>
+                            <div class="content">
+                                <div>
+                                    <h2>Ингредиенты</h2>
+                                    <ul>
+                                        <li><strong>Огурцы</strong> <em>(230 г)</em></li>
+                                        <li><strong>Сок огуречный</strong> <em>(115 мл)</em></li>
+                                        <li><strong>Сахар</strong> <em>(10 г)</em></li>
+                                        <li><strong>Белый винный уксус</strong> <em>(8 г)</em></li>
+                                        <li><strong>Сироп имбирный</strong> <em>(6 мл)</em></li>
+                                        <li><strong>Лосось</strong> <em>(100 г)</em></li>
+                                        <li><strong>Творог</strong> <em>(50 г)</em></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h2>Инструкция</h2>
+                                    <ul>
+                                        <li>
+                                            Пробить в блендере на высокой скорости огуречный сок,
+                                            винный уксус, сироп, сахар и соль на высокой скорости
+                                            в течение двух минут.
+                                        </li>
+                                        <li>
+                                            Процедить суп через сито шинуа. Остудить до температуры
+                                            1 градус по Цельсию.
+                                        </li>
+                                        <li>
+                                            Взбить творог, протереть через сито и охладить в течение
+                                            получаса, чтобы сделать аккуратный шарик. Затем залить
+                                            творожный мусс супом.
+                                        </li>
+                                        <li>
+                                            При подаче украсить кубиками огурца, предварительно
+                                            очистив его от кожи и семечек, и 2–3 кусочками слегка
+                                            отваренного лосося.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </figure>
             </div>
-            <div class="items item2">
-                <label for="image2">
-                    <img src="images/kobalt.jpg" alt="kobalt" title="kobalt">
-                </label>
+            <div data-item>
+                <figure class="effect image2">
+                    <label for="image2">
+                        <img src="images/kobalt.jpg" alt="kobalt" title="kobalt">
+                        <figcaption><label for="open2" class="btn">Рецепт</label></figcaption>
+                    </label>
+                    <div class="back">
+                        <div class="recipe">
+                            <label for="close2"><img src="images/cross.png"></label>
+                            <h1>Яйца, маринованные в свекольном соке</h1>
+                            <hr>
+                            <div class="content">
+                                <div>
+                                    <h2>Ингредиенты</h2>
+                                    <ul>
+                                        <li><strong>Яйцо куриное</strong> <em>(12 штук)</em></li>
+                                        <li>
+                                            <strong>Свекла маринованная</strong> <em>(500 г)</em>
+                                        </li>
+                                        <li><strong>Уксус</strong> <em>(200 мл)</em></li>
+                                        <li><strong>Вода</strong> <em>(200 мл)</em></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h2>Инструкция</h2>
+                                    <ul>
+                                        <li>
+                                            Сварить яйца вкрутую и дать им остыть — или взять уже
+                                            имеющиеся вареные. Очистить от скорлупы и выложить их
+                                            в достойного объема стеклянную банку.
+                                        </li>
+                                        <li>
+                                            В сотейнике смешать уксус с аналогичным количеством
+                                            воды, добавить сахар, немного соли и маринованную
+                                            свеклу. Поставить на средний огонь и довести до первых
+                                            пузырьков кипения. Снять с огня и перелить маринад в
+                                            банку с яйцами. Дать остыть.
+                                        </li>
+                                        <li>
+                                            Плотно закрыть крышкой и поставить в холодильник на
+                                            несколько дней: чем больше времени яйца остаются в
+                                            маринаде, тем ярче их цвет.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </figure>
             </div>
-            <div class="items item3">
-                <label for="image3">
-                    <img src="images/carrot.jpg" alt="carrot" title="carrot">
-                </label>
+            <div data-item>
+                <figure class="effect image3">
+                    <label for="image3">
+                        <img src="images/carrot.jpg" alt="carrot" title="carrot">
+                        <figcaption><label for="open3" class="btn">Рецепт</label></figcaption>
+                    </label>
+                    <div class="back">
+                        <div class="recipe">
+                            <label for="close3"><img src="images/cross.png"></label>
+                            <h1>Морковный пирог с миндалем</h1>
+                            <hr>
+                            <div class="content">
+                                <div>
+                                    <h2>Ингредиенты</h2>
+                                    <ul>
+                                        <li><strong>Морковь</strong> <em>(2 штуки)</em></li>
+                                        <li><strong>Миндаль</strong> <em>(300 г)</em></li>
+                                        <li><strong>Сахар</strong> <em>(200 г)</em></li>
+                                        <li><strong>Яйцо куриное</strong> <em>(4 штуки)</em></li>
+                                        <li><strong>Мука пшеничная</strong> <em>(50 г)</em></li>
+                                        <li><strong>Лимонная цедра</strong> <em>(2 с.л.)</em></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h2>Инструкция</h2>
+                                    <ul>
+                                        <li>
+                                            Две крупные морковки очистить и натереть на крупной
+                                            терке. Миндаль смолоть в крошку в кухонном комбайне.
+                                            Смешать морковь и миндаль в большой глубокой миске.
+                                        </li>
+                                        <li>
+                                            Яйца разделить на желтки и белки. Желтки взбить с
+                                            половиной сахара (100 г), добавить муку, разрыхлитель,
+                                            щепотку корицы, цедру. В конце влить ликер и перемешать.
+                                            Полученную массу соединить с морковью и миндалем.
+                                        </li>
+                                        <li>
+                                            В отдельной чистой и сухой миске венчиком взбить белки
+                                            с оставшимся сахаром в плотную пену и аккуратно лопаткой
+                                            или деревянной ложкой вмешать ее в морковно-ореховое
+                                            тесто.
+                                        </li>
+                                        <li>
+                                            Тесто перелить в предварительно смазанную небольшим
+                                            количеством растительного масла глубокую форму.
+                                            Выпекать чуть меньше часа при температуре 180 градусов.
+                                        </li>
+                                        <li>
+                                            Готовый пирог вынуть из духовки, остудить в течение
+                                            двадцати — двадцати пяти минут и вынуть из формы.
+                                            Нарезать на порции и сразу подавать.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </figure>
             </div>
-            <div class="items item4">
-                <label for="image4">
-                    <img src="images/cabbage.jpg" alt="cabbage" title="cabbage">
-                </label>
+            <div data-item>
+                <figure class="effect image4">
+                    <label for="image4">
+                        <img src="images/cabbage.jpg" alt="cabbage" title="cabbage">
+                        <figcaption><label for="open4" class="btn">Рецепт</label></figcaption>
+                    </label>
+                    <div class="back">
+                        <div class="recipe">
+                            <label for="close4"><img src="images/cross.png"></label>
+                            <h1>Салат из капусты с креветками</h1>
+                            <hr>
+                            <div class="content">
+                                <div>
+                                    <h2>Ингредиенты</h2>
+                                    <ul>
+                                        <li><strong>Чеснок</strong> <em>(5 зубчиков)</em></li>
+                                        <li>
+                                            <strong>Белокочанная капуста</strong> <em>(200 г)</em>
+                                        </li>
+                                        <li><strong>Креветки</strong> <em>(70 г)</em></li>
+                                        <li><strong>Редис</strong> <em>(20 г)</em></li>
+                                        <li><strong>Кислые яблоки</strong> <em>(1 штука)</em></li>
+                                        <li><strong>Лук-порей</strong> <em>(2 г)</em></li>
+                                        <li><strong>Уксус</strong> <em>(2 с.л.)</em></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h2>Инструкция</h2>
+                                    <ul>
+                                        <li>
+                                            Очень тонко нарезать редиску. Очистить от кожицы и
+                                            сердцевины небольшое яблоко, нарубить его соломкой, а
+                                            лук-порей — мелкими кольцами.
+                                        </li>
+                                        <li>
+                                            В сотейнике нагреть растительное масло с измельченным
+                                            чесноком и смесью специй для моркови по-корейски.
+                                            Капусту нарезать соломкой, посыпать обычной солью и
+                                            щепоткой-другой сахара, заправить уксусом, а потом и
+                                            теплым маслом. Перемешать руками и оставить на пять
+                                            минут.
+                                        </li>
+                                        <li>
+                                            Креветки очистить от панциря и по­ложить в кипяток на
+                                            десять секунд.
+                                        </li>
+                                        <li>
+                                            В центр большой тарелки выложить пропитавшуюся маслом
+                                            со специями капусту (можно слегка отжать ее руками),
+                                            свер­ху — нарезанные креветки, яблочную соломку и редис.
+                                            Украсить кольцами порея и целой креветкой и полить
+                                            оливковым маслом.
+                                        </li>
+                                        <li>
+                                            Посыпать готовый салат из капусты с креветками
+                                            свежемолотым черным перцем, щепоткой черной копченой
+                                            соли и сразу же подавать на стол.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </figure>
             </div>
-            <div class="items item5">
-                <label for="image5">
-                    <img src="images/squash.jpg" alt="squash" title="squash">
-                </label>
+            <div data-item>
+                <figure class="effect image5">
+                    <label for="image5">
+                        <img src="images/squash.jpg" alt="squash" title="squash">
+                        <figcaption><label for="open5" class="btn">Рецепт</label></figcaption>
+                    </label>
+                    <div class="back">
+                        <div class="recipe">
+                            <label for="close5"><img src="images/cross.png"></label>
+                            <h1>Кабачок с помидором и сыром</h1>
+                            <hr>
+                            <div class="content">
+                                <div>
+                                    <h2>Ингредиенты</h2>
+                                    <ul>
+                                        <li><strong>Кабачки</strong> <em>(280 г)</em></li>
+                                        <li><strong>Лук репчатый</strong> <em>(15 г)</em></li>
+                                        <li><strong>Помидоры</strong> <em>(100 г)</em></li>
+                                        <li><strong>Сыр</strong> <em>(40 г)</em></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h2>Инструкция</h2>
+                                    <ul>
+                                        <li>Кабачок чистим и нарезаем кружочками 1–2 см.</li>
+                                        <li>
+                                            Выкладываем кабачок в форму и ставим в духовку на 15
+                                            минут.
+                                        </li>
+                                        <li>Тем временем нарезаем лук, помидор и натираем сыр.</li>
+                                        <li>
+                                            Через 15 минут достаем кабачок и выкладываем на него
+                                            помидор, лук, сыр.
+                                        </li>
+                                        <li>Ставим на 20 минут в духовку.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </figure>
             </div>
-            <div class="items item6">
-                <label for="image6">
-                    <img src="images/eggplant.jpg" alt="eggplant" title="eggplant">
-                </label>
+            <div data-item>
+                <figure class="effect image6">
+                    <label for="image6">
+                        <img src="images/eggplant.jpg" alt="eggplant" title="eggplant">
+                        <figcaption><label for="open6" class="btn">Рецепт</label></figcaption>
+                    </label>
+                    <div class="back">
+                        <div class="recipe">
+                            <label for="close6"><img src="images/cross.png"></label>
+                            <h1>Китайский холодный суп из баклажанов</h1>
+                            <hr>
+                            <div class="content">
+                                <div>
+                                    <h2>Ингредиенты</h2>
+                                    <ul>
+                                        <li><strong>Баклажаны</strong> <em>(500 г)</em></li>
+                                        <li><strong>Лук репчатый</strong> <em>(100 г)</em></li>
+                                        <li><strong>Соус соевый</strong> <em>(40 г)</em></li>
+                                        <li><strong>Чили-паста</strong> <em>(80 г)</em></li>
+                                        <li><strong>Яблочный уксус</strong> <em>(50 г)</em></li>
+                                        <li><strong>Перец чили свежий</strong> <em>(30 г)</em></li>
+                                        <li><strong>Лук зеленый</strong> <em>(315 г)</em></li>
+                                        <li><strong>Кинза</strong> <em>(315 г)</em></li>
+                                        <li><strong>Вода</strong> <em>(1 л)</em></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h2>Инструкция</h2>
+                                    <ul>
+                                        <li>
+                                            Баклажан очистить от кожуры и пропарить 25 минут.
+                                            Пароварку можно соорудить из обычной кастрюли и
+                                            дуршлага.
+                                        </li>
+                                        <li>
+                                            Разорвать баклажан на полоски руками, или тонко нарезать
+                                            ножом. Нарезать лук и кинзу. Смешать все ингредиенты
+                                            кроме воды, мариновать 15 минут.
+                                        </li>
+                                        <li>
+                                            Добавить ледяную воду. Вода должна быть лучшая из
+                                            возможных.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </figure>
             </div>
-            <div class="items item7">
-                <label for="image7">
-                    <img src="images/pumpkin.jpg" alt="pumpkin" title="pumpkin">
-                </label>
+            <div data-item>
+                <figure class="effect image7">
+                    <label for="image7">
+                        <img src="images/pumpkin.jpg" alt="pumpkin" title="pumpkin">
+                        <figcaption><label for="open7" class="btn">Рецепт</label></figcaption>
+                    </label>
+                    <div class="back">
+                        <div class="recipe">
+                            <label for="close7"><img src="images/cross.png"></label>
+                            <h1>Тыква с пряностями и орехами</h1>
+                            <hr>
+                            <div class="content">
+                                <div>
+                                    <h2>Ингредиенты</h2>
+                                    <ul>
+                                        <li><strong>Орехи грецкие</strong> <em>(по вкусу)</em></li>
+                                        <li><strong>Орехи кедровые</strong> <em>(по вкусу)</em></li>
+                                        <li><strong>Мед</strong> <em>(2 с.л.)</em></li>
+                                        <li><strong>Масло сливочное</strong> <em>(2 с.л.)</em></li>
+                                        <li><strong>Палочки корицы</strong> <em>(по вкусу)</em></li>
+                                        <li>
+                                            <strong>Семена кардамона</strong> <em>(по вкусу)</em>
+                                        </li>
+                                        <li><strong>Сахар</strong> <em>(по вкусу)</em></li>
+                                        <li>
+                                            <strong>Семечки тыквы очищенные</strong>
+                                            <em>(по вкусу)</em>
+                                        </li>
+                                        <li><strong>Тыква</strong> <em>(1 штука)</em></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h2>Инструкция</h2>
+                                    <ul>
+                                        <li>Очистить тыкву, нарезать произвольно кусочками.</li>
+                                        <li>
+                                            Поместить в пакет и отправить в микроволновку на
+                                            5 минут.
+                                        </li>
+                                        <li>
+                                            Противень смазать маслом, переложить туда тыкву (если
+                                            выделится сок, его обязательно вылить на противень).
+                                            На горячую тыкву выложить остаток сливочного масла.
+                                            Полить медом.
+                                        </li>
+                                        <li>
+                                            Добавить остальные ингредиенты — орехи, пряности. Орехи
+                                            по желанию можно крупно нарубить или поломать.
+                                            Кардамон немного размять в ступке.
+                                        </li>
+                                        <li>
+                                            Все перемешать. Сахар — по желанию (для сладкоежек).
+                                        </li>
+                                        <li>
+                                            Запекать в духовом шкафу при температуре 200 градусов
+                                            до золотистого цвета.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </figure>
             </div>
         </div>
 

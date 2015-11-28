@@ -1,8 +1,11 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300&subset=latin,cyrillic);
+
 html,
 body
 {
     padding: 0;
     margin: 0;
+    font: 16px Roboto, Arial, sans-serif;
 }
 
 main
@@ -13,6 +16,7 @@ main
     width: 100%;
     height: 100vh;
     background-color: #f5f7f8;
+    overflow: hidden;
 }
 
 .gallery
@@ -35,12 +39,13 @@ label
     cursor: pointer;
 }
 
-.items
+[data-item]
 {
     transition: right 1s ease-out 0s, transform 1s ease-in-out 0s;
     position: relative;
     box-shadow: 0 0 59px 18px rgba(0,0,0,.05);
     background-color: #fff;
+    color: #fff;
 }
 
 img
@@ -50,247 +55,509 @@ img
     width: 200px;
 }
 
-#image1:checked ~ .gallery .item1
+#image1:checked ~ .gallery [data-item]:nth-of-type(1)
 {
-    transform: translateX(600px) translateZ(80px);
+    transform: translateX(600px) translateZ(0);
 }
 
-#image1:checked ~ .gallery .item2
+#image1:checked ~ .gallery [data-item]:nth-of-type(2)
 {
-    transform: translateX(500px) rotateY(-35deg);
+    transform: translateX(500px) rotateY(-35deg) translateZ(-90px);
 }
 
-#image1:checked ~ .gallery .item3
+#image1:checked ~ .gallery [data-item]:nth-of-type(3)
 {
-    transform: translateX(400px) rotateY(-30deg);
+    transform: translateX(400px) rotateY(-30deg) translateZ(-90px);
 }
 
-#image1:checked ~ .gallery .item4
+#image1:checked ~ .gallery [data-item]:nth-of-type(4)
 {
-    transform: translateX(300px) rotateY(-25deg);
+    transform: translateX(300px) rotateY(-25deg) translateZ(-90px);
 }
 
-#image1:checked ~ .gallery .item5
+#image1:checked ~ .gallery [data-item]:nth-of-type(5)
 {
-    transform: translateX(200px) rotateY(-20deg);
+    transform: translateX(200px) rotateY(-20deg) translateZ(-90px);
 }
 
-#image1:checked ~ .gallery .item6
+#image1:checked ~ .gallery [data-item]:nth-of-type(6)
 {
-    transform: translateX(100px) rotateY(-15deg);
+    transform: translateX(100px) rotateY(-15deg) translateZ(-90px);
 }
 
-#image1:checked ~ .gallery .item7
+#image1:checked ~ .gallery [data-item]:nth-of-type(7)
 {
-    transform: translateX(0) rotateY(-10deg);
+    transform: rotateY(-10deg) translateZ(-90px);
 }
 
-#image2:checked ~ .gallery .item1
+#image2:checked ~ .gallery [data-item]:nth-of-type(1)
 {
-    transform: translateX(500px) rotateY(35deg);
+    transform: translateX(500px) rotateY(35deg) translateZ(-90px);
 }
 
-#image2:checked ~ .gallery .item2
+#image2:checked ~ .gallery [data-item]:nth-of-type(2)
 {
-    transform: translateX(400px) translateZ(80px);
+    transform: translateX(400px) translateZ(0);
 }
 
-#image2:checked ~ .gallery .item3
+#image2:checked ~ .gallery [data-item]:nth-of-type(3)
 {
-    transform: translateX(300px) rotateY(-35deg);
+    transform: translateX(300px) rotateY(-35deg) translateZ(-90px);
 }
 
-#image2:checked ~ .gallery .item4
+#image2:checked ~ .gallery [data-item]:nth-of-type(4)
 {
-    transform: translateX(200px) rotateY(-30deg);
+    transform: translateX(200px) rotateY(-30deg) translateZ(-90px);
 }
 
-#image2:checked ~ .gallery .item5
+#image2:checked ~ .gallery [data-item]:nth-of-type(5)
 {
-    transform: translateX(100px) rotateY(-25deg);
+    transform: translateX(100px) rotateY(-25deg) translateZ(-90px);
 }
 
-#image2:checked ~ .gallery .item6
+#image2:checked ~ .gallery [data-item]:nth-of-type(6)
 {
-    transform: translateX(0) rotateY(-20deg);
+    transform: rotateY(-20deg) translateZ(-90px);
 }
 
-#image2:checked ~ .gallery .item7
+#image2:checked ~ .gallery [data-item]:nth-of-type(7)
 {
-    transform: translateX(-100px) rotateY(-15deg);
+    transform: translateX(-100px) rotateY(-15deg) translateZ(-90px);
 }
 
-#image3:checked ~ .gallery .item1
+#image3:checked ~ .gallery [data-item]:nth-of-type(1)
 {
-    transform: translateX(400px) rotateY(30deg);
+    transform: translateX(400px) rotateY(30deg) translateZ(-90px);
 }
 
-#image3:checked ~ .gallery .item2
+#image3:checked ~ .gallery [data-item]:nth-of-type(2)
 {
-    transform: translateX(300px) rotateY(35deg);
+    transform: translateX(300px) rotateY(35deg) translateZ(-90px);
 }
 
-#image3:checked ~ .gallery .item3
+#image3:checked ~ .gallery [data-item]:nth-of-type(3)
 {
-    transform: translateX(200px) translateZ(80px);
+    transform: translateX(200px) translateZ(0);
 }
 
-#image3:checked ~ .gallery .item4
+#image3:checked ~ .gallery [data-item]:nth-of-type(4)
 {
-    transform: translateX(100px) rotateY(-35deg);
+    transform: translateX(100px) rotateY(-35deg) translateZ(-90px);
 }
 
-#image3:checked ~ .gallery .item5
+#image3:checked ~ .gallery [data-item]:nth-of-type(5)
 {
-    transform: translateX(0) rotateY(-30deg);
+    transform: rotateY(-30deg) translateZ(-90px);
 }
 
-#image3:checked ~ .gallery .item6
+#image3:checked ~ .gallery [data-item]:nth-of-type(6)
 {
-    transform: translateX(-100px) rotateY(-25deg);
+    transform: translateX(-100px) rotateY(-25deg) translateZ(-90px);
 }
 
-#image3:checked ~ .gallery .item7
+#image3:checked ~ .gallery [data-item]:nth-of-type(7)
 {
-    transform: translateX(-200px) rotateY(-20deg);
+    transform: translateX(-200px) rotateY(-20deg) translateZ(-90px);
 }
 
-#image4:checked ~ .gallery .item1
+#image4:checked ~ .gallery [data-item]:nth-of-type(1)
 {
-    transform: translateX(300px) rotateY(25deg);
+    transform: translateX(300px) rotateY(25deg) translateZ(-90px);
 }
 
-#image4:checked ~ .gallery .item2
+#image4:checked ~ .gallery [data-item]:nth-of-type(2)
 {
-    transform: translateX(200px) rotateY(30deg);
+    transform: translateX(200px) rotateY(30deg) translateZ(-90px);
 }
 
-#image4:checked ~ .gallery .item3
+#image4:checked ~ .gallery [data-item]:nth-of-type(3)
 {
-    transform: translateX(100px) rotateY(35deg);
+    transform: translateX(100px) rotateY(35deg) translateZ(-90px);
 }
 
-#image4:checked ~ .gallery .item4
+#image4:checked ~ .gallery [data-item]:nth-of-type(4)
 {
-    transform: translateZ(80px);
+    transform: translateZ(0);
 }
 
-#image4:checked ~ .gallery .item5
+#image4:checked ~ .gallery [data-item]:nth-of-type(5)
 {
-    transform: translateX(-100px) rotateY(-35deg);
+    transform: translateX(-100px) rotateY(-35deg) translateZ(-90px);
 }
 
-#image4:checked ~ .gallery .item6
+#image4:checked ~ .gallery [data-item]:nth-of-type(6)
 {
-    transform: translateX(-200px) rotateY(-30deg);
+    transform: translateX(-200px) rotateY(-30deg) translateZ(-90px);
 }
 
-#image4:checked ~ .gallery .item7
+#image4:checked ~ .gallery [data-item]:nth-of-type(7)
 {
-    transform: translateX(-300px) rotateY(-25deg);
+    transform: translateX(-300px) rotateY(-25deg) translateZ(-90px);
 }
 
-#image5:checked ~ .gallery .item1
+#image5:checked ~ .gallery [data-item]:nth-of-type(1)
 {
-    transform: translateX(200px) rotateY(20deg);
+    transform: translateX(200px) rotateY(20deg) translateZ(-90px);
 }
 
-#image5:checked ~ .gallery .item2
+#image5:checked ~ .gallery [data-item]:nth-of-type(2)
 {
-    transform: translateX(100px) rotateY(25deg);
+    transform: translateX(100px) rotateY(25deg) translateZ(-90px);
 }
 
-#image5:checked ~ .gallery .item3
+#image5:checked ~ .gallery [data-item]:nth-of-type(3)
 {
-    transform: translateX(0) rotateY(30deg);
+    transform: rotateY(30deg) translateZ(-90px);
 }
 
-#image5:checked ~ .gallery .item4
+#image5:checked ~ .gallery [data-item]:nth-of-type(4)
 {
-    transform: translateX(-100px) rotateY(35deg);
+    transform: translateX(-100px) rotateY(35deg) translateZ(-90px);
 }
 
-#image5:checked ~ .gallery .item5
+#image5:checked ~ .gallery [data-item]:nth-of-type(5)
 {
-    transform: translateX(-200px) translateZ(80px);
+    transform: translateX(-200px) translateZ(0);
 }
 
-#image5:checked ~ .gallery .item6
+#image5:checked ~ .gallery [data-item]:nth-of-type(6)
 {
-    transform: translateX(-300px) rotateY(-35deg);
+    transform: translateX(-300px) rotateY(-35deg) translateZ(-90px);
 }
 
-#image5:checked ~ .gallery .item7
+#image5:checked ~ .gallery [data-item]:nth-of-type(7)
 {
-    transform: translateX(-400px) rotateY(-30deg);
+    transform: translateX(-400px) rotateY(-30deg) translateZ(-90px);
 }
 
-#image6:checked ~ .gallery .item1
+#image6:checked ~ .gallery [data-item]:nth-of-type(1)
 {
-    transform: translateX(100px) rotateY(15deg);
+    transform: translateX(100px) rotateY(15deg) translateZ(-90px);
 }
 
-#image6:checked ~ .gallery .item2
+#image6:checked ~ .gallery [data-item]:nth-of-type(2)
 {
-    transform: translateX(0) rotateY(20deg);
+    transform: rotateY(20deg) translateZ(-90px);
 }
 
-#image6:checked ~ .gallery .item3
+#image6:checked ~ .gallery [data-item]:nth-of-type(3)
 {
-    transform: translateX(-100px) rotateY(25deg);
+    transform: translateX(-100px) rotateY(25deg) translateZ(-90px);
 }
 
-#image6:checked ~ .gallery .item4
+#image6:checked ~ .gallery [data-item]:nth-of-type(4)
 {
-    transform: translateX(-200px) rotateY(30deg);
+    transform: translateX(-200px) rotateY(30deg) translateZ(-90px);
 }
 
-#image6:checked ~ .gallery .item5
+#image6:checked ~ .gallery [data-item]:nth-of-type(5)
 {
-    transform: translateX(-300px) rotateY(35deg);
+    transform: translateX(-300px) rotateY(35deg) translateZ(-90px);
 }
 
-#image6:checked ~ .gallery .item6
+#image6:checked ~ .gallery [data-item]:nth-of-type(6)
 {
-    transform: translateX(-400px) translateZ(80px);
+    transform: translateX(-400px) translateZ(0);
 }
 
-#image6:checked ~ .gallery .item7
+#image6:checked ~ .gallery [data-item]:nth-of-type(7)
 {
-    transform: translateX(-500px) rotateY(-35deg);
+    transform: translateX(-500px) rotateY(-35deg) translateZ(-90px);
 }
 
-#image7:checked ~ .gallery .item1
+#image7:checked ~ .gallery [data-item]:nth-of-type(1)
 {
-    transform: translateX(0) rotateY(10deg);
+    transform: rotateY(10deg) translateZ(-90px);
 }
 
-#image7:checked ~ .gallery .item2
+#image7:checked ~ .gallery [data-item]:nth-of-type(2)
 {
-    transform: translateX(-100px) rotateY(15deg);
+    transform: translateX(-100px) rotateY(15deg) translateZ(-90px);
 }
 
-#image7:checked ~ .gallery .item3
+#image7:checked ~ .gallery [data-item]:nth-of-type(3)
 {
-    transform: translateX(-200px) rotateY(20deg);
+    transform: translateX(-200px) rotateY(20deg) translateZ(-90px);
 }
 
-#image7:checked ~ .gallery .item4
+#image7:checked ~ .gallery [data-item]:nth-of-type(4)
 {
-    transform: translateX(-300px) rotateY(25deg);
+    transform: translateX(-300px) rotateY(25deg) translateZ(-90px);
 }
 
-#image7:checked ~ .gallery .item5
+#image7:checked ~ .gallery [data-item]:nth-of-type(5)
 {
-    transform: translateX(-400px) rotateY(30deg);
+    transform: translateX(-400px) rotateY(30deg) translateZ(-90px);
 }
 
-#image7:checked ~ .gallery .item6
+#image7:checked ~ .gallery [data-item]:nth-of-type(6)
 {
-    transform: translateX(-500px) rotateY(35deg);
+    transform: translateX(-500px) rotateY(35deg) translateZ(-90px);
 }
 
-#image7:checked ~ .gallery .item7
+#image7:checked ~ .gallery [data-item]:nth-of-type(7)
 {
-    transform: translateX(-600px) translateZ(80px);
+    transform: translateX(-600px) translateZ(0);
+}
+
+figure
+{
+    height: 200px;
+    width: 200px;
+    margin: 0;
+}
+
+figure figcaption::before,
+figure label.btn
+{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    bottom: 30px;
+    left: 30px;
+    opacity: 0;
+    transition: opacity .35s, transform .35s;
+}
+
+figure figcaption::before
+{
+    border: 1px solid #fff;
+    box-shadow: 0 0 0 30px rgba(0,0,0,.2);
+    content: '';
+    transform: scale3d(1.4,1.4,1);
+}
+
+figure label.btn
+{
+    display: none;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 150px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#image1:checked ~ .gallery figure.image1:hover label.btn,
+#image2:checked ~ .gallery figure.image2:hover label.btn,
+#image3:checked ~ .gallery figure.image3:hover label.btn,
+#image4:checked ~ .gallery figure.image4:hover label.btn,
+#image5:checked ~ .gallery figure.image5:hover label.btn,
+#image6:checked ~ .gallery figure.image6:hover label.btn,
+#image7:checked ~ .gallery figure.image7:hover label.btn
+{
+    display: inline-block;
+    opacity: 1;
+    transform: scale3d(1,1,1);
+}
+
+#image1:checked ~ .gallery figure.image1:hover figcaption::before,
+#image2:checked ~ .gallery figure.image2:hover figcaption::before,
+#image3:checked ~ .gallery figure.image3:hover figcaption::before,
+#image4:checked ~ .gallery figure.image4:hover figcaption::before,
+#image5:checked ~ .gallery figure.image5:hover figcaption::before,
+#image6:checked ~ .gallery figure.image6:hover figcaption::before,
+#image7:checked ~ .gallery figure.image7:hover figcaption::before
+{
+    background-color: rgba(0,0,0,.2);
+    opacity: 1;
+    transform: scale3d(1,1,1);
+}
+
+.back
+{
+    position: absolute;
+    display: none;
+}
+
+.recipe
+{
+    padding: 40px;
+    color: #373737;
+    overflow: auto;
+}
+
+.content
+{
+    display: flex;
+    min-height: 200px;
+}
+
+.content > div:first-child
+{
+    padding: 10px;
+    margin-right: 20px;
+    width: 35%;
+}
+
+ul
+{
+    padding-left: 0;
+}
+
+.content > div:first-child li
+{
+    list-style: none;
+    padding-bottom: 8px;
+}
+
+.content > div:last-child
+{
+    width: 65%;
+    padding: 10px;
+}
+
+.content > div:last-child li
+{
+    list-style: decimal inside;
+}
+
+#open1:checked ~ .gallery [data-item]:nth-of-type(1),
+#open2:checked ~ .gallery [data-item]:nth-of-type(2),
+#open3:checked ~ .gallery [data-item]:nth-of-type(3),
+#open4:checked ~ .gallery [data-item]:nth-of-type(4),
+#open5:checked ~ .gallery [data-item]:nth-of-type(5),
+#open6:checked ~ .gallery [data-item]:nth-of-type(6),
+#open7:checked ~ .gallery [data-item]:nth-of-type(7)
+{
+    animation: firstPart 2s linear;
+    z-index: 10000;
+}
+
+#open1:checked ~ .gallery figure.image1 .back,
+#open2:checked ~ .gallery figure.image2 .back,
+#open3:checked ~ .gallery figure.image3 .back,
+#open4:checked ~ .gallery figure.image4 .back,
+#open5:checked ~ .gallery figure.image5 .back,
+#open6:checked ~ .gallery figure.image6 .back,
+#open7:checked ~ .gallery figure.image7 .back
+{
+    display: block;
+    position: absolute;
+    z-index: 1000;
+    top: -46vh;
+    bottom: -46vh;
+    right: -50vw;
+    left: -50vw;
+    animation: secondPart 2s linear;
+    background-color: rgba(0,0,0,.2);
+}
+
+#open1:checked ~ .gallery figure.image1 .recipe,
+#open2:checked ~ .gallery figure.image2 .recipe,
+#open3:checked ~ .gallery figure.image3 .recipe,
+#open4:checked ~ .gallery figure.image4 .recipe,
+#open5:checked ~ .gallery figure.image5 .recipe,
+#open6:checked ~ .gallery figure.image6 .recipe,
+#open7:checked ~ .gallery figure.image7 .recipe
+{
+    display: block;
+    position: absolute;
+    z-index: 1000;
+    top: 20vh;
+    bottom: 20vh;
+    right: 25vw;
+    left: 25vw;
+    min-width: 500px;
+    min-height: 300px;
+    background-color: #f5f7f8;
+}
+
+.gallery .recipe img
+{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: -15px;
+    right: -15px;
+    float: right;
+    cursor: pointer;
+}
+
+@keyframes firstPart
+{
+    0%
+    {
+        display: block;
+        position: relative;
+        top: 0;
+    }
+    50%
+    {
+        display: block;
+        position: relative;
+        top: -200px;
+        transform: rotateX(-110deg);
+        opacity: 1;
+    }
+    51%
+    {
+        display: block;
+        position: relative;
+        top: -200px;
+        transform: rotateX(-110deg);
+        opacity: 1;
+    }
+    100%
+    {
+        display: block;
+        position: relative;
+        top: 0;
+        transform: rotateX(-360deg);
+        opacity: 1;
+    }
+}
+
+@keyframes secondPart
+{
+    0%
+    {
+        opacity: 0;
+    }
+    50%
+    {
+        opacity: 0;
+        z-index: 1000;
+    }
+    51%
+    {
+        opacity: 1;
+        z-index: 1000;
+        transform: scale(.3);
+        background-color: rgba(0,0,0,0);
+    }
+    70%
+    {
+        opacity: 1;
+        z-index: 1000;
+        transform: scale(.7);
+        background-color: rgba(0,0,0,0);
+    }
+    80%
+    {
+        opacity: 1;
+        z-index: 1000;
+        transform: scale(.8);
+        background-color: rgba(0,0,0,0);
+    }
+    90%
+    {
+        opacity: 1;
+        z-index: 1000;
+        transform: scale(.9);
+        background-color: rgba(0,0,0,0);
+    }
+    97%
+    {
+        opacity: 1;
+        z-index: 1000;
+        transform: scale(1.1);
+        background-color: rgba(0,0,0,0);
+    }
+    100%
+    {
+        opacity: 1;
+        z-index: 1000;
+        transform: scale(1.2);
+        background-color: rgba(0,0,0,.2);
+    }
 }
