@@ -5,29 +5,25 @@ input
 .wrapper
 {
     margin: 200px auto;
-    width: 80%;
+    width: 50%;
     min-width: 1150px;
     perspective: 200px;
 }
-.wrapper
 .vegetable
 {
     display: inline-block;
     position: relative;
     width: 160px;
     height: 180px;
-    box-shadow: 0 5px 30px grey;
+    box-shadow: 0 5px 30px #808080;
     transition: transform 1.5s ease 0s, left 1.5s ease 0s;
 }
-.wrapper
-.vegetable
-img
+.veg-img
 {
     width: inherit;
     height: inherit;
     background-color: #fff;
 }
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 #first:checked ~ label > .first
 {
     transform: scaleY(1);
@@ -70,7 +66,6 @@ img
     left: 0%;
     z-index: 1;
 }
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 #second:checked ~ label > .first
 {
     transform: scaleY(.9) rotateY(30deg);
@@ -113,7 +108,6 @@ img
     left: -5%;
     z-index: 1;
 }
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 #third:checked ~ label > .first
 {
     transform: scaleY(.8) rotateY(30deg);
@@ -156,7 +150,6 @@ img
     left: -10%;
     z-index: 1;
 }
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 #fourth:checked ~ label > .first
 {
     transform: scaleY(.7) rotateY(30deg);
@@ -199,7 +192,6 @@ img
     left: -15%;
     z-index: 2;
 }
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 #fifth:checked ~ label > .first
 {
     transform: scaleY(.6) rotateY(30deg);
@@ -242,7 +234,6 @@ img
     left: -20%;
     z-index: 3;
 }
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 #sixth:checked ~ label > .first
 {
     transform: scaleY(.5) rotateY(30deg);
@@ -285,7 +276,6 @@ img
     left: -25%;
     z-index: 4;
 }
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 #seventh:checked ~ label > .first
 {
     transform: scaleY(.4) rotateY(30deg);
