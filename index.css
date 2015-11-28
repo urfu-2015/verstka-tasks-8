@@ -57,56 +57,56 @@
     visibility: hidden;
 }
 
-/* 
+/*
 =====================
 RADIO1
 =====================
 */
 #radio1:checked + #radio2 + #radio3 + #radio4 + #radio5 + #radio6 + #radio7 + div.wrapper #img1
 {
-	transition: .5s;
+    transition: .5s;
     transform: translate(0, 0) rotateY(0deg);
     z-index: 6;
 }
 
 #radio1:checked + #radio2 + #radio3 + #radio4 + #radio5 + #radio6 + #radio7 + div.wrapper #img2
 {
-	transition: .5s;
+    transition: .5s;
     transform: translate(-300px, 0) rotateY(45deg) scaleY(.75);
     z-index: 3;
 }
 
 #radio1:checked + #radio2 + #radio3 + #radio4 + #radio5 + #radio6 + #radio7 + div.wrapper #img3
 {
-	transition: .5s;
+    transition: .5s;
     transform: translate(-200px, 0) rotateY(40deg) scaleY(.75);
     z-index: 4;
 }
 
 #radio1:checked + #radio2 + #radio3 + #radio4 + #radio5 + #radio6 + #radio7 + div.wrapper #img4
 {
-	transition: .5s;
+    transition: .5s;
     transform: translate(-100px, 0) rotateY(35deg) scaleY(.75);
     z-index: 5;
 }
 
 #radio1:checked + #radio2 + #radio3 + #radio4 + #radio5 + #radio6 + #radio7 + div.wrapper #img5
 {
-	transition: .5s;
+    transition: .5s;
     transform: translate( 100px, 0) rotateY(-35deg) scaleY(.75);
     z-index: 2;
 }
 
 #radio1:checked + #radio2 + #radio3 + #radio4 + #radio5 + #radio6 + #radio7 + div.wrapper #img6
 {
-	transition: .5s;
+    transition: .5s;
     transform: translate( 200px, 0) rotateY(-40deg) scaleY(.75);
     z-index: 1;
 }
 
 #radio1:checked + #radio2 + #radio3 + #radio4 + #radio5 + #radio6 + #radio7 + div.wrapper #img7
 {
-	transition: .5s;
+    transition: .5s;
     transform: translate( 300px, 0) rotateY(-45deg) scaleY(.75);
     z-index: 0;
 }
@@ -118,49 +118,49 @@ RADIO2
 */
 #radio2:checked + #radio3 + #radio4 + #radio5 + #radio6 + #radio7 + div.wrapper #img1
 {
-	transition: .5s;
+    transition: .5s;
     transform: translate(-300px, 0) rotateY(45deg) scaleY(.75);
     z-index: 0;
 }
 
 #radio2:checked + #radio3 + #radio4 + #radio5 + #radio6 + #radio7 + div.wrapper #img2
 {
-	transition: .5s;
+    transition: .5s;
     transform: translate(0, 0) rotateY(0deg);
     z-index: 5;
 }
 
 #radio2:checked + #radio3 + #radio4 + #radio5 + #radio6 + #radio7 + div.wrapper #img3
 {
-	transition: .5s;
+    transition: .5s;
     transform: translate(-200px, 0) rotateY(40deg) scaleY(.75);
     z-index: 1;
 }
 
 #radio2:checked + #radio3 + #radio4 + #radio5 + #radio6 + #radio7 + div.wrapper #img4
 {
-	transition: .5s;
+    transition: .5s;
     transform: translate(-100px, 0) rotateY(35deg) scaleY(.75);
     z-index: 3;
 }
 
 #radio2:checked + #radio3 + #radio4 + #radio5 + #radio6 + #radio7 + div.wrapper #img5
 {
-	transition: .5s;
+    transition: .5s;
     transform: translate( 100px, 0) rotateY(-35deg) scaleY(.75);
     z-index: 2;
 }
 
 #radio2:checked + #radio3 + #radio4 + #radio5 + #radio6 + #radio7 + div.wrapper #img6
 {
-	transition: .5s;
+    transition: .5s;
     transform: translate( 200px, 0) rotateY(-40deg) scaleY(.75);
     z-index: 1;
 }
 
 #radio2:checked + #radio3 + #radio4 + #radio5 + #radio6 + #radio7 + div.wrapper #img7
 {
-	transition: .5s;
+    transition: .5s;
     transform: translate( 300px, 0) rotateY(-45deg) scaleY(.75);
     z-index: 0;
 }
@@ -172,49 +172,49 @@ RADIO3
 */
 #radio3:checked + #radio4 + #radio5 + #radio6 + #radio7 + div.wrapper #img1
 {
-	transition: .5s;
+    transition: .5s;
     transform: translate(-300px, 0) rotateY(45deg) scaleY(.75);
     z-index: 0;
 }
 
 #radio3:checked + #radio4 + #radio5 + #radio6 + #radio7 + div.wrapper #img2
 {
-	transition: .5s;
+    transition: .5s;
     transform: translate(-200px, 0) rotateY(40deg) scaleY(.75);
     z-index: 1;
 }
 
 #radio3:checked + #radio4 + #radio5 + #radio6 + #radio7 + div.wrapper #img3
 {
-	transition: .5s;
+    transition: .5s;
     transform: translate(0, 0) rotateY(0deg);
     z-index: 4;
 }
 
 #radio3:checked + #radio4 + #radio5 + #radio6 + #radio7 + div.wrapper #img4
 {
-	transition: .5s;
+    transition: .5s;
     transform: translate(-100px, 0) rotateY(35deg) scaleY(.75);
     z-index: 3;
 }
 
 #radio3:checked + #radio4 + #radio5 + #radio6 + #radio7 + div.wrapper #img5
 {
-	transition: .5s;
+    transition: .5s;
     transform: translate( 100px, 0) rotateY(-35deg) scaleY(.75);
     z-index: 2;
 }
 
 #radio3:checked + #radio4 + #radio5 + #radio6 + #radio7 + div.wrapper #img6
 {
-	transition: .5s;
+    transition: .5s;
     transform: translate( 200px, 0) rotateY(-40deg) scaleY(.75);
     z-index: 1;
 }
 
 #radio3:checked + #radio4 + #radio5 + #radio6 + #radio7 + div.wrapper #img7
 {
-	transition: .5s;
+    transition: .5s;
     transform: translate( 300px, 0) rotateY(-45deg) scaleY(.75);
     z-index: 0;
 }
@@ -226,49 +226,49 @@ RADIO4
 */
 #radio4:checked + #radio5 + #radio6 + #radio7 + div.wrapper #img1
 {
-	transition: .5s;
+    transition: .5s;
     transform: translate(-300px, 0) rotateY(45deg) scaleY(.75);
     z-index: 0;
 }
 
 #radio4:checked + #radio5 + #radio6 + #radio7 + div.wrapper #img2
 {
-	transition: .5s;
+    transition: .5s;
     transform: translate(-200px, 0) rotateY(40deg) scaleY(.75);
     z-index: 1;
 }
 
 #radio4:checked + #radio5 + #radio6 + #radio7 + div.wrapper #img3
 {
-	transition: .5s;
+    transition: .5s;
     transform: translate(-100px, 0) rotateY(35deg) scaleY(.75);
     z-index: 2;
 }
 
 #radio4:checked + #radio5 + #radio6 + #radio7 + div.wrapper #img4
 {
-	transition: .5s;
+    transition: .5s;
     transform: translate(0, 0) rotateY(0deg);
     z-index: 3;
 }
 
 #radio4:checked + #radio5 + #radio6 + #radio7 + div.wrapper #img5
 {
-	transition: .5s;
+    transition: .5s;
     transform: translate( 100px, 0) rotateY(-35deg) scaleY(.75);
     z-index: 2;
 }
 
 #radio4:checked + #radio5 + #radio6 + #radio7 + div.wrapper #img6
 {
-	transition: .5s;
+    transition: .5s;
     transform: translate( 200px, 0) rotateY(-40deg) scaleY(.75);
     z-index: 1;
 }
 
 #radio4:checked + #radio5 + #radio6 + #radio7 + div.wrapper #img7
 {
-	transition: .5s;
+    transition: .5s;
     transform: translate( 300px, 0) rotateY(-45deg) scaleY(.75);
     z-index: 0;
 }
@@ -280,49 +280,49 @@ RADIO5
 */
 #radio5:checked + #radio6 + #radio7 + div.wrapper #img1
 {
-	transition: .5s;
+    transition: .5s;
     transform: translate(-300px, 0) rotateY(45deg) scaleY(.75);
     z-index: 0;
 }
 
 #radio5:checked + #radio6 + #radio7 + div.wrapper #img2
 {
-	transition: .5s;
+    transition: .5s;
     transform: translate(-200px, 0) rotateY(40deg) scaleY(.75);
     z-index: 1;
 }
 
 #radio5:checked + #radio6 + #radio7 + div.wrapper #img3
 {
-	transition: .5s;
+    transition: .5s;
     transform: translate(-100px, 0) rotateY(35deg) scaleY(.75);
     z-index: 2;
 }
 
 #radio5:checked + #radio6 + #radio7 + div.wrapper #img4
 {
-	transition: .5s;
+    transition: .5s;
     transform: translate(100px, 0) rotateY(-35deg) scaleY(.75);
     z-index: 3;
 }
 
 #radio5:checked + #radio6 + #radio7 + div.wrapper #img5
 {
-	transition: .5s;
+    transition: .5s;
     transform: translate(0, 0) rotateY(0deg);
     z-index: 4;
 }
 
 #radio5:checked + #radio6 + #radio7 + div.wrapper #img6
 {
-	transition: .5s;
+    transition: .5s;
     transform: translate( 200px, 0) rotateY(-40deg) scaleY(.75);
     z-index: 2;
 }
 
 #radio5:checked + #radio6 + #radio7 + div.wrapper #img7
 {
-	transition: .5s;
+    transition: .5s;
     transform: translate( 300px, 0) rotateY(-45deg) scaleY(.75);
     z-index: 1;
 }
@@ -334,49 +334,49 @@ RADIO6
 */
 #radio6:checked + #radio7 + div.wrapper #img1
 {
-	transition: .5s;
+    transition: .5s;
     transform: translate(-300px, 0) rotateY(45deg) scaleY(.75);
     z-index: 0;
 }
 
 #radio6:checked + #radio7 + div.wrapper #img2
 {
-	transition: .5s;
+    transition: .5s;
     transform: translate(-200px, 0) rotateY(40deg) scaleY(.75);
     z-index: 1;
 }
 
 #radio6:checked + #radio7 + div.wrapper #img3
 {
-	transition: .5s;
+    transition: .5s;
     transform: translate(-100px, 0) rotateY(35deg) scaleY(.75);
     z-index: 2;
 }
 
 #radio6:checked + #radio7 + div.wrapper #img4
 {
-	transition: .5s;
+    transition: .5s;
     transform: translate(100px, 0) rotateY(-35deg) scaleY(.75);
     z-index: 5;
 }
 
 #radio6:checked + #radio7 + div.wrapper #img5
 {
-	transition: .5s;
+    transition: .5s;
     transform: translate( 200px, 0) rotateY(-40deg) scaleY(.75);
     z-index: 4;
 }
 
 #radio6:checked + #radio7 + div.wrapper #img6
 {
-	transition: .5s;
+    transition: .5s;
     transform: translate(0, 0) rotateY(0deg);
     z-index: 6;
 }
 
 #radio6:checked + #radio7 + div.wrapper #img7
 {
-	transition: .5s;
+    transition: .5s;
     transform: translate( 300px, 0) rotateY(-45deg) scaleY(.75);
     z-index: 3;
 }
@@ -388,49 +388,49 @@ RADIO7
 */
 #radio7:checked + div.wrapper #img1
 {
-	transition: .5s;
+    transition: .5s;
     transform: translate(-300px, 0) rotateY(45deg) scaleY(.75);
     z-index: 0;
 }
 
 #radio7:checked + div.wrapper #img2
 {
-	transition: .5s;
+    transition: .5s;
     transform: translate(-200px, 0) rotateY(40deg) scaleY(.75);
     z-index: 1;
 }
 
 #radio7:checked + div.wrapper #img3
 {
-	transition: .5s;
+    transition: .5s;
     transform: translate(-100px, 0) rotateY(35deg) scaleY(.75);
     z-index: 2;
 }
 
 #radio7:checked + div.wrapper #img4
 {
-	transition: .5s;
+    transition: .5s;
     transform: translate(100px, 0) rotateY(-35deg) scaleY(.75);
     z-index: 4;
 }
 
 #radio7:checked + div.wrapper #img5
 {
-	transition: .5s;
+    transition: .5s;
     transform: translate(200px, 0) rotateY(-40deg) scaleY(.75);
     z-index: 3;
 }
 
 #radio7:checked + div.wrapper #img6
 {
-	transition: .5s;
+    transition: .5s;
     transform: translate(300px, 0) rotateY(-45deg) scaleY(.75);
     z-index: 2;
 }
 
 #radio7:checked + div.wrapper #img7
 {
-	transition: .5s;
+    transition: .5s;
     transform: translate(0, 0) rotateY(0deg);
     z-index: 6;
 }
