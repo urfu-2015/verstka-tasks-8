@@ -1,11 +1,447 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="utf-8">
-        <title>айБабулька</title>
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <!-- Здесь применять трехмерное волшебство -->
-    </body>
+<head>
+    <meta charset="utf-8">
+    <title>айБабулька</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="font-awesome-4.4.0/css/font-awesome.css">
+</head>
+<body>
+<!-- Здесь применять трехмерное волшебство -->
+<main>
+    <input type="radio" name="vegetables" id="cucumber" class="invisible-input">
+    <input type="radio" name="vegetables" id="cabbage" class="invisible-input">
+    <input type="radio" name="vegetables" id="eggplant" class="invisible-input">
+    <input type="radio" name="vegetables" id="parrot" class="invisible-input" checked>
+    <input type="radio" name="vegetables" id="pepper" class="invisible-input">
+    <input type="radio" name="vegetables" id="pumpkin" class="invisible-input">
+    <input type="radio" name="vegetables" id="tomato" class="invisible-input">
+
+    <input type="radio" name="recipe-1" id="recipe-1" class="recipe-input invisible-input">
+    <input type="radio" name="recipe-2" id="recipe-2" class="recipe-input invisible-input">
+    <input type="radio" name="recipe-3" id="recipe-3" class="recipe-input invisible-input">
+    <input type="radio" name="recipe-4" id="recipe-4" class="recipe-input invisible-input">
+    <input type="radio" name="recipe-5" id="recipe-5" class="recipe-input invisible-input">
+    <input type="radio" name="recipe-6" id="recipe-6" class="recipe-input invisible-input">
+    <input type="radio" name="recipe-7" id="recipe-7" class="recipe-input invisible-input">
+
+    <input type="radio" name="recipe-1" id="exit-1" class="exit invisible-input">
+    <input type="radio" name="recipe-2" id="exit-2" class="exit invisible-input">
+    <input type="radio" name="recipe-3" id="exit-3" class="exit invisible-input">
+    <input type="radio" name="recipe-4" id="exit-4" class="exit invisible-input">
+    <input type="radio" name="recipe-5" id="exit-5" class="exit invisible-input">
+    <input type="radio" name="recipe-6" id="exit-6" class="exit invisible-input">
+    <input type="radio" name="recipe-7" id="exit-7" class="exit invisible-input">
+
+    <section class="main-content">
+        <div class="paranja"></div>
+        <article class="vegetables cucumber">
+            <div class="front-side">
+                <label for="cucumber">
+                    <img src="images/cucumber.jpeg" alt="cucumber" title="cucumber">
+                </label>
+                <div class="hover-background">
+                    <div class="recipe-link">
+                        <label for="recipe-1" class="recipe-label">Рецепт</label>
+                    </div>
+                </div>
+            </div>
+            <div class="back-side">
+                <label for="exit-1" title="exit" class="exit">
+                    <span class="fa fa-times"></span>
+                </label>
+                <h3>Канапе с огурцом и морепродуктами</h3>
+                <div class="recipe">
+                    <div class="ingredients">
+                        <span>Сливочный сыр/фета</span> (100г)<br>
+                        <span>Огурец</span> (1 штука)<br>
+                        <span>Чеснок</span><br>
+                        <span>Батон</span> (1 штука)<br>
+                        <span>Оливки/маслины</span><br>
+                        <span>Креветки</span> (200г)<br>
+                        <span>Майонез</span><br>
+                    </div>
+                    <div class="instruction">
+                        <h4>Инструкция</h4>
+                        <ol>
+                            <li>
+                                Отварить креветки по инструкции на упаковке, дать остыть, очистить.
+                            </li>
+                            <li>
+                                Измельчить огурец, потерев его на терке, соединить со сливочным сыром
+                                или фетой, добавить пропущенный через пресс чеснок, немного
+                                майонеза – смесь должна быть пастообразной и легко намазываться
+                                на хлеб.
+                            </li>
+                            <li>
+                                Нарезать батон кусочками по 1-1,5см толщиной, поджарить на сковороде
+                                без масла до легкого зарумянивания.
+                            </li>
+                            <li>
+                                Смазать приготовленные гренки сырной пастой с огурцом.
+                                На шпажки для канапе нанизать креветки и оливки,
+                                прикрепить шпажку к кусочку хлеба.
+                            </li>
+                        </ol>
+                        <div class="instruction-bonus">
+                            Не обязательно делать канапе именно с креветками – нанизать на шпажку
+                            можно и мидии, и кальмары, и осьминожек, и любую рыбу.
+                            Для аромата можно сбрызнуть такие канапе соком лимона,
+                            а в качестве «подставки» вместо хлеба можно использовать
+                            огурец или помидор.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="vegetables cabbage">
+            <div class="front-side">
+                <label for="cabbage">
+                    <img src="images/cabbage1.jpg" alt="cabbage" title="cabbage">
+                </label>
+                <div class="hover-background">
+                    <div class="recipe-link">
+                        <label for="recipe-2" class="recipe-label">Рецепт</label>
+                    </div>
+                </div>
+            </div>
+            <div class="back-side">
+                <label for="exit-2" title="exit" class="exit">
+                    <span class="fa fa-times"></span>
+                </label>
+                <h3>Пирожки с капустой</h3>
+                <div class="recipe">
+                    <div class="ingredients">
+                        <span>Мука</span> (2 стакана)<br>
+                        <span>Вода</span> (1/2 стакана)<br>
+                        <span>Масло подсолнечное</span> (1/2 стакана)<br>
+                        <span>Соль</span> (1 ч. ложка)<br>
+                        <span>Капуста</span> (300г)<br>
+                        <span>Морковь</span> (1 штука)<br>
+                        <span>Томатный сок</span> (1/2 стакана)<br>
+                    </div>
+                    <div class="instruction">
+                        <h4>Инструкция</h4>
+                        <ol>
+                            <li>
+                                Чтобы правильно приготовить тесто, сначала смешивают в миске воду,
+                                соль и масло, а затем постепенно добавляют муку,
+                                всё тщательно вымешивая.
+                                Тесто получается мягким, но достаточно эластичным.
+                                Его накрывают салфеткой и оставляют на 30 минут.
+                            </li>
+                            <li>
+                                Пока тесто отдыхает, занимаются начинкой.
+                                Для этого мелко рубят капусту, трут на тёрке морковь,
+                                солят и все вместе ставят тушиться, добавив томатный сок.
+                            </li>
+                            <li>
+                                Когда начинка готова, приступают к изготовлению пирожков.
+                                Сперва тесто разделяют на одинаковые шарики.
+                                Затем каждый кусочек раскатывают скалкой так,
+                                чтобы он стал прямоугольной формы, и щедро награждают его
+                                капустной начинкой. Сворачивают рулетом.
+                            </li>
+                            <li>
+                                Выкладывают на противень и пекут в разогретой духовке
+                                около 20 минут при 180°C.
+                            </li>
+                        </ol>
+                        <div class="instruction-bonus">
+                            Начинку для вэрзэре можно выбрать на свой вкус,
+                            в классическом же исполнении – это капуста.
+                            Она может быть кислой или свежей, с добавлением риса, лука либо яиц.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="vegetables eggplant">
+            <div class="front-side">
+                <label for="eggplant">
+                    <img src="images/eggplant.jpg" alt="eggplant" title="eggplant">
+                </label>
+                <div class="hover-background">
+                    <div class="recipe-link">
+                        <label for="recipe-3" class="recipe-label">Рецепт</label>
+                    </div>
+                </div>
+            </div>
+            <div class="back-side">
+                <label for="exit-3" title="exit" class="exit">
+                    <span class="fa fa-times"></span>
+                </label>
+                <h3>Горячая закусочка</h3>
+                <div class="recipe">
+                    <div class="ingredients">
+                        <span>Баклажанчик</span> (1 штука)<br>
+                        <span>Помидорчик</span> (1 штука)<br>
+                        <span>Сырок</span> (100г)<br>
+                        <span>Солька</span> (по вкусу)<br>
+                        <span>Маслице растительное</span><br>
+                        <span>Чесночок</span> (по вкусу)<br>
+                        <span>Сода</span> (1 щепотка)<br>
+                        <span>Масло для жарки</span>
+                    </div>
+                    <div class="instruction">
+                        <h4>Инструкция</h4>
+                        <ol>
+                            <li>
+                                Помойте и обсушите при помощи бумажных полотенец баклажаны.
+                                Их необходимо порезать кружочками (толщина каждого — около 1 см.).
+                                Хорошенько посолите и оставьте баклажаны постоять,
+                                чтобы готовая закуска не горчила.
+                                Как увидите на кружочках баклажанов выделившийся сок,
+                                хорошенько промойте их обычной водой.
+                            </li>
+                            <li>
+                                Затем баклажаны снова немного посолите и обжарьте с двух сторон
+                                до золотой корочки на сковороде.
+                            </li>
+                            <li>
+                                Готовые баклажаны выложите на тарелочку. Выдавить через пресс чеснок.
+                                Натрите сыр (лучше выбирать твёрдые сорта). Посыпьте им баклажаны.
+                                Помытые и нарезанные кружочками помидоры выложите на сыр.
+                            </li>
+                            <li>
+                                Снова немного посолите и присыпьте сверху сыром.
+                                Запекайте овощи с сыром в микроволновой печи (буквально 2 минуты)
+                                или в духовке (тоже пару минут).
+                                Это позволит сыру расплавиться и образовать аппетитную корочку.
+                            </li>
+                        </ol>
+                        <div class="instruction-bonus">
+                            Ням-ням! :)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="vegetables parrot">
+            <div class="front-side">
+                <label for="parrot">
+                    <img src="images/parrot.gif" alt="parrot" title="parrot">
+                </label>
+                <div class="hover-background">
+                    <div class="recipe-link">
+                        <label for="recipe-4" class="recipe-label">Рецепт</label>
+                    </div>
+                </div>
+            </div>
+            <div class="back-side">
+                <label for="exit-4" title="exit" class="exit">
+                    <span class="fa fa-times"></span>
+                </label>
+                <h3>Сырники с морковкой</h3>
+                <div class="recipe">
+                    <div class="ingredients">
+                        <span>Морковь</span> (1 штука)<br>
+                        <span>Творог</span> (250г)<br>
+                        <span>Мука</span> (200г)<br>
+                        <span>Сметана</span> (1 ст. ложка)<br>
+                        <span>Яйцо</span> (1 штука)<br>
+                        <span>Сахар</span> (2 ст. ложки)<br>
+                        <span>Сода</span> (1 щепотка)<br>
+                        <span>Масло для жарки</span>
+                    </div>
+                    <div class="instruction">
+                        <h4>Инструкция</h4>
+                        <ol>
+                            <li>
+                                Размешаем хорошо творог, морковь, соду, сахар, яйцо и часть муки.
+                                Остальную муку будем добавлять постепенно,
+                                чтобы получилось мягкое тесто.
+                            </li>
+                            <li>
+                                Из теста накатаем порционных шариков величиной с орех.
+                                Из шариков, придавив их вилкой, сделаем маленькие лепешки.
+                            </li>
+                            <li>
+                                Обжарим сырники на разогретой сковороде с двух сторон.
+                            </li>
+                        </ol>
+                        <div class="instruction-bonus">
+                            Подавать творожники с морковью можно с медом, сметаной.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="vegetables pepper">
+            <div class="front-side">
+                <label for="pepper">
+                    <img src="images/pepper.jpg" alt="pepper" title="pepper">
+                </label>
+                <div class="hover-background">
+                    <div class="recipe-link">
+                        <label for="recipe-5" class="recipe-label">Рецепт</label>
+                    </div>
+                </div>
+            </div>
+            <div class="back-side">
+                <label for="exit-5" title="exit" class="exit">
+                    <span class="fa fa-times"></span>
+                </label>
+                <h3>Рататуй</h3>
+                <div class="recipe">
+                    <div class="ingredients">
+                        <span>Сладкий перец</span> (2 штуки)<br>
+                        <span>Баклажан</span> (2 штуки)<br>
+                        <span>Цукини</span> (1 штука)<br>
+                        <span>Помидоры</span> (2 штуки)<br>
+                        <span>Красная луковица</span> (1 штука)<br>
+                        <span>Чеснок</span> (2-3 зубчика)<br>
+                        <span>Соус Табаско</span> (несколько капель)<br>
+                        <span>Оливковое масло</span> (2 ст. ложки) <br>
+                        <span>Петрушка, тимьян, орегано, майоран</span>
+                    </div>
+                    <div class="instruction">
+                        <h4>Инструкция</h4>
+                        <ol>
+                            <li>
+                                Цукини и баклажан нарежьте тонкими ломтиками.
+                                Перцы разрежьте вдоль, удалите семена,
+                                мякоть нарежьте крупными квадратами.
+                                Поместите овощи в пароварку и готовьте 16–18 мин.
+                            </li>
+                            <li>
+                                Лук нарежьте тонкими полукольцами, помидоры кубиками,
+                                чеснок мелко порубите.
+                            </li>
+                            <li>
+                                Разогрейте в глубокой сковороде оливковое масло и потушите
+                                лук и чеснок на среднем огне 4–5 мин., добавьте помидоры
+                                и готовьте 5–7 мин.
+                                Положите зелень, перемешайте.
+                                Приправьте острым соусом, поперчите и посолите по вкусу.
+                            </li>
+                            <li>
+                                Выньте овощи из пароварки, заправьте томатным соусом
+                                и дайте настояться, 20 мин.
+                            </li>
+                        </ol>
+                        <div class="instruction-bonus">
+                            Зелень для рататуя вы можете выбирать по собственному
+                            вкусу – кому-то покажется,
+                            что вполне достаточно одного тимьяна, другому нужен весь сезонной букет
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="vegetables pumpkin">
+            <div class="front-side">
+                <label for="pumpkin">
+                    <img src="images/pumpkin.jpg" alt="pumpkin" title="pumpkin">
+                </label>
+                <div class="hover-background">
+                    <div class="recipe-link">
+                        <label for="recipe-6" class="recipe-label">Рецепт</label>
+                    </div>
+                </div>
+            </div>
+            <div class="back-side">
+                <label for="exit-6" title="exit" class="exit">
+                    <span class="fa fa-times"></span>
+                </label>
+                <h3>Запеченная тыква</h3>
+                <div class="recipe">
+                    <div class="ingredients">
+                        <span>Тыква</span> (4 штуки)<br>
+                        <span>Лук</span> (2 штуки)<br>
+                        <span>Шампиньоны</span> (11 штук)<br>
+                        <span>Чеснок</span> (1 зубчик)<br>
+                        <span>Шпинат</span> (300г)<br>
+                        <span>Твердый тертый сыр</span> (2/3 стакана)<br>
+                        <span>Сливки</span> (1/2 стакана)<br>
+                        <span>Сливочное масло</span> (1 ст. ложка) <br>
+                        <span>Багет</span><br>
+                        <span>Соль, перец по вкусу</span>
+                    </div>
+                    <div class="instruction">
+                        <h4>Инструкция</h4>
+                        <ol>
+                            <li>
+                                Тыквы промойте, срежьте у них верхушки, но не выкидывайте их:
+                                они нам ещё понадобятся.
+                                Удалите мякоть с семенами. Посолите тыкву, посыпьте специями изнутри.
+                                Параллельно разогрейте духовку до 150 градусов.
+                            </li>
+                            <li>
+                                Лук очистите, порежьте и обжарьте на сковороде (с добавлением масла).
+                                Грибы порежьте и обжарьте вместе с луком.
+                                Готовим вместе 5 минут (грибочки должны стать коричневыми).
+                                Следом добавляем шпинат. Посолите и поперчите.
+                                Переложите обжаренные ингредиенты в отдельную мисочку.
+                                К ним добавьте багет и сыр, влейте сливки. Всё тщательно перемешайте.
+                                Разложите начинку по тыквам.
+                            </li>
+                            <li>
+                                Поставьте тыквы на противень, предварительно смазанный маслом.
+                                Накройте их срезанными верхушками. Запекайте их на протяжении 1 часа,
+                                затем уберите "шапочки". Выпекайте еще 20-30 минут.
+                            </li>
+                        </ol>
+                        <div class="instruction-bonus">
+                            Тыква — невероятный овощ, с какой стороны ни глянь.
+                            Она имеет низкую калорийность и поэтому великолепно подходит для тех,
+                            кто следит за своей фигурой.<br>
+                            Попробуйте это сытное блюдо: не пожалеете!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="vegetables tomato">
+            <div class="front-side">
+                <label for="tomato">
+                    <img src="images/tomato.jpg" alt="tomato" title="tomato">
+                </label>
+                <div class="hover-background">
+                    <div class="recipe-link">
+                        <label for="recipe-7" class="recipe-label">Рецепт</label>
+                    </div>
+                </div>
+            </div>
+            <div class="back-side">
+                <label for="exit-7" title="exit" class="exit">
+                    <span class="fa fa-times"></span>
+                </label>
+                <h3>Запеканка из помидоров с творогом</h3>
+                <div class="recipe">
+                    <div class="ingredients">
+                        <span>Творог</span> (200г)<br>
+                        <span>Яйца</span> (4 штуки)<br>
+                        <span>Очищенные семечки</span> (1 стакан)<br>
+                        <span>Молоко</span> (1/2 стакана)<br>
+                        <span>Растительное масло</span> (4 ст. ложки)<br>
+                        <span>Соль, перец, петрушка по вкусу</span>
+                    </div>
+                    <div class="instruction">
+                        <h4>Инструкция</h4>
+                        <ol>
+                            <li>
+                                Очистить от кожицы помидоры, мелко нарезать, потушить на масле,
+                                подсолив, 5 мин, снять с огня.
+                            </li>
+                            <li>
+                                Всыпать семечки, добавить творог, петрушку, поперчить,
+                                перемешать и выложить в смазанную маслом форму.
+                            </li>
+                            <li>
+                                Яйца взбить с молоком, полить помидоры с творогом,
+                                запечь в духовке до румяной корочкой.
+                                Украсить базиликом при подаче.
+                            </li>
+                        </ol>
+                        <div class="instruction-bonus">
+                            Вместо творога попробуйте использовать адыгейский сыр.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+</main>
+</body>
 </html>
