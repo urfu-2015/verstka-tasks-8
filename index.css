@@ -1,1 +1,150 @@
+html,
+body
+{
+    margin: 0;
+    height: 100%;
+}
 
+body
+{
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input
+{
+    display: none;
+}
+
+main
+{
+    width: 1400px;
+    height: 150px;
+    position: relative;
+    perspective: 800px;
+}
+
+.item
+{
+    position: absolute;
+    left: 600px;
+    width: 200px;
+    height: 150px;
+    box-shadow: 0 5px 10px #ccc;
+    transition: all .5s;
+    z-index: 7;
+}
+
+.item img
+{
+    width: 100%;
+}
+
+#item1:checked ~ main .item1,
+#item2:checked ~ main .item2,
+#item3:checked ~ main .item3,
+#item4:checked ~ main .item4,
+#item5:checked ~ main .item5,
+#item6:checked ~ main .item6,
+#item7:checked ~ main .item7
+{
+    transform: scale(1.2);
+}
+
+#item1:checked ~ main .item2,
+#item2:checked ~ main .item3,
+#item3:checked ~ main .item4,
+#item4:checked ~ main .item5,
+#item5:checked ~ main .item6,
+#item6:checked ~ main .item7
+{
+    transform: translateX(170px) rotateY(-60deg);
+    z-index: 6;
+}
+
+#item1:checked ~ main .item3,
+#item2:checked ~ main .item4,
+#item3:checked ~ main .item5,
+#item4:checked ~ main .item6,
+#item5:checked ~ main .item7
+{
+    transform: translateX(240px) rotateY(-55deg);
+    z-index: 5;
+}
+
+#item1:checked ~ main .item4,
+#item2:checked ~ main .item5,
+#item3:checked ~ main .item6,
+#item4:checked ~ main .item7
+{
+    transform: translateX(310px) rotateY(-50deg);
+    z-index: 4;
+}
+
+#item1:checked ~ main .item5,
+#item2:checked ~ main .item6,
+#item3:checked ~ main .item7
+{
+    transform: translateX(380px) rotateY(-45deg);
+    z-index: 3;
+}
+
+#item1:checked ~ main .item6,
+#item2:checked ~ main .item7
+{
+    transform: translateX(450px) rotateY(-40deg);
+    z-index: 2;
+}
+
+#item1:checked ~ main .item7
+{
+    transform: translateX(520px) rotateY(-35deg);
+    z-index: 1;
+}
+
+#item7:checked ~ main .item6,
+#item6:checked ~ main .item5,
+#item5:checked ~ main .item4,
+#item4:checked ~ main .item3,
+#item3:checked ~ main .item2,
+#item2:checked ~ main .item1
+{
+    transform: translateX(-170px) rotateY(60deg);
+}
+
+#item7:checked ~ main .item5,
+#item6:checked ~ main .item4,
+#item5:checked ~ main .item3,
+#item4:checked ~ main .item2,
+#item3:checked ~ main .item1
+{
+    transform: translateX(-240px) rotateY(55deg);
+}
+
+#item7:checked ~ main .item4,
+#item6:checked ~ main .item3,
+#item5:checked ~ main .item2,
+#item4:checked ~ main .item1
+{
+    transform: translateX(-310px) rotateY(50deg);
+}
+
+#item7:checked ~ main .item3,
+#item6:checked ~ main .item2,
+#item5:checked ~ main .item1
+{
+    transform: translateX(-380px) rotateY(45deg);
+}
+
+#item7:checked ~ main .item2,
+#item6:checked ~ main .item1
+{
+    transform: translateX(-450px) rotateY(40deg);
+}
+
+#item7:checked ~ main .item1
+{
+    transform: translateX(-520px) rotateY(35deg);
+}
