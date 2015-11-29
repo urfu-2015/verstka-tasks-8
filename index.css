@@ -166,7 +166,6 @@ main
     top: 10%;
 }
 
-
 [id='cucumber']:checked ~ .main-content .cucumber:hover .hover-background .recipe-label,
 [id='cabbage']:checked ~ .main-content .cabbage:hover .hover-background .recipe-label,
 [id='eggplant']:checked ~ .main-content .eggplant:hover .hover-background .recipe-label,
