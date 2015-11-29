@@ -709,6 +709,11 @@ article.vegetables
     display: none;
 }
 
+.paranja
+{
+    transition: transform 0s linear .75s, background-color 0s linear .75s;
+}
+
 .recipe-input:checked ~ .main-content .paranja
 {
     position: fixed;
@@ -716,8 +721,8 @@ article.vegetables
     left: -20%;
     width: 140%;
     height: 165%;
-    z-index: 7;
     background: rgba(1, 1, 1, .3);
+    transform: translateZ(30px);
 }
 
 [id='recipe-1']:checked ~ .main-content .cucumber,
@@ -728,7 +733,7 @@ article.vegetables
 [id='recipe-6']:checked ~ .main-content .pumpkin,
 [id='recipe-7']:checked ~ .main-content .tomato
 {
-    transform: rotate3d(1, 0, 0, -180deg);
+    transform: rotate3d(1, 0, 0, -180deg) translateZ(-32px);
 }
 
 .recipe
