@@ -33,9 +33,8 @@ main
     width: 200px;
     height: 150px;
     box-shadow: 0 5px 10px #ccc;
-    transition-property: all;
-    transition-duration: .5s;
-    transition-timing-function: ease;
+    transition: all .5s;
+    z-index: 7;
 }
 
 .item img
@@ -52,7 +51,6 @@ main
 #item7:checked ~ main .item7
 {
     transform: scale(1.2);
-    z-index: 7;
 }
 
 #item1:checked ~ main .item2,
@@ -114,7 +112,6 @@ main
 #item2:checked ~ main .item1
 {
     transform: translateX(-170px) rotateY(60deg);
-    z-index: 6;
 }
 
 #item7:checked ~ main .item5,
@@ -124,7 +121,6 @@ main
 #item3:checked ~ main .item1
 {
     transform: translateX(-240px) rotateY(55deg);
-    z-index: 5;
 }
 
 #item7:checked ~ main .item4,
@@ -133,7 +129,6 @@ main
 #item4:checked ~ main .item1
 {
     transform: translateX(-310px) rotateY(50deg);
-    z-index: 4;
 }
 
 #item7:checked ~ main .item3,
@@ -141,18 +136,15 @@ main
 #item5:checked ~ main .item1
 {
     transform: translateX(-380px) rotateY(45deg);
-    z-index: 3;
 }
 
 #item7:checked ~ main .item2,
 #item6:checked ~ main .item1
 {
     transform: translateX(-450px) rotateY(40deg);
-    z-index: 2;
 }
 
 #item7:checked ~ main .item1
 {
     transform: translateX(-520px) rotateY(35deg);
-    z-index: 1;
 }
