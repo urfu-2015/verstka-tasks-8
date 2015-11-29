@@ -2,6 +2,7 @@ html,
 body
 {
     height: 100%;
+    margin: 0;
 }
 
 body
@@ -24,6 +25,7 @@ main
     flex-direction: row;
     flex-wrap: nowrap;
     transform-style: preserve-3d;
+    transform: perspective(800px);
     transition: all .5s ease-in;
 }
 
@@ -48,144 +50,131 @@ img
 
 #picture-1:checked ~ .container
 {
-    transform: translateX(200px);
+    transform: perspective(800px) translateX(600px);
 }
 
 #picture-2:checked ~ .container
 {
-    transform: translateX(100px);
+    transform: perspective(800px) translateX(400px);
 }
 
 #picture-3:checked ~ .container
 {
-    transform: translateX(50px);
+    transform: perspective(800px) translateX(200px);
 }
 
 #picture-5:checked ~ .container
 {
-    transform: translateX(-50px);
+    transform: perspective(800px) translateX(-200px);
 }
 
 #picture-6:checked ~ .container
 {
-    transform: translateX(-100px);
+    transform: perspective(800px) translateX(-400px);
 }
 
 #picture-7:checked ~ .container
 {
-    transform: translateX(-200px);
+    transform: perspective(800px) translateX(-600px);
 }
 
-#picture-1:checked ~ .container > .picture-1,
-#picture-2:checked ~ .container > .picture-2,
-#picture-3:checked ~ .container > .picture-3,
-#picture-4:checked ~ .container > .picture-4,
-#picture-5:checked ~ .container > .picture-5,
-#picture-6:checked ~ .container > .picture-6,
-#picture-7:checked ~ .container > .picture-7
+#picture-1:checked ~ .container .picture-1,
+#picture-2:checked ~ .container .picture-2,
+#picture-3:checked ~ .container .picture-3,
+#picture-4:checked ~ .container .picture-4,
+#picture-5:checked ~ .container .picture-5,
+#picture-6:checked ~ .container .picture-6,
+#picture-7:checked ~ .container .picture-7
 {
-    transform: scale(1.1);
-    z-index: 100;
+    transform: translateZ(100px);
 }
 
-#picture-1:checked ~ .container > .picture-2,
-#picture-2:checked ~ .container > .picture-3,
-#picture-3:checked ~ .container > .picture-4,
-#picture-4:checked ~ .container > .picture-5,
-#picture-5:checked ~ .container > .picture-6,
-#picture-6:checked ~ .container > .picture-7
+#picture-1:checked ~ .container .picture-2,
+#picture-2:checked ~ .container .picture-3,
+#picture-3:checked ~ .container .picture-4,
+#picture-4:checked ~ .container .picture-5,
+#picture-5:checked ~ .container .picture-6,
+#picture-6:checked ~ .container .picture-7
 {
-    transform: perspective(400px) rotateY(-50deg) translateZ(-50px);
-    margin-left: -100px;
+    transform: translateX(-50px) translateZ(-50px) rotateY(-50deg);
 }
 
-#picture-1:checked ~ .container > .picture-3,
-#picture-2:checked ~ .container > .picture-4,
-#picture-3:checked ~ .container > .picture-5,
-#picture-4:checked ~ .container > .picture-6,
-#picture-5:checked ~ .container > .picture-7
+#picture-1:checked ~ .container .picture-3,
+#picture-2:checked ~ .container .picture-4,
+#picture-3:checked ~ .container .picture-5,
+#picture-4:checked ~ .container .picture-6,
+#picture-5:checked ~ .container .picture-7
 {
-    transform: perspective(400px) rotateY(-48deg) translateZ(-50px);
-    margin-left: -100px;
+    transform: translateX(-200px) translateZ(-50px) rotateY(-48deg);
 }
 
-#picture-1:checked ~ .container > .picture-4,
-#picture-2:checked ~ .container > .picture-5,
-#picture-3:checked ~ .container > .picture-6,
-#picture-4:checked ~ .container > .picture-7
+#picture-1:checked ~ .container .picture-4,
+#picture-2:checked ~ .container .picture-5,
+#picture-3:checked ~ .container .picture-6,
+#picture-4:checked ~ .container .picture-7
 {
-    transform: perspective(400px) rotateY(-46deg) translateZ(-50px);
-    margin-left: -150px;
+    transform: translateX(-350px) translateZ(-50px) rotateY(-46deg);
 }
 
-#picture-1:checked ~ .container > .picture-5,
-#picture-2:checked ~ .container > .picture-6,
-#picture-3:checked ~ .container > .picture-7
+#picture-1:checked ~ .container .picture-5,
+#picture-2:checked ~ .container .picture-6,
+#picture-3:checked ~ .container .picture-7
 {
-    transform: perspective(400px) rotateY(-44deg) translateZ(-50px);
-    margin-left: -160px;
+    transform: translateX(-500px) translateZ(-50px) rotateY(-44deg);
 }
 
-#picture-1:checked ~ .container > .picture-6,
-#picture-2:checked ~ .container > .picture-7
+#picture-1:checked ~ .container .picture-6,
+#picture-2:checked ~ .container .picture-7
 {
-    transform: perspective(400px) rotateY(-42deg) translateZ(-50px);
-    margin-left: -170px;
+    transform: translateX(-650px) translateZ(-50px) rotateY(-42deg);
 }
 
-#picture-1:checked ~ .container > .picture-7
+#picture-1:checked ~ .container .picture-7
 {
-    transform: perspective(400px) rotateY(-40deg) translateZ(-50px);
-    margin-left: -180px;
+    transform: translateX(-800px) translateZ(-50px) rotateY(-40deg);
 }
 
-#picture-2:checked ~ .container > .picture-1,
-#picture-3:checked ~ .container > .picture-2,
-#picture-4:checked ~ .container > .picture-3,
-#picture-5:checked ~ .container > .picture-4,
-#picture-6:checked ~ .container > .picture-5,
-#picture-7:checked ~ .container > .picture-6
+#picture-2:checked ~ .container .picture-1,
+#picture-3:checked ~ .container .picture-2,
+#picture-4:checked ~ .container .picture-3,
+#picture-5:checked ~ .container .picture-4,
+#picture-6:checked ~ .container .picture-5,
+#picture-7:checked ~ .container .picture-6
 {
-    transform: perspective(400px) rotateY(50deg) translateZ(-50px);
-    margin-right: -100px;
+    transform: translateX(50px) translateZ(-50px) rotateY(50deg);
 }
 
-#picture-3:checked ~ .container > .picture-1,
-#picture-4:checked ~ .container > .picture-2,
-#picture-5:checked ~ .container > .picture-3,
-#picture-6:checked ~ .container > .picture-4,
-#picture-7:checked ~ .container > .picture-5
+#picture-3:checked ~ .container .picture-1,
+#picture-4:checked ~ .container .picture-2,
+#picture-5:checked ~ .container .picture-3,
+#picture-6:checked ~ .container .picture-4,
+#picture-7:checked ~ .container .picture-5
 {
-    transform: perspective(400px) rotateY(48deg) translateZ(-50px);
-    margin-right: -100px;
+    transform: translateX(200px) translateZ(-50px) rotateY(48deg);
 }
 
-#picture-4:checked ~ .container > .picture-1,
-#picture-5:checked ~ .container > .picture-2,
-#picture-6:checked ~ .container > .picture-3,
-#picture-7:checked ~ .container > .picture-4
+#picture-4:checked ~ .container .picture-1,
+#picture-5:checked ~ .container .picture-2,
+#picture-6:checked ~ .container .picture-3,
+#picture-7:checked ~ .container .picture-4
 {
-    transform: perspective(400px) rotateY(46deg) translateZ(-50px);
-    margin-right: -150px;
+    transform: translateX(350px) translateZ(-50px) rotateY(46deg);
 }
 
-#picture-5:checked ~ .container > .picture-1,
-#picture-6:checked ~ .container > .picture-2,
-#picture-7:checked ~ .container > .picture-3
+#picture-5:checked ~ .container .picture-1,
+#picture-6:checked ~ .container .picture-2,
+#picture-7:checked ~ .container .picture-3
 {
-    transform: perspective(400px) rotateY(44deg) translateZ(-50px);
-    margin-right: -160px;
+    transform: translateX(500px) translateZ(-50px) rotateY(44deg);
 }
 
-#picture-6:checked ~ .container > .picture-1,
-#picture-7:checked ~ .container > .picture-2
+#picture-6:checked ~ .container .picture-1,
+#picture-7:checked ~ .container .picture-2
 {
-    transform: perspective(400px) rotateY(42deg) translateZ(-50px);
-    margin-right: -170px;
+    transform: translateX(650px) translateZ(-50px) rotateY(42deg);
 }
 
-#picture-7:checked ~ .container > .picture-1
+#picture-7:checked ~ .container .picture-1
 {
-    transform: perspective(400px) rotateY(40deg) translateZ(-50px);
-    margin-right: -180px;
+    transform: translateX(800px) translateZ(-50px) rotateY(40deg);
 }
