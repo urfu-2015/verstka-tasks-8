@@ -1,9 +1,12 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&subset=latin,cyrillic);
+
 main
 {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: 'Open Sans Condensed', Calibri, Arial, Helvetica, sans-serif;
     font-size: 1vw;
 }
 
@@ -15,6 +18,7 @@ main
     align-items: center;
     justify-content: space-between;
     perspective: 400px;
+    transform-style: preserve-3d;
 }
 
 .invisible-input
@@ -29,6 +33,48 @@ main
     flex-direction: column;
     align-items: center;
     position: relative;
+    perspective: 400px;
+    transform-style: preserve-3d;
+}
+
+.front-side
+{
+    backface-visibility: hidden;
+}
+
+.back-side
+{
+    position: absolute;
+    top: -25%;
+    left: -80%;
+    width: 330%;
+    height: 150%;
+    background-color: #fff;
+    transform: translateZ(-2px) rotateX(180deg);
+    backface-visibility: hidden;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, .3);
+    font-size: .9em;
+}
+
+.cucumber .back-side,
+.pumpkin .back-side
+{
+    height: 350%;
+    top: -150%;
+}
+
+.cabbage .back-side
+{
+    height: 380%;
+    top: -180%;
+}
+
+.eggplant .back-side,
+.tomato .back-side,
+.pepper .back-side
+{
+    height: 280%;
+    top: -120%;
 }
 
 .vegetables img
@@ -36,6 +82,7 @@ main
     width: 100%;
     min-height: 100%;
     object-fit: cover;
+    display: block;
     box-shadow: 0 0 5px 5px rgba(0, 0, 0, .3);
 }
 
@@ -65,13 +112,13 @@ main
     background-color: rgba(72, 72, 72, .8);
 }
 
-[id='cucumber']:checked ~ .main-content .cucumber:hover .recipe,
-[id='cabbage']:checked ~ .main-content .cabbage:hover .recipe,
-[id='eggplant']:checked ~ .main-content .eggplant:hover .recipe,
-[id='parrot']:checked ~ .main-content .parrot:hover .recipe,
-[id='pepper']:checked ~ .main-content .pepper:hover .recipe,
-[id='pumpkin']:checked ~ .main-content .pumpkin:hover .recipe,
-[id='tomato']:checked ~ .main-content .tomato:hover .recipe
+[id='cucumber']:checked ~ .main-content .cucumber:hover .recipe-link,
+[id='cabbage']:checked ~ .main-content .cabbage:hover .recipe-link,
+[id='eggplant']:checked ~ .main-content .eggplant:hover .recipe-link,
+[id='parrot']:checked ~ .main-content .parrot:hover .recipe-link,
+[id='pepper']:checked ~ .main-content .pepper:hover .recipe-link,
+[id='pumpkin']:checked ~ .main-content .pumpkin:hover .recipe-link,
+[id='tomato']:checked ~ .main-content .tomato:hover .recipe-link
 {
     border: 2px solid #fff;
     position: relative;
@@ -83,50 +130,52 @@ main
     text-align: center;
 }
 
-[id='cucumber']:checked ~ .main-content .cucumber:hover .recipe
+[id='cucumber']:checked ~ .main-content .cucumber:hover .recipe-link
 {
     height: 75%;
     top: 10%;
 }
 
-[id='cabbage']:checked ~ .main-content .cabbage:hover .recipe
+[id='cabbage']:checked ~ .main-content .cabbage:hover .recipe-link
 {
     height: 65%;
     top: 17%;
 }
 
-[id='parrot']:checked ~ .main-content .parrot:hover .recipe
+[id='parrot']:checked ~ .main-content .parrot:hover .recipe-link
 {
     width: 60%;
     left: 19%;
 }
 
-[id='pepper']:checked ~ .main-content .pepper:hover .recipe
+[id='pepper']:checked ~ .main-content .pepper:hover .recipe-link
 {
     height: 60%;
     top: 19%;
 }
 
-[id='pumpkin']:checked ~ .main-content .pumpkin:hover .recipe
+[id='pumpkin']:checked ~ .main-content .pumpkin:hover .recipe-link
 {
     height: 60%;
     top: 19%;
 }
 
-[id='tomato']:checked ~ .main-content .tomato:hover .recipe
+[id='tomato']:checked ~ .main-content .tomato:hover .recipe-link
 {
     height: 75%;
     top: 10%;
 }
 
-[id='cucumber']:checked ~ .main-content .cucumber:hover .hover-background p,
-[id='cabbage']:checked ~ .main-content .cabbage:hover .hover-background p,
-[id='eggplant']:checked ~ .main-content .eggplant:hover .hover-background p,
-[id='parrot']:checked ~ .main-content .parrot:hover .hover-background p,
-[id='pepper']:checked ~ .main-content .pepper:hover .hover-background p,
-[id='pumpkin']:checked ~ .main-content .pumpkin:hover .hover-background p,
-[id='tomato']:checked ~ .main-content .tomato:hover .hover-background p
+
+[id='cucumber']:checked ~ .main-content .cucumber:hover .hover-background .recipe-label,
+[id='cabbage']:checked ~ .main-content .cabbage:hover .hover-background .recipe-label,
+[id='eggplant']:checked ~ .main-content .eggplant:hover .hover-background .recipe-label,
+[id='parrot']:checked ~ .main-content .parrot:hover .hover-background .recipe-label,
+[id='pepper']:checked ~ .main-content .pepper:hover .hover-background .recipe-label,
+[id='pumpkin']:checked ~ .main-content .pumpkin:hover .hover-background .recipe-label,
+[id='tomato']:checked ~ .main-content .tomato:hover .hover-background .recipe-label
 {
+    display: block;
     color: #fff;
     margin-top: 30%;
     font-size: 1.5em;
@@ -144,21 +193,21 @@ article.vegetables
 {
     left: 40%;
     transform: scale(2);
-    z-index: 7;
+    z-index: 8;
 
 }
 
 [id='parrot']:checked ~ .main-content .parrot
 {
     transform: scale(1.3);
-    z-index: 7;
+    z-index: 8;
 }
 
 [id='cabbage']:checked ~ .main-content .cabbage
 {
     left: 30%;
     transform: scale(2);
-    z-index: 7;
+    z-index: 8;
 
 }
 
@@ -166,7 +215,7 @@ article.vegetables
 {
     left: 15%;
     transform: scale(1.8);
-    z-index: 7;
+    z-index: 8;
 
 }
 
@@ -174,7 +223,7 @@ article.vegetables
 {
     left: -15%;
     transform: scale(1.4);
-    z-index: 7;
+    z-index: 8;
 
 }
 
@@ -182,7 +231,7 @@ article.vegetables
 {
     left: -25%;
     transform: scale(2);
-    z-index: 7;
+    z-index: 8;
 
 }
 
@@ -190,44 +239,68 @@ article.vegetables
 {
     left: -40%;
     transform: scale(2);
-    z-index: 7;
+    z-index: 8;
 
 }
 
 [id='parrot']:checked ~ .main-content .pepper
 {
     z-index: 6;
-    transform: rotateY(-30deg);
+    -webkit-transform: rotate3d(0, 1, 0, -20deg);
+    -moz-transform: rotate3d(0, 1, 0, -20deg);
+    -ms-transform: rotate3d(0, 1, 0, -20deg);
+    -o-transform: rotate3d(0, 1, 0, -20deg);
+    transform: rotate3d(0, 1, 0, -20deg);
 }
 
 [id='parrot']:checked ~ .main-content .pumpkin
 {
     z-index: 5;
-    transform: rotateY(-30deg);
+    -webkit-transform: rotate3d(0, 1, 0, -20deg);
+    -moz-transform: rotate3d(0, 1, 0, -20deg);
+    -ms-transform: rotate3d(0, 1, 0, -20deg);
+    -o-transform: rotate3d(0, 1, 0, -20deg);
+    transform: rotate3d(0, 1, 0, -20deg);
 }
 
 [id='parrot']:checked ~ .main-content .tomato
 {
     z-index: 4;
-    transform: rotateY(-30deg);
+    -webkit-transform: rotate3d(0, 1, 0, -20deg);
+    -moz-transform: rotate3d(0, 1, 0, -20deg);
+    -ms-transform: rotate3d(0, 1, 0, -20deg);
+    -o-transform: rotate3d(0, 1, 0, -20deg);
+    transform: rotate3d(0, 1, 0, -20deg);
 }
 
 [id='parrot']:checked ~ .main-content .eggplant
 {
     z-index: 6;
-    transform: rotateY(30deg);
+    -webkit-transform: rotate3d(0, 1, 0, 20deg);
+    -moz-transform: rotate3d(0, 1, 0, 20deg);
+    -ms-transform: rotate3d(0, 1, 0, 20deg);
+    -o-transform: rotate3d(0, 1, 0, 20deg);
+    transform: rotate3d(0, 1, 0, 20deg);
 }
 
 [id='parrot']:checked ~ .main-content .cabbage
 {
     z-index: 5;
-    transform: rotateY(30deg);
+    -webkit-transform: rotate3d(0, 1, 0, 20deg);
+    -moz-transform: rotate3d(0, 1, 0, 20deg);
+    -ms-transform: rotate3d(0, 1, 0, 20deg);
+    -o-transform: rotate3d(0, 1, 0, 20deg);
+    transform: rotate3d(0, 1, 0, 20deg);
 }
 
 [id='parrot']:checked ~ .main-content .cucumber
 {
     z-index: 4;
-    transform: rotateY(30deg);
+    -webkit-transform: rotate3d(0, 1, 0, 20deg);
+    -moz-transform: rotate3d(0, 1, 0, 20deg);
+    -ms-transform: rotate3d(0, 1, 0, 20deg);
+    -o-transform: rotate3d(0, 1, 0, 20deg);
+    transform: rotate3d(0, 1, 0, 20deg);
 }
 
 /* ********************************************************************* */
@@ -236,41 +309,65 @@ article.vegetables
 {
     left: 40%;
     z-index: 6;
-    transform: rotateY(-30deg) scaleY(1.5);
+    -webkit-transform: rotate3d(0, 1, 0, -20deg) scale3d(1, 1.4, 1);
+    -moz-transform: rotate3d(0, 1, 0, -20deg) scale3d(1, 1.4, 1);
+    -ms-transform: rotate3d(0, 1, 0, -20deg) scale3d(1, 1.4, 1);
+    -o-transform: rotate3d(0, 1, 0, -20deg) scale3d(1, 1.4, 1);
+    transform: rotate3d(0, 1, 0, -20deg) scale3d(1, 1.4, 1);
 }
 
 [id='cucumber']:checked ~ .main-content .eggplant
 {
     left: 32%;
     z-index: 5;
-    transform: rotateY(-30deg) scaleY(1.1);
+    -webkit-transform: rotate3d(0, 1, 0, -20deg) scale3d(1, .9, 1);
+    -moz-transform: rotate3d(0, 1, 0, -20deg) scale3d(1, .9, 1);
+    -ms-transform: rotate3d(0, 1, 0, -20deg) scale3d(1, .9, 1);
+    -o-transform: rotate3d(0, 1, 0, -20deg) scale3d(1, .9, 1);
+    transform: rotate3d(0, 1, 0, -20deg) scale3d(1, .9, 1);
 }
 
 [id='cucumber']:checked ~ .main-content .parrot
 {
-    left: 25%;
+    left: 23%;
     z-index: 4;
-    transform: rotateY(-30deg) scaleY(.9);
+    -webkit-transform: rotate3d(0, 1, 0, -20deg) scale3d(1, .7, 1);
+    -moz-transform: rotate3d(0, 1, 0, -20deg) scale3d(1, .7, 1);
+    -ms-transform: rotate3d(0, 1, 0, -20deg) scale3d(1, .7, 1);
+    -o-transform: rotate3d(0, 1, 0, -20deg) scale3d(1, .7, 1);
+    transform: rotate3d(0, 1, 0, -20deg) scale3d(1, .7, 1);
 }
 
 [id='cucumber']:checked ~ .main-content .pepper
 {
-    left: 17%;
+    left: 15%;
     z-index: 3;
-    transform: rotateY(-30deg) scaleY(1.1);
+    -webkit-transform: rotate3d(0, 1, 0, -20deg) scale3d(1, .9, 1);
+    -moz-transform: rotate3d(0, 1, 0, -20deg) scale3d(1, .9, 1);
+    -ms-transform: rotate3d(0, 1, 0, -20deg) scale3d(1, .9, 1);
+    -o-transform: rotate3d(0, 1, 0, -20deg) scale3d(1, .9, 1);
+    transform: rotate3d(0, 1, 0, -20deg) scale3d(1, .9, 1);
 }
 
 [id='cucumber']:checked ~ .main-content .pumpkin
 {
-    left: 8%;
+    left: 7%;
     z-index: 2;
-    transform: rotateY(-30deg) scaleY(1.1);
+    -webkit-transform: rotate3d(0, 1, 0, -20deg) scale3d(1, .9, 1);
+    -moz-transform: rotate3d(0, 1, 0, -20deg) scale3d(1, .9, 1);
+    -ms-transform: rotate3d(0, 1, 0, -20deg) scale3d(1, .9, 1);
+    -o-transform: rotate3d(0, 1, 0, -20deg) scale3d(1, .9, 1);
+    transform: rotate3d(0, 1, 0, -20deg) scale3d(1, .9, 1);
 }
 
 [id='cucumber']:checked ~ .main-content .tomato
 {
     z-index: 1;
-    transform: rotateY(-30deg);
+    -webkit-transform: rotate3d(0, 1, 0, -20deg) scale3d(1, .9, 1);
+    -moz-transform: rotate3d(0, 1, 0, -20deg) scale3d(1, .9, 1);
+    -ms-transform: rotate3d(0, 1, 0, -20deg) scale3d(1, .9, 1);
+    -o-transform: rotate3d(0, 1, 0, -20deg) scale3d(1, .9, 1);
+    transform: rotate3d(0, 1, 0, -20deg) scale3d(1, .9, 1);
 }
 
 /* ********************************************************************* */
@@ -279,41 +376,65 @@ article.vegetables
 {
     left: 25%;
     z-index: 6;
-    transform: rotateY(30deg) scaleY(1.5);
+    -webkit-transform: rotate3d(0, 1, 0, 20deg) scale3d(1, 1.5, 1);
+    -moz-transform: rotate3d(0, 1, 0, 20deg) scale3d(1, 1.5, 1);
+    -ms-transform: rotate3d(0, 1, 0, 20deg) scale3d(1, 1.5, 1);
+    -o-transform: rotate3d(0, 1, 0, 20deg) scale3d(1, 1.5, 1);
+    transform: rotate3d(0, 1, 0, 20deg) scale3d(1, 1.5, 1);
 }
 
 [id='cabbage']:checked ~ .main-content .eggplant
 {
     left: 30%;
     z-index: 6;
-    transform: rotateY(-30deg);
+    -webkit-transform: rotate3d(0, 1, 0, -20deg) scale3d(1, 1.1, 1);
+    -moz-transform: rotate3d(0, 1, 0, -20deg) scale3d(1, 1.1, 1);
+    -ms-transform: rotate3d(0, 1, 0, -20deg) scale3d(1, 1.1, 1);
+    -o-transform: rotate3d(0, 1, 0, -20deg) scale3d(1, 1.1, 1);
+    transform: rotate3d(0, 1, 0, -20deg) scale3d(1, 1.1, 1);
 }
 
 [id='cabbage']:checked ~ .main-content .parrot
 {
     left: 22%;
     z-index: 5;
-    transform: rotateY(-30deg) scaleY(.8);
+    -webkit-transform: rotate3d(0, 1, 0, -20deg) scale3d(1, .8, 1);
+    -moz-transform: rotate3d(0, 1, 0, -20deg) scale3d(1, .8, 1);
+    -ms-transform: rotate3d(0, 1, 0, -20deg) scale3d(1, .8, 1);
+    -o-transform: rotate3d(0, 1, 0, -20deg) scale3d(1, .8, 1);
+    transform: rotate3d(0, 1, 0, -20deg) scale3d(1, .8, 1);
 }
 
 [id='cabbage']:checked ~ .main-content .pepper
 {
     left: 13%;
     z-index: 4;
-    transform: rotateY(-30deg) scaleY(.9);
+    -webkit-transform: rotate3d(0, 1, 0, -20deg) scale3d(1, .9, 1);
+    -moz-transform: rotate3d(0, 1, 0, -20deg) scale3d(1, .9, 1);
+    -ms-transform: rotate3d(0, 1, 0, -20deg) scale3d(1, .9, 1);
+    -o-transform: rotate3d(0, 1, 0, -20deg) scale3d(1, .9, 1);
+    transform: rotate3d(0, 1, 0, -20deg) scale3d(1, .9, 1);
 }
 
 [id='cabbage']:checked ~ .main-content .pumpkin
 {
     left: 6%;
     z-index: 3;
-    transform: rotateY(-30deg) scaleY(.85);
+    -webkit-transform: rotate3d(0, 1, 0, -20deg) scale3d(1, .85, 1);
+    -moz-transform: rotate3d(0, 1, 0, -20deg) scale3d(1, .85, 1);
+    -ms-transform: rotate3d(0, 1, 0, -20deg) scale3d(1, .85, 1);
+    -o-transform: rotate3d(0, 1, 0, -20deg) scale3d(1, .85, 1);
+    transform: rotate3d(0, 1, 0, -20deg) scale3d(1, .85, 1);
 }
 
 [id='cabbage']:checked ~ .main-content .tomato
 {
     z-index: 2;
-    transform: rotateY(-30deg) scaleY(.8);
+    -webkit-transform: rotate3d(0, 1, 0, -20deg) scale3d(1, .8, 1);
+    -moz-transform: rotate3d(0, 1, 0, -20deg) scale3d(1, .8, 1);
+    -ms-transform: rotate3d(0, 1, 0, -20deg) scale3d(1, .8, 1);
+    -o-transform: rotate3d(0, 1, 0, -20deg) scale3d(1, .8, 1);
+    transform: rotate3d(0, 1, 0, -20deg) scale3d(1, .8, 1);
 }
 
 /* ********************************************************************* */
@@ -322,41 +443,65 @@ article.vegetables
 {
     left: 16%;
     z-index: 5;
-    transform: rotateY(30deg);
+    -webkit-transform: rotate3d(0, 1, 0, 20deg);
+    -moz-transform: rotate3d(0, 1, 0, 20deg);
+    -ms-transform: rotate3d(0, 1, 0, 20deg);
+    -o-transform: rotate3d(0, 1, 0, 20deg);
+    transform: rotate3d(0, 1, 0, 20deg);
 }
 
 [id='eggplant']:checked ~ .main-content .cabbage
 {
     left: 12%;
     z-index: 6;
-    transform: rotateY(30deg) scaleY(1.1);
+    -webkit-transform: rotate3d(0, 1, 0, 20deg) scale3d(1, 1.1, 1);
+    -moz-transform: rotate3d(0, 1, 0, 20deg) scale3d(1, 1.1, 1);
+    -ms-transform: rotate3d(0, 1, 0, 20deg) scale3d(1, 1.1, 1);
+    -o-transform: rotate3d(0, 1, 0, 20deg) scale3d(1, 1.1, 1);
+    transform: rotate3d(0, 1, 0, 20deg) scale3d(1, 1.1, 1);
 }
 
 [id='eggplant']:checked ~ .main-content .parrot
 {
     left: 15%;
     z-index: 6;
-    transform: rotateY(-30deg) scaleY(1.1);
+    -webkit-transform: rotate3d(0, 1, 0, -20deg);
+    -moz-transform: rotate3d(0, 1, 0, -20deg);
+    -ms-transform: rotate3d(0, 1, 0, -20deg);
+    -o-transform: rotate3d(0, 1, 0, -20deg);
+    transform: rotate3d(0, 1, 0, -20deg);
 }
 
 [id='eggplant']:checked ~ .main-content .pepper
 {
     left: 10%;
     z-index: 5;
-    transform: rotateY(-30deg);
+    -webkit-transform: rotate3d(0, 1, 0, -20deg);
+    -moz-transform: rotate3d(0, 1, 0, -20deg);
+    -ms-transform: rotate3d(0, 1, 0, -20deg);
+    -o-transform: rotate3d(0, 1, 0, -20deg);
+    transform: rotate3d(0, 1, 0, -20deg);
 }
 
 [id='eggplant']:checked ~ .main-content .pumpkin
 {
     left: 6%;
     z-index: 4;
-    transform: rotateY(-30deg) scaleY(.9);
+    -webkit-transform: rotate3d(0, 1, 0, -20deg) scale3d(1, .9, 1);
+    -moz-transform: rotate3d(0, 1, 0, -20deg) scale3d(1, .9, 1);
+    -ms-transform: rotate3d(0, 1, 0, -20deg) scale3d(1, .9, 1);
+    -o-transform: rotate3d(0, 1, 0, -20deg) scale3d(1, .9, 1);
+    transform: rotate3d(0, 1, 0, -20deg) scale3d(1, .9, 1);
 }
 
 [id='eggplant']:checked ~ .main-content .tomato
 {
     z-index: 3;
-    transform: rotateY(-30deg) scaleY(.8);
+    -webkit-transform: rotate3d(0, 1, 0, -20deg) scale3d(1, .8, 1);
+    -moz-transform: rotate3d(0, 1, 0, -20deg) scale3d(1, .8, 1);
+    -ms-transform: rotate3d(0, 1, 0, -20deg) scale3d(1, .8, 1);
+    -o-transform: rotate3d(0, 1, 0, -20deg) scale3d(1, .8, 1);
+    transform: rotate3d(0, 1, 0, -20deg) scale3d(1, .8, 1);
 }
 
 /* ********************************************************************* */
@@ -364,42 +509,66 @@ article.vegetables
 [id='pepper']:checked ~ .main-content .cucumber
 {
     z-index: 3;
-    transform: rotateY(30deg) scaleY(.8);
+    -webkit-transform: rotate3d(0, 1, 0, 20deg) scale3d(1, .8, 1);
+    -moz-transform: rotate3d(0, 1, 0, 20deg) scale3d(1, .8, 1);
+    -ms-transform: rotate3d(0, 1, 0, 20deg) scale3d(1, .8, 1);
+    -o-transform: rotate3d(0, 1, 0, 20deg) scale3d(1, .8, 1);
+    transform: rotate3d(0, 1, 0, 20deg) scale3d(1, .8, 1);
 }
 
 [id='pepper']:checked ~ .main-content .cabbage
 {
     left: -5%;
     z-index: 4;
-    transform: rotateY(30deg) scaleY(1);
+    -webkit-transform: rotate3d(0, 1, 0, 20deg);
+    -moz-transform: rotate3d(0, 1, 0, 20deg);
+    -ms-transform: rotate3d(0, 1, 0, 20deg);
+    -o-transform: rotate3d(0, 1, 0, 20deg);
+    transform: rotate3d(0, 1, 0, 20deg);
 }
 
 [id='pepper']:checked ~ .main-content .eggplant
 {
     left: -8%;
     z-index: 5;
-    transform: rotateY(30deg) scaleY(.9);
+    -webkit-transform: rotate3d(0, 1, 0, 20deg) scale3d(1, .9, 1);
+    -moz-transform: rotate3d(0, 1, 0, 20deg) scale3d(1, .9, 1);
+    -ms-transform: rotate3d(0, 1, 0, 20deg) scale3d(1, .9, 1);
+    -o-transform: rotate3d(0, 1, 0, 20deg) scale3d(1, .9, 1);
+    transform: rotate3d(0, 1, 0, 20deg) scale3d(1, .9, 1);
 }
 
 [id='pepper']:checked ~ .main-content .parrot
 {
     left: -15%;
     z-index: 6;
-    transform: rotateY(30deg) scaleY(.9);
+    -webkit-transform: rotate3d(0, 1, 0, 20deg) scale3d(1, .9, 1);
+    -moz-transform: rotate3d(0, 1, 0, 20deg) scale3d(1, .9, 1);
+    -ms-transform: rotate3d(0, 1, 0, 20deg) scale3d(1, .9, 1);
+    -o-transform: rotate3d(0, 1, 0, 20deg) scale3d(1, .9, 1);
+    transform: rotate3d(0, 1, 0, 20deg) scale3d(1, .9, 1);
 }
 
 [id='pepper']:checked ~ .main-content .pumpkin
 {
     left: -16%;
     z-index: 6;
-    transform: rotateY(-30deg) scaleY(1.1);
+    -webkit-transform: rotate3d(0, 1, 0, -20deg) scale3d(1, 1.1, 1);
+    -moz-transform: rotate3d(0, 1, 0, -20deg) scale3d(1, 1.1, 1);
+    -ms-transform: rotate3d(0, 1, 0, -20deg) scale3d(1, 1.1, 1);
+    -o-transform: rotate3d(0, 1, 0, -20deg) scale3d(1, 1.1, 1);
+    transform: rotate3d(0, 1, 0, -20deg) scale3d(1, 1.1, 1);
 }
 
 [id='pepper']:checked ~ .main-content .tomato
 {
     left: -20%;
     z-index: 5;
-    transform: rotateY(-30deg);
+    -webkit-transform: rotate3d(0, 1, 0, -20deg);
+    -moz-transform: rotate3d(0, 1, 0, -20deg);
+    -ms-transform: rotate3d(0, 1, 0, -20deg);
+    -o-transform: rotate3d(0, 1, 0, -20deg);
+    transform: rotate3d(0, 1, 0, -20deg);
 }
 
 /* ********************************************************************* */
@@ -407,42 +576,66 @@ article.vegetables
 [id='pumpkin']:checked ~ .main-content .cucumber
 {
     z-index: 2;
-    transform: rotateY(30deg) scaleY(.7);
+    -webkit-transform: rotate3d(0, 1, 0, 20deg) scale3d(1, .7, 1);
+    -moz-transform: rotate3d(0, 1, 0, 20deg) scale3d(1, .7, 1);
+    -ms-transform: rotate3d(0, 1, 0, 20deg) scale3d(1, .7, 1);
+    -o-transform: rotate3d(0, 1, 0, 20deg) scale3d(1, .7, 1);
+    transform: rotate3d(0, 1, 0, 20deg) scale3d(1, .7, 1);
 }
 
 [id='pumpkin']:checked ~ .main-content .cabbage
 {
     left: -7%;
     z-index: 3;
-    transform: rotateY(30deg) scaleY(.7);
+    -webkit-transform: rotate3d(0, 1, 0, 20deg) scale3d(1, .7, 1);
+    -moz-transform: rotate3d(0, 1, 0, 20deg) scale3d(1, .7, 1);
+    -ms-transform: rotate3d(0, 1, 0, 20deg) scale3d(1, .7, 1);
+    -o-transform: rotate3d(0, 1, 0, 20deg) scale3d(1, .7, 1);
+    transform: rotate3d(0, 1, 0, 20deg) scale3d(1, .7, 1);
 }
 
 [id='pumpkin']:checked ~ .main-content .eggplant
 {
     left: -13%;
     z-index: 4;
-    transform: rotateY(30deg) scaleY(.8);
+    -webkit-transform: rotate3d(0, 1, 0, 20deg) scale3d(1, .8, 1);
+    -moz-transform: rotate3d(0, 1, 0, 20deg) scale3d(1, .8, 1);
+    -ms-transform: rotate3d(0, 1, 0, 20deg) scale3d(1, .8, 1);
+    -o-transform: rotate3d(0, 1, 0, 20deg) scale3d(1, .8, 1);
+    transform: rotate3d(0, 1, 0, 20deg) scale3d(1, .8, 1);
 }
 
 [id='pumpkin']:checked ~ .main-content .parrot
 {
     left: -20%;
     z-index: 5;
-    transform: rotateY(30deg) scaleY(.9);
+    -webkit-transform: rotate3d(0, 1, 0, 20deg) scale3d(1, .9, 1);
+    -moz-transform: rotate3d(0, 1, 0, 20deg) scale3d(1, .9, 1);
+    -ms-transform: rotate3d(0, 1, 0, 20deg) scale3d(1, .9, 1);
+    -o-transform: rotate3d(0, 1, 0, 20deg) scale3d(1, .9, 1);
+    transform: rotate3d(0, 1, 0, 20deg) scale3d(1, .9, 1);
 }
 
 [id='pumpkin']:checked ~ .main-content .pepper
 {
     left: -27%;
     z-index: 6;
-    transform: rotateY(30deg) scaleY(1.3);
+    -webkit-transform: rotate3d(0, 1, 0, 20deg) scale3d(1, 1.3, 1);
+    -moz-transform: rotate3d(0, 1, 0, 20deg) scale3d(1, 1.3, 1);
+    -ms-transform: rotate3d(0, 1, 0, 20deg) scale3d(1, 1.3, 1);
+    -o-transform: rotate3d(0, 1, 0, 20deg) scale3d(1, 1.3, 1);
+    transform: rotate3d(0, 1, 0, 20deg) scale3d(1, 1.3, 1);
 }
 
 [id='pumpkin']:checked ~ .main-content .tomato
 {
     left: -23%;
     z-index: 6;
-    transform: rotateY(-30deg) scaleY(1.1);
+    -webkit-transform: rotate3d(0, 1, 0, -20deg) scale3d(1, 1.5, 1);
+    -moz-transform: rotate3d(0, 1, 0, -20deg) scale3d(1, 1.5, 1);
+    -ms-transform: rotate3d(0, 1, 0, -20deg) scale3d(1, 1.5, 1);
+    -o-transform: rotate3d(0, 1, 0, -20deg) scale3d(1, 1.5, 1);
+    transform: rotate3d(0, 1, 0, -20deg) scale3d(1, 1.5, 1);
 }
 
 /* ********************************************************************* */
@@ -450,40 +643,156 @@ article.vegetables
 [id='tomato']:checked ~ .main-content .cucumber
 {
     z-index: 1;
-    transform: rotateY(30deg) scaleY(.8);
+    -webkit-transform: rotate3d(0, 1, 0, 20deg) scale3d(1, .8, 1);
+    -moz-transform: rotate3d(0, 1, 0, 20deg) scale3d(1, .8, 1);
+    -ms-transform: rotate3d(0, 1, 0, 20deg) scale3d(1, .8, 1);
+    -o-transform: rotate3d(0, 1, 0, 20deg) scale3d(1, .8, 1);
+    transform: rotate3d(0, 1, 0, 20deg) scale3d(1, .8, 1);
 }
 
 [id='tomato']:checked ~ .main-content .cabbage
 {
     left: -9%;
     z-index: 2;
-    transform: rotateY(30deg) scaleY(.8);
+    -webkit-transform: rotate3d(0, 1, 0, 20deg) scale3d(1, .8, 1);
+    -moz-transform: rotate3d(0, 1, 0, 20deg) scale3d(1, .8, 1);
+    -ms-transform: rotate3d(0, 1, 0, 20deg) scale3d(1, .8, 1);
+    -o-transform: rotate3d(0, 1, 0, 20deg) scale3d(1, .8, 1);
+    transform: rotate3d(0, 1, 0, 20deg) scale3d(1, .8, 1);
 }
 
 [id='tomato']:checked ~ .main-content .eggplant
 {
     left: -17%;
     z-index: 3;
-    transform: rotateY(30deg) scaleY(.7);
+    -webkit-transform: rotate3d(0, 1, 0, 20deg) scale3d(1, .7, 1);
+    -moz-transform: rotate3d(0, 1, 0, 20deg) scale3d(1, .7, 1);
+    -ms-transform: rotate3d(0, 1, 0, 20deg) scale3d(1, .7, 1);
+    -o-transform: rotate3d(0, 1, 0, 20deg) scale3d(1, .7, 1);
+    transform: rotate3d(0, 1, 0, 20deg) scale3d(1, .7, 1);
 }
 
 [id='tomato']:checked ~ .main-content .parrot
 {
     left: -25%;
     z-index: 4;
-    transform: rotateY(30deg) scaleY(.7);
+    -webkit-transform: rotate3d(0, 1, 0, 20deg) scale3d(1, .7, 1);
+    -moz-transform: rotate3d(0, 1, 0, 20deg) scale3d(1, .7, 1);
+    -ms-transform: rotate3d(0, 1, 0, 20deg) scale3d(1, .7, 1);
+    -o-transform: rotate3d(0, 1, 0, 20deg) scale3d(1, .7, 1);
+    transform: rotate3d(0, 1, 0, 20deg) scale3d(1, .7, 1);
 }
 
 [id='tomato']:checked ~ .main-content .pepper
 {
     left: -32%;
     z-index: 5;
-    transform: rotateY(30deg);
+    -webkit-transform: rotate3d(0, 1, 0, 20deg);
+    -moz-transform: rotate3d(0, 1, 0, 20deg);
+    -ms-transform: rotate3d(0, 1, 0, 20deg);
+    -o-transform: rotate3d(0, 1, 0, 20deg);
+    transform: rotate3d(0, 1, 0, 20deg);
 }
 
 [id='tomato']:checked ~ .main-content .pumpkin
 {
     left: -40%;
     z-index: 6;
-    transform: rotateY(30deg) scaleY(1.2);
+    -webkit-transform: rotate3d(0, 1, 0, 20deg) scale3d(1, 1.2, 1);
+    -moz-transform: rotate3d(0, 1, 0, 20deg) scale3d(1, 1.2, 1);
+    -ms-transform: rotate3d(0, 1, 0, 20deg) scale3d(1, 1.2, 1);
+    -o-transform: rotate3d(0, 1, 0, 20deg) scale3d(1, 1.2, 1);
+    transform: rotate3d(0, 1, 0, 20deg) scale3d(1, 1.2, 1);
+}
+
+.recipe-input:checked ~ .main-content .vegetables:hover .hover-background
+{
+    display: none;
+}
+
+.recipe-input:checked ~ .main-content .paranja
+{
+    position: fixed;
+    top: -20%;
+    left: -20%;
+    width: 140%;
+    height: 165%;
+    z-index: 7;
+    background: rgba(1, 1, 1, .3);
+}
+
+[id='recipe-1']:checked ~ .main-content .cucumber,
+[id='recipe-2']:checked ~ .main-content .cabbage,
+[id='recipe-3']:checked ~ .main-content .eggplant,
+[id='recipe-4']:checked ~ .main-content .parrot,
+[id='recipe-5']:checked ~ .main-content .pepper,
+[id='recipe-6']:checked ~ .main-content .pumpkin,
+[id='recipe-7']:checked ~ .main-content .tomato
+{
+    transform: rotate3d(1, 0, 0, -180deg);
+}
+
+.recipe
+{
+    width: 97%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.ingredients
+{
+    padding: 10px;
+    width: 25%;
+}
+
+.instruction
+{
+    width: 64%;
+}
+
+.back-side h3
+{
+    border-bottom: 1px solid #bbb;
+    color: #bbb;
+    margin: -1% auto 1% 2%;
+    padding: 5px 5px 8px;
+    width: 90%;
+    text-align: center;
+}
+
+.ingredients span
+{
+    font-weight: 600;
+}
+
+.instruction h4
+{
+    margin-top: -2px;
+    padding-left: 10%;
+    color: red;
+}
+
+.instruction ol
+{
+    margin-top: -10px;
+    padding-bottom: 5px;
+}
+
+.instruction-bonus
+{
+    color: #888;
+    border-top: 1px solid black;
+    padding: 3px;
+    line-height: .9;
+}
+
+.exit
+{
+    position: absolute;
+    left: 94%;
+    color: #bbb;
+    cursor: pointer;
+    z-index: 2;
 }
