@@ -458,7 +458,7 @@ ul
 /*#open6:checked ~ .gallery figure.image6 .back,*/
 /*#open7:checked ~ .gallery figure.image7 .back*/
 /*{*/
-    /*animation: rotationOpenSecondPart 2s linear;*/
+/*animation: rotationOpenSecondPart 2s linear;*/
 /*}*/
 
 /*#open1:checked ~ .gallery [data-item]:nth-of-type(1),*/
@@ -469,7 +469,7 @@ ul
 /*#open6:checked ~ .gallery [data-item]:nth-of-type(6),*/
 /*#open7:checked ~ .gallery [data-item]:nth-of-type(7)*/
 /*{*/
-    /*animation: rotationOpenFirstPart 2s linear;*/
+/*animation: rotationOpenFirstPart 2s linear;*/
 /*}*/
 
 /*#close1:checked ~ .gallery [data-item]:nth-of-type(1),*/
@@ -480,9 +480,9 @@ ul
 /*#close6:checked ~ .gallery [data-item]:nth-of-type(6),*/
 /*#close7:checked ~ .gallery [data-item]:nth-of-type(7)*/
 /*{*/
-    /*position: relative;*/
-    /*top: 0;*/
-    /*animation: rotationClose 1s linear;*/
+/*position: relative;*/
+/*top: 0;*/
+/*animation: rotationClose 1s linear;*/
 /*}*/
 
 #open1:checked ~ .gallery figure.image1 .recipe,
@@ -506,27 +506,27 @@ ul
     border: 1px solid rgba(0,0,0,.1);
 }
 
-input[id^="open"]:checked ~ .gallery [data-item]:nth-of-type(n) .back
+input[id^='open']:checked ~ .gallery [data-item]:nth-of-type(n) .back
 {
     animation: fade 2s;
 }
 
-input[id^="open"]:checked ~ .gallery [data-item]:nth-of-type(2n) .back,
+input[id^='open']:checked ~ .gallery [data-item]:nth-of-type(2n) .back,
 {
     animation: bounce 2s;
 }
 
-input[id^="open"]:checked ~ .gallery [data-item]:nth-of-type(3n) .back
+input[id^='open']:checked ~ .gallery [data-item]:nth-of-type(3n) .back
 {
     animation: scaling 2s linear;
 }
 
-input[id^="open"]:checked ~ .gallery [data-item]:nth-of-type(5n) .recipe
+input[id^='open']:checked ~ .gallery [data-item]:nth-of-type(5n) .recipe
 {
     animation: rounding 2s linear;
 }
 
-input[id^="open"]:checked ~ .gallery [data-item]:nth-of-type(7n) .back
+input[id^='open']:checked ~ .gallery [data-item]:nth-of-type(7n) .back
 {
     animation: flash .8s;
 }
