@@ -27,127 +27,127 @@ input
 #first:checked ~ label > .first
 {
     transform: scaleY(1);
-    left: 30%;
+    left: 45%;
     z-index: 7;
 }
 #first:checked ~ label > .second
 {
     transform: scaleY(.9) rotateY(-30deg);
-    left: 25%;
+    left: 40%;
     z-index: 6;
 }
 #first:checked ~ label > .third
 {
     transform: scaleY(.8) rotateY(-30deg);
-    left: 20%;
+    left: 35%;
     z-index: 5;
 }
 #first:checked ~ label > .fourth
 {
     transform: scaleY(.7) rotateY(-30deg);
-    left: 15%;
+    left: 30%;
     z-index: 4;
 }
 #first:checked ~ label > .fifth
 {
     transform: scaleY(.6) rotateY(-30deg);
-    left: 10%;
+    left: 25%;
     z-index: 3;
 }
 #first:checked ~ label > .sixth
 {
     transform: scaleY(.5) rotateY(-30deg);
-    left: 5%;
+    left: 20%;
     z-index: 2;
 }
 #first:checked ~ label > .seventh
 {
     transform: scaleY(.4) rotateY(-30deg);
-    left: 0%;
+    left: 15%;
     z-index: 1;
 }
 #second:checked ~ label > .first
 {
     transform: scaleY(.9) rotateY(30deg);
-    left: 25%;
+    left: 35%;
     z-index: 5;
 }
 #second:checked ~ label > .second
 {
     transform: scaleY(1);
-    left: 20%;
+    left: 30%;
     z-index: 6;
 }
 #second:checked ~ label > .third
 {
     transform: scaleY(.9) rotateY(-30deg);
-    left: 15%;
+    left: 25%;
     z-index: 5;
 }
 #second:checked ~ label > .fourth
 {
     transform: scaleY(.8) rotateY(-30deg);
-    left: 10%;
+    left: 20%;
     z-index: 4;
 }
 #second:checked ~ label > .fifth
 {
     transform: scaleY(.7) rotateY(-30deg);
-    left: 5%;
+    left: 15%;
     z-index: 3;
 }
 #second:checked ~ label > .sixth
 {
     transform: scaleY(.6) rotateY(-30deg);
-    left: 0%;
+    left: 10%;
     z-index: 2;
 }
 #second:checked ~ label > .seventh
 {
     transform: scaleY(.5) rotateY(-30deg);
-    left: -5%;
+    left: 5%;
     z-index: 1;
 }
 #third:checked ~ label > .first
 {
     transform: scaleY(.8) rotateY(30deg);
-    left: 20%;
+    left: 25%;
     z-index: 3;
 }
 #third:checked ~ label > .second
 {
     transform: scaleY(.9) rotateY(30deg);
-    left: 15%;
+    left: 20%;
     z-index: 4;
 }
 #third:checked ~ label > .third
 {
     transform: scaleY(1);
-    left: 10%;
+    left: 15%;
     z-index: 5;
 }
 #third:checked ~ label > .fourth
 {
     transform: scaleY(.9) rotateY(-30deg);
-    left: 5%;
+    left: 10%;
     z-index: 4;
 }
 #third:checked ~ label > .fifth
 {
     transform: scaleY(.8) rotateY(-30deg);
-    left: 0%;
+    left: 5%;
     z-index: 3;
 }
 #third:checked ~ label > .sixth
 {
     transform: scaleY(.7) rotateY(-30deg);
-    left: -5%;
+    left: 0%;
     z-index: 2;
 }
 #third:checked ~ label > .seventh
 {
     transform: scaleY(.6) rotateY(-30deg);
-    left: -10%;
+    left: -5%;
     z-index: 1;
 }
 #fourth:checked ~ label > .first
@@ -195,126 +195,126 @@ input
 #fifth:checked ~ label > .first
 {
     transform: scaleY(.6) rotateY(30deg);
-    left: 10%;
+    left: 5%;
     z-index: 1;
 }
 #fifth:checked ~ label > .second
 {
     transform: scaleY(.7) rotateY(30deg);
-    left: 5%;
+    left: 0%;
     z-index: 2;
 }
 #fifth:checked ~ label > .third
 {
     transform: scaleY(.8) rotateY(30deg);
-    left: 0%;
+    left: -5%;
     z-index: 3;
 }
 #fifth:checked ~ label > .fourth
 {
     transform: scaleY(.9) rotateY(30deg);
-    left: -5%;
+    left: -10%;
     z-index: 4;
 }
 #fifth:checked ~ label > .fifth
 {
     transform: scaleY(1);
-    left: -10%;
+    left: -15%;
     z-index: 5;
 }
 #fifth:checked ~ label > .sixth
 {
     transform: scaleY(.9) rotateY(-30deg);
-    left: -15%;
+    left: -20%;
     z-index: 4;
 }
 #fifth:checked ~ label > .seventh
 {
     transform: scaleY(.8) rotateY(-30deg);
-    left: -20%;
+    left: -25%;
     z-index: 3;
 }
 #sixth:checked ~ label > .first
 {
     transform: scaleY(.5) rotateY(30deg);
-    left: 5%;
+    left: -5%;
     z-index: 1;
 }
 #sixth:checked ~ label > .second
 {
     transform: scaleY(.6) rotateY(30deg);
-    left: 0%;
+    left: -10%;
     z-index: 2;
 }
 #sixth:checked ~ label > .third
 {
     transform: scaleY(.7) rotateY(30deg);
-    left: -5%;
+    left: -15%;
     z-index: 3;
 }
 #sixth:checked ~ label > .fourth
 {
     transform: scaleY(.8) rotateY(30deg);
-    left: -10%;
+    left: -20%;
     z-index: 4;
 }
 #sixth:checked ~ label > .fifth
 {
     transform: scaleY(.9) rotateY(30deg);
-    left: -15%;
+    left: -25%;
     z-index: 5;
 }
 #sixth:checked ~ label > .sixth
 {
     transform: scaleY(1);
-    left: -20%;
+    left: -30%;
     z-index: 6;
 }
 #sixth:checked ~ label > .seventh
 {
     transform: scaleY(.9) rotateY(-30deg);
-    left: -25%;
+    left: -35%;
     z-index: 4;
 }
 #seventh:checked ~ label > .first
 {
     transform: scaleY(.4) rotateY(30deg);
-    left: 0%;
+    left: -25%;
     z-index: 1;
 }
 #seventh:checked ~ label > .second
 {
     transform: scaleY(.5) rotateY(30deg);
-    left: -5%;
+    left: -20%;
     z-index: 2;
 }
 #seventh:checked ~ label > .third
 {
     transform: scaleY(.6) rotateY(30deg);
-    left: -10%;
+    left: -25%;
     z-index: 3;
 }
 #seventh:checked ~ label > .fourth
 {
     transform: scaleY(.7) rotateY(30deg);
-    left: -15%;
+    left: -30%;
     z-index: 4;
 }
 #seventh:checked ~ label > .fifth
 {
     transform: scaleY(.8) rotateY(30deg);
-    left: -20%;
+    left: -35%;
     z-index: 5;
 }
 #seventh:checked ~ label > .sixth
 {
     transform: scaleY(.9) rotateY(30deg);
-    left: -25%;
+    left: -40%;
     z-index: 6;
 }
 #seventh:checked ~ label > .seventh
 {
     transform: scaleY(1);
-    left: -30%;
+    left: -45%;
     z-index: 7;
 }
