@@ -8,6 +8,7 @@ body
     margin: 0;
     padding: 0;
     background: #e7e7e7;
+    overflow: hidden;
 }
 
 main
@@ -16,7 +17,7 @@ main
     display: inline;
     height: 200px;
     margin-top: 100px;
-    margin-left: 15%;
+    margin-left: 5%;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     transition: all 1s ease-out;
@@ -27,7 +28,6 @@ label.img
     display: inline-flex;
     max-width: 17%;
     margin-top: 15%;
-    margin-left: .2%;
     position: relative;
     z-index: 10;
     -webkit-transition-property: transform;
@@ -37,6 +37,12 @@ label.img
     transition-timing-function: ease-in-out;
     transition-duration: .5s;
     cursor: pointer;
+}
+
+main label:not(.close)
+{
+    margin-left: -4%;
+    margin-right: -4%;
 }
 
 label:not(.img)
@@ -100,7 +106,7 @@ span
     width: 30px;
     height: 30px;
     top: 20px;
-    right: 20px;
+    right: 30px;
     z-index: 15;
 }
 
@@ -147,49 +153,47 @@ main label div label.close
     display: block;
     visibility: hidden;
     position: fixed;
+}
+
+main label div img.back
+{
     top: 0;
 }
 
 input[value='first']:checked ~ main
 {
-    margin-left: 30%;
+    margin-left: 35%;
 }
 
 input[value='second']:checked ~ main
 {
-    margin-left: 25%;
+    margin-left: 30%;
 }
 
 input[value='third']:checked ~ main
 {
-    margin-left: 20%;
+    margin-left: 25%;
 }
 
 input[value='fourth']:checked ~ main
 {
-    margin-left: 15%;
+    margin-left: 20%;
 }
 
 input[value='fifth']:checked ~ main
 {
-    margin-left: 10%;
+    margin-left: 15%;
 }
 
 input[value='sixth']:checked ~ main
 {
-    margin-left: 5%;
-}
-
-input[value='seventh']:checked ~ main
-{
-    margin-left: 0;
+    margin-left: 10%;
 }
 
 input[value='first']:checked ~ main label.seventh
 {
     -webkit-transform: perspective(550px) translateZ(-10px) rotateY(-10deg);
     transform: perspective(550px) translateZ(-10px) rotateY(-10deg);
-    margin-left: -9%;
     z-index: 1;
 }
 
@@ -197,7 +201,6 @@ input[value='seventh']:checked ~ main label.first
 {
     -webkit-transform: perspective(550px) rotateY(10deg) translateZ(-10px);
     transform: perspective(550px) rotateY(10deg) translateZ(-10px);
-    margin-right: -9%;
     z-index: 1;
 }
 
@@ -206,7 +209,6 @@ input[value='second']:checked ~ main label.seventh
 {
     -webkit-transform: perspective(500px) rotateY(-20deg) translateZ(-20px);
     transform: perspective(500px) rotateY(-20deg) translateZ(-20px);
-    margin-left: -8%;
     z-index: 2;
 }
 
@@ -215,7 +217,6 @@ input[value='seventh']:checked ~ main label.second
 {
     -webkit-transform: perspective(500px) rotateY(20deg) translateZ(-20px);
     transform: perspective(500px) rotateY(20deg) translateZ(-20px);
-    margin-right: -8%;
     z-index: 2;
 }
 
@@ -225,7 +226,6 @@ input[value='third']:checked ~ main label.seventh
 {
     -webkit-transform: perspective(400px) rotateY(-30deg) translateZ(-30px);
     transform: perspective(400px) rotateY(-30deg) translateZ(-30px);
-    margin-left: -8%;
     z-index: 3;
 }
 
@@ -235,7 +235,6 @@ input[value='seventh']:checked ~ main label.third
 {
     -webkit-transform: perspective(400px) rotateY(30deg) translateZ(-30px);
     transform: perspective(400px) rotateY(30deg) translateZ(-30px);
-    margin-right: -8%;
     z-index: 3;
 }
 
@@ -246,7 +245,6 @@ input[value='fourth']:checked ~ main label.seventh
 {
     -webkit-transform: perspective(350px) rotateY(-40deg) translateZ(-40px);
     transform: perspective(350px) rotateY(-40deg) translateZ(-40px);
-    margin-left: -7%;
     z-index: 4;
 }
 
@@ -257,7 +255,6 @@ input[value='seventh']:checked ~ main label.fourth
 {
     -webkit-transform: perspective(350px) rotateY(40deg) translateZ(-40px);
     transform: perspective(350px) rotateY(40deg) translateZ(-40px);
-    margin-right: -7%;
     z-index: 4;
 }
 
@@ -269,7 +266,6 @@ input[value='fifth']:checked ~ main label.seventh
 {
     -webkit-transform: perspective(300px) rotateY(-50deg) translateZ(-50px);
     transform: perspective(300px) rotateY(-50deg) translateZ(-50px);
-    margin-left: -6%;
     z-index: 5;
 }
 
@@ -281,7 +277,6 @@ input[value='seventh']:checked ~ main label.fifth
 {
     -webkit-transform: perspective(300px) rotateY(50deg) translateZ(-50px);
     transform: perspective(300px) rotateY(50deg) translateZ(-50px);
-    margin-right: -6%;
     z-index: 5;
 }
 
@@ -294,7 +289,6 @@ input[value='sixth']:checked ~ main label.seventh
 {
     -webkit-transform: perspective(200px) rotateY(-70deg) translateZ(-70px);
     transform: perspective(200px) rotateY(-70deg) translateZ(-70px);
-    margin-left: -10%;
     z-index: 6;
 }
 
@@ -307,7 +301,6 @@ input[value='seventh']:checked ~ main label.sixth
 {
     -webkit-transform: perspective(200px) rotateY(70deg) translateZ(-70px);
     transform: perspective(200px) rotateY(70deg) translateZ(-70px);
-    margin-right: -10%;
     z-index: 6;
 }
 
@@ -331,7 +324,7 @@ input[value='sixth']:checked ~ main label.sixth div.veg:hover,
 input[value='seventh']:checked ~ main label.seventh div.veg:hover
 {
     width: 100%;
-    height: 90%;
+    height: 100%;
     margin-bottom: 100px;
     background: #000;
     z-index: 11;
@@ -376,7 +369,7 @@ input[value='seventh']:checked ~ main label.seventh div.veg:hover img:not(.back)
 input[value='recipe1']:checked ~ div.veg
 {
     animation-name: closingVeg;
-    animation-duration: .5s;
+    animation-duration: .2s;
     position: relative;
 }
 
@@ -409,7 +402,7 @@ input[value='recipe1']:checked ~ div.veg .recipe div.actions
 input[value='recipe2']:checked ~ div.veg .recipe
 {
     animation-name: closingRecipe;
-    animation-duration: 3s;
+    animation-duration: 1s;
     visibility: visible;
     opacity: 1;
 }
