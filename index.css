@@ -1,1 +1,147 @@
+body
+{
+    margin: 20px;
+    height: 100%;
+    overflow: hidden;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.full-width
+{
+    width: 100%;
+}
+
+input
+{
+    display: none;
+}
+
+section
+{
+    width: 1500px;
+    height: 300px;
+    position: relative;
+    perspective: 1000px;
+}
+
+.slide-container
+{
+    position: absolute;
+    left: 600px;
+    width: 250px;
+    height: 250px;
+    transition-duration: 1s;
+}
+
+#slide1:checked ~ section > label > .slide1,
+#slide2:checked ~ section > label > .slide2,
+#slide3:checked ~ section > label > .slide3,
+#slide4:checked ~ section > label > .slide4,
+#slide5:checked ~ section > label > .slide5,
+#slide6:checked ~ section > label > .slide6,
+#slide7:checked ~ section > label > .slide7
+{
+    transform: scale(25deg);
+    z-index: 7;
+}
+
+#slide1:checked ~ section > label > .slide2,
+#slide2:checked ~ section > label > .slide3,
+#slide3:checked ~ section > label > .slide4,
+#slide4:checked ~ section > label > .slide5,
+#slide5:checked ~ section > label > .slide6,
+#slide6:checked ~ section > label > .slide7
+{
+    transform: translateX(170px) rotateY(-50deg);
+    z-index: 6;
+}
+
+#slide7:checked ~ section > label > .slide6,
+#slide6:checked ~ section > label > .slide5,
+#slide5:checked ~ section > label > .slide4,
+#slide4:checked ~ section > label > .slide3,
+#slide3:checked ~ section > label > .slide2,
+#slide2:checked ~ section > label > .slide1
+{
+    transform: translateX(-170px) rotateY(50deg);
+    z-index: 6;
+}
+
+#slide1:checked ~ section > label > .slide3,
+#slide2:checked ~ section > label > .slide4,
+#slide3:checked ~ section > label > .slide5,
+#slide4:checked ~ section > label > .slide6,
+#slide5:checked ~ section > label > .slide7
+{
+    transform: translateX(240px) rotateY(-60deg);
+    z-index: 5;
+}
+#slide7:checked ~ section > label > .slide5,
+#slide6:checked ~ section > label > .slide4,
+#slide5:checked ~ section > label > .slide3,
+#slide4:checked ~ section > label > .slide2,
+#slide3:checked ~ section > label > .slide1
+{
+    transform: translateX(-240px) rotateY(60deg);
+    z-index: 5;
+}
+
+#slide1:checked ~ section > label > .slide4,
+#slide2:checked ~ section > label > .slide5,
+#slide3:checked ~ section > label > .slide6,
+#slide4:checked ~ section > label > .slide7
+{
+    transform: translateX(310px) rotateY(-50deg);
+    z-index: 4;
+}
+#slide7:checked ~ section > label > .slide4,
+#slide6:checked ~ section > label > .slide3,
+#slide5:checked ~ section > label > .slide2,
+#slide4:checked ~ section > label > .slide1
+{
+    transform: translateX(-310px) rotateY(50deg);
+    z-index: 4;
+}
+
+#slide1:checked ~ section > label > .slide5,
+#slide2:checked ~ section > label > .slide6,
+#slide3:checked ~ section > label > .slide7
+{
+    transform: translateX(380px) rotateY(-40deg);
+    z-index: 3;
+}
+#slide7:checked ~ section > label > .slide3,
+#slide6:checked ~ section > label > .slide2,
+#slide5:checked ~ section > label > .slide1
+{
+    transform: translateX(-380px) rotateY(40deg);
+    z-index: 3;
+}
+
+#slide1:checked ~ section > label > .slide6,
+#slide2:checked ~ section > label > .slide7
+{
+    transform: translateX(450px) rotateY(-35deg);
+    z-index: 2;
+}
+#slide7:checked ~ section > label > .slide2,
+#slide6:checked ~ section > label > .slide1
+{
+    transform: translateX(-450px) rotateY(35deg);
+    z-index: 2;
+}
+
+#slide1:checked ~ section > label > .slide7
+{
+    transform: translateX(520px) rotateY(-30deg);
+    z-index: 1;
+}
+
+#slide7:checked ~ section > label > .slide1
+{
+    transform: translateX(-520px) rotateY(30deg);
+    z-index: 1;
+}
