@@ -17,7 +17,7 @@ section
 {
     width: 90%;
     height: 100%;
-    margin: 100px auto;
+    margin: 200px auto;
     align-items: center;
     justify-content: space-around;
 
@@ -34,27 +34,26 @@ section
     align-items: center;
     background: #fff;
     overflow: hidden;
-    transition: transform .7s ease-in-out;
+    transition: transform .6s ease;
 }
 
-.img-container > .img-button
+.img-container > .front .img-button
 {
     width: 220px;
+    height: 160px;
 }
 
 .recipe
 {
-    display: none;
-    position: fixed;
-    margin: auto;
-    opacity: 0;
+    position: absolute;
     box-shadow: 0 0 10px #000;
+    background: #fff;
+    z-index: -100;
     width: 840px;
     height: 500px;
-    background: #fff;
-    z-index: -10;
-    left: 340px;
-    top: 60px;
+    top: -240px;
+    left: -320px;
+    opacity: 0;
     font-family: helvetica, futura, arial, sans-serif;
 }
 
@@ -90,6 +89,7 @@ section
 {
     display: block;
 }
+
 .recipe .description
 {
     flex-grow: 2;
@@ -106,6 +106,7 @@ section
     width: 220px;
     height: 160px;
     left: 0;
+    top: 0;
 }
 
 .recipe-loading,
@@ -135,7 +136,7 @@ section
 
 .img-container img
 {
-    width: 220px;
+    height: 165px;
     overflow: hidden;
 }
 
@@ -147,8 +148,8 @@ section
     background-size: cover;
     position: fixed;
     z-index: 20000;
-    top: 100px;
-    right: 360px;
+    top: 200px;
+    left: 470px;
     width: 30px;
     height: 30px;
     transition: opacity .1s step-start;
@@ -165,7 +166,17 @@ section
     opacity: 0;
     background-color: rgba(191, 191, 191, .8);
     pointer-events: none;
-    transition: opacity .1s step-start;
+    transition: opacity 2s ease;
+}
+
+.front
+{
+    backface-visibility: hidden;
+}
+
+.back
+{
+    transform: rotateX(-180deg);
 }
 
 input[id='img1']:checked ~ section > .img1,
@@ -315,68 +326,139 @@ input[id='recipe5']:checked ~ section > .img-container.img5,
 input[id='recipe6']:checked ~ section > .img-container.img6,
 input[id='recipe7']:checked ~ section > .img-container.img7
 {
-    animation-name: hide-img;
-    animation-duration: 6s;
-    animation-direction: alternate;
-}
-
-@keyframes hide-img
-{
-    from
-    {
-        transform: perspective(1200px) scale(1.2);
-    }
-    50%
-    {
-        transform: perspective(200px) scale(4) rotateX(-90deg);
-    }
-    to
-    {
-        transform: perspective(200px) scale(4) rotateX(-90deg);
-    }
-}
-
-input[id='recipe1']:checked ~ .recipe-section .recipe1,
-input[id='recipe2']:checked ~ .recipe-section .recipe2,
-input[id='recipe3']:checked ~ .recipe-section .recipe3,
-input[id='recipe4']:checked ~ .recipe-section .recipe4,
-input[id='recipe5']:checked ~ .recipe-section .recipe5,
-input[id='recipe6']:checked ~ .recipe-section .recipe6,
-input[id='recipe7']:checked ~ .recipe-section .recipe7
-{
-    animation-name: show-recipe;
-    animation-duration: 3s;
-    animation-delay: 2s;
+    animation-name: flip;
+    animation-duration: 2s;
     animation-fill-mode: both;
-    animation-direction: alternate;
-    z-index: 8000;
-    display: block;
 }
 
-input[id^='recipe']:checked ~ .recipe-section .recipe-background
+input[id='recipe1']:checked ~ section > .img-container.img1 .recipe1,
+input[id='recipe2']:checked ~ section > .img-container.img2 .recipe2,
+input[id='recipe3']:checked ~ section > .img-container.img3 .recipe3,
+input[id='recipe4']:checked ~ section > .img-container.img4 .recipe4,
+input[id='recipe5']:checked ~ section > .img-container.img5 .recipe5,
+input[id='recipe6']:checked ~ section > .img-container.img6 .recipe6,
+input[id='recipe7']:checked ~ section > .img-container.img7 .recipe7
+{
+    animation-name: visibility;
+    animation-duration: 1s;
+    animation-delay: .55s;
+    animation-fill-mode: both;
+}
+
+input[id^='recipe']:checked ~ section .recipe-background
+
 {
     opacity: 1;
-    transition: opacity .1s step-end 4.5s;
+    z-index: 7;
+    transition: opacity 2s ease;
 }
 
-input[id^='recipe']:checked ~ .recipe-section .close-recipe
+input[id='recipe1']:checked ~ section .img1 .close-recipe,
+input[id='recipe2']:checked ~ section .img2 .close-recipe,
+input[id='recipe3']:checked ~ section .img3 .close-recipe,
+input[id='recipe4']:checked ~ section .img4 .close-recipe,
+input[id='recipe5']:checked ~ section .img5 .close-recipe,
+input[id='recipe6']:checked ~ section .img6 .close-recipe,
+input[id='recipe7']:checked ~ section .img7 .close-recipe
 {
     cursor: pointer;
     pointer-events: auto;
     opacity: 1;
-    transition: opacity .1s step-end 4.5s;
 }
 
-@keyframes show-recipe
+@keyframes flip
+{
+    50%
+    {
+        transform: scale(1.8) translateY(-100px) perspective(700px) rotateX(-90deg);
+        overflow: hidden;
+    }
+    51%
+    {
+        overflow: visible;
+    }
+    to
+    {
+        overflow: visible;
+        transform: translateY(0) rotateX(-180deg) perspective(1200px);
+    }
+}
+
+input[id='no-recipe1']:checked ~ section .img-container.img1,
+input[id='no-recipe2']:checked ~ section .img-container.img2,
+input[id='no-recipe3']:checked ~ section .img-container.img3,
+input[id='no-recipe4']:checked ~ section .img-container.img4,
+input[id='no-recipe5']:checked ~ section .img-container.img5,
+input[id='no-recipe6']:checked ~ section .img-container.img6,
+input[id='no-recipe7']:checked ~ section .img-container.img7
+{
+    animation-name: flip-back;
+    animation-duration: 2s;
+}
+
+input[id='no-recipe1']:checked ~ section .img-container.img1 .recipe1,
+input[id='no-recipe2']:checked ~ section .img-container.img2 .recipe2,
+input[id='no-recipe3']:checked ~ section .img-container.img3 .recipe3,
+input[id='no-recipe4']:checked ~ section .img-container.img4 .recipe4,
+input[id='no-recipe5']:checked ~ section .img-container.img5 .recipe5,
+input[id='no-recipe6']:checked ~ section .img-container.img6 .recipe6,
+input[id='no-recipe7']:checked ~ section .img-container.img7 .recipe7
+{
+    animation-name: visibility-back;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes flip-back
 {
     from
     {
-        transform: perspective(1200px) scale(1) rotateX(90deg);
+        transform: perspective(500px) translateY(0) rotateX(-180deg);
+        overflow: visible;
+    }
+    50%
+    {
+        transform: perspective(500px) translateY(-100px) rotateX(0deg);
+    }
+    51%
+    {
+        overflow: hidden;
+    }
+    to
+    {
+        overflow: hidden;
+        transform: scale(1.4) translateY(0);
+    }
+}
+
+@keyframes visibility
+{
+    from
+    {
+        backface-visibility: hidden;
+        z-index: -10;
         opacity: 0;
     }
     to
     {
-        transform: perspective(1200px) scale(1) rotateX(0deg);
+        backface-visibility: visible;
+        z-index: 100;
         opacity: 1;
+    }
+}
+
+@keyframes visibility-back
+{
+    from
+    {
+        backface-visibility: visible;
+        z-index: 100;
+        opacity: 1;
+    }
+    to
+    {
+        backface-visibility: hidden;
+        z-index: -10;
+        opacity: 0;
     }
 }
