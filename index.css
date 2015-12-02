@@ -12,6 +12,7 @@ input
 {
     transform-style: preserve-3d;
     display: flex;
+    align-items: center;
     perspective: 500px;
     position: absolute;
     top: 300px;
