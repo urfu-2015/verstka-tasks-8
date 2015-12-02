@@ -1,1 +1,288 @@
+html,
+body
+{
+    height: 98.5%;
+}
 
+.gallery-3D
+{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+img
+{
+    display: block;
+    height: 150px;
+    width: 200px;
+    object-fit: cover;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, .7);
+}
+
+.img-container
+{
+    display: block;
+    transition: all 2s ease-in-out;
+    cursor: pointer;
+}
+
+.check-img
+{
+    display: none;
+}
+
+/*----------------------------------------------------------------------*/
+
+#r1:checked ~ .img1
+{
+    transform: translateX(600px);
+}
+
+#r1:checked ~ .img2
+{
+    transform: translateX(500px) rotateY(-60deg);
+}
+
+#r1:checked ~ .img3
+{
+    transform: translateX(400px) rotateY(-60deg);
+}
+
+#r1:checked ~ .img4
+{
+    transform: translateX(300px) rotateY(-60deg);
+}
+
+#r1:checked ~ .img5
+{
+    transform: translateX(180px) rotateY(-60deg);
+}
+
+#r1:checked ~ .img6
+{
+    transform: translateX(50px) rotateY(-60deg);
+}
+
+#r1:checked ~ .img7
+{
+    transform: translateX(-80px) rotateY(-60deg);
+}
+/*----------------------------------------------------------------------*/
+
+#r2:checked ~ .img1
+{
+    transform: translateX(450px) rotateY(60deg);
+}
+
+#r2:checked ~ .img2
+{
+    transform: translateX(400px);
+}
+
+#r2:checked ~ .img3
+{
+    transform: translateX(350px) rotateY(-60deg);
+}
+
+#r2:checked ~ .img4
+{
+    transform: translateX(250px) rotateY(-60deg);
+}
+
+#r2:checked ~ .img5
+{
+    transform: translateX(150px) rotateY(-60deg);
+}
+
+#r2:checked ~ .img6
+{
+    transform: translateX(50px) rotateY(-60deg);
+}
+
+#r2:checked ~ .img7
+{
+    transform: translateX(-100px) rotateY(-60deg);
+}
+
+/*----------------------------------------------------------------------*/
+
+#r3:checked ~ .img1
+{
+    transform: translateX(350px) rotateY(60deg);
+}
+
+#r3:checked ~ .img2
+{
+    transform: translateX(250px) rotateY(60deg);
+}
+
+#r3:checked ~ .img3
+{
+    transform: translateX(200px);
+}
+
+#r3:checked ~ .img4
+{
+    transform: translateX(160px) rotateY(-60deg);
+}
+
+#r3:checked ~ .img5
+{
+    transform: translateX(50px) rotateY(-60deg);
+}
+
+#r3:checked ~ .img6
+{
+    transform: translateX(-50px) rotateY(-60deg);
+}
+
+#r3:checked ~ .img7
+{
+    transform: translateX(-150px) rotateY(-60deg);
+}
+
+/*----------------------------------------------------------------------*/
+
+#r4:checked ~ .img1
+{
+    transform: translateX(250px) rotateY(60deg);
+}
+
+#r4:checked ~ .img2
+{
+    transform: translateX(150px) rotateY(60deg);
+}
+
+#r4:checked ~ .img3
+{
+    transform: translateX(50px) rotateY(60deg);
+}
+
+#r4:checked ~ .img5
+{
+    transform: translateX(-50px) rotateY(-60deg);
+}
+
+#r4:checked ~ .img6
+{
+    transform: translateX(-150px) rotateY(-60deg);
+}
+
+#r4:checked ~ .img7
+{
+    transform: translateX(-250px) rotateY(-60deg);
+}
+
+/*----------------------------------------------------------------------*/
+
+#r5:checked ~ .img1
+{
+    transform: translateX(150px) rotateY(60deg);
+}
+
+#r5:checked ~ .img2
+{
+    transform: translateX(50px) rotateY(60deg);
+}
+
+#r5:checked ~ .img3
+{
+    transform: translateX(-50px) rotateY(60deg);
+}
+
+#r5:checked ~ .img4
+{
+    transform: translateX(-150px) rotateY(60deg);
+}
+
+#r5:checked ~ .img5
+{
+    transform: translateX(-200px);
+}
+
+#r5:checked ~ .img6
+{
+    transform: translateX(-250px) rotateY(-60deg);
+}
+
+#r5:checked ~ .img7
+{
+    transform: translateX(-350px) rotateY(-60deg);
+}
+
+/*----------------------------------------------------------------------*/
+
+#r6:checked ~ .img1
+{
+    transform: translateX(50px) rotateY(60deg);
+}
+
+#r6:checked ~ .img2
+{
+    transform: translateX(-50px) rotateY(60deg);
+}
+
+#r6:checked ~ .img3
+{
+    transform: translateX(-150px) rotateY(60deg);
+}
+
+#r6:checked ~ .img4
+{
+    transform: translateX(-250px) rotateY(60deg);
+}
+
+#r6:checked ~ .img5
+{
+    transform: translateX(-350px) rotateY(60deg);
+}
+
+#r6:checked ~ .img6
+{
+    transform: translateX(-400px);
+}
+
+#r6:checked ~ .img7
+{
+    transform: translateX(-450px) rotateY(-60deg);
+}
+
+/*----------------------------------------------------------------------*/
+
+#r7:checked ~ .img1
+{
+    transform: translateX(50px) rotateY(60deg);
+}
+
+#r7:checked ~ .img2
+{
+    transform: translateX(-100px) rotateY(60deg);
+}
+
+#r7:checked ~ .img3
+{
+    transform: translateX(-220px) rotateY(60deg);
+}
+
+#r7:checked ~ .img4
+{
+    transform: translateX(-350px) rotateY(60deg);
+}
+
+#r7:checked ~ .img5
+{
+    transform: translateX(-450px) rotateY(60deg);
+}
+
+#r7:checked ~ .img6
+{
+    transform: translateX(-550px) rotateY(60deg);
+}
+
+#r7:checked ~ .img7
+{
+    transform: translateX(-600px);
+}
