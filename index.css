@@ -2,7 +2,9 @@ body
 {
     background: #ececec;
     display: flex;
+    height: 600px;
     justify-content: center;
+    align-items: center;
 }
 
 .gallery
@@ -11,7 +13,6 @@ body
     display: flex;
     max-width: 1700px;
     perspective: 500px;
-    margin-top: 10%;
 }
 
 div[class^='item'] 
