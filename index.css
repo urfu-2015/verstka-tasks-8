@@ -79,7 +79,7 @@ img
 
 #r2:checked ~ .img2
 {
-    transform: translateX(400px)
+    transform: translateX(400px);
 }
 
 #r2:checked ~ .img3
@@ -121,7 +121,7 @@ img
 
 #r3:checked ~ .img3
 {
-    transform: translateX(200px)
+    transform: translateX(200px);
 }
 
 #r3:checked ~ .img4
@@ -200,7 +200,7 @@ img
 
 #r5:checked ~ .img5
 {
-    transform: translateX(-200px)
+    transform: translateX(-200px);
 }
 
 #r5:checked ~ .img6
@@ -242,7 +242,7 @@ img
 
 #r6:checked ~ .img6
 {
-    transform: translateX(-400px)
+    transform: translateX(-400px);
 }
 
 #r6:checked ~ .img7
@@ -284,5 +284,5 @@ img
 
 #r7:checked ~ .img7
 {
-    transform: translateX(-600px)
+    transform: translateX(-600px);
 }
