@@ -11,284 +11,519 @@ body
     justify-content: center;
     aling-items: center;
     perspective: 400px;
+    perspective-origin: center 380px;
+    width: 100vw;
     padding-top: 100px;
-    max-width: 100vw;
 }
-.view-image,
-.radio-images
+.radio-images,
+.view-image
 {
     display: none;
 }
 .image img
 {
-    width: 5vw;
+    width: 100%;
+    max-height: 100%;
 }
 
 .item
 {
     display: flex;
     justify-content: center;
-    perspective: 400px;
     transform-style: preserve-3d;
     transition-property: transform, transform;
-    transform: scale(1.4) rotateY(40deg);
-    order: 10;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .5);
-    width: 5vw;
-    height: 4vw;
+    width: 100px;
+    height: 70px;
     margin: 0;
     padding: 0;
     background-color: #fff;
-    transition-duration: .3s;
+    transition-duration: .7s;
+    position: relative;
+    backface-visibility: hidden;
 }
-.hiddenLeftBox
+.button
 {
-    order: 9;
-    animation-name: to-right;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-}
-.hiddenRight
-{
-    order: 11;
-    animation-name: to-left;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-}
-.hiddenRight,
-.hiddenLeftBox
-{
-    transition-property: transform;
-    transition-duration: 1.5s;
-}
-.radio-images:checked ~ .item
-{
-    transform: scale(1.4) rotateY(-40deg);
-}
-.radio-images:checked + .item
-{
-    transform: rotateY(0deg) scale(1.7);
-    z-index: 100;
-}
-.item .image-checkbox div
-{
+    position: absolute;
+    top: 0;
+    left: 0;
     display: none;
     width: 100%;
     height: 100%;
-    background-color: #333;
-}
-
-.item .image-checkbox div p
-{
+    background-color: rgba(0,0,0, .7);
+    font-size: 20px;
     text-align: center;
     vertical-align: middle;
-    width: calc(80% * .85);
-    height: calc(80% - 24px);
-    margin: 0;
-    padding: 12px 0;
-    border-radius: 100px;
-    color: #fff;
-    font-size: 12px;
-    border: 3px solid #fff;
+    line-height: 60px;
+    animation-name: change-color;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
-
-.radio-images:checked + .item:hover .image-checkbox div
+@keyframes change-color
 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    0%
+    {
+       color: rgb(255, 0, 255);
+    }
+    100%
+    {
+        color: rgb(0, 200, 0);
+    }
+}
+.back
+{
     position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.radio-images:checked ~ .hiddenRight
-{
-    animation-name: to-right;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-    width: 0;
-}
-
-.radio-images:checked ~ .hiddenLeftBox
-{
-    animation-name: to-left;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-    width: 5vw;
-}
-
-@keyframes to-left
-{
-    0%
-    {
-        width: 0;
-    }
-    100%
-    {
-        width: 5vw;
-    }
-}
-@keyframes to-right
-{
-    0%
-    {
-        width: 5vw;
-    }
-    100%
-    {
-        width: 0;
-    }
-}
-
-.radio-images:checked ~ .hiddenRight
-{
-    animation-name: to-right;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-}
-
-.radio-images:checked ~ .hiddenLeftBox
-{
-    animation-name: to-left;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-}
-
-.radio-images:not(:checked) + .item:hover
-{
-    z-index: 90;
-}
-.view-image:checked + .radio-images:checked + .item
-{
-    transform-style: preserve-3d;
-    animation-name: show-recipe-content;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes show-recipe-content
-{
-    100%
-    {
-        transform:  translateZ(100px) translateY(-200px) rotateX(78deg);
-    }
-}
-
-.view-image + .radio-images:checked + .item + .description div h3,
-.view-image + .radio-images:checked + .item + .description div .d-left,
-.view-image + .radio-images:checked + .item + .description div .d-right
-{
-    top: 200px;
-    width: 150px;
-    height: 0;
-}
-
-.description
-{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    padding: 0;
-    background-color: rgba(20, 20, 20, .4);
-    z-index: 1000;
-    transform: translateZ(-1000px) translateY(-1000px) rotateX(90deg);
-}
-.description div
-{
-    display: flex;
-    flex-wrap: wrap;
-    width: 600px;
-    height: 800px;
-    padding: 20px;
     background-color: #fff;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transform: rotateY(-180deg);
+    transform: rotateX(-180deg);
+    transition: transform 0.7s;
 }
-.view-image + .radio-images + .item + .description
-{
-    display: none;
-}
-.view-image + .radio-images:checked + .item + .description
-{
-    display: flex;
-}
-.view-image:checked + .radio-images:checked + .item + .description
-{
-    animation-name: show-recipe;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
-    transition-delay: 2s;
-}
-@keyframes show-recipe
-{
-    100%
-    {
-        transform: translateZ(0px) translateY(0px) rotateX(0deg);
-    }
-}
-/*Здесь должна быть обратная анимация. Но я не знаю как сделать,
-что бы она не работала, когда идет изменение выбраной картинки*/
-.view-image + .radio-images:checked  + .item + .description
-{
-    /* animation-name: hide-recipe;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;*/
-}
-@keyframes hide-recipe
-{
-    0%
-    {
-        transform: translateZ(0px) translateY(0px) rotateX(0deg);
-    }
-    100%
-    {
-       transform: translateZ(-1000px) translateY(-1000px) rotateX(90deg);
-    }
-}
-
-.view-image:checked + .radio-images:checked ~ .item:nth-of-type(n)
-{
-    transform-style: flat;
-}
-
-.radio-images:checked + .item .image,
-.image-checkbox
-{
-    display: none;
-}
-.radio-images:checked + .item .image-checkbox
-{
-    display: block;
-}
-
 .close
 {
     position: absolute;
+    background: url(image/close.png);
     top: 20px;
     right: 20px;
+    width: 60px;
+    height: 60px;
+}
+.item1:checked ~ .image-item1:hover .button,
+.item2:checked ~ .image-item2:hover .button,
+.item3:checked ~ .image-item3:hover .button,
+.item4:checked ~ .image-item4:hover .button,
+.item5:checked ~ .image-item5:hover .button,
+.item6:checked ~ .image-item6:hover .button,
+.item7:checked ~ .image-item7:hover .button
+{
     display: block;
-    width: 50px;
-    height: 50px;
-    background-color: black;
+}
+.check-image1:checked ~ .image-item1,
+.check-image2:checked ~ .image-item2,
+.check-image3:checked ~ .image-item3,
+.check-image4:checked ~ .image-item4,
+.check-image5:checked ~ .image-item5,
+.check-image6:checked ~ .image-item6,
+.check-image7:checked ~ .image-item7
+{
+    z-index: 300 !important;
+}
+.blackblack
+{
+    z-index: 200;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0, 0.7);
+    display: none;
+}
+.check-image1:checked ~ .blackblack,
+.check-image2:checked ~ .blackblack,
+.check-image3:checked ~ .blackblack,
+.check-image4:checked ~ .blackblack,
+.check-image5:checked ~ .blackblack,
+.check-image6:checked ~ .blackblack,
+.check-image7:checked ~ .blackblack
+{
+    display: block;
+}
+.check-image1:checked ~ .image-item1
+{
+    animation-name: run1;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes run1
+{
+    0%
+    {
+        transform: translateX(300px) translateY(200px) scale(2.5);
+    }
+    100%
+    {
+        transform: translateX(300px) rotateX(180deg);
+        width: 600px;
+        height: 400px;
+    }
+}
+.check-image2:checked ~ .image-item2
+{
+    animation-name: run2;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes run2
+{
+    0%
+    {
+        transform: translateX(200px) translateY(200px) scale(2.5);
+    }
+    100%
+    {
+        transform: translateX(200px) rotateX(180deg);
+        width: 600px;
+        height: 400px;
+    }
+}
+.check-image3:checked ~ .image-item3
+{
+    animation-name: run3;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes run3
+{
+    0%
+    {
+        transform: translateX(100px) translateY(200px) scale(2.5);
+    }
+    100%
+    {
+        transform: translateX(100px) rotateX(180deg);
+        width: 600px;
+        height: 400px;
+    }
+}
+.check-image4:checked ~ .image-item4
+{
+    animation-name: run4;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes run4
+{
+    0%
+    {
+        transform: translateX(0) translateY(200px) scale(2.5);
+    }
+    100%
+    {
+        transform: translateX(0) rotateX(180deg);
+        width: 600px;
+        height: 400px;
+    }
+}
+.check-image5:checked ~ .image-item5
+{
+    animation-name: run5;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes run5
+{
+    0%
+    {
+        transform: translateX(-100px) translateY(200px) scale(2.5);
+    }
+    100%
+    {
+        transform: translateX(-100px) rotateX(180deg);
+        width: 600px;
+        height: 400px;
+    }
+}
+.check-image6:checked ~ .image-item6
+{
+    animation-name: run6;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes run6
+{
+    0%
+    {
+        transform: translateX(-200px) translateY(200px) scale(2.5);
+    }
+    100%
+    {
+        transform: translateX(-200px) rotateX(180deg);
+        width: 600px;
+        height: 400px;
+    }
+}
+.check-image7:checked ~ .image-item7
+{
+    animation-name: run7;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes run7
+{
+    0%
+    {
+        transform: translateX(-300px) translateY(200px) scale(2.5);
+    }
+    100%
+    {
+        transform: translateX(-300px) rotateX(180deg);
+        width: 600px;
+        height: 400px;
+    }
+}
+.item1:checked ~ .image-item1,
+.item2:checked ~ .image-item2,
+.item3:checked ~ .image-item3,
+.item4:checked ~ .image-item4,
+.item5:checked ~ .image-item5,
+.item6:checked ~ .image-item6,
+.item7:checked ~ .image-item7
+{
+    z-index: 100;
+}
+.item1:checked ~ .image-item1
+{
+    transform: translateX(300px) translateY(200px) scale(2.5);
+}
+.item1:checked ~ .image-item2
+{
+    z-index: 99;
+    transform: translateX(340px) translateY(200px) translateZ(-30px) scale(1.9) rotateY(-40deg);
+}
+.item1:checked ~ .image-item3
+{
+    z-index: 98;
+    transform: translateX(330px) translateY(200px) translateZ(-40px) scale(1.8) rotateY(-40deg);
+}
+.item1:checked ~ .image-item4
+{
+    z-index: 97;
+    transform: translateX(325px) translateY(200px) translateZ(-50px) scale(1.7) rotateY(-40deg);
+}
+.item1:checked ~ .image-item5
+{
+    z-index: 96;
+    transform: translateX(320px) translateY(200px) translateZ(-60px) scale(1.6) rotateY(-40deg);
+}
+.item1:checked ~ .image-item6
+{
+    z-index: 95;
+    transform: translateX(315px) translateY(200px) translateZ(-70px) scale(1.5) rotateY(-40deg);
+}
+.item1:checked ~ .image-item7
+{
+    z-index: 94;
+    transform: translateX(310px) translateY(200px) translateZ(-80px) scale(1.4) rotateY(-40deg);
 }
 
-.description div h3
+/*2*/
+.item2:checked ~ .image-item2
 {
-    color: #b5b5b5;
-    width: 98%;
+    transform: translateX(200px) translateY(200px) scale(2.5);
 }
-.description div .d-left
+.item2:checked ~ .image-item1
 {
-    width: 30%;
+    z-index: 99;
+    transform: translateX(160px) translateY(200px) translateZ(-30px) scale(1.9) rotateY(40deg);
 }
-.description div .d-right
+.item2:checked ~ .image-item3
 {
-    display: flex;
-    flex-flow: column wrap;
-    width: 60% !important;
+    z-index: 99;
+    transform: translateX(240px) translateY(200px) translateZ(-40px) scale(1.9) rotateY(-40deg);
+}
+.item2:checked ~ .image-item4
+{
+    z-index: 98;
+    transform: translateX(230px) translateY(200px) translateZ(-50px) scale(1.8) rotateY(-40deg);
+}
+.item2:checked ~ .image-item5
+{
+    z-index: 97;
+    transform: translateX(225px) translateY(200px) translateZ(-60px) scale(1.7) rotateY(-40deg);
+}
+.item2:checked ~ .image-item6
+{
+    z-index: 96;
+    transform: translateX(220px) translateY(200px) translateZ(-70px) scale(1.6) rotateY(-40deg);
+}
+.item2:checked ~ .image-item7
+{
+    z-index: 95;
+    transform: translateX(215px) translateY(200px) translateZ(-80px) scale(1.5) rotateY(-40deg);
+}
+/*3*/
+.item3:checked ~ .image-item3
+{
+    transform: translateX(100px) translateY(200px) scale(2.5);
+}
+.item3:checked ~ .image-item1
+{
+    z-index: 98;
+    transform: translateX(65px) translateY(200px) translateZ(-30px) scale(1.8) rotateY(40deg);
+}
+.item3:checked ~ .image-item2
+{
+    z-index: 99;
+    transform: translateX(60px) translateY(200px) translateZ(-40px) scale(1.9) rotateY(40deg);
+}
+.item3:checked ~ .image-item4
+{
+    z-index: 99;
+    transform: translateX(140px) translateY(200px) translateZ(-50px) scale(1.9) rotateY(-40deg);
+}
+.item3:checked ~ .image-item5
+{
+    z-index: 98;
+    transform: translateX(130px) translateY(200px) translateZ(-60px) scale(1.8) rotateY(-40deg);
+}
+.item3:checked ~ .image-item6
+{
+    z-index: 97;
+    transform: translateX(125px) translateY(200px) translateZ(-70px) scale(1.7) rotateY(-40deg);
+}
+.item3:checked ~ .image-item7
+{
+    z-index: 95;
+    transform: translateX(120px) translateY(200px) translateZ(-80px) scale(1.6) rotateY(-40deg);
+}
+
+/*4*/
+.item4:checked ~ .image-item4
+{
+    transform: translateX(0) translateY(200px) scale(2.5);
+}
+.item4:checked ~ .image-item1
+{
+    z-index: 97;
+    transform: translateX(-25px) translateY(200px) translateZ(-30px) scale(1.7) rotateY(40deg);
+}
+.item4:checked ~ .image-item2
+{
+    z-index: 98;
+    transform: translateX(-30px) translateY(200px) translateZ(-40px) scale(1.8) rotateY(40deg);
+}
+.item4:checked ~ .image-item3
+{
+    z-index: 99;
+    transform: translateX(-40px) translateY(200px) translateZ(-50px) scale(1.9) rotateY(40deg);
+}
+.item4:checked ~ .image-item5
+{
+    z-index: 98;
+    transform: translateX(40px) translateY(200px) translateZ(-60px) scale(1.9) rotateY(-40deg);
+}
+.item4:checked ~ .image-item6
+{
+    z-index: 97;
+    transform: translateX(30px) translateY(200px) translateZ(-70px) scale(1.8) rotateY(-40deg);
+}
+.item4:checked ~ .image-item7
+{
+    z-index: 96;
+    transform: translateX(25px) translateY(200px) translateZ(-80px) scale(1.7) rotateY(-40deg);
+}
+
+/*5*/
+.item5:checked ~ .image-item5
+{
+    transform: translateX(-100px) translateY(200px) scale(2.5);
+}
+.item5:checked ~ .image-item1
+{
+    z-index: 96;
+    transform: translateX(-120px) translateY(200px) translateZ(-30px) scale(1.6) rotateY(40deg);
+}
+.item5:checked ~ .image-item2
+{
+    z-index: 97;
+    transform: translateX(-125px) translateY(200px) translateZ(-40px) scale(1.7) rotateY(40deg);
+}
+.item5:checked ~ .image-item3
+{
+    z-index: 98;
+    transform: translateX(-130px) translateY(200px) translateZ(-50px) scale(1.8) rotateY(40deg);
+}
+.item5:checked ~ .image-item4
+{
+    z-index: 99;
+    transform: translateX(-140px) translateY(200px) translateZ(-60px) scale(1.9) rotateY(40deg);
+}
+.item5:checked ~ .image-item6
+{
+    z-index: 99;
+    transform: translateX(-60px) translateY(200px) translateZ(-70px) scale(1.9) rotateY(-40deg);
+}
+.item5:checked ~ .image-item7
+{
+    z-index: 98;
+    transform: translateX(-70px) translateY(200px) translateZ(-80px) scale(1.8) rotateY(-40deg);
+}
+
+/*6*/
+.item6:checked ~ .image-item6
+{
+    transform: translateX(-200px) translateY(200px) scale(2.5);
+}
+.item6:checked ~ .image-item1
+{
+    z-index: 95;
+    transform: translateX(-215px) translateY(200px) translateZ(-30px) scale(1.5) rotateY(40deg);
+}
+.item6:checked ~ .image-item2
+{
+    z-index: 96;
+    transform: translateX(-220px) translateY(200px) translateZ(-40px) scale(1.6) rotateY(40deg);
+}
+.item6:checked ~ .image-item3
+{
+    z-index: 97;
+    transform: translateX(-225px) translateY(200px) translateZ(-50px) scale(1.7) rotateY(40deg);
+}
+.item6:checked ~ .image-item4
+{
+    z-index: 98;
+    transform: translateX(-230px) translateY(200px) translateZ(-60px) scale(1.8) rotateY(40deg);
+}
+.item6:checked ~ .image-item5
+{
+    z-index: 99;
+    transform: translateX(-240px) translateY(200px) translateZ(-70px) scale(1.9) rotateY(40deg);
+}
+.item6:checked ~ .image-item7
+{
+    z-index: 99;
+    transform: translateX(-160px) translateY(200px) translateZ(-80px) scale(1.9) rotateY(-40deg);
+}
+
+/*7*/
+.item7:checked ~ .image-item7
+{
+    transform: translateX(-300px) translateY(200px) scale(2.5);
+}
+.item7:checked ~ .image-item1
+{
+    z-index: 94;
+    transform: translateX(-310px) translateY(200px) translateZ(-80px) scale(1.4) rotateY(40deg);
+}
+.item7:checked ~ .image-item2
+{
+    z-index: 95;
+    transform: translateX(-315px) translateY(200px) translateZ(-70px) scale(1.5) rotateY(40deg);
+}
+.item7:checked ~ .image-item3
+{
+    z-index: 96;
+    transform: translateX(-325px) translateY(200px) translateZ(-60px) scale(1.6) rotateY(40deg);
+}
+.item7:checked ~ .image-item4
+{
+    z-index: 97;
+    transform: translateX(-330px) translateY(200px) translateZ(-50px) scale(1.7) rotateY(40deg);
+}
+.item7:checked ~ .image-item5
+{
+    z-index: 98;
+    transform: translateX(-335px) translateY(200px) translateZ(-40px) scale(1.8) rotateY(40deg);
+}
+.item7:checked ~ .image-item6
+{
+    z-index: 99;
+    transform: translateX(-340px) translateY(200px) translateZ(-30px) scale(1.9) rotateY(40deg);
 }
