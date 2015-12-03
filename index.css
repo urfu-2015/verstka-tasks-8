@@ -1,1 +1,175 @@
+body
+{
+    background-color: #c5c7cf;
+    overflow: hidden;
+}
 
+main
+{
+    text-align: center;
+}
+
+.slider
+{
+    transform-style: preserve-3d;
+    transition: all 1s ease-out;
+    transform: perspective(125px);
+    margin-top: 20%;
+}
+
+label
+{
+    display: inline-block;
+    width: 125px;
+    transition: transform .7s ease;
+    position: relative;
+}
+
+img
+{
+    box-shadow: 0 3px 3px #9995ae;
+    height: 175px;
+}
+
+input
+{
+    display: none;
+}
+
+#first ~ .slider .firstLabel
+{
+    transition-property: transform;
+}
+
+/*FIRST*/
+#first:checked ~ .slider .firstLabel
+{
+    z-index: 10;
+    transform: translateX(390px);
+}
+
+#first:checked ~ .slider .secondLabel,
+#first:checked ~ .slider .thirdLabel,
+#first:checked ~ .slider .fourthLabel,
+#first:checked ~ .slider .fifthLabel,
+#first:checked ~ .slider .sixthLabel,
+#first:checked ~ .slider .seventhLabel
+{
+    transform: translateX(390px) translateZ(-20px) rotateY(-5deg);
+}
+/*SECOND*/
+#second:checked ~ .slider .secondLabel
+{
+    z-index: 10;
+    transform: translateX(260px);
+}
+
+#second:checked ~ .slider .firstLabel
+{
+    transform: translateX(260px) translateZ(-20px) rotateY(5deg);
+}
+
+#second:checked ~ .slider .thirdLabel,
+#second:checked ~ .slider .fourthLabel,
+#second:checked ~ .slider .fifthLabel,
+#second:checked ~ .slider .sixthLabel,
+#second:checked ~ .slider .seventhLabel
+{
+    transform: translateX(260px) translateZ(-20px) rotateY(-5deg);
+}
+
+/*THIRD*/
+#third:checked ~ .slider .thirdLabel
+{
+    z-index: 10;
+    transform: translateX(130px);
+}
+
+#third:checked ~ .slider .firstLabel,
+#third:checked ~ .slider .secondLabel
+{
+    transform: translateX(130px) translateZ(-20px) rotateY(5deg);
+}
+
+#third:checked ~ .slider .fourthLabel,
+#third:checked ~ .slider .fifthLabel,
+#third:checked ~ .slider .sixthLabel,
+#third:checked ~ .slider .seventhLabel
+{
+    transform: translateX(130px) translateZ(-20px) rotateY(-5deg);
+}
+
+/*FOURTH*/
+#fourth:checked ~ .slider .firstLabel,
+#fourth:checked ~ .slider .secondLabel,
+#fourth:checked ~ .slider .thirdLabel
+{
+    z-index: 10;
+    transform: translateZ(-20px) rotateY(5deg);
+}
+
+#fourth:checked ~ .slider .fifthLabel,
+#fourth:checked ~ .slider  .sixthLabel,
+#fourth:checked ~ .slider  .seventhLabel
+{
+    transform: translateZ(-20px) rotateY(-5deg);
+}
+
+/*FIFTH*/
+#fifth:checked ~ .slider .fifthLabel
+{
+    z-index: 10;
+    transform: translateX(-130px);
+}
+
+#fifth:checked ~ .slider .firstLabel,
+#fifth:checked ~ .slider .secondLabel,
+#fifth:checked ~ .slider .thirdLabel,
+#fifth:checked ~ .slider .fourthLabel
+{
+    transform: translateX(-130px) translateZ(-20px) rotateY(5deg);
+}
+
+#fifth:checked ~ .slider .sixthLabel,
+#fifth:checked ~ .slider .seventhLabel
+{
+    transform: translateX(-130px) translateZ(-20px) rotateY(-5deg);
+}
+
+/*SIXTH*/
+#sixth:checked ~ .slider .sixthLabel
+{
+    z-index: 10;
+    transform: translateX(-260px);
+}
+
+#sixth:checked ~ .slider .firstLabel,
+#sixth:checked ~ .slider .secondLabel,
+#sixth:checked ~ .slider .thirdLabel,
+#sixth:checked ~ .slider .fourthLabel,
+#sixth:checked ~ .slider .fifthLabel
+{
+    transform: translateX(-260px) translateZ(-20px) rotateY(5deg);
+}
+
+#sixth:checked ~ .slider .seventhLabel
+{
+    transform: translateX(-260px) translateZ(-20px) rotateY(-5deg);
+}
+
+/*SEVENTH*/
+#seventh:checked ~ .slider .seventhLabel
+{
+    z-index: 10;
+    transform: translateX(-390px);
+}
+
+#seventh:checked ~ .slider .firstLabel,
+#seventh:checked ~ .slider .secondLabel,
+#seventh:checked ~ .slider .thirdLabel,
+#seventh:checked ~ .slider .fourthLabel,
+#seventh:checked ~ .slider .fifthLabel,
+#seventh:checked ~ .slider .sixthLabel
+{
+    transform: translateX(-390px) translateZ(-20px) rotateY(5deg);
+}
