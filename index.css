@@ -12,6 +12,7 @@ body
     align-items: center;
     background: #ddd;
     perspective: 1000px;
+    font-family: arial;
     overflow: hidden;
 }
 
@@ -20,7 +21,7 @@ input
     display: none;
 }
 
-article
+.item
 {
     height: 250px;
     width: 250px;
@@ -29,7 +30,7 @@ article
     transition-duration: .5s;
 }
 
-label
+label:first-of-type
 {
     display: flex;
     justify-content: center;
@@ -523,4 +524,261 @@ img
     -o-transform: translateX(-750px);
     transform: translateX(-750px);
     z-index: 14;
+}
+
+.receiptLabel
+{
+    display: none;
+    position: relative;
+    margin-top: -250px;
+    height: 250px;
+    width: 250px;
+}
+
+.receiptLabel > div:first-child
+{
+    height: 250px;
+    width: 250px;
+    background-color: #000;
+    opacity: .3;
+}
+
+.receiptLabel > div:last-child
+{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    height: 130px;
+    width: 130px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    border: 10px solid #fff;
+    color: #fff;
+    text-align: center;
+}
+
+.shadow
+{
+    display: none;
+    height: 10000000px;
+    width: 1000000px;
+    position: absolute;
+    margin-top: -500000px;
+    margin-left: -500000px;
+    background: #000;
+    opacity: .5;
+    z-index: 13;
+}
+
+.receipt
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    height: 500px;
+    width: 500px;
+    background: #fff;
+    z-index: 15;
+    transform: scale(0) rotateX(180deg);
+}
+
+.receiptText
+{
+    position: absolute;
+    height: 450px;
+    width: 450px;
+    padding: 25px;
+    font-size: 16px;
+}
+
+.closeReceipt
+{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 15px;
+    width: 15px;
+    background: url('http://www.pubzi.com/f/lg-Cross-icon.png');
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+.receiptLabel span
+{
+    position: absolute;
+    top: 50px;
+    left: 25px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.receiptText > header
+{
+    font-size: 50px;
+    color: #999;
+    border-bottom: 5px solid #888;
+}
+
+.components
+{
+    display: inline-block;
+    width: 190px;
+    margin-top: 10px;
+    vertical-align: top;
+}
+
+.componentName
+{
+    font-weight: bold;
+}
+
+.componentCount:after
+{
+    content: ')';
+}
+
+.componentCount:before
+{
+    content: '(';
+}
+
+.instruction
+{
+    display: inline-block;
+    width: 190px;
+    margin-left: 20px;
+}
+
+.instruction:before
+{
+    content: 'Инструкция:';
+    display: block;
+    margin-top: 10px;
+    margin-left: -25px;
+    color: #f00;
+}
+
+.rem
+{
+    display: inline-block;
+    position: absolute;
+    width: 220px;
+    bottom: 25px;
+    right: 25px;
+    font-size: 15px;
+    font-style: italic;
+    color: #999;
+    border-top: 1px solid #000;
+}
+
+#in1:checked ~ #pic1:hover .receiptLabel,
+#in2:checked ~ #pic2:hover .receiptLabel,
+#in3:checked ~ #pic3:hover .receiptLabel,
+#in4:checked ~ #pic4:hover .receiptLabel,
+#in5:checked ~ #pic5:hover .receiptLabel,
+#in6:checked ~ #pic6:hover .receiptLabel,
+#in7:checked ~ #pic7:hover .receiptLabel
+{
+    display: block;
+}
+
+#receipt1In:checked ~ .shadow,
+#receipt2In:checked ~ .shadow,
+#receipt3In:checked ~ .shadow,
+#receipt4In:checked ~ .shadow,
+#receipt5In:checked ~ .shadow,
+#receipt6In:checked ~ .shadow,
+#receipt7In:checked ~ .shadow
+{
+    display: block;
+}
+
+#receipt1In:checked ~ #receipt1,
+#receipt2In:checked ~ #receipt2,
+#receipt3In:checked ~ #receipt3,
+#receipt4In:checked ~ #receipt4,
+#receipt5In:checked ~ #receipt5,
+#receipt6In:checked ~ #receipt6,
+#receipt7In:checked ~ #receipt7
+{
+    display: block;
+    -webkit-transform: scale(1) rotateX(360deg);
+    -moz-transform: scale(1) rotateX(360deg);
+    -ms-transform: scale(1) rotateX(360deg);
+    -o-transform: scale(1) rotateX(360deg);
+    transform: scale(1) rotateX(360deg);
+    transition-duration: .5s;
+}
+
+#receipt1In:checked ~ #pic1,
+#receipt2In:checked ~ #pic2,
+#receipt3In:checked ~ #pic3,
+#receipt4In:checked ~ #pic4,
+#receipt5In:checked ~ #pic5,
+#receipt6In:checked ~ #pic6,
+#receipt7In:checked ~ #pic7
+{
+    -moz-transform: translateZ(500px) rotateX(180deg);
+    -ms-transform: translateZ(500px) rotateX(180deg);
+    -o-transform: translateZ(500px) rotateX(180deg);
+    transform: translateZ(500px) rotateX(180deg);
+    -webkit-transform: translateZ(500px) rotateX(180deg);
+}
+
+#receipt1In:checked ~ #pic1
+{
+    -webkit-transform: translateX(680px);
+    -moz-transform: translateX(680px);
+    -ms-transform: translateX(680px);
+    -o-transform: translateX(680px);
+    transform: translateX(680px);
+}
+
+#receipt2In:checked ~ #pic2
+{
+    -webkit-transform: translateX(450px);
+    -moz-transform: translateX(450px);
+    -ms-transform: translateX(450px);
+    -o-transform: translateX(450px);
+    transform: translateX(450px);
+}
+
+#receipt3In:checked ~ #pic3
+{
+    -webkit-transform: translateX(250px);
+    -moz-transform: translateX(250px);
+    -ms-transform: translateX(250px);
+    -o-transform: translateX(250px);
+    transform: translateX(250px);
+}
+
+#receipt5In:checked ~ #pic5
+{
+    -webkit-transform: translateX(-250px);
+    -moz-transform: translateX(-250px);
+    -ms-transform: translateX(-250px);
+    -o-transform: translateX(-250px);
+    transform: translateX(-250px);
+}
+
+#receipt6In:checked ~ #pic6
+{
+    -webkit-transform: translateX(-500px);
+    -moz-transform: translateX(-500px);
+    -ms-transform: translateX(-500px);
+    -o-transform: translateX(-500px);
+    transform: translateX(-500px);
+}
+
+#receipt7In:checked ~ #pic7
+{
+    -webkit-transform: translateX(-750px);
+    -moz-transform: translateX(-750px);
+    -ms-transform: translateX(-750px);
+    -o-transform: translateX(-750px);
+    transform: translateX(-750px);
 }
