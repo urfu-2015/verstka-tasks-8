@@ -1,1 +1,251 @@
+body
+{
+    background-color: #ccc;
+    margin: 0;
+}
 
+main
+{
+    height: 100%;
+}
+
+.center
+{
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    transform-style: preserve-3d;
+    perspective: 600px;
+}
+
+.center div
+{
+    position: absolute;
+    display: inline-block;
+    width: 10%;
+    transition: all .8s ease;
+}
+
+header
+{
+    text-align: center;
+}
+
+img
+{
+    width: 100%;
+    transform: scale(1.5);
+    box-shadow: 0 0 20px #aaa;
+}
+
+.five img,
+.six img,
+.seven img
+{
+    transform: scale(1.6);
+}
+
+input
+{
+    display: none;
+}
+
+#fourth:checked ~ article .four
+{
+    transform: translateZ(50px);
+}
+
+#fourth:checked ~ article .one,
+#fourth:checked ~ article .two,
+#fourth:checked ~ article .three
+{
+    transform: translateX(-10%) rotateY(60deg);
+}
+
+#fourth:checked ~ article .five,
+#fourth:checked ~ article .six,
+#fourth:checked ~ article .seven
+{
+    transform: translateX(10%) rotateY(-60deg);
+}
+
+#first:checked ~ article .one
+{
+    transform: translateX(180%) translateZ(50px);
+}
+
+#first:checked ~ article .two,
+#first:checked ~ article .three
+{
+    transform: translateX(230%) rotateY(-60deg);
+}
+
+#first:checked ~ article .four
+{
+    transform: translateX(180%) rotateY(-60deg);
+}
+
+#first:checked ~ article .five,
+#first:checked ~ article .six,
+#first:checked ~ article .seven
+{
+    transform: translateX(140%) rotateY(-75deg);
+}
+
+#second:checked ~ article .two
+{
+    transform: translateX(120%) translateZ(50px);
+}
+
+#second:checked ~ article .one
+{
+    transform: translateX(80%) rotateY(60deg);
+}
+
+#second:checked ~ article .three
+{
+    transform: translateX(160%) rotateY(-60deg);
+}
+
+#second:checked ~ article .four
+{
+    transform: translateX(100%) rotateY(-55deg);
+}
+
+#second:checked ~ article .five,
+#second:checked ~ article .six,
+#second:checked ~ article .seven
+{
+    transform: translateX(60%) rotateY(-70deg);
+}
+
+#third:checked ~ article .three
+{
+    transform: translateX(90%) translateZ(50px);
+}
+
+#third:checked ~ article .one,
+#third:checked ~ article .two
+{
+    transform: translateX(60%) rotateY(60deg);
+}
+
+#third:checked ~ article .four
+{
+    transform: translateX(80%) rotateY(-60deg);
+}
+
+#third:checked ~ article .five,
+#third:checked ~ article .six,
+#third:checked ~ article .seven
+{
+    transform: translateX(50%) rotateY(-75deg);
+}
+
+#fifth:checked ~ article .five
+{
+    transform: translateX(-110%) translateZ(50px);
+}
+
+#fifth:checked ~ article .one,
+#fifth:checked ~ article .two,
+#fifth:checked ~ article .three
+{
+    transform: translateX(-60%) rotateY(70deg);
+}
+
+#fifth:checked ~ article .four
+{
+    transform: translateX(-95%) rotateY(60deg);
+}
+
+#fifth:checked ~ article .six,
+#fifth:checked ~ article .seven
+{
+    transform: translateX(-80%) rotateY(-60deg);
+}
+
+#sixth:checked ~ article .six
+{
+    transform: translateX(-140%) translateZ(50px);
+}
+
+#sixth:checked ~ article .one,
+#sixth:checked ~ article .two,
+#sixth:checked ~ article .three
+{
+    transform: translateX(-80%) rotateY(75deg);
+}
+
+#sixth:checked ~ article .four
+{
+    transform: translateX(-125%) rotateY(65deg);
+}
+
+#sixth:checked ~ article .five
+{
+    transform: translateX(-180%) rotateY(65deg);
+}
+
+#sixth:checked ~ article .seven
+{
+    transform: translateX(-100%) rotateY(-65deg);
+}
+
+#seventh:checked ~ article .seven
+{
+    transform: translateX(-180%) translateZ(50px);
+}
+
+#seventh:checked ~ article .one,
+#seventh:checked ~ article .two,
+#seventh:checked ~ article .three
+{
+    transform: translateX(-140%) rotateY(75deg);
+}
+
+#seventh:checked ~ article .four
+{
+    transform: translateX(-180%) rotateY(60deg);
+}
+
+#seventh:checked ~ article .five,
+#seventh:checked ~ article .six
+{
+    transform: translateX(-230%) rotateY(60deg);
+}
+
+.one
+{
+    margin-left: 25%;
+}
+
+.two
+{
+    margin-left: 30%;
+}
+
+.three
+{
+    margin-left: 35%;
+}
+
+.four
+{
+    margin-left: 45%;
+}
+
+.five
+{
+    margin-left: 55%;
+}
+
+.six
+{
+    margin-left: 60%;
+}
+
+.seven
+{
+    margin-left: 65%;
+}
