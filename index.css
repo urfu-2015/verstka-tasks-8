@@ -25,7 +25,7 @@ main
     flex-direction: row;
     flex-wrap: nowrap;
     transform-style: preserve-3d;
-    transform: perspective(800px);
+    perspective: 800px;
     transition: all .5s ease-in;
 }
 
@@ -50,32 +50,38 @@ img
 
 #picture-1:checked ~ .container
 {
-    transform: perspective(800px) translateX(600px);
+    transform: translateX(600px);
+    perspective-origin: 10% 90%;
 }
 
 #picture-2:checked ~ .container
 {
-    transform: perspective(800px) translateX(400px);
+    transform: translateX(400px);
+    perspective-origin: 25% 75%;
 }
 
 #picture-3:checked ~ .container
 {
-    transform: perspective(800px) translateX(200px);
+    transform: translateX(200px);
+    perspective-origin: 40% 60%;
 }
 
 #picture-5:checked ~ .container
 {
-    transform: perspective(800px) translateX(-200px);
+    transform: translateX(-200px);
+    perspective-origin: 60% 40%;
 }
 
 #picture-6:checked ~ .container
 {
-    transform: perspective(800px) translateX(-400px);
+    transform: translateX(-400px);
+    perspective-origin: 75% 25%;
 }
 
 #picture-7:checked ~ .container
 {
-    transform: perspective(800px) translateX(-600px);
+    transform: translateX(-600px);
+    perspective-origin: 90% 10%;
 }
 
 #picture-1:checked ~ .container .picture-1,
