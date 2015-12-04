@@ -37,7 +37,7 @@ article > label
     flex-grow: 1;
 }
 
-article[class^=veg]
+.veg
 {
     transition-property: all;
     transition-duration: 1s;
