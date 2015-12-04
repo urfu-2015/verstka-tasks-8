@@ -1,1 +1,186 @@
+html,
+body
+{
+    height: 100%;
+    margin: 0;
+}
 
+body
+{
+    background-color: #ccc;
+}
+
+main
+{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    transform-style: preserve-3d;
+    perspective: 800px;
+    transition: all .5s ease-in;
+}
+
+.invisible
+{
+    display: none;
+}
+
+.picture
+{
+    width: 200px;
+    height: 135px;
+    transition: all .5s ease-in;
+    box-shadow: 10px 10px 25px 0 rgba(0,0,0,.5);
+}
+
+img
+{
+    width: 100%;
+    height: 100%;
+}
+
+#picture-1:checked ~ .container
+{
+    transform: translateX(600px);
+    perspective-origin: 10% 90%;
+}
+
+#picture-2:checked ~ .container
+{
+    transform: translateX(400px);
+    perspective-origin: 25% 75%;
+}
+
+#picture-3:checked ~ .container
+{
+    transform: translateX(200px);
+    perspective-origin: 40% 60%;
+}
+
+#picture-5:checked ~ .container
+{
+    transform: translateX(-200px);
+    perspective-origin: 60% 40%;
+}
+
+#picture-6:checked ~ .container
+{
+    transform: translateX(-400px);
+    perspective-origin: 75% 25%;
+}
+
+#picture-7:checked ~ .container
+{
+    transform: translateX(-600px);
+    perspective-origin: 90% 10%;
+}
+
+#picture-1:checked ~ .container .picture-1,
+#picture-2:checked ~ .container .picture-2,
+#picture-3:checked ~ .container .picture-3,
+#picture-4:checked ~ .container .picture-4,
+#picture-5:checked ~ .container .picture-5,
+#picture-6:checked ~ .container .picture-6,
+#picture-7:checked ~ .container .picture-7
+{
+    transform: translateZ(100px);
+}
+
+#picture-1:checked ~ .container .picture-2,
+#picture-2:checked ~ .container .picture-3,
+#picture-3:checked ~ .container .picture-4,
+#picture-4:checked ~ .container .picture-5,
+#picture-5:checked ~ .container .picture-6,
+#picture-6:checked ~ .container .picture-7
+{
+    transform: translateX(-50px) translateZ(-50px) rotateY(-50deg);
+}
+
+#picture-1:checked ~ .container .picture-3,
+#picture-2:checked ~ .container .picture-4,
+#picture-3:checked ~ .container .picture-5,
+#picture-4:checked ~ .container .picture-6,
+#picture-5:checked ~ .container .picture-7
+{
+    transform: translateX(-200px) translateZ(-50px) rotateY(-48deg);
+}
+
+#picture-1:checked ~ .container .picture-4,
+#picture-2:checked ~ .container .picture-5,
+#picture-3:checked ~ .container .picture-6,
+#picture-4:checked ~ .container .picture-7
+{
+    transform: translateX(-350px) translateZ(-50px) rotateY(-46deg);
+}
+
+#picture-1:checked ~ .container .picture-5,
+#picture-2:checked ~ .container .picture-6,
+#picture-3:checked ~ .container .picture-7
+{
+    transform: translateX(-500px) translateZ(-50px) rotateY(-44deg);
+}
+
+#picture-1:checked ~ .container .picture-6,
+#picture-2:checked ~ .container .picture-7
+{
+    transform: translateX(-650px) translateZ(-50px) rotateY(-42deg);
+}
+
+#picture-1:checked ~ .container .picture-7
+{
+    transform: translateX(-800px) translateZ(-50px) rotateY(-40deg);
+}
+
+#picture-2:checked ~ .container .picture-1,
+#picture-3:checked ~ .container .picture-2,
+#picture-4:checked ~ .container .picture-3,
+#picture-5:checked ~ .container .picture-4,
+#picture-6:checked ~ .container .picture-5,
+#picture-7:checked ~ .container .picture-6
+{
+    transform: translateX(50px) translateZ(-50px) rotateY(50deg);
+}
+
+#picture-3:checked ~ .container .picture-1,
+#picture-4:checked ~ .container .picture-2,
+#picture-5:checked ~ .container .picture-3,
+#picture-6:checked ~ .container .picture-4,
+#picture-7:checked ~ .container .picture-5
+{
+    transform: translateX(200px) translateZ(-50px) rotateY(48deg);
+}
+
+#picture-4:checked ~ .container .picture-1,
+#picture-5:checked ~ .container .picture-2,
+#picture-6:checked ~ .container .picture-3,
+#picture-7:checked ~ .container .picture-4
+{
+    transform: translateX(350px) translateZ(-50px) rotateY(46deg);
+}
+
+#picture-5:checked ~ .container .picture-1,
+#picture-6:checked ~ .container .picture-2,
+#picture-7:checked ~ .container .picture-3
+{
+    transform: translateX(500px) translateZ(-50px) rotateY(44deg);
+}
+
+#picture-6:checked ~ .container .picture-1,
+#picture-7:checked ~ .container .picture-2
+{
+    transform: translateX(650px) translateZ(-50px) rotateY(42deg);
+}
+
+#picture-7:checked ~ .container .picture-1
+{
+    transform: translateX(800px) translateZ(-50px) rotateY(40deg);
+}
