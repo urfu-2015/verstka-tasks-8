@@ -1,6 +1,5 @@
 body
 {
-    transform-style: preserve-3d;
     background-color: #eaeaea;
 }
 
@@ -34,7 +33,6 @@ article > label
     align-items: center;
     overflow: hidden;
     width: 180px;
-    min-width: 180px;
     height: 180px;
     flex-grow: 1;
 }
@@ -46,219 +44,158 @@ article[class^=veg]
     background-color: #fff;
 }
 
-/*For veg-1 checked*/
-#veg-1:checked ~ main > .veg-1
+#veg-1:checked ~ main .veg-1
 {
     transform: translateX(600px) rotateY(0deg) translateZ(50px);
 }
-#veg-1:checked ~ main > .veg-2
+#veg-1:checked ~ main .veg-2
 {
     transform: translateX(500px) rotateY(-50deg);
 }
-#veg-1:checked ~ main > .veg-3
+#veg-1:checked ~ main .veg-3
 {
     transform: translateX(400px) rotateY(-50deg);
 }
-#veg-1:checked ~ main > .veg-4
+#veg-1:checked ~ main .veg-4,
+#veg-2:checked ~ main .veg-3
 {
     transform: translateX(300px) rotateY(-50deg);
 }
-#veg-1:checked ~ main > .veg-5
+#veg-1:checked ~ main .veg-5,
+#veg-2:checked ~ main .veg-4
 {
     transform: translateX(200px) rotateY(-50deg);
 }
-#veg-1:checked ~ main > .veg-6
+#veg-1:checked ~ main .veg-6,
+#veg-2:checked ~ main .veg-5,
+#veg-3:checked ~ main .veg-4
 {
     transform: translateX(100px) rotateY(-50deg);
 }
-#veg-1:checked ~ main > .veg-7
+#veg-1:checked ~ main .veg-7,
+#veg-2:checked ~ main .veg-6,
+#veg-3:checked ~ main .veg-5
 {
     transform: translateX(0) rotateY(-50deg);
 }
-/*-----------------*/
-
-/*For veg-2 checked*/
-#veg-2:checked ~ main > .veg-1
+#veg-2:checked ~ main .veg-1
 {
     transform: translateX(500px) rotateY(50deg);
 }
-#veg-2:checked ~ main > .veg-2
+#veg-2:checked ~ main .veg-2
 {
     transform: translateX(400px) rotateY(0deg) translateZ(50px);
 }
-#veg-2:checked ~ main > .veg-3
-{
-    transform: translateX(300px) rotateY(-50deg);
-}
-#veg-2:checked ~ main > .veg-4
-{
-    transform: translateX(200px) rotateY(-50deg);
-}
-#veg-2:checked ~ main > .veg-5
-{
-    transform: translateX(100px) rotateY(-50deg);
-}
-#veg-2:checked ~ main > .veg-6
-{
-    transform: translateX(0) rotateY(-50deg);
-}
-#veg-2:checked ~ main > .veg-7
+#veg-2:checked ~ main .veg-7,
+#veg-3:checked ~ main .veg-6
 {
     transform: translateX(-100px) rotateY(-50deg);
 }
-/*-----------------*/
-
-/*For veg-3 checked*/
-#veg-3:checked ~ main > .veg-1
+#veg-3:checked ~ main .veg-1
 {
     transform: translateX(400px) rotateY(50deg);
 }
-#veg-3:checked ~ main > .veg-2
+#veg-3:checked ~ main .veg-2
 {
     transform: translateX(300px) rotateY(50deg);
 }
-#veg-3:checked ~ main > .veg-3
+#veg-3:checked ~ main .veg-3
 {
     transform: translateX(200px) rotateY(0deg) translateZ(50px);
 }
-#veg-3:checked ~ main > .veg-4
-{
-    transform: translateX(100px) rotateY(-50deg);
-}
-#veg-3:checked ~ main > .veg-5
-{
-    transform: translateX(0) rotateY(-50deg);
-}
-#veg-3:checked ~ main > .veg-6
-{
-    transform: translateX(-100px) rotateY(-50deg);
-}
-#veg-3:checked ~ main > .veg-7
+#veg-3:checked ~ main .veg-7
 {
     transform: translateX(-200px) rotateY(-50deg);
 }
-/*-----------------*/
-
-/*For veg-4 checked*/
-#veg-4:checked ~ main > .veg-1
+#veg-4:checked ~ main .veg-1
 {
     transform: translateX(250px) rotateY(50deg);
 }
-#veg-4:checked ~ main > .veg-2
+#veg-4:checked ~ main .veg-2
 {
     transform: translateX(150px) rotateY(50deg);
 }
-#veg-4:checked ~ main > .veg-3
+#veg-4:checked ~ main .veg-3
 {
     transform: translateX(50px) rotateY(50deg);
 }
-#veg-4:checked ~ main > .veg-4
+#veg-4:checked ~ main .veg-4
 {
     transform: translateX(0) rotateY(0deg) translateZ(50px);
 }
-#veg-4:checked ~ main > .veg-5
+#veg-4:checked ~ main .veg-5
 {
     transform: translateX(-50px) rotateY(-50deg);
 }
-#veg-4:checked ~ main > .veg-6
+#veg-4:checked ~ main .veg-6
 {
     transform: translateX(-150px) rotateY(-50deg);
 }
-#veg-4:checked ~ main > .veg-7
+#veg-4:checked ~ main .veg-7
 {
     transform: translateX(-250px) rotateY(-50deg);
 }
-/*-----------------*/
-
-/*For veg-5 checked*/
-#veg-5:checked ~ main > .veg-1
+#veg-5:checked ~ main .veg-1
 {
     transform: translateX(200px) rotateY(50deg);
 }
-#veg-5:checked ~ main > .veg-2
+#veg-5:checked ~ main .veg-2,
+#veg-6:checked ~ main .veg-1
 {
     transform: translateX(100px) rotateY(50deg);
 }
-#veg-5:checked ~ main > .veg-3
+#veg-5:checked ~ main .veg-3,
+#veg-6:checked ~ main .veg-2,
+#veg-7:checked ~ main .veg-1
 {
     transform: translateX(0) rotateY(50deg);
 }
-#veg-5:checked ~ main > .veg-4
+#veg-5:checked ~ main .veg-4,
+#veg-6:checked ~ main .veg-3,
+#veg-7:checked ~ main .veg-2
 {
     transform: translateX(-100px) rotateY(50deg);
 }
-#veg-5:checked ~ main > .veg-5
+#veg-5:checked ~ main .veg-5
 {
     transform: translateX(-200px) rotateY(0deg) translateZ(50px);
 }
-#veg-5:checked ~ main > .veg-6
+#veg-5:checked ~ main .veg-6
 {
     transform: translateX(-300px) rotateY(-50deg);
 }
-#veg-5:checked ~ main > .veg-7
+#veg-5:checked ~ main .veg-7
 {
     transform: translateX(-400px) rotateY(-50deg);
 }
-/*-----------------*/
-
-/*For veg-6 checked*/
-#veg-6:checked ~ main > .veg-1
-{
-    transform: translateX(100px) rotateY(50deg);
-}
-#veg-6:checked ~ main > .veg-2
-{
-    transform: translateX(0) rotateY(50deg);
-}
-#veg-6:checked ~ main > .veg-3
-{
-    transform: translateX(-100px) rotateY(50deg);
-}
-#veg-6:checked ~ main > .veg-4
+#veg-6:checked ~ main .veg-4,
+#veg-7:checked ~ main .veg-3
 {
     transform: translateX(-200px) rotateY(50deg);
 }
-#veg-6:checked ~ main > .veg-5
+#veg-6:checked ~ main .veg-5,
+#veg-7:checked ~ main .veg-4
 {
     transform: translateX(-300px) rotateY(50deg);
 }
-#veg-6:checked ~ main > .veg-6
+#veg-6:checked ~ main .veg-6
 {
     transform: translateX(-400px) rotateY(0deg) translateZ(50px);
 }
-#veg-6:checked ~ main > .veg-7
+#veg-6:checked ~ main .veg-7
 {
     transform: translateX(-500px) rotateY(-50deg);
 }
-/*-----------------*/
 
-/*For veg-7 checked*/
-#veg-7:checked ~ main > .veg-1
-{
-    transform: translateX(0) rotateY(50deg);
-}
-#veg-7:checked ~ main > .veg-2
-{
-    transform: translateX(-100px) rotateY(50deg);
-}
-#veg-7:checked ~ main > .veg-3
-{
-    transform: translateX(-200px) rotateY(50deg);
-}
-#veg-7:checked ~ main > .veg-4
-{
-    transform: translateX(-300px) rotateY(50deg);
-}
-#veg-7:checked ~ main > .veg-5
+#veg-7:checked ~ main .veg-5
 {
     transform: translateX(-400px) rotateY(50deg);
 }
-#veg-7:checked ~ main > .veg-6
+#veg-7:checked ~ main .veg-6
 {
     transform: translateX(-500px) rotateY(50deg);
 }
-#veg-7:checked ~ main > .veg-7
+#veg-7:checked ~ main .veg-7
 {
     transform: translateX(-600px) rotateY(0deg) translateZ(50px);
 }
-/*-----------------*/
