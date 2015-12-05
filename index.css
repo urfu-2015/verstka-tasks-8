@@ -55,105 +55,105 @@ img
     margin: auto;
 }
 
-input#photo-4:checked ~ .items-slide .vegetable-card label[for='photo-1'],
-input#photo-5:checked ~ .items-slide .vegetable-card label[for='photo-1'],
-input#photo-6:checked ~ .items-slide .vegetable-card label[for='photo-1'],
-input#photo-7:checked ~ .items-slide .vegetable-card label[for='photo-1']
+#photo-4:checked ~ .items-slide label[for='photo-1'],
+#photo-5:checked ~ .items-slide label[for='photo-1'],
+#photo-6:checked ~ .items-slide label[for='photo-1'],
+#photo-7:checked ~ .items-slide label[for='photo-1']
 {
     transform: rotateY(20deg);
 }
 
-input#photo-4:checked ~ .items-slide .vegetable-card label[for='photo-2'],
-input#photo-5:checked ~ .items-slide .vegetable-card label[for='photo-2'],
-input#photo-6:checked ~ .items-slide .vegetable-card label[for='photo-2'],
-input#photo-7:checked ~ .items-slide .vegetable-card label[for='photo-2']
+#photo-4:checked ~ .items-slide label[for='photo-2'],
+#photo-5:checked ~ .items-slide label[for='photo-2'],
+#photo-6:checked ~ .items-slide label[for='photo-2'],
+#photo-7:checked ~ .items-slide label[for='photo-2']
 {
     transform: rotateY(30deg);
 }
 
-input#photo-4:checked ~ .items-slide .vegetable-card label[for='photo-3'],
-input#photo-5:checked ~ .items-slide .vegetable-card label[for='photo-3'],
-input#photo-6:checked ~ .items-slide .vegetable-card label[for='photo-3'],
-input#photo-7:checked ~ .items-slide .vegetable-card label[for='photo-3'],
-input#photo-3:checked ~ .items-slide .vegetable-card label[for='photo-1']
+#photo-4:checked ~ .items-slide label[for='photo-3'],
+#photo-5:checked ~ .items-slide label[for='photo-3'],
+#photo-6:checked ~ .items-slide label[for='photo-3'],
+#photo-7:checked ~ .items-slide label[for='photo-3'],
+#photo-3:checked ~ .items-slide label[for='photo-1']
 {
     transform: rotateY(40deg);
 }
 
-input#photo-1:checked ~ .items-slide .vegetable-card label[for='photo-1'],
-input#photo-2:checked ~ .items-slide .vegetable-card label[for='photo-2'],
-input#photo-3:checked ~ .items-slide .vegetable-card label[for='photo-3'],
-input#photo-4:checked ~ .items-slide .vegetable-card label[for='photo-4'],
-input#photo-5:checked ~ .items-slide .vegetable-card label[for='photo-5'],
-input#photo-6:checked ~ .items-slide .vegetable-card label[for='photo-6'],
-input#photo-7:checked ~ .items-slide .vegetable-card label[for='photo-7']
+#photo-1:checked ~ .items-slide label[for='photo-1'],
+#photo-2:checked ~ .items-slide label[for='photo-2'],
+#photo-3:checked ~ .items-slide label[for='photo-3'],
+#photo-4:checked ~ .items-slide label[for='photo-4'],
+#photo-5:checked ~ .items-slide label[for='photo-5'],
+#photo-6:checked ~ .items-slide label[for='photo-6'],
+#photo-7:checked ~ .items-slide label[for='photo-7']
 {
     transform: translateZ(50px);
     box-shadow: 2px 2px 5px #c8c8c8,
         -2px 0 5px #c8c8c8;
 }
 
-input#photo-1:checked ~ .items-slide .vegetable-card label[for='photo-5'],
-input#photo-2:checked ~ .items-slide .vegetable-card label[for='photo-5'],
-input#photo-3:checked ~ .items-slide .vegetable-card label[for='photo-5'],
-input#photo-4:checked ~ .items-slide .vegetable-card label[for='photo-5'],
-input#photo-5:checked ~ .items-slide .vegetable-card label[for='photo-7']
+#photo-1:checked ~ .items-slide label[for='photo-5'],
+#photo-2:checked ~ .items-slide label[for='photo-5'],
+#photo-3:checked ~ .items-slide label[for='photo-5'],
+#photo-4:checked ~ .items-slide label[for='photo-5'],
+#photo-5:checked ~ .items-slide label[for='photo-7']
 {
     transform: rotateY(-40deg);
 }
 
-input#photo-1:checked ~ .items-slide .vegetable-card label[for='photo-6'],
-input#photo-2:checked ~ .items-slide .vegetable-card label[for='photo-6'],
-input#photo-3:checked ~ .items-slide .vegetable-card label[for='photo-6'],
-input#photo-4:checked ~ .items-slide .vegetable-card label[for='photo-6']
+#photo-1:checked ~ .items-slide label[for='photo-6'],
+#photo-2:checked ~ .items-slide label[for='photo-6'],
+#photo-3:checked ~ .items-slide label[for='photo-6'],
+#photo-4:checked ~ .items-slide label[for='photo-6']
 {
     transform: rotateY(-30deg);
 }
 
-input#photo-1:checked ~ .items-slide .vegetable-card label[for='photo-7'],
-input#photo-2:checked ~ .items-slide .vegetable-card label[for='photo-7'],
-input#photo-3:checked ~ .items-slide .vegetable-card label[for='photo-7'],
-input#photo-4:checked ~ .items-slide .vegetable-card label[for='photo-7']
+#photo-1:checked ~ .items-slide label[for='photo-7'],
+#photo-2:checked ~ .items-slide label[for='photo-7'],
+#photo-3:checked ~ .items-slide label[for='photo-7'],
+#photo-4:checked ~ .items-slide label[for='photo-7']
 {
     transform: rotateY(-20deg);
 }
 
-input#photo-5:checked ~ .items-slide .vegetable-card label[for='photo-4'],
-input#photo-6:checked ~ .items-slide .vegetable-card label[for='photo-4'],
-input#photo-7:checked ~ .items-slide .vegetable-card label[for='photo-4'],
-input#photo-3:checked ~ .items-slide .vegetable-card label[for='photo-2']
+#photo-5:checked ~ .items-slide label[for='photo-4'],
+#photo-6:checked ~ .items-slide label[for='photo-4'],
+#photo-7:checked ~ .items-slide label[for='photo-4'],
+#photo-3:checked ~ .items-slide label[for='photo-2']
 {
     transform: rotateY(50deg);
 }
 
-input#photo-1:checked ~ .items-slide .vegetable-card label[for='photo-4'],
-input#photo-2:checked ~ .items-slide .vegetable-card label[for='photo-4'],
-input#photo-3:checked ~ .items-slide .vegetable-card label[for='photo-4'],
-input#photo-5:checked ~ .items-slide .vegetable-card label[for='photo-6']
+#photo-1:checked ~ .items-slide label[for='photo-4'],
+#photo-2:checked ~ .items-slide label[for='photo-4'],
+#photo-3:checked ~ .items-slide label[for='photo-4'],
+#photo-5:checked ~ .items-slide label[for='photo-6']
 {
     transform: rotateY(-50deg);
 }
 
-input#photo-6:checked ~ .items-slide .vegetable-card label[for='photo-5'],
-input#photo-7:checked ~ .items-slide .vegetable-card label[for='photo-5'],
-input#photo-2:checked ~ .items-slide .vegetable-card label[for='photo-1']
+#photo-6:checked ~ .items-slide label[for='photo-5'],
+#photo-7:checked ~ .items-slide label[for='photo-5'],
+#photo-2:checked ~ .items-slide label[for='photo-1']
 {
     transform: rotateY(60deg);
 }
 
-input#photo-1:checked ~ .items-slide .vegetable-card label[for='photo-3'],
-input#photo-2:checked ~ .items-slide .vegetable-card label[for='photo-3'],
-input#photo-6:checked ~ .items-slide .vegetable-card label[for='photo-7']
+#photo-1:checked ~ .items-slide label[for='photo-3'],
+#photo-2:checked ~ .items-slide label[for='photo-3'],
+#photo-6:checked ~ .items-slide label[for='photo-7']
 {
     transform: rotateY(-60deg);
 }
 
-input#photo-7:checked ~ .items-slide .vegetable-card label[for='photo-6']
+#photo-7:checked ~ .items-slide label[for='photo-6']
 {
     transform: rotateY(70deg);
 }
 
-input#photo-1:checked ~ .items-slide .vegetable-card label[for='photo-2']
+#photo-1:checked ~ .items-slide label[for='photo-2']
 {
     transform: rotateY(-70deg);
 }
