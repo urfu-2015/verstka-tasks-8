@@ -1,252 +1,338 @@
 body
 {
     background-color: #e9ebeb;
-    overflow: hidden;
 }
 
 .gallery
 {
     margin-top: 15%;
-    transform-style: preserve-3d;
-    transition: transform 1s ease-out;
+    display: flex;
+    perspective: 350px;
 }
 
-input
+.input-hidden
 {
     display: none;
 }
 
+.label-photo
+{
+    width: 12%;
+    transform-style: preserve-3d;
+    transition: transform 1.2s ease;
+    margin: 0 -3%;
+    box-shadow: 0 1px 10px #000;
+}
+
 .photo-wrapper
 {
-    display: inline-block;
-    width: 12%;
-    transition: all 1.5s ease-out;
-    box-shadow: 0 1px 10px #000;
-    height: 200px;
+    width: 100%;
+    height: 180px;
 }
 
 img
 {
     width: 100%;
-    height: 200px;
+    height: 180px;
 }
-
-#radio-photo-1:checked ~ .gallery
-{
-    transform: translateX(43%);
-}
-
-#radio-photo-2:checked ~ .gallery
-{
-    transform: translateX(37%);
-}
-
-#radio-photo-3:checked ~ .gallery
-{
-    transform: translateX(31%);
-}
-
-#radio-photo-4:checked ~ .gallery
-{
-    transform: translateX(25%);
-}
-
-#radio-photo-5:checked ~ .gallery
-{
-    transform: translateX(19%);
-}
-
-#radio-photo-6:checked ~ .gallery
-{
-    transform: translateX(13%);
-}
-
-#radio-photo-7:checked ~ .gallery
-{
-    transform: translateX(6%);
-}
+/*--------------------------ПЕРВОЕ ФОТО--------------------------*/
 
 #radio-photo-1:checked ~ .gallery .photo-1
 {
     z-index: 80;
+    transform: translateX(390%) translateZ(50px);
 }
 
-#radio-photo-1:checked ~ .gallery .photo-2,
-#radio-photo-2:checked ~ .gallery .photo-3,
-#radio-photo-3:checked ~ .gallery .photo-4,
-#radio-photo-4:checked ~ .gallery .photo-5,
-#radio-photo-6:checked ~ .gallery .photo-7
+#radio-photo-1:checked ~ .gallery .photo-2 
 {
-    transform: perspective(1000px) rotateY(-50deg) translateZ(-20px);
-    margin: 0 -3%;
+    transform: translateX(390%) rotateY(-25deg) translateZ(-20px);
     z-index: 70;
 }
 
-#radio-photo-1:checked ~ .gallery .photo-3,
-#radio-photo-2:checked ~ .gallery .photo-4,
-#radio-photo-3:checked ~ .gallery .photo-5,
-#radio-photo-4:checked ~ .gallery .photo-6
+#radio-photo-1:checked ~ .gallery .photo-3
 {
-    transform: perspective(1000px) rotateY(-50deg) translateZ(-25px);
-    margin: 0 -3%;
+    transform: translateX(390%) rotateY(-25deg) translateZ(-25px);
     z-index: 60;
 }
 
-#radio-photo-1:checked ~ .gallery .photo-4,
-#radio-photo-2:checked ~ .gallery .photo-5,
-#radio-photo-3:checked ~ .gallery .photo-6,
-#radio-photo-4:checked ~ .gallery .photo-7
+#radio-photo-1:checked ~ .gallery .photo-4
 {
-    transform: perspective(1000px) rotateY(-50deg) translateZ(-30px);
-    margin: 0 -3%;
+    transform: translateX(390%) rotateY(-25deg) translateZ(-30px);
     z-index: 50;
 }
 
-#radio-photo-1:checked ~ .gallery .photo-5,
-#radio-photo-2:checked ~ .gallery .photo-6,
-#radio-photo-3:checked ~ .gallery .photo-7
+#radio-photo-1:checked ~ .gallery .photo-5
 {
-    transform: perspective(1000px) rotateY(-50deg) translateZ(-35px);
-    margin: 0 -3%;
+    transform: translateX(390%) rotateY(-25deg) translateZ(-35px);
     z-index: 40;
 }
 
-#radio-photo-1:checked ~ .gallery .photo-6,
-#radio-photo-2:checked ~ .gallery .photo-7
+#radio-photo-1:checked ~ .gallery .photo-6
 {
-    transform: perspective(1000px) rotateY(-50deg) translateZ(-40px);
-    margin: 0 -3%;
+    transform: translateX(390%) rotateY(-25deg) translateZ(-40px);
     z-index: 30;
 }
 
 #radio-photo-1:checked ~ .gallery .photo-7
 {
-    transform: perspective(1000px) rotateY(-50deg) translateZ(-45px);
-    margin: 0 -3%;
+    transform: translateX(390%) rotateY(-25deg) translateZ(-45px);
     z-index: 20;
 }
+/*--------------------------ВТОРОЕ ФОТО--------------------------*/
 
-#radio-photo-2:checked ~ .gallery .photo-1,
-#radio-photo-4:checked ~ .gallery .photo-3,
-#radio-photo-5:checked ~ .gallery .photo-4,
-#radio-photo-6:checked ~ .gallery .photo-5,
-#radio-photo-7:checked ~ .gallery .photo-6
+#radio-photo-2:checked ~ .gallery .photo-1 
 {
-    transform: perspective(1000px) rotateY(50deg) translateZ(-20px);
-    margin: 0 -3%;
+    transform: translateZ(-20px) translateX(340%) rotateY(30deg);
     z-index: 70;
 }
 
 #radio-photo-2:checked ~ .gallery .photo-2 
 {
     z-index: 80;
+    transform: translateX(340%) translateZ(50px);
 }
 
-#radio-photo-3:checked ~ .gallery .photo-1,
-#radio-photo-5:checked ~ .gallery .photo-3
+#radio-photo-2:checked ~ .gallery .photo-3
 {
-    transform: perspective(1000px) rotateY(50deg) translateZ(-20px);
-    margin: 0 -3%;
+    transform: translateX(340%) rotateY(-25deg) translateZ(-20px);
+    z-index: 70;
+}
+
+#radio-photo-2:checked ~ .gallery .photo-4
+{
+    transform: translateX(340%) rotateY(-25deg) translateZ(-25px);
+    z-index: 60;
+}
+
+#radio-photo-2:checked ~ .gallery .photo-5
+{
+    transform: translateX(340%) rotateY(-25deg) translateZ(-30px);
+    z-index: 50;
+}
+
+#radio-photo-2:checked ~ .gallery .photo-6
+{
+    transform: translateX(340%) rotateY(-25deg) translateZ(-35px);
+    z-index: 40;
+}
+
+#radio-photo-2:checked ~ .gallery .photo-7
+{
+    transform: translateX(340%) rotateY(-25deg) translateZ(-40px);
+    z-index: 30;
+}
+/*--------------------------ТРЕТЬЕ ФОТО--------------------------*/
+
+#radio-photo-3:checked ~ .gallery .photo-1 
+{
+    transform: translateX(290%) rotateY(30deg) translateZ(-20px);
     z-index: 60;
 }
 
 #radio-photo-3:checked ~ .gallery .photo-2
 {
-    transform: perspective(1000px) rotateY(50deg) translateZ(-25px);
-    margin: 0 -3%;
+    transform: translateX(290%) rotateY(30deg) translateZ(-25px);
     z-index: 70;
 }
 
 #radio-photo-3:checked ~ .gallery .photo-3
 {
     z-index: 80;
+    transform: translateX(290%) translateZ(50px);
 }
 
-#radio-photo-4:checked ~ .gallery .photo-1,
-#radio-photo-6:checked ~ .gallery .photo-3,
-#radio-photo-7:checked ~ .gallery .photo-4
+#radio-photo-3:checked ~ .gallery .photo-4
 {
-    transform: perspective(1000px) rotateY(50deg) translateZ(-30px);
-    margin: 0 -3%;
+    transform: translateX(290%) rotateY(-25deg) translateZ(-20px);
+    z-index: 70;
+}
+
+#radio-photo-3:checked ~ .gallery .photo-5
+{
+    transform: translateX(290%) rotateY(-25deg) translateZ(-25px);
+    z-index: 60;
+}
+
+#radio-photo-3:checked ~ .gallery .photo-6
+{
+    transform: translateX(290%) rotateY(-25deg) translateZ(-30px);
     z-index: 50;
 }
 
-#radio-photo-4:checked ~ .gallery .photo-2,
-#radio-photo-6:checked ~ .gallery .photo-4,
-#radio-photo-7:checked ~ .gallery .photo-5
+#radio-photo-3:checked ~ .gallery .photo-7
 {
-    transform: perspective(1000px) rotateY(50deg) translateZ(-25px);
-    margin: 0 -3%;
+    transform: translateX(290%) rotateY(-25deg) translateZ(-35px);
+    z-index: 40;
+}
+/*--------------------------ЧЕТВЁРТОЕ ФОТО--------------------------*/
+
+#radio-photo-4:checked ~ .gallery .photo-1 
+{
+    transform: translateX(240%) rotateY(30deg) translateZ(-30px);
+    z-index: 50;
+}
+
+#radio-photo-4:checked ~ .gallery .photo-2
+{
+    transform: translateX(240%) rotateY(30deg) translateZ(-25px);
     z-index: 60;
+}
+
+#radio-photo-4:checked ~ .gallery .photo-3
+{
+    transform: translateX(240%) rotateY(30deg) translateZ(-20px);
+    z-index: 70;
 }
 
 #radio-photo-4:checked ~ .gallery .photo-4
 {
     z-index: 80;
+    transform: translateX(240%) translateZ(50px);
 }
+
+#radio-photo-4:checked ~ .gallery .photo-5
+{
+    transform: translateX(240%) rotateY(-25deg) translateZ(-20px);
+    z-index: 70;
+}
+
+#radio-photo-4:checked ~ .gallery .photo-6
+{
+    transform: translateX(240%) rotateY(-25deg) translateZ(-25px);
+    z-index: 60;
+}
+
+#radio-photo-4:checked ~ .gallery .photo-7
+{
+    transform: translateX(240%) rotateY(-25deg) translateZ(-30px);
+    z-index: 50;
+}
+/*--------------------------ПЯТОЕ ФОТО--------------------------*/
 
 #radio-photo-5:checked ~ .gallery .photo-1 
 {
-    transform: perspective(1000px) rotateY(50deg) translateZ(-30px);
-    margin: 0 -3%;
+    transform: translateX(190%) rotateY(30deg) translateZ(-30px);
     z-index: 40;
 }
 
 #radio-photo-5:checked ~ .gallery .photo-2
 {
-    transform: perspective(1000px) rotateY(50deg) translateZ(-25px);
-    margin: 0 -3%;
+    transform: translateX(190%) rotateY(30deg) translateZ(-25px);
     z-index: 50;
+}
+
+#radio-photo-5:checked ~ .gallery .photo-3
+{
+    transform: translateX(190%) rotateY(30deg) translateZ(-20px);
+    z-index: 60;
+}
+
+#radio-photo-5:checked ~ .gallery .photo-4
+{
+    transform: translateX(190%) rotateY(30deg) translateZ(-20px);
+    z-index: 70;
 }
 
 #radio-photo-5:checked ~ .gallery .photo-5
 {
     z-index: 80;
+    transform: translateX(190%) translateZ(50px);
 }
 
 #radio-photo-5:checked ~ .gallery .photo-6
 {
-    transform: perspective(1000px) rotateY(-50deg) translateZ(-25px);
-    margin: 0 -3%;
+    transform: translateX(190%) rotateY(-25deg) translateZ(-25px);
     z-index: 70;
 }
 
 #radio-photo-5:checked ~ .gallery .photo-7
 {
-    transform: perspective(1000px) rotateY(-50deg) translateZ(-30px);
-    margin: 0 -3%;
+    transform: translateX(190%) rotateY(-25deg) translateZ(-30px);
     z-index: 60;
 }
+/*--------------------------ШЕСТОЕ ФОТО--------------------------*/
 
-#radio-photo-6:checked ~ .gallery .photo-1,
-#radio-photo-7:checked ~ .gallery .photo-2
+#radio-photo-6:checked ~ .gallery .photo-1 
 {
-    transform: perspective(1000px) rotateY(50deg) translateZ(-40px);
-    margin: 0 -3%;
+    transform: translateX(140%) rotateY(30deg) translateZ(-40px);
     z-index: 30;
 }
 
-#radio-photo-6:checked ~ .gallery .photo-2,
-#radio-photo-7:checked ~ .gallery .photo-3
+#radio-photo-6:checked ~ .gallery .photo-2
 {
-    transform: perspective(1000px) rotateY(50deg) translateZ(-35px);
-    margin: 0 -3%;
+    transform: translateX(140%) rotateY(30deg) translateZ(-35px);
     z-index: 40;
+}
+
+#radio-photo-6:checked ~ .gallery .photo-3
+{
+    transform: translateX(140%) rotateY(30deg) translateZ(-30px);
+    z-index: 50;
+}
+
+#radio-photo-6:checked ~ .gallery .photo-4
+{
+    transform: translateX(140%) rotateY(30deg) translateZ(-25px);
+    z-index: 60;
 }
 
 #radio-photo-6:checked ~ .gallery .photo-5
 {
-    z-index: 80;
+    transform: translateX(140%) rotateY(30deg) translateZ(-20px);
+    z-index: 70;
 }
+
+#radio-photo-6:checked ~ .gallery .photo-6
+{
+    z-index: 80;
+    transform: translateX(140%) translateZ(50px);
+}
+
+#radio-photo-6:checked ~ .gallery .photo-7
+{
+    transform: translateX(140%) rotateY(-25deg) translateZ(-20px);
+    z-index: 70;
+}
+/*--------------------------СЕДЬМОЕ ФОТО--------------------------*/
 
 #radio-photo-7:checked ~ .gallery .photo-1 
 {
-    transform: perspective(1000px) rotateY(50deg) translateZ(-45px);
-    margin: 0 -3%;
+    transform: translateX(90%) rotateY(30deg) translateZ(-45px);
     z-index: 20;
+}
+
+#radio-photo-7:checked ~ .gallery .photo-2
+{
+    transform: translateX(90%) rotateY(30deg) translateZ(-40px);
+    z-index: 30;
+}
+
+#radio-photo-7:checked ~ .gallery .photo-3
+{
+    transform: translateX(90%) rotateY(30deg) translateZ(-35px);
+    z-index: 40;
+}
+
+#radio-photo-7:checked ~ .gallery .photo-4
+{
+    transform: translateX(90%) rotateY(30deg) translateZ(-30px);
+    z-index: 50;
+}
+
+#radio-photo-7:checked ~ .gallery .photo-5
+{
+    transform: translateX(90%) rotateY(30deg) translateZ(-25px);
+    z-index: 60;
 }
 
 #radio-photo-7:checked ~ .gallery .photo-6
 {
+    transform: translateX(90%) rotateY(30deg) translateZ(-20px);  
+    z-index: 70;
+}
+
+#radio-photo-7:checked ~ .gallery .photo-7
+{
     z-index: 80;
+    transform: translateX(90%) translateZ(50px);
 }
