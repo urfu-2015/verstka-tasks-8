@@ -1,1 +1,511 @@
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans:400,700);
 
+html
+{
+    font-size: 62.5%;
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after
+{
+    box-sizing: inherit;
+}
+
+body
+{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.4rem;
+    font-weight: normal;
+    color: #000;
+    background-image: linear-gradient(90deg, rgba(200,0,0,.5) 50%, transparent 50%),
+        linear-gradient(rgba(200,0,0,.5) 50%, transparent 50%);
+    background-size: 50px 50px;
+}
+
+.wrapper
+{
+    flex: 1 1 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.wrapper input[name='vegetable'],
+.wrapper input[name='modal']
+{
+    display: none;
+}
+
+.slider
+{
+    min-height: 100vh;
+    flex: 1 0 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    transition: all .8s ease-in-out;
+}
+
+.slider__item
+{
+    position: relative;
+    transform-style: preserve-3d;
+    transform: perspective(800px);
+    flex: 0 0 300px;
+    height: 250px;
+    transition: all 1s ease-in-out;
+    z-index: 21;
+}
+
+.vegetable
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    box-shadow: 0 3px 25px rgba(0,0,0,.5);
+}
+
+.vegetable__img
+{
+    max-width: 250px;
+    max-height: 200px;
+    transition : filter .5s ease-in-out;
+}
+
+#cabbage:checked ~ .slider > .slider__item[for='cabbage'] > .vegetable:hover > .vegetable__img,
+#corn:checked ~ .slider > .slider__item[for='corn'] > .vegetable:hover > .vegetable__img,
+#garlic:checked ~ .slider > .slider__item[for='garlic'] > .vegetable:hover > .vegetable__img,
+#pepper:checked ~ .slider > .slider__item[for='pepper'] > .vegetable:hover > .vegetable__img,
+#potato:checked ~ .slider > .slider__item[for='potato'] > .vegetable:hover > .vegetable__img,
+#pumpkin:checked ~ .slider > .slider__item[for='pumpkin'] > .vegetable:hover > .vegetable__img,
+#tomatoes:checked ~ .slider > .slider__item[for='tomatoes'] > .vegetable:hover > .vegetable__img
+{
+    -webkit-filter: grayscale(100%) blur(3px);
+    filter: grayscale(100%) blur(3px);
+}
+
+.vegetable__link
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 180px;
+    background-color: #0e83cd;
+    border-radius: 50%;
+    overflow: hidden;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #0972b4;
+    transition: transform .5s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.vegetable__link::before
+{
+    content: attr(data-hover);
+    position: absolute;
+    max-width: 0;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+}
+
+.vegetable__link:hover
+{
+    box-shadow: 0 0 0 5px #fff;
+}
+
+.vegetable__link:hover::before
+{
+    max-width: 100%;
+}
+
+#cabbage:checked ~ .slider > .slider__item[for='cabbage'] > .vegetable:hover,
+#corn:checked ~ .slider > .slider__item[for='corn'] > .vegetable:hover,
+#garlic:checked ~ .slider > .slider__item[for='garlic'] > .vegetable:hover,
+#pepper:checked ~ .slider > .slider__item[for='pepper'] > .vegetable:hover,
+#potato:checked ~ .slider > .slider__item[for='potato'] > .vegetable:hover,
+#pumpkin:checked ~ .slider > .slider__item[for='pumpkin'] > .vegetable:hover,
+#tomatoes:checked ~ .slider > .slider__item[for='tomatoes'] > .vegetable:hover
+{
+    cursor: default;
+}
+
+#cabbage:checked ~ .slider > .slider__item[for='cabbage'] > .vegetable:hover > .vegetable__link,
+#corn:checked ~ .slider > .slider__item[for='corn'] > .vegetable:hover > .vegetable__link,
+#garlic:checked ~ .slider > .slider__item[for='garlic'] > .vegetable:hover > .vegetable__link,
+#pepper:checked ~ .slider > .slider__item[for='pepper'] > .vegetable:hover > .vegetable__link,
+#potato:checked ~ .slider > .slider__item[for='potato'] > .vegetable:hover > .vegetable__link,
+#pumpkin:checked ~ .slider > .slider__item[for='pumpkin'] > .vegetable:hover > .vegetable__link,
+#tomatoes:checked ~ .slider > .slider__item[for='tomatoes'] > .vegetable:hover > .vegetable__link
+{
+    transform: translate(-50%, -50%) scale(1);
+    cursor: pointer;
+}
+
+.recipe
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 150%;
+    height: auto;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    transform: perspective(800px) translate3d(-50%, -50%, -10px) rotateX(-180deg);
+    backface-visibility: hidden;
+    padding: 20px;
+}
+
+.recipe__close
+{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: transform .5s ease-in-out;
+}
+
+.recipe__close:hover
+{
+    transform: rotate(180deg) scale(1.5);
+}
+
+.recipe__close::before,
+.recipe__close::after
+{
+    content: '';
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    width: 28px;
+    height: 3px;
+    border: 1px solid #747571;
+    border-radius: 2px;
+    background-color: #898b86;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.recipe__close::after
+{
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.recipe__title
+{
+    font-size: 1.8rem;
+    font-weight: normal;
+    margin: 0;
+    color: #b5b5b5;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #b5b5b5;
+}
+
+.recipe__main
+{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+
+.recipe__ingredients
+{
+    flex: 0 0 100px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.recipe__ingredient:first-child
+{
+    margin-top: 15px;
+}
+
+.recipe__ingredient
+{
+    margin: 5px 0 0;
+}
+
+.recipe__ingredient-name
+{
+    font-weight: bold;
+}
+
+.recipe__instruction
+{
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.recipe__instruction-title
+{
+    margin: 15px 0 0;
+    color: #ba0000;
+}
+
+.recipe__instruction-list
+{
+    padding: 0;
+    list-style-position: inside;
+    margin: 10px 0 0;
+}
+
+.recipe__instruction-footer
+{
+    color: #a4a4a4;
+    font-size: 1rem;
+    margin-top: 15px;
+    padding-top: 5px;
+    border-top: 1px solid #000;
+}
+
+.modal-overlay
+{
+    position: absolute;
+    left: -100%;
+    top: 0;
+    width: 300%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s ease-in-out .2s;
+}
+
+#modal-open-1:checked ~ .modal-overlay,
+#modal-open-2:checked ~ .modal-overlay,
+#modal-open-3:checked ~ .modal-overlay,
+#modal-open-4:checked ~ .modal-overlay,
+#modal-open-5:checked ~ .modal-overlay,
+#modal-open-6:checked ~ .modal-overlay,
+#modal-open-7:checked ~ .modal-overlay
+{
+    visibility: visible;
+    opacity: 1;
+}
+
+#modal-open-1:checked ~ .slider__item[for='cabbage'],
+#modal-open-2:checked ~ .slider__item[for='corn'],
+#modal-open-3:checked ~ .slider__item[for='garlic'],
+#modal-open-4:checked ~ .slider__item[for='pepper'],
+#modal-open-5:checked ~ .slider__item[for='potato'],
+#modal-open-6:checked ~ .slider__item[for='pumpkin'],
+#modal-open-7:checked ~ .slider__item[for='tomatoes']
+{
+    animation: showRecipe 1s linear forwards;
+}
+
+#modal-close-1:checked ~ .slider__item[for='cabbage'],
+#modal-close-2:checked ~ .slider__item[for='corn'],
+#modal-close-3:checked ~ .slider__item[for='garlic'],
+#modal-close-4:checked ~ .slider__item[for='pepper'],
+#modal-close-5:checked ~ .slider__item[for='potato'],
+#modal-close-6:checked ~ .slider__item[for='pumpkin'],
+#modal-close-7:checked ~ .slider__item[for='tomatoes']
+{
+    animation: closeRecipe 1s linear reverse;
+}
+
+@keyframes showRecipe
+{
+    40%
+    {
+        transform: perspective(800px) translate3d(0, -50%, 250px) rotateX(-85deg);
+    }
+    60%
+    {
+        transform: perspective(800px) translate3d(0, -50%, 300px) rotateX(-125deg);
+    }
+    100%
+    {
+        transform: perspective(800px) translate3d(0, 0%, 300px) rotateX(-180deg);
+    }
+}
+
+@keyframes closeRecipe
+{
+    40%
+    {
+        transform: perspective(800px) translate3d(0, -50%, 250px) rotateX(-85deg);
+    }
+    60%
+    {
+        transform: perspective(800px) translate3d(0, -50%, 300px) rotateX(-125deg);
+    }
+    100%
+    {
+        transform: perspective(800px) translate3d(0, 0%, 300px) rotateX(-180deg);
+    }
+}
+
+#cabbage:checked ~ .slider
+{
+    transform: translateX(47%);
+}
+#corn:checked ~ .slider
+{
+    transform: translateX(32%);
+}
+#garlic:checked ~ .slider
+{
+    transform: translateX(16%);
+}
+#potato:checked ~ .slider
+{
+    transform: translateX(-16%);
+}
+#pumpkin:checked ~ .slider
+{
+    transform: translateX(-32%);
+}
+#tomatoes:checked ~ .slider
+{
+    transform: translateX(-47%);
+}
+
+#cabbage:checked ~ .slider > .slider__item[for='cabbage'],
+#corn:checked ~ .slider > .slider__item[for='corn'],
+#garlic:checked ~ .slider > .slider__item[for='garlic'],
+#pepper:checked ~ .slider > .slider__item[for='pepper'],
+#potato:checked ~ .slider > .slider__item[for='potato'],
+#pumpkin:checked ~ .slider > .slider__item[for='pumpkin'],
+#tomatoes:checked ~ .slider > .slider__item[for='tomatoes']
+{
+    left: 0;
+    right: 0;
+}
+
+#tomatoes:checked ~ .slider > .slider__item--first
+{
+    left: 55%;
+    transform: perspective(800px) translateZ(-100px) rotateY(15deg);
+}
+
+#pumpkin:checked ~ .slider > .slider__item--first,
+#tomatoes:checked ~ .slider > .slider__item--second
+{
+    left: 45%;
+    transform: perspective(800px) translateZ(-100px) rotateY(20deg);
+}
+
+#potato:checked ~ .slider > .slider__item--first,
+#pumpkin:checked ~ .slider > .slider__item--second,
+#tomatoes:checked ~ .slider > .slider__item--third
+{
+    left: 35%;
+    transform: perspective(800px) translateZ(-100px) rotateY(25deg);
+}
+
+#pepper:checked ~ .slider > .slider__item--first,
+#potato:checked ~ .slider > .slider__item--second,
+#pumpkin:checked ~ .slider > .slider__item--third,
+#tomatoes:checked ~ .slider > .slider__item--fourth
+{
+    left: 25%;
+    transform: perspective(800px) translateZ(-100px) rotateY(30deg);
+}
+
+#garlic:checked ~ .slider > .slider__item--first,
+#pepper:checked ~ .slider > .slider__item--second,
+#potato:checked ~ .slider > .slider__item--third,
+#pumpkin:checked ~ .slider > .slider__item--fourth,
+#tomatoes:checked ~ .slider > .slider__item--fifth
+{
+    left: 15%;
+    transform: perspective(800px) translateZ(-100px) rotateY(35deg);
+}
+
+#corn:checked ~ .slider > .slider__item--first,
+#garlic:checked ~ .slider > .slider__item--second,
+#pepper:checked ~ .slider > .slider__item--third,
+#potato:checked ~ .slider > .slider__item--fourth,
+#pumpkin:checked ~ .slider > .slider__item--fifth,
+#tomatoes:checked ~ .slider > .slider__item--sixth
+{
+    left: 5%;
+    transform: perspective(800px) translateZ(-100px) rotateY(40deg);
+}
+
+#cabbage:checked ~ .slider > .slider__item--second,
+#corn:checked ~ .slider > .slider__item--third,
+#garlic:checked ~ .slider > .slider__item--fourth,
+#pepper:checked ~ .slider > .slider__item--fifth,
+#potato:checked ~ .slider > .slider__item--sixth,
+#pumpkin:checked ~ .slider > .slider__item--seventh
+{
+    left: -5%;
+    transform: perspective(800px) translateZ(-100px) rotateY(-40deg);
+}
+
+#cabbage:checked ~ .slider > .slider__item--third,
+#corn:checked ~ .slider > .slider__item--fourth,
+#garlic:checked ~ .slider > .slider__item--fifth,
+#pepper:checked ~ .slider > .slider__item--sixth,
+#potato:checked ~ .slider > .slider__item--seventh
+{
+    left: -15%;
+    transform: perspective(800px) translateZ(-100px) rotateY(-35deg);
+}
+
+#cabbage:checked ~ .slider > .slider__item--fourth,
+#corn:checked ~ .slider > .slider__item--fifth,
+#garlic:checked ~ .slider > .slider__item--sixth,
+#pepper:checked ~ .slider > .slider__item--seventh
+{
+    left: -25%;
+    transform: perspective(800px) translateZ(-100px) rotateY(-30deg);
+}
+
+#cabbage:checked ~ .slider > .slider__item--fifth,
+#corn:checked ~ .slider > .slider__item--sixth,
+#garlic:checked ~ .slider > .slider__item--seventh
+{
+    left: -35%;
+    transform: perspective(800px) translateZ(-100px) rotateY(-25deg);
+}
+
+#cabbage:checked ~ .slider > .slider__item--sixth,
+#corn:checked ~ .slider > .slider__item--seventh
+{
+    left: -45%;
+    transform: perspective(800px) translateZ(-100px) rotateY(-20deg);
+}
+
+#cabbage:checked ~ .slider > .slider__item--seventh
+{
+    left: -55%;
+    transform: perspective(800px) translateZ(-100px) rotateY(-15deg);
+}
