@@ -4,12 +4,12 @@ body
     background-color: #ebebeb;
 }
 
-.wrapper
+.gallery
 {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
-    aling-items: center;
+    align-items: center;
     perspective: 400px;
     perspective-origin: center 380px;
     width: 100vw;
@@ -31,7 +31,7 @@ body
     display: flex;
     justify-content: center;
     transform-style: preserve-3d;
-    transition-property: transform, transform;
+    transition-property: transform;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .5);
     width: 100px;
     height: 70px;
@@ -44,6 +44,7 @@ body
 }
 .button
 {
+    z-index: 2;
     position: absolute;
     top: 0;
     left: 0;
@@ -59,7 +60,6 @@ body
     animation-duration: 2s;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
-    animation-direction: alternate;
 }
 @keyframes change-color
 {
@@ -83,16 +83,19 @@ body
     backface-visibility: hidden;
     transform: rotateY(-180deg);
     transform: rotateX(-180deg);
+
     transition: transform 0.7s;
 }
 .close
 {
     position: absolute;
     background: url(image/close.png);
-    top: 20px;
-    right: 20px;
+    top: calc(100px);
+    right: calc(50vw - 300px);
     width: 60px;
     height: 60px;
+    z-index: 500;
+    display: none;
 }
 .item1:checked ~ .image-item1:hover .button,
 .item2:checked ~ .image-item2:hover .button,
@@ -104,17 +107,8 @@ body
 {
     display: block;
 }
-.check-image1:checked ~ .image-item1,
-.check-image2:checked ~ .image-item2,
-.check-image3:checked ~ .image-item3,
-.check-image4:checked ~ .image-item4,
-.check-image5:checked ~ .image-item5,
-.check-image6:checked ~ .image-item6,
-.check-image7:checked ~ .image-item7
-{
-    z-index: 300 !important;
-}
-.blackblack
+
+.black-fon
 {
     z-index: 200;
     position: fixed;
@@ -125,13 +119,13 @@ body
     background-color: rgba(0,0,0, 0.7);
     display: none;
 }
-.check-image1:checked ~ .blackblack,
-.check-image2:checked ~ .blackblack,
-.check-image3:checked ~ .blackblack,
-.check-image4:checked ~ .blackblack,
-.check-image5:checked ~ .blackblack,
-.check-image6:checked ~ .blackblack,
-.check-image7:checked ~ .blackblack
+.check-image1:checked ~ .black-fon,
+.check-image2:checked ~ .black-fon,
+.check-image3:checked ~ .black-fon,
+.check-image4:checked ~ .black-fon,
+.check-image5:checked ~ .black-fon,
+.check-image6:checked ~ .black-fon,
+.check-image7:checked ~ .black-fon
 {
     display: block;
 }
@@ -526,4 +520,25 @@ body
 {
     z-index: 99;
     transform: translateX(-340px) translateY(200px) translateZ(-30px) scale(1.9) rotateY(40deg);
+}
+.check-image1:checked ~ .image-item1,
+.check-image2:checked ~ .image-item2,
+.check-image3:checked ~ .image-item3,
+.check-image4:checked ~ .image-item4,
+.check-image5:checked ~ .image-item5,
+.check-image6:checked ~ .image-item6,
+.check-image7:checked ~ .image-item7
+{
+    z-index: 300;
+}
+
+.check-image1:checked ~ .image-item1 + .close,
+.check-image2:checked ~ .image-item2 + .close,
+.check-image3:checked ~ .image-item3 + .close,
+.check-image4:checked ~ .image-item4 + .close,
+.check-image5:checked ~ .image-item5 + .close,
+.check-image6:checked ~ .image-item6 + .close,
+.check-image7:checked ~ .image-item7 + .close
+{
+    display: block;
 }
