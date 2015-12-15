@@ -6,6 +6,364 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <!-- Здесь применять трехмерное волшебство -->
+        <div class="wrapper">
+            <input id="cabbage" name="vegetable" type="radio">
+            <input id="corn" name="vegetable" type="radio">
+            <input id="garlic" name="vegetable" type="radio">
+            <input id="pepper" name="vegetable" type="radio" checked>
+            <input id="potato" name="vegetable" type="radio">
+            <input id="pumpkin" name="vegetable" type="radio">
+            <input id="tomatoes" name="vegetable" type="radio">
+            <div class="slider">
+                <input id="modal-open-1" name="modal" type="radio">
+                <input id="modal-close-1" name="modal" type="radio">
+                <label for="cabbage" class="slider__item slider__item--first">
+                    <div class="vegetable">
+                        <img src="img/cabbage.jpg" class="vegetable__img" alt="Капуста">
+                        <label for="modal-open-1" class="vegetable__link" data-hover="Рецепт">Рецепт</label>
+                    </div>
+                    <article class="recipe">
+                        <label for="modal-close-1" class="recipe__close"></label>
+                        <h2 class="recipe__title">Капуста отварная</h2>
+                        <div class="recipe__main">
+                            <div class="recipe__ingredients">
+                                <p class="recipe__ingredient">
+                                    <span class="recipe__ingredient-name">Капуста</span> <span
+                                    class="recipe__ingredient-count">(300 г.)</span>
+                                </p>
+                                <p class="recipe__ingredient">
+                                    <span class="recipe__ingredient-name">Сливочное масло</span>
+                                    <span class="recipe__ingredient-count">(10 г.)</span>
+                                </p>
+                                <p class="recipe__ingredient">
+                                    <span class="recipe__ingredient-name">Яйца</span>
+                                    <span class="recipe__ingredient-count">(1 шт.)</span>
+                                </p>
+                                <p class="recipe__ingredient">
+                                    <span class="recipe__ingredient-name">Соль</span>
+                                    <span class="recipe__ingredient-count">(по вкусу)</span>
+                                </p>
+                            </div>
+                            <div class="recipe__instruction">
+                                <div class="recipe__instruction-header">
+                                    <p class="recipe__instruction-title">Инструкция</p>
+                                    <ol class="recipe__instruction-list">
+                                        <li>
+                                            Кочан капусты обмываем, удаляем верхние листики и нарезаем
+                                            кубиками среднего размера
+                                        </li>
+                                        <li>
+                                            Отвариваем капусту в течение четверти часа в подсоленной воде в
+                                            открытой кастрюле
+                                        </li>
+                                        <li>
+                                            Отваренную капусту выкладывают в тарелку, заливаем растопленным
+                                            сливочным маслом!
+                                        </li>
+                                        <li>
+                                            Сверху по желанию можно посыпать измельченным яйцом и мелко
+                                            порезанным укропом
+                                        </li>
+                                    </ol>
+                                </div>
+                                <div class="recipe__instruction-footer">
+                                    Прекрасный быстрый ужин для тех, кто следит за фигурой
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </label>
+                <input id="modal-open-2" name="modal" type="radio">
+                <input id="modal-close-2" name="modal" type="radio">
+                <label for="corn" class="slider__item slider__item--second">
+                    <div class="vegetable">
+                        <img src="img/corn.jpg" class="vegetable__img" alt="Кукуруза">
+                        <label for="modal-open-2" class="vegetable__link" data-hover="Рецепт">Рецепт</label>
+                    </div>
+                    <article class="recipe">
+                        <label for="modal-close-2" class="recipe__close"></label>
+                        <h2 class="recipe__title">Вареная кукуруза</h2>
+                        <div class="recipe__main">
+                            <div class="recipe__ingredients">
+                                <p class="recipe__ingredient">
+                                    <span class="recipe__ingredient-name">Кукуруза</span>
+                                    <span class="recipe__ingredient-count">(6 шт.)</span>
+                                </p>
+                                <p class="recipe__ingredient">
+                                    <span class="recipe__ingredient-name">Растительное масло</span>
+                                    <span class="recipe__ingredient-count">(1 стол.л.)</span>
+                                </p>
+                                <p class="recipe__ingredient">
+                                    <span class="recipe__ingredient-name">Соль</span>
+                                    <span class="recipe__ingredient-count">(4 чайн.л.)</span>
+                                </p>
+                            </div>
+                            <div class="recipe__instruction">
+                                <div class="recipe__instruction-header">
+                                    <p class="recipe__instruction-title">Инструкция</p>
+                                    <ol class="recipe__instruction-list">
+                                        <li>Очищаем кукурузу от листьев и усиков</li>
+                                        <li>
+                                            Заливаем овощ водой так, чтобы она покрывала кукурузу на 1
+                                            сантиметр выше
+                                        </li>
+                                        <li>
+                                            После того как кукуруза будет готова, вынимаем её, укладываем на
+                                            блюдо, натираем солью и поливаем маслом. Подаём к столу!
+                                        </li>
+                                    </ol>
+                                </div>
+                                <div class="recipe__instruction-footer">
+                                    Поможет тем, кто хочет правильно и смачно приготовить кукурузу
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </label>
+                <input id="modal-open-3" name="modal" type="radio">
+                <input id="modal-close-3" name="modal" type="radio">
+                <label for="garlic" class="slider__item slider__item--third">
+                    <div class="vegetable">
+                        <img src="img/garlic.jpg" class="vegetable__img" alt="Чеснок">
+                        <label for="modal-open-3" class="vegetable__link" data-hover="Рецепт">Рецепт</label>
+                    </div>
+                    <article class="recipe">
+                        <label for="modal-close-3" class="recipe__close"></label>
+                        <h2 class="recipe__title">Сало с чесноком</h2>
+                        <div class="recipe__main">
+                            <div class="recipe__ingredients">
+                                <p class="recipe__ingredient">
+                                    <span class="recipe__ingredient-name">Сало</span> <span
+                                    class="recipe__ingredient-count">(1 кг.)</span>
+                                </p>
+                                <p class="recipe__ingredient">
+                                    <span class="recipe__ingredient-name">Чеснок</span>
+                                    <span class="recipe__ingredient-count">(10 зубч.)</span>
+                                </p>
+                                <p class="recipe__ingredient">
+                                    <span class="recipe__ingredient-name">Перец чили</span>
+                                    <span class="recipe__ingredient-count">(1 чайн.л.)</span>
+                                </p>
+                                <p class="recipe__ingredient">
+                                    <span class="recipe__ingredient-name">Соль</span>
+                                    <span class="recipe__ingredient-count">(4 стол.л.)</span>
+                                </p>
+                            </div>
+                            <div class="recipe__instruction">
+                                <div class="recipe__instruction-header">
+                                    <p class="recipe__instruction-title">Инструкция</p>
+                                    <ol class="recipe__instruction-list">
+                                        <li>
+                                            Промыть сало, обсушить, нарезать на куски. Положить на доску
+                                            кожей вниз и сделать надрезы на 2-3 мм глубиной
+                                        </li>
+                                        <li>Нарезать тонко очищенный чеснок и вдавить его в надрезы</li>
+                                        <li>Смешать паприку и перец и обсыпать ими сало сверху</li>
+                                        <li>
+                                            Теперь аккуратно завернуть куски сала в фольгу и положить в
+                                            холодильник на 2 недели
+                                        </li>
+                                    </ol>
+                                </div>
+                                <div class="recipe__instruction-footer">
+                                    Необыкновенно вкусно и сытно
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </label>
+                <input id="modal-open-4" name="modal" type="radio">
+                <input id="modal-close-4" name="modal" type="radio">
+                <label for="pepper" class="slider__item slider__item--fourth">
+                    <div class="vegetable">
+                        <img src="img/pepper.jpg" class="vegetable__img" alt="Перец">
+                        <label for="modal-open-4" class="vegetable__link" data-hover="Рецепт">Рецепт</label>
+                    </div>
+                    <article class="recipe">
+                        <label for="modal-close-4" class="recipe__close"></label>
+                        <h2 class="recipe__title">Болгарский перец жареный</h2>
+                        <div class="recipe__main">
+                            <div class="recipe__ingredients">
+                                <p class="recipe__ingredient">
+                                    <span class="recipe__ingredient-name">Болгарский перец</span>
+                                    <span class="recipe__ingredient-count">(10 штук)</span>
+                                </p>
+                                <p class="recipe__ingredient">
+                                    <span class="recipe__ingredient-name">Чеснок</span>
+                                    <span class="recipe__ingredient-count">(4 зубч.)</span>
+                                </p>
+                                <p class="recipe__ingredient">
+                                    <span class="recipe__ingredient-name">Уксус</span>
+                                    <span class="recipe__ingredient-count">(по вкусу)</span>
+                                </p>
+                                <p class="recipe__ingredient">
+                                    <span class="recipe__ingredient-name">Соль</span>
+                                    <span class="recipe__ingredient-count">(по вкусу)</span>
+                                </p>
+                                <p class="recipe__ingredient">
+                                    <span class="recipe__ingredient-name">Растительное масло</span>
+                                    <span class="recipe__ingredient-count">(по вкусу)</span>
+                                </p>
+                            </div>
+                            <div class="recipe__instruction">
+                                <div class="recipe__instruction-header">
+                                    <p class="recipe__instruction-title">Инструкция</p>
+                                    <ol class="recipe__instruction-list">
+                                        <li>
+                                            Отбираем целые, неповреждённые перчинки, хорошенько их промываем
+                                            и просушиваем бумажным полотенцем
+                                        </li>
+                                        <li>Поджариваем со всех сторон до подрумянивания</li>
+                                        <li>Все готово. Приятного аппетита!</li>
+                                    </ol>
+                                </div>
+                                <div class="recipe__instruction-footer">
+                                    Превосходный рецепт этого блюдо должен быть в арсенале каждой хозяйки!
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </label>
+                <input id="modal-open-5" name="modal" type="radio">
+                <input id="modal-close-5" name="modal" type="radio">
+                <label for="potato" class="slider__item slider__item--fifth">
+                    <div class="vegetable">
+                        <img src="img/potato.jpg" class="vegetable__img" alt="Картошка">
+                        <label for="modal-open-5" class="vegetable__link" data-hover="Рецепт">Рецепт</label>
+                    </div>
+                    <article class="recipe">
+                        <label for="modal-close-5" class="recipe__close"></label>
+                        <h2 class="recipe__title">Картофель фри</h2>
+                        <div class="recipe__main">
+                            <div class="recipe__ingredients">
+                                <p class="recipe__ingredient">
+                                    <span class="recipe__ingredient-name">Картошка</span>
+                                    <span class="recipe__ingredient-count">(1 кг.)</span>
+                                </p>
+                                <p class="recipe__ingredient">
+                                    <span class="recipe__ingredient-name">Растительное масло</span>
+                                    <span class="recipe__ingredient-count">(по вкусу)</span>
+                                </p>
+                            </div>
+                            <div class="recipe__instruction">
+                                <div class="recipe__instruction-header">
+                                    <p class="recipe__instruction-title">Инструкция</p>
+                                    <ol class="recipe__instruction-list">
+                                        <li>
+                                            Берём немолодой картофель и очищаем его от кожуры, моем, с
+                                            помощью острого ножа нарезаем на тонкую соломку
+                                        </li>
+                                        <li>Промываем картофель, сушим полотенцем</li>
+                                        <li>
+                                            Порциями вбрасываем картофельную соломку в масло и жарим их в
+                                            течение 3-5 минут
+                                        </li>
+                                    </ol>
+                                </div>
+                                <div class="recipe__instruction-footer">
+                                    Отличный рецепт одомашненного фастфуда!
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </label>
+                <input id="modal-open-6" name="modal" type="radio">
+                <input id="modal-close-6" name="modal" type="radio">
+                <label for="pumpkin" class="slider__item slider__item--sixth">
+                    <div class="vegetable">
+                        <img src="img/pumpkin.jpg" class="vegetable__img" alt="Тыква">
+                        <label for="modal-open-6" class="vegetable__link" data-hover="Рецепт">Рецепт</label>
+                    </div>
+                    <article class="recipe">
+                        <label for="modal-close-6" class="recipe__close"></label>
+                        <h2 class="recipe__title">Тыквочка в сухарях</h2>
+                        <div class="recipe__main">
+                            <div class="recipe__ingredients">
+                                <p class="recipe__ingredient">
+                                    <span class="recipe__ingredient-name">Панировочные сухари</span>
+                                    <span class="recipe__ingredient-count">(100 г.)</span>
+                                </p>
+                                <p class="recipe__ingredient">
+                                    <span class="recipe__ingredient-name">Тыква</span>
+                                    <span class="recipe__ingredient-count">(1 шт.)</span>
+                                </p>
+                                <p class="recipe__ingredient">
+                                    <span class="recipe__ingredient-name">Перец черный молотый</span>
+                                    <span class="recipe__ingredient-count">(по вкусу)</span>
+                                </p>
+                                <p class="recipe__ingredient">
+                                    <span class="recipe__ingredient-name">Растительное масло</span>
+                                    <span class="recipe__ingredient-count">(по вкусу)</span>
+                                </p>
+                                <p class="recipe__ingredient">
+                                    <span class="recipe__ingredient-name">Соль</span>
+                                    <span class="recipe__ingredient-count">(по вкусу)</span>
+                                </p>
+                            </div>
+                            <div class="recipe__instruction">
+                                <div class="recipe__instruction-header">
+                                    <p class="recipe__instruction-title">Инструкция</p>
+                                    <ol class="recipe__instruction-list">
+                                        <li>Нарезать кубикамы очищенную тыкву</li>
+                                        <li>Тыкву поперчить, посолить, обвалять в сухарях панировочных</li>
+                                        <li>
+                                            Выложить тыкву на сковороду и обжарить в разогретом раст. масле
+                                        </li>
+                                        <li>У тыквы должна образоваться корочка</li>
+                                    </ol>
+                                </div>
+                                <div class="recipe__instruction-footer">
+                                    Эта тыквочка в сухарях необычна и на вид, и на вкус. Попробуйте, вы
+                                    точно удивитесь!
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </label>
+                <input id="modal-open-7" name="modal" type="radio">
+                <input id="modal-close-7" name="modal" type="radio">
+                <label for="tomatoes" class="slider__item slider__item--seventh">
+                    <div class="vegetable">
+                        <img src="img/tomatoes.jpg" class="vegetable__img" alt="Помидоры">
+                        <label for="modal-open-7" class="vegetable__link" data-hover="Рецепт">Рецепт</label>
+                    </div>
+                    <article class="recipe">
+                        <label for="modal-close-7" class="recipe__close"></label>
+                        <h2 class="recipe__title">Вкусная закуска из помидора</h2>
+                        <div class="recipe__main">
+                            <div class="recipe__ingredients">
+                                <p class="recipe__ingredient">
+                                    <span class="recipe__ingredient-name">Помидоры</span>
+                                    <span class="recipe__ingredient-count">(500 г.)</span>
+                                </p>
+                                <p class="recipe__ingredient">
+                                    <span class="recipe__ingredient-name">Лук репчатый</span>
+                                    <span class="recipe__ingredient-count">(150 г.)</span>
+                                </p>
+                                <p class="recipe__ingredient">
+                                    <span class="recipe__ingredient-name">Растительное масло</span>
+                                    <span class="recipe__ingredient-count">(4 ст.л.)</span>
+                                </p>
+                            </div>
+                            <div class="recipe__instruction">
+                                <div class="recipe__instruction-header">
+                                    <p class="recipe__instruction-title">Инструкция</p>
+                                    <ol class="recipe__instruction-list">
+                                        <li>Помидоры нарезать кружочками, лук - полукольцами</li>
+                                        <li>Помидоры и лук уложить слоями и залить маринадом</li>
+                                        <li>Закрыть плотно. Поставить в холодильник на сутки</li>
+                                    </ol>
+                                </div>
+                                <div class="recipe__instruction-footer">
+                                    Очень интересный рецепт, делать легко и просто, и пусть вас не смущает
+                                    наличие меда, он там совершенно не чувствуется.
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </label>
+                <div class="modal-overlay"></div>
+            </div>
+        </div>
     </body>
 </html>
