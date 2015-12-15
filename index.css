@@ -83,6 +83,7 @@ body
     cursor: pointer;
     transition: all 1s ease-in-out;
     transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     box-shadow: 0 3px 25px rgba(0,0,0,.5);
 }
@@ -131,6 +132,8 @@ body
 {
     content: attr(data-hover);
     position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     max-width: 0;
     border-bottom: 2px solid #fff;
     color: #fff;
@@ -178,12 +181,13 @@ body
     top: 50%;
     width: 150%;
     height: auto;
+    padding: 20px;
     background-color: #fff;
     display: flex;
     flex-direction: column;
     transform: perspective(800px) translate3d(-50%, -50%, -10px) rotateX(-180deg);
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    padding: 20px;
 }
 
 .recipe__close
