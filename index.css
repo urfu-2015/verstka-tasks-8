@@ -1,1 +1,276 @@
+body
+{
+    -moz-user-select: -moz-none;
+    -o-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.fruit
+{
+    transform-style: preserve-3d;
+    width: 100%;
+    text-align: center;
+    margin-top: 200px;
+}
+.card
+{
+    display: none;
+}
+label
+{
+    position: relative;
+    display: inline-flex;
+    width: 13%;
+    height: 120px;
+    transition-property: transform;
+    transition-duration: .9s;
+    box-shadow: 0 16px 32px rgba(60, 63, 65, .78);
+}
+#banana-view
+{
+    background: url('http://bestia-wm.ru/wp-content/uploads/2013/08/05-Banany.jpg') no-repeat;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+}
+#banana:checked ~ .fruit #banana-view
+{
+    transform: rotateY(0deg) scale(1.5) translateX(200%);
+}
+#orange-view
+{
+    background: url('http://www.dahaiyiyasam.com/wp-content/uploads/2015/10/po.jpg') no-repeat;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+}
+#orange:checked ~ .fruit #orange-view
+{
+    transform: rotateY(0deg) scale(1.5) translateX(120%);
+}
+#strawberry-view
+{
+    background: url('http://digipraim.com/data_images/out/23/657550-strawberry-best-wallpaper.jpg') no-repeat;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+}
+#strawberry:checked ~ .fruit #strawberry-view
+{
+    transform: rotateY(0deg) scale(1.5) translateX(60%);
+}
+#raspberry-view
+{
+    background: url('http://7blud.ru/images/product/61/612f68b6bfb9a1a05165a0ac0eac991a.jpg') no-repeat;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+}
+#raspberry:checked ~ .fruit #raspberry-view
+{
+    transform: rotateY(0deg) scale(1.5);
+}
+#cherry-view
+{
+    background: url('http://www.narodnaya-meditsina.com/wp-content/uploads/2015/07/cherry.jpg') no-repeat;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+}
+#cherry:checked ~ .fruit #cherry-view
+{
+    transform: rotateY(0deg) scale(1.5) translateX(-60%);
+}
+#grapes-view
+{
+    background: url('http://ecogift.umi.ru/images/cms/data/vinogra.jpg') no-repeat;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+}
+#grapes:checked ~ .fruit #grapes-view
+{
+    transform: rotateY(0deg) scale(1.5) translateX(-120%);
+}
+#kiwi-view
+{
+    background: url('http://tortsnab-msk.ru/wp-content/uploads/2015/06/aromat_kiwi.jpg') no-repeat;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+}
+#kiwi:checked ~ .fruit #kiwi-view
+{
+    transform: rotateY(0deg) scale(1.5) translateX(-200%);
+}
 
+/*Как отображать карточки при переключении с одной на другую*/
+#banana:checked ~ .fruit #orange-view
+{
+    transform: translateX(275%) perspective(300px) rotateY(-40deg) translateZ(-40px);
+}
+#banana:checked ~ .fruit #strawberry-view
+{
+    transform: translateX(235%) perspective(300px) rotateY(-35deg) translateZ(-40px);
+}
+#banana:checked ~ .fruit #raspberry-view
+{
+    transform: translateX(190%) perspective(300px) rotateY(-30deg) translateZ(-40px);
+}
+#banana:checked ~ .fruit #cherry-view
+{
+    transform: translateX(140%) perspective(300px) rotateY(-25deg) translateZ(-40px);
+}
+#banana:checked ~ .fruit #grapes-view
+{
+    transform: translateX(80%) perspective(300px) rotateY(-20deg) translateZ(-40px);
+}
+#banana:checked ~ .fruit #kiwi-view
+{
+    transform: translateX(20%) perspective(300px) rotateY(-15deg) translateZ(-40px);
+}
+#orange:checked ~ .fruit #banana-view
+{
+    transform: translateX(190%) perspective(300px) rotateY(40deg) translateZ(-40px);
+}
+#orange:checked ~ .fruit #strawberry-view
+{
+    transform: translateX(170%) perspective(300px) rotateY(-40deg) translateZ(-40px);
+}
+#orange:checked ~ .fruit #raspberry-view
+{
+    transform: translateX(130%) perspective(300px) rotateY(-35deg) translateZ(-40px);
+}
+#orange:checked ~ .fruit #cherry-view
+{
+    transform: translateX(80%) perspective(300px) rotateY(-30deg) translateZ(-40px);
+}
+#orange:checked ~ .fruit #grapes-view
+{
+    transform: translateX(30%) perspective(300px) rotateY(-25deg) translateZ(-40px);
+}
+#orange:checked ~ .fruit #kiwi-view
+{
+    transform: translateX(-30%) perspective(300px) rotateY(-20deg) translateZ(-40px);
+}
+#strawberry:checked ~ .fruit #banana-view
+{
+    transform: translateX(130%) perspective(300px) rotateY(35deg) translateZ(-40px);
+}
+#strawberry:checked ~ .fruit #orange-view
+{
+    transform: translateX(100%) perspective(300px) rotateY(40deg) translateZ(-40px);
+}
+#strawberry:checked ~ .fruit #raspberry-view
+{
+    transform: translateX(80%) perspective(300px) rotateY(-40deg) translateZ(-40px);
+}
+#strawberry:checked ~ .fruit #cherry-view
+{
+    transform: translateX(40%) perspective(300px) rotateY(-35deg) translateZ(-40px);
+}
+#strawberry:checked ~ .fruit #grapes-view
+{
+    transform: translateX(-10%) perspective(300px) rotateY(-30deg) translateZ(-40px);
+}
+#strawberry:checked ~ .fruit #kiwi-view
+{
+    transform: translateX(-60%) perspective(300px) rotateY(-25deg) translateZ(-40px);
+}
+#raspberry:checked ~ .fruit #banana-view
+{
+    transform: translateX(90%) perspective(300px) rotateY(30deg) translateZ(-40px);
+}
+#raspberry:checked ~ .fruit #orange-view
+{
+    transform: translateX(50%) perspective(300px) rotateY(35deg) translateZ(-40px);
+}
+#raspberry:checked ~ .fruit #strawberry-view
+{
+    transform: translateX(20%) perspective(300px) rotateY(40deg) translateZ(-40px);
+}
+#raspberry:checked ~ .fruit #cherry-view
+{
+    transform: translateX(-20%) perspective(300px) rotateY(-40deg) translateZ(-40px);
+}
+#raspberry:checked ~ .fruit #grapes-view
+{
+    transform: translateX(-50%) perspective(300px) rotateY(-35deg) translateZ(-40px);
+}
+#raspberry:checked ~ .fruit #kiwi-view
+{
+    transform: translateX(-90%) perspective(300px) rotateY(-30deg) translateZ(-40px);
+}
+#cherry:checked ~ .fruit #banana-view
+{
+    transform: translateX(60%) perspective(300px) rotateY(25deg) translateZ(-40px);
+}
+#cherry:checked ~ .fruit #orange-view
+{
+    transform: translateX(10%) perspective(300px) rotateY(30deg) translateZ(-40px);
+}
+#cherry:checked ~ .fruit #strawberry-view
+{
+    transform: translateX(-40%) perspective(300px) rotateY(35deg) translateZ(-40px);
+}
+#cherry:checked ~ .fruit #raspberry-view
+{
+    transform: translateX(-80%) perspective(300px) rotateY(40deg) translateZ(-40px);
+}
+#cherry:checked ~ .fruit #grapes-view
+{
+    transform: translateX(-100%) perspective(300px) rotateY(-40deg) translateZ(-40px);
+}
+#cherry:checked ~ .fruit #kiwi-view
+{
+    transform: translateX(-130%) perspective(300px) rotateY(-35deg) translateZ(-40px);
+}
+#grapes:checked ~ .fruit #banana-view
+{
+    transform: translateX(30%) perspective(300px) rotateY(20deg) translateZ(-40px);
+}
+#grapes:checked ~ .fruit #orange-view
+{
+    transform: translateX(-30%) perspective(300px) rotateY(25deg) translateZ(-40px);
+}
+#grapes:checked ~ .fruit #strawberry-view
+{
+    transform: translateX(-80%) perspective(300px) rotateY(30deg) translateZ(-40px);
+}
+#grapes:checked ~ .fruit #raspberry-view
+{
+    transform: translateX(-130%) perspective(300px) rotateY(35deg) translateZ(-40px);
+}
+#grapes:checked ~ .fruit #cherry-view
+{
+    transform: translateX(-170%) perspective(300px) rotateY(40deg) translateZ(-40px);
+}
+#grapes:checked ~ .fruit #kiwi-view
+{
+    transform: translateX(-190%) perspective(300px) rotateY(-40deg) translateZ(-40px);
+}
+#kiwi:checked ~ .fruit #banana-view
+{
+    transform: translateX(-20%) perspective(300px) rotateY(15deg) translateZ(-40px);
+}
+#kiwi:checked ~ .fruit #orange-view
+{
+    transform: translateX(-80%) perspective(300px) rotateY(20deg) translateZ(-40px);
+}
+#kiwi:checked ~ .fruit #strawberry-view
+{
+    transform: translateX(-140%) perspective(300px) rotateY(25deg) translateZ(-40px);
+}
+#kiwi:checked ~ .fruit #raspberry-view
+{
+    transform: translateX(-190%) perspective(300px) rotateY(30deg) translateZ(-40px);
+}
+#kiwi:checked ~ .fruit #cherry-view
+{
+    transform: translateX(-235%) perspective(300px) rotateY(35deg) translateZ(-40px);
+}
+#kiwi:checked ~ .fruit #grapes-view
+{
+    transform: translateX(-275%) perspective(300px) rotateY(40deg) translateZ(-40px);
+}
